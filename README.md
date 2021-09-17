@@ -50,7 +50,7 @@ Note: Remember to git add, git commit and git push regularly
 
 **Acceptance criteria**
 
-1, I can learn about at least two projects that you built.
+1. I can learn about at least two projects that you built.
 2. For each project, I can see a screenshot of the project, a text description of the project, and a link to the project's GitHub repo.
 
 **As a user, I can see how to contact or follow you.**
