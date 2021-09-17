@@ -18,5 +18,69 @@ For now, this project will be an MVP (Minimum Viable Product) that you can conti
 These sample project is far from perfect. You do not need to copy any specific feature here. You can and should use your own creativity!
 
 [Carlos Martinez (he/him)](https://carlosmartinez.dev/)
+
 [Owen Jones (he/him)](https://ojonesdev.netlify.app/)
+
 [Maria Martinez (she/her)](https://marializa.netlify.app/)
+
+# Setup Instructions
+1. Fork this repo
+2. Clone the forked repo to your machine
+3. cd to the cloned folder and write your code!
+
+# Submission Instructions
+
+1. Complete the project
+2. Commit and push your changes to your fork
+3. Submit a pull request back to the assignment repo
+
+Note: Remember to git add, git commit and git push regularly
+
+# User Story
+
+**As a user, I can learn information about you.
+**
+
+**Acceptance criteria
+**
+
+I can see your full name.
+I can see your Pursuit headshot photo.
+I can read a short description of you.
+
+**As a user, I can learn about your recent projects.
+**
+
+**Acceptance criteria
+**
+
+I can learn about at least two projects that you built.
+For each project, I can see a screenshot of the project, a text description of the project, and a link to the project's GitHub repo.
+
+**As a user, I can see how to contact or follow you.
+**
+
+**Acceptance criteria
+**
+
+I can click a link to send a message to your Pursuit email address.
+I can click a link to visit your GitHub page.
+I can click a link to visit your LinkedIn page.
+
+**As a user, I can navigate your site.
+**
+
+**Acceptance criteria
+**
+
+There is a navigation UI that has links to all of the pages or sections.
+When I click on a link in the navigation UI, I can view that page/section.
+
+**As a user, I can experience an interactive UI.
+**
+
+**Acceptance criteria
+**
+
+I can change the content or appearance of the site when I click or interact with elements on the page.
+Errors do not appear in the browser console when I use an interactive element.
