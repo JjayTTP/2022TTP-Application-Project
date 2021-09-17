@@ -38,49 +38,39 @@ Note: Remember to git add, git commit and git push regularly
 
 # User Story
 
-**As a user, I can learn information about you.
-**
+**As a user, I can learn information about you.**
 
-**Acceptance criteria
-**
+**Acceptance criteria**
 
 I can see your full name.
 I can see your Pursuit headshot photo.
 I can read a short description of you.
 
-**As a user, I can learn about your recent projects.
-**
+**As a user, I can learn about your recent projects.**
 
-**Acceptance criteria
-**
+**Acceptance criteria**
 
 I can learn about at least two projects that you built.
 For each project, I can see a screenshot of the project, a text description of the project, and a link to the project's GitHub repo.
 
-**As a user, I can see how to contact or follow you.
-**
+**As a user, I can see how to contact or follow you.**
 
-**Acceptance criteria
-**
+**Acceptance criteria**
 
 I can click a link to send a message to your Pursuit email address.
 I can click a link to visit your GitHub page.
 I can click a link to visit your LinkedIn page.
 
-**As a user, I can navigate your site.
-**
+**As a user, I can navigate your site.**
 
-**Acceptance criteria
-**
+**Acceptance criteria**
 
 There is a navigation UI that has links to all of the pages or sections.
 When I click on a link in the navigation UI, I can view that page/section.
 
-**As a user, I can experience an interactive UI.
-**
+**As a user, I can experience an interactive UI.**
 
-**Acceptance criteria
-**
+**Acceptance criteria**
 
 I can change the content or appearance of the site when I click or interact with elements on the page.
 Errors do not appear in the browser console when I use an interactive element.
