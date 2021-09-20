@@ -43,14 +43,14 @@ Note: Remember to git add, git commit and git push regularly
 ### Acceptance criteria
 
 1. I can see your full name.
-2. I can see your Pursuit headshot photo.
+2. I can see a picture of you.
 3. I can read a short description of you.
 
 <h2> As a user, I can see how to contact or follow you. </h2>
 
 ### Acceptance criteria
 
-1. I can click a link to send a message to your Pursuit email address.
+1. I can click a link to send a message to your preferred email address.
 2. I can click a link to visit your GitHub page.
 3. I can click a link to visit your LinkedIn page.
 
