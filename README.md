@@ -3,11 +3,10 @@ Students will be submitting this project as a qualifier for the 2022 cohort for 
 All applicants must submit a completed project in order to be considered for the program. Those who successfully complete this project will move on to the last and final part of the application process, the interview process.
 
 # Introduction
-For this project will build your own personal website using the following criteria:
+For this project you will build your own personal website using the following criteria:
 
 - Building Web sites with HTML and CSS
 - Using JavaScript to make Web sites interactive
-- Fundamental UI/UX principles
 - Developing your personal brand and online profiles
 
 You'll use these skills to build an MVP (Most Viable Product) of your personal web site. This Web site is a place to show the tech industry who you are and what you can do.
@@ -16,7 +15,7 @@ By the time you are job ready, your personal site will probably use additional t
 For now, this project will be an MVP (Minimum Viable Product) that you can continue to enhance throughout your journey as a developer.
 
 # Examples
-These sample project is far from perfect. You do not need to copy any specific feature here. You can and should use your own creativity!
+Below are some sample websites. These may be a lot more intricate with a lot more elements than what is expected for. These are here to give you ideas on how to move forward. You do not need to copy any specific feature here. You can and should use your own creativity!
 
 [Carlos Martinez (he/him)](https://carlosmartinez.dev/)
 
@@ -46,13 +45,6 @@ Note: Remember to git add, git commit and git push regularly
 1. I can see your full name.
 2. I can see your Pursuit headshot photo.
 3. I can read a short description of you.
-
-<h2> As a user, I can learn about your recent projects. </h2>
-
-### Acceptance criteria
-
-1. I can learn about at least two projects that you built.
-2. For each project, I can see a screenshot of the project, a text description of the project, and a link to the project's GitHub repo.
 
 <h2> As a user, I can see how to contact or follow you. </h2>
 
@@ -87,15 +79,6 @@ Make sure you do the following to successfully complete the projec:
 - Manipulate the conten and styling on the page by utilizing DOM Events and Event Listeners
 - Use Flexbox and Grid to layout a page
 
-<h3> UI/UX Design </h3>
-
-- Your project uses grids to organize information clearly
-- Your project has clear and consistent structure on each section or page
-- Your project uses accessible color contrast
-- Your project follows font-size best practices
-- Your project is limited to 3-4 font variations
-- Your project has navigation that appears in a consistent place across pages and is easy to use
-
 <h3> Interactive site </h3>
 
 Use your JavaScript and DOM skills to make your site interactive. In other words, there should be at least one place where clicking, selecting, hovering, or submitting information changes the content of the page.
@@ -119,11 +102,9 @@ Your site needs to implement all user stories and meet the UI/UX criteria. There
 
 2. About/Intro: The about page is where you get to talk about yourself. Do you have a pop pitch? This is the place to put it. Write a bio. Show a picture. Talk about your love of cats, books, or milkshakes. Make this part personal. You can have combine this section wit your landing page if it makes sense.
 
-3. Projects: This section is where you put projects you've worked on during your time at Pursuit and personal projects you may have. Link to each project's GitHub repo, include a screenshot, and write a description. If the project is deployed, include a link to the live version.
+3. Contact links: You can put it at the bottom of your page as a footer or in a contact me section. A good font with tons of social icons is [FontAwesome](fontawesome.com)
 
-4. Contact links: You can put it at the bottom of your page as a footer or in a contact me section. A good font with tons of social icons is [FontAwesome](fontawesome.com)
-
-5. Other: (Optional) Anything else with things you may want to include, if you write, then a blog section, if you paint or photograph then a gallery section etc.
+4. Other: (Optional) Anything else with things you may want to include, if you write, then a blog section, if you paint or photograph then a gallery section, projects you might be working on etc.
 
 <h3> Hints for showing and hiding elements </h3>
   
