@@ -12,8 +12,8 @@ For this project will build your own personal website using the following criter
 
 You'll use these skills to build an MVP (Most Viable Product) of your personal web site. This Web site is a place to show the tech industry who you are and what you can do.
 
-By the time you are job ready, your personal site will probably use additional technologies and skills that have not been covered. 
-For now, this project will be an MVP (Minimum Viable Product) that you can continue to enhance throughout your journey as a debeloper.
+By the time you are job ready, your personal site will probably use additional technologies and skills that you may not yet be familiar with. 
+For now, this project will be an MVP (Minimum Viable Product) that you can continue to enhance throughout your journey as a developer.
 
 # Examples
 These sample project is far from perfect. You do not need to copy any specific feature here. You can and should use your own creativity!
