@@ -92,7 +92,6 @@ body{
     height: 0.75em;
     border-radius: 50%;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 23.5%;
     right: -340%;
 }
