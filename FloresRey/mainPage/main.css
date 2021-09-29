@@ -68,7 +68,7 @@ body{
 .myName h1{
     font-family: 'Poppins', sans-serif;
     white-space: pre;
-    margin-top: 80px;
+    margin-top: 30px;
     text-transform: uppercase;
     text-align: center;
     background-image: url('https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
@@ -76,20 +76,23 @@ body{
     -webkit-background-clip: text;
 }
 
-.myImg{
-    display: inline-block;
-    position: absolute;
-    width: 1.5em;
-    height: 1.5em;
+.myImgContainer{
+    display: inline;
+    margin-left: 0.05em;
+    position: relative;
+}
+.myImgContainer h1{
+    display: inline;
+    font-size: 1em;
+    position: relative;
+}
+.myImgContainer img{
+    display: inline;
+    width: 0.75em;
+    height: 0.75em;
     border-radius: 50%;
     position: absolute;
-    right: -1.5em;
-    top: 21vh;
-
-    transition: all 0.9s linear;
-}
-.myImg img{
-    width: inherit;
-    height: inherit;
-    border-radius: inherit;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -340%;
 }
