@@ -1,0 +1,58 @@
+p{
+    color: seashell;
+    font-family: "mission_gothic", Arial, Verdana, sans-serif;
+}
+
+h1{
+    color: seashell;
+    font-family: "mission_gothic", Arial, Verdana, sans-serif;
+}
+html{
+     background-color:#1d1d2c;
+
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about{
+    background-color: rgb(177, 48, 48);
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    -moz-box-shadow: #555 0 0 8px;
+    -webkit-box-shadow: #555 0 0 8px;
+    -o-box-shadow: #555 0 0 8px;
+    box-shadow: #555 0 0 8px;
+}
+.portrait{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    -moz-box-shadow: #555 0 0 8px;
+    -webkit-box-shadow: #555 0 0 8px;
+    -o-box-shadow: #555 0 0 8px;
+    box-shadow: #555 0 0 8px;
+    text-align: center;
+}
+.pages{
+    background-color: rgb(177, 48, 48);
+    height: auto;
+    width: 1040px;
+    -moz-box-shadow: #555 0 0 8px;
+    -webkit-box-shadow: #555 0 0 8px;
+    -o-box-shadow: #555 0 0 8px;
+    box-shadow: #555 0 0 8px;
+    text-align: center;
+
+}
+
+.selfie{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
