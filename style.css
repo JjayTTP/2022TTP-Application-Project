@@ -1,0 +1,215 @@
+body
+{
+    font-size: 16px;
+    margin:0;
+    padding:0;
+    background-color: antiquewhite;
+    margin: auto;
+}
+
+
+a:link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: grey;
+  }
+  
+  a:hover {
+    color: yellow;
+  }
+
+.navbar
+{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    padding: 10px;
+}
+
+.nav
+{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 5px 20px;
+    text-decoration:none;
+}
+
+#introduction
+{
+    margin: 3%;
+    background-color: beige;
+    font-size: 20px;
+    height: 700px;
+    border-radius: 20px;
+    padding: 5px;
+}
+img
+{ 
+    float: left;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 3px;
+    width: 90%;
+    margin: 1%;
+}
+
+#introtext
+{
+    float: left;
+    width: 90%;
+    background-color: cadetblue;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 1%;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 800px) {
+
+#name
+{
+    margin-right:50%;
+}
+.nav
+{
+    float: left;  
+}
+
+#introduction
+{
+    height: 640px;
+}
+img
+{
+    width: 45%;
+}
+
+#introtext
+{
+    width: 40%;
+    margin-top: 30%;
+}
+   
+}
+
+#footer
+{
+    background-color: #333;
+    padding: 5px;
+    font-size: 16px;
+    color: rgb(201, 103, 247);
+    text-align: center;
+}
+/*
+#footer
+{
+    background-color: #333;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 5px 20px;
+}
+
+#introduction
+{
+    margin: 3%;
+    background-color: beige;
+    font-size: 20px;
+    height: 640px;
+    border-radius: 20px;
+    padding: 5px;
+}
+img
+{ 
+    float: left;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 3px;
+    width: 45%;
+    margin: 1%;
+}
+
+#introtext
+{
+    float: left;
+    width: 45%;
+    background-color: cadetblue;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 1%;
+    margin-top: 400px;
+}
+
+
+@media screen and (max-width:900px) {
+   
+    #introduction
+    {
+        height: 640px;
+    }
+    img
+    { 
+        width: 45%;
+    }
+    
+    #introtext
+    {
+    
+        width: 45%;
+        background-color: cadetblue;
+        padding: 10px;
+        border-radius: 20px;
+        margin: 1%;
+        margin-top: 400px;
+    }
+    }
+    
+    end of media 
+*/
+
+/*
+
+This is the version I want to keep
+#introduction
+{
+    margin: 3%;
+    background-color: beige;
+    font-size: 20px;
+    height: 640px;
+    border-radius: 20px;
+    padding: 5px;
+}
+img
+{ 
+    float: left;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 3px;
+    width: 45%;
+    margin: 1%;
+}
+
+#introtext
+{
+    float: left;
+    width: 45%;
+    background-color: cadetblue;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 1%;
+    margin-top: 400px;
+}
+
+@media screen and (min-width: 800px) {
+   img{
+      width: 100%;
+    }
+*/
+#poem
+{
+    clear: both;
+}
