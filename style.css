@@ -90,6 +90,14 @@ img
 	text-align: left;
 }
 
+#email
+{
+    clear: both;
+    border: navy solid 2px;
+    border-radius: 20px;
+    padding: 3%;
+}
+
 /*mediasdhflshdflhsdlfkhlsdkfhlkdfh*/
 @media screen and (min-width: 800px) {
 
@@ -122,11 +130,18 @@ img
 }
   
 }
+#email
+{
+    margin-left: 30%;
+    margin-right: 30%;
+    
+}
 
 /*hdsljfhsdfjsdkfhksjdfhkjsdfsdfsdfsdf*/
 #contactId
 {
     clear: both;
+    background-color:white;
 }
 
 #footer

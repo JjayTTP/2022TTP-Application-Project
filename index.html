@@ -6,7 +6,8 @@
     <title>Ankit Kafle</title>
     <link rel="shortcut icon" type="image/jpg" href="image/logo.png"/>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='script.js'></script>
 </head>
 <body>
@@ -20,7 +21,7 @@
             <li class="nav"> <a href="https://drive.google.com/file/d/1V3tCGZkJUemnD2OfMTT2_r323ERpqFVV/view?usp=sharing">Resume</a>
             </li>
             <li class="nav">Photo Story</li>
-            <li class="nav">Contact</li>
+            <li class="nav"> <a href="#contactId"> Contact</a></li>
         </ul>
     </nav>
     
@@ -64,26 +65,31 @@
     </p>
 </div>
 
-<div id="contactId">
-    <h2 style="text-align: center;">Contact me</h2>
+<form id="email" action="mailto: ankit.kafle19@gmail.com" method="post" enctype="text/plain">
+
+    Name:
+    <input type="text" name="name"><br><br>
+    E-mail:
+    <input type="text" name="mail"><br> <br>
+    Message:<br><br>
+    <input type="text" name="message" size="50"><br>
+    <input type="submit" value="Send">
+    <input type="reset" value="Reset">
+</form>
+
+
+<div id="contactId" style="text-align: center;">
+    <h2>Contact me</h2>
+    <a href="https://www.linkedin.com/in/ankit-kafle-816364198" class="fa fa-linkedin" style="font-size:36px"></a>
+    <a href="https://www.instagram.com/ankit_kafle47/" class="fa fa-instagram" style="font-size:36px"></a>
+    <a href="https://github.com/ankitkafle1" class="fa fa-github" style="font-size:36px"></a>
+
 </div>
 
 <div id="footer">
     <h2>Thank you for Visiting my website</h2>
 </div>
 
-<!--
 
-
-<div class="navbar">
-    <ul class="navbar">
-        <li style="margin-left: 32%;" class="nav"><a  href="#top">Back to Top</a></li>
-        <li class="nav"><a  href="">Instagram</a></li>
-        <li class="nav"><a  href="">Github</a></li>
-        <li class="nav"><a  href="">Linkedin</a></li>
-    </ul>
-</div>
-
--->
 </body>
 </html> 
