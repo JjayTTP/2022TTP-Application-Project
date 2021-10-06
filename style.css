@@ -68,6 +68,29 @@ img
     margin-top: 20px;
 }
 
+
+#poems
+{
+    clear: both;
+    margin: 3%;
+    font-size: 20px;
+    padding: 5px;
+    color: red;
+}
+
+
+.poem
+{
+    float: left;
+    width: 90%;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin: auto;
+	text-align: left;
+}
+
+/*mediasdhflshdflhsdlfkhlsdkfhlkdfh*/
 @media screen and (min-width: 800px) {
 
 #name
@@ -93,11 +116,22 @@ img
     width: 40%;
     margin-top: 30%;
 }
-   
+.poem
+{
+    width: 45%;
+}
+  
+}
+
+/*hdsljfhsdfjsdkfhksjdfhkjsdfsdfsdfsdf*/
+#contactId
+{
+    clear: both;
 }
 
 #footer
 {
+    clear: both;
     background-color: #333;
     padding: 5px;
     font-size: 16px;
@@ -105,6 +139,28 @@ img
     text-align: center;
 }
 /*
+
+    float: left;
+    width: 90%;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 1%;
+    margin-top: 20px;
+    text-align: center;
+
+
+#poem1
+{
+
+    background-color: aqua;
+}
+#poem2
+{
+    color: aqua;
+}
+
+
+
 #footer
 {
     background-color: #333;
@@ -209,7 +265,3 @@ img
       width: 100%;
     }
 */
-#poem
-{
-    clear: both;
-}
