@@ -17,6 +17,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
 .container_Fluid{
     width: 100%;
 }
@@ -36,9 +40,13 @@ header{
     background-color: rgba(0,0,0,0.7);   
     position: fixed;
     width: 100%;
-}nav ul{
+}
+
+nav ul{
     list-style-type: none; /*erase dots*/
     display: flex;
+    
+    
 }
 
 nav ul li a{
@@ -61,11 +69,12 @@ header .container{
 
 header .logo{
     height: 75px;
-    width: 75px;
+    width: 75px;   
 }
 header .logo img{
     height: 75px;
     width: 75px;
+    position:fixed;
 }
 .main_Section{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),
@@ -78,16 +87,45 @@ header .logo img{
     text-align: center;
 }
 
-.content .user_Image{
+.content .My_Image{
     height: 300px;
     width: 300px;
     overflow: hidden;
     border: 5px solid #fff;
-    margin: 50px auto 25px;
+    margin: 278px auto 25px;
     border-radius: 200px;
+    
 }
 
-.content .user_Image img{
+.content .My_Image img{
     width: 100%;
     height: 100%;
+   
+}
+
+.content h2{
+    font-size: 25px;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    font-weight: 400;
+    display: inline-block; /*reduce the length of the line border*/ 
+    margin: 3px auto 15px;   
+}
+ 
+.icons {
+    display: grid;
+    grid-gap: 6px;
+    grid-template-columns: repeat(5, 1fr);
+    width: 200px;
+    margin: auto;
+   
+}
+
+.icons a{
+    border: 1px solid #fff;
+    padding: 2px 3px;
+    
+    
+    
+
 }
