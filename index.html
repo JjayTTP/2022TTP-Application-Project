@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
     <!-- browser -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,700&display=swap" rel="stylesheet">
     <link rel="icon" href="img/logo.png">
     <!-- Link to load an icon for small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,25 +18,38 @@
 <body>
     <script src="myscripts.js"></script>
 
-    <!-- header section -->
-    <header>
-    
-        <div class = container>
-            <div class="topnav" id="myTopnav">
-    
-                <div class="logo">
-                <img src="img/logo.png" alt = "logo">
-                </div>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-                </a>
-            </div>
+     <div id="navbar">
+        <a href="#" id="logo">StephaniaHQ</a>
+        <div  class ="navbar-right">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Projects</a>
+          <a href="#contact">Contact</a>
+          
+          
         </div>
-    </header>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
     <!-- main section -->
 
     <section id ="home" class="main_Section" >     <!--bannersection -->
@@ -61,7 +73,7 @@
 
     </section>
     
-    <section class ="containerFluid" id="about">
+    <section id="about" class ="about_section">
         <div class="container">
             <h2 class ="title">About Me</h2>
             <div class="grid">
@@ -86,21 +98,29 @@
                     </p>
                     <div class="info">
                         <div>
-                            <label>Name:</label>
+                            <label>Name :</label>
                             Stephania Hoyos
                         </div>
                         <div>
-                            <label>Phone:</label>
+                            <label>Phone :</label>
                             6466847890
                         </div>
                         <div>
-                            <label>Email:</label>
+                            <label>Email :</label>
                             hoyosstephania1@gmail.com
                         </div>
                         <div>
-                            <label>Hobbies:</label>
+                            <label>Hobbies :</label>
                              soccer 
                         </div>
+
+                        <div class="skillsInfo">
+                            <h3>
+                                Skills
+                            </h3>
+                        </div>
+
+                        
 
                     </div>
                 </div>
