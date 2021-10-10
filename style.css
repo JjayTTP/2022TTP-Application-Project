@@ -1,12 +1,24 @@
+*
+{
+    box-sizing: border-box;
+}
 body
 {
     font-size: 16px;
     margin:0;
     padding:0;
     background-color: antiquewhite;
-    margin: auto;
 }
-
+h1
+{
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+h2
+{
+    text-align: center;
+}
 
 a:link {
     color: white;
@@ -26,7 +38,8 @@ a:link {
     list-style-type: none;
     overflow: hidden;
     background-color: #333;
-    padding: 10px;
+    padding: 5px;
+
 }
 
 .nav
@@ -47,7 +60,7 @@ a:link {
     border-radius: 20px;
     padding: 5px;
 }
-img
+#profileImage
 { 
     float: left;
     border: 2px solid #ddd;
@@ -67,77 +80,84 @@ img
     margin: 1%;
     margin-top: 20px;
 }
-
-
 #poems
 {
+    background-color: beige;
     clear: both;
     margin: 3%;
     font-size: 20px;
-    padding: 5px;
     color: red;
+    border-radius: 20px;
 }
-
-
 .poem
 {
-    float: left;
-    width: 90%;
-    padding: 10px;
     border-radius: 20px;
-    margin-top: 20px;
-    margin: auto;
-	text-align: left;
+    padding:20px;
 }
 
+.heading
+{
+    padding: 3%;
+    font-weight: bold;
+    color: black;
+}
+
+.poem:nth-child(odd)
+{
+    background-color: rgb(243, 252, 252);
+}
+
+#photoStory
+{
+    border-radius: 20px;
+    clear: both;
+    margin:3%; 
+}
+.grid-img 
+{
+    font-size: 30px;
+    text-align: center;  
+  } 
+
+.pic
+{
+    width: 100%;   
+    border-radius: 5px; 
+}
 #email
 {
     clear: both;
+    text-align: left;
     border: navy solid 2px;
     border-radius: 20px;
-    padding: 3%;
-}
-
-/*mediasdhflshdflhsdlfkhlsdkfhlkdfh*/
-@media screen and (min-width: 800px) {
-
-#name
-{
-    margin-right:50%;
-}
-.nav
-{
-    float: left;  
-}
-
-#introduction
-{
-    height: 640px;
-}
-img
-{
-    width: 45%;
-}
-
-#introtext
-{
-    width: 40%;
-    margin-top: 30%;
-}
-.poem
-{
-    width: 45%;
-}
-  
-}
-#email
-{
-    margin-left: 30%;
-    margin-right: 30%;
+    width: 90%;
+    height: 250px;
+    margin: auto;
+    padding: 0 20px;
     
 }
-
-/*hdsljfhsdfjsdkfhksjdfhkjsdfsdfsdfsdf*/
+#email > p 
+{
+    text-align: center;
+}
+#emailName
+{
+    text-align:left;
+}
+#emailMessage
+{
+    width: 95%;
+    height: 100px;
+}
+#emailName
+{
+    height: 30px;
+    border-radius: 5px;
+}
+#emailMessage
+{
+    border-radius: 5px;
+}
 #contactId
 {
     clear: both;
@@ -153,130 +173,103 @@ img
     color: rgb(201, 103, 247);
     text-align: center;
 }
-/*
-
-    float: left;
-    width: 90%;
-    padding: 10px;
-    border-radius: 20px;
-    margin: 1%;
-    margin-top: 20px;
-    text-align: center;
 
 
-#poem1
-{
+/* Another media inquity */
+@media (min-width: 1200px) {
+    body
+        {
+        border: #333 2px solid;
+        width:1300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #name
+    {
+        margin-right:30%;
+    }
+    #poems
+    {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
 
-    background-color: aqua;
-}
-#poem2
-{
-    color: aqua;
-}
-
-
-
-#footer
-{
-    background-color: #333;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    padding: 5px 20px;
-}
-
-#introduction
-{
-    margin: 3%;
-    background-color: beige;
-    font-size: 20px;
-    height: 640px;
-    border-radius: 20px;
-    padding: 5px;
-}
-img
-{ 
-    float: left;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    padding: 3px;
-    width: 45%;
-    margin: 1%;
+    #photoStory
+    {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    #email
+    {
+        width: 60%;
+    }
 }
 
-#introtext
-{
-    float: left;
-    width: 45%;
-    background-color: cadetblue;
-    padding: 10px;
-    border-radius: 20px;
-    margin: 1%;
-    margin-top: 400px;
-}
+/*mediasdhflshdflhsdlfkhlsdkfhlkdfh*/
+@media (min-width: 800px) {
 
 
-@media screen and (max-width:900px) {
-   
+    .nav
+    {
+        float: left;  
+    }
+
     #introduction
     {
         height: 640px;
     }
-    img
-    { 
-        width: 45%;
+    #profileImage
+    {
+        width: 50%;
     }
-    
+
     #introtext
     {
-    
-        width: 45%;
-        background-color: cadetblue;
-        padding: 10px;
-        border-radius: 20px;
-        margin: 1%;
-        margin-top: 400px;
+        width: 40%;
+        margin-top: 30%;
     }
-    }
-    
-    end of media 
-*/
 
+    #email
+    {
+        width: 60%;
+    }
+}
+
+
+@media ( min-width:800px) and (max-width:1200px) {
+    #poems
+    {
+        display: grid;
+        grid-template-columns:auto auto;
+    }
+    #photoStory
+    {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+/* hdsljfhsdfjsdkfhksjdfhkjsdfsdfsdfsdf*/
 /*
-
-This is the version I want to keep
-#introduction
+#poems
 {
-    margin: 3%;
-    background-color: beige;
+    clear: both;
+    width: 90%;
+    text-align: center;
+    margin: auto;
     font-size: 20px;
-    height: 640px;
-    border-radius: 20px;
-    padding: 5px;
-}
-img
-{ 
-    float: left;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    padding: 3px;
-    width: 45%;
-    margin: 1%;
+    color: red;
 }
 
-#introtext
+
+.poem
 {
     float: left;
-    width: 45%;
-    background-color: cadetblue;
+    width: 90%;
     padding: 10px;
     border-radius: 20px;
-    margin: 1%;
-    margin-top: 400px;
+    margin-top: 20px;
+    margin: auto;
+	text-align: left;
 }
-
-@media screen and (min-width: 800px) {
-   img{
-      width: 100%;
-    }
 */
