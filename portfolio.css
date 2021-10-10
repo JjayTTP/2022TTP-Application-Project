@@ -1,0 +1,57 @@
+
+body{
+   font-family: 'Montserrat', sans-ser;
+   background-color:gainsboro;
+}
+
+#mainPageLogo {
+   color:indigo;
+   font-style: normal;
+   font-weight: 800;
+   font-size: 40px;
+   line-height: 24px;
+}
+
+a{
+   text-decoration: none; 
+}
+
+li{
+   list-style-type: none;
+}
+
+.menuItems ul {
+   color:indigo;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 20px;
+}
+
+header,footer, .socialIcons{
+   color:indigo;
+   display: flex;
+   justify-content: space-between;
+   align-items:stretch;
+}
+
+.pageContainer{
+   width: 985px;
+   margin: 40px auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.socialIcons{
+   padding-left: 0px;
+}
+
+.socialIcons li{
+   padding-right: 24px;
+}
+
+.description{
+   text-align: center;
+   text-indent: 50px;
+}
