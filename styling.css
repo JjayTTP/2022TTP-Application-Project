@@ -1,6 +1,11 @@
 html{
     background-color:#e6d1ad75
 }
+
+p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 #page-top{
     position: absolute;
     left: 0;
@@ -24,13 +29,22 @@ html{
     justify-content: center;
 }
 #contact{
-    
+    height: 20px;
+    width: 47px;
+    background-color: #eab99d;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+    border-style: ridge;
+    box-shadow: 0px 4px 0px 0px #9e7b4ea8;
+    -moz-box-shadow: 0px 4px 0px 0px #9e7b4ea8;
+    -webkit-box-shadow: 0px 4px 0px 0px #9e7b4ea8;
 }
 #greypre-text{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:grey;
 }
 
-p{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+#PI{
+    vertical-align: baseline;
 }
