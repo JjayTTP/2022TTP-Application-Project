@@ -17,6 +17,7 @@ h1
 }
 h2
 {
+    clear: both;
     text-align: center;
 }
 
@@ -80,10 +81,15 @@ a:link {
     margin: 1%;
     margin-top: 20px;
 }
+
 #poems
 {
-    background-color: beige;
     clear: both;
+    background-color: beige;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: center;
     margin: 3%;
     font-size: 20px;
     color: red;
@@ -158,22 +164,23 @@ a:link {
 {
     border-radius: 5px;
 }
-#contactId
+#contactId a
 {
     clear: both;
-    background-color:white;
+    color: black;
+    font-size: 36px;
+    background-color:rgb(255, 255, 255);
 }
 
 #footer
 {
     clear: both;
-    background-color: #333;
+    background-color: rgb(95, 74, 74);
     padding: 5px;
     font-size: 16px;
     color: rgb(201, 103, 247);
     text-align: center;
 }
-
 
 /* Another media inquity */
 @media (min-width: 1200px) {
@@ -188,12 +195,6 @@ a:link {
     {
         margin-right:30%;
     }
-    #poems
-    {
-        display: grid;
-        grid-template-columns: auto auto auto;
-    }
-
     #photoStory
     {
         display: grid;
@@ -205,9 +206,7 @@ a:link {
     }
 }
 
-/*mediasdhflshdflhsdlfkhlsdkfhlkdfh*/
 @media (min-width: 800px) {
-
 
     .nav
     {
@@ -237,11 +236,7 @@ a:link {
 
 
 @media ( min-width:800px) and (max-width:1200px) {
-    #poems
-    {
-        display: grid;
-        grid-template-columns:auto auto;
-    }
+
     #photoStory
     {
         display: grid;
@@ -249,27 +244,3 @@ a:link {
     }
 }
 
-/* hdsljfhsdfjsdkfhksjdfhkjsdfsdfsdfsdf*/
-/*
-#poems
-{
-    clear: both;
-    width: 90%;
-    text-align: center;
-    margin: auto;
-    font-size: 20px;
-    color: red;
-}
-
-
-.poem
-{
-    float: left;
-    width: 90%;
-    padding: 10px;
-    border-radius: 20px;
-    margin-top: 20px;
-    margin: auto;
-	text-align: left;
-}
-*/
