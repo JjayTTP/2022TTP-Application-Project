@@ -1,7 +1,6 @@
 body
 {
     background-color: rgb(110, 160, 34);
-    
 }
 
 .header
@@ -9,21 +8,29 @@ body
     padding-block: 1ch;
     float: center;
     background-color: rgb(185, 196, 196);
-    border-radius: 50%;
+    border-radius: 45%;
 }
 
 .header1
 {
-    width: 100%;
+    border-style: solid;
+    width: auto;
     height: 100%;
     float: center;
     text-align: center;
     background-color: rgb(180, 43, 43);
 }
 
+.Content
+{
+    text-align: center;
+}
+
 .img1
 {
-    display: block;
-    padding-top: 5ch;
+    display: inline-block;
     border-radius: 50%;
+    width: 30%;
+    height: auto;
 }
+
