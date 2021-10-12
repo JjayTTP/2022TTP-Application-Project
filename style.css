@@ -1,12 +1,15 @@
 body
 {
-    background-color: green;
+    background-color: rgb(110, 160, 34);
+    
 }
 
 .header
 {
     padding-block: 1ch;
     float: center;
+    background-color: rgb(185, 196, 196);
+    border-radius: 50%;
 }
 
 .header1
@@ -15,5 +18,12 @@ body
     height: 100%;
     float: center;
     text-align: center;
-    background-color: red;
+    background-color: rgb(180, 43, 43);
+}
+
+.img1
+{
+    display: block;
+    padding-top: 5ch;
+    border-radius: 50%;
 }
