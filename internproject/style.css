@@ -26,7 +26,6 @@ a {
   background-color: #efeff8;
   align-items: center;
   padding: 1rem 2.5rem;
-  
 }
 
 .brand-title img {
@@ -213,6 +212,11 @@ a {
   margin-bottom: 1.5em;
 }
 
+.contact-form h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /* footer */
 
 .footer {
@@ -258,7 +262,6 @@ hover effect */
   .navbar-links {
     display: none;
     width: 100%;
-    
   }
   .navbar {
     flex-direction: column;
@@ -275,7 +278,6 @@ hover effect */
 
   .active {
     display: flex;
-    
   }
 
   .top {
