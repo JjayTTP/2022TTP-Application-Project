@@ -196,6 +196,7 @@ a {
 /* contact form  */
 .contact-form {
   display: flex;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
   padding: 2rem 10%;
@@ -207,6 +208,8 @@ a {
   flex-direction: column;
   padding: 2rem 2rem;
 }
+
+
 
 .space {
   margin-bottom: 1.5em;

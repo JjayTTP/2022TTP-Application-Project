@@ -22,7 +22,7 @@
           <li><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#project">Project</a></li>
-          <li><a href="#contact">Contact </a></li>
+          <li><a href="#form">Contact </a></li>
         </ul>
       </div>
     </nav>
@@ -93,8 +93,9 @@
           <div class="access-links">
             <p class="links-p">click on the link to access the project</p>
             <div>
-              <a href="#">github</a>
-              
+              <a href="https://github.com/robertquartey7/CAESAR-CIPHER"
+                >github</a
+              >
             </div>
           </div>
         </div>
@@ -124,17 +125,17 @@
         <video src="./video/dance.MOV" controls></video>
       </div> -->
 
-    <div class="contact-form" id="contact">
+    <div class="contact-form" id="form">
       <h2>Contact me</h2>
-      <form action="" class="form-contact-form" >
+      <form class="form-contact-form" method="GET" action="/">
         <label for="fname">First Name: </label>
-        <input type="text" id="fname" class="space" required/>
+        <input type="text" id="fname" class="space" required />
 
         <label for="lname">Last Name: </label>
-        <input type="text" id="lname" class="space" required/>
+        <input type="text" id="lname" class="space" required />
 
         <label for="email">Email: </label>
-        <input type="email" id="email" class="space" required/>
+        <input type="email" id="email" class="space" required />
 
         <label for="subject">Subject</label>
         <textarea
@@ -144,7 +145,8 @@
           class="space"
         ></textarea>
 
-        <button type="submit" class="space">Submit</button>
+        <button type="submit" class="space" id="submit">submit</button>
+        <p class="MgSent"></p>
       </form>
     </div>
 
