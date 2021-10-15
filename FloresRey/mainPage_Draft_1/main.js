@@ -14,25 +14,18 @@ function loadName(){
 
     nameText.style.opacity = "1";
     letterO.style.opacity = "1";
-    nameText.style.transition = "opacity 3s";
 
     nameContainer.style.top = "0";
-    nameContainer.style.transition = "top 1.8s";
+    nameContainer.style.transition = "top 1.5s ease";
 
-    nameText.style.transition = "font-size 2s";
-    letterO.style.transition = "font-size 2s";
-    nameText.style.fontSize = "13vw";
-    letterO.style.fontSize = "13vw";
+    nameText.style.fontSize = "13.5vw";
 
-    setTimeout(function(){
-        nameText.style.transition = "font-size 0s";
-        letterO.style.transition = "font-size 0s";
-    },0);
+    nameText.style.transition = "opacity 1.5s ease, font-size 1s ease";
 
     setTimeout(function(){
         nameText.style.transition = "font-size 0s";
         letterO.style.transition = "font-size 0s";
-    },0);
+    },1000);
 
     loadAboutMe();
 
@@ -43,7 +36,7 @@ function loadAboutMe(){
     var aboutMeText = document.getElementsByClassName("aboutMe")[0].getElementsByTagName("h2")[0];
 
     aboutMeText.style.top = "0";
-    aboutMeText.style.transition = "top 1.8s";
+    aboutMeText.style.transition = "top 1.8s ease";
 }
 
 window.addEventListener("load",function(){

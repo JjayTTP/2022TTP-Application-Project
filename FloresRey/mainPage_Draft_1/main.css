@@ -70,10 +70,12 @@ body{
     width: 90%;
     height: 20vw;
     font-family: 'Poppins', sans-serif;
-    margin: 0 auto;
+    margin: 1vw auto;
     top: 33.5vw;
     text-align: center;
-    font-size: 2.4vw;
+    font-size: 2.2vw;
+    color: #008fa4;
+
 }
 
 /*-----------------------------My Name--------------------------------*/

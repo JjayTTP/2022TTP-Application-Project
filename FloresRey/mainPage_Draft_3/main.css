@@ -1,0 +1,83 @@
+body{
+    background-color: #2C2F32;
+    margin: 0;
+}
+
+.contentContainer{
+    display: block;
+    position: relative;
+    margin: 30px auto;
+    width: 90%;
+    height: auto;
+    border-radius: 25px;
+    
+    background-color: #1f2223;
+}
+
+.myName{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 7.5vw;
+    user-select: none;
+    justify-content: center;
+    overflow: hidden;
+}
+.myName h1{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    background-image: url('../Images/myNameBackground.jfif');
+    background-attachment: fixed;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-size: 55vw 45vw;
+    margin: 20px 0;
+    line-height: 12vw;
+    overflow: hidden;
+
+    border-right: .10em solid orange;
+    white-space: nowrap;
+
+    animation: 
+    typing 3s steps(50, end),
+    blink-caret .75s step-end infinite;
+}
+.myName span{
+    display: inline-block;
+    width: 0.78em;
+    height: inherit;
+    position: relative;
+    background-image: url('../Images/myNameBackground.jfif');
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    background-size: 55vw 45vw;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 90% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+#profileImg{
+    position: absolute;
+    display: inline;
+    width: 0.76em;
+    height: 0.76em;
+    border-radius: 50%;
+    top: 2%;
+    /* left: 3%; */
+    left: 50vw;
+}
+
+.aboutMe{
+    width: 100%;
+    height: auto;
+}
