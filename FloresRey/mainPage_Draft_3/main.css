@@ -132,13 +132,13 @@ body{
 
 /* The typewriter cursor effect */
 @keyframes blink-caret-main {
-  from, to { border-width: 0; }
-  50% { border-width: 0.50em; }
+  from, to { border-width: 0.50em;  }
+  50% { border-width: 0;}
 }
 
 @keyframes blink-caret-mini {
-    from, to { border-width: 0; }
-    50% { border-width: 20px; }
+    from, to { border-width: 20px; }
+    50% { border-width: 0; }
   }
 
 #profileImg{
