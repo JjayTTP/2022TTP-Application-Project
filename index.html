@@ -7,6 +7,7 @@
     <link rel="shortcut icon" type="image/jpg" href="image/logo.png"/>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='script.js'></script>
 </head>
@@ -18,16 +19,16 @@
             <li class="nav">
                 <a href="#introduction">
                 About</a></li>
-            <li class="nav"> <a href="https://drive.google.com/file/d/1V3tCGZkJUemnD2OfMTT2_r323ERpqFVV/view?usp=sharing">Resume</a>
+            <li class="nav"> <a href="https://drive.google.com/file/d/1Mk2wuO4-BNP8eZ4K_lZvJKtfDG6gUMsp/view?usp=sharing">Resume</a>
             </li>
             <li class="nav"> <a href="#photStoryID">Photo Story</a></li>
             <li class="nav"> <a href="#contactId"> Contact</a></li>
         </ul>
     </nav>
 
-<div id="introduction">
+<div onmouseenter="makeBorder('introduction');" onmouseleave="removeBorder('introduction');"  id="introduction">
        <img id="profileImage" src="image/ankitKafle.png" alt="Photo of Ankit Kafle">
-        <p id="introtext">
+        <p  id="introtext">
         Hi, I am Ankit Kafle. I am orginally form Nepal and living in New York for past 5 years. I am currently persuing my bacelors degree in Computer Sciece and Information Security in John Jay College Of Criminal Justice. I love to travel, read
         books. I am intereseted in economics, biology and computer sciece.
         </p>
@@ -35,7 +36,7 @@
 
 <h2>Poems</h2>
 
-<div id="poems"> 
+<div onmouseenter="makeBorder('poems');" onmouseleave="removeBorder('poems');"id="poems"> 
     <div class="poem">
         <span class="heading">You</span> <br><br>
         Life is a story, <br>
@@ -95,16 +96,49 @@
 
 <h2 id="photStoryID">Photo Story</h2>
 
-<div id="photoStory">
-    <div class="grid-img"><img class="pic" src="image/hudsonYards.jpg" alt=""> </div>
-    <div class="grid-img"><img class="pic" src="image/fearlessGirl.jpg" alt=""></div>
-    <div class="grid-img"><img class="pic" src="image/imgABC.jpeg" alt=""></div>  
-    <div class="grid-img"><img class="pic" src="image/imgDC.jpg" alt=""></div>
-    <div class="grid-img"><img class="pic" src="image/imgLamoKapal.jpg" alt=""></div>
-    <div class="grid-img"><img class="pic" src="image/imgKarnaliBridge.jpg" alt=""></div>  
-    <div class="grid-img"><img class="pic" src="image/flower.jpg" alt=""></div>
-    <div class="grid-img"><img class="pic" src="image/imgLamoKapal.jpg" alt=""></div>
-    <div class="grid-img"><img class="pic" src="image/hudsonYards.jpg" alt=""></div> 
+<div onmouseenter="makeBorder('photoStory');" onmouseleave="removeBorder('photoStory');" id="photoStory">
+
+    <div
+    onmouseenter="presentStory('zero');" onmouseleave="hideStory('zero');"  class="grid-img"><img class="pic" src="image/fearlessGirl.jpg" alt="">
+    <p class="photoText" id="zero"> </p>
+    </div>
+    
+    <div
+    onmouseenter="presentStory('one');" onmouseleave="hideStory('one');" class="grid-img"><img class="pic" src="image/imgABC.jpeg" alt="">
+    <p class="photoText" id="one"> </p>
+    </div>  
+    
+    <div
+    onmouseenter="presentStory('two');" onmouseleave="hideStory('two');" class="grid-img"><img class="pic" src="image/imgDC.jpg" alt="">
+    <p class="photoText" id="two"> </p>
+    </div>
+
+    <div
+    onmouseenter="presentStory('three');" onmouseleave="hideStory('three');" class="grid-img"><img class="pic" src="image/imgLamoKapal.jpg" alt="">
+    <p class="photoText" id="three"> </p>
+    </div>
+   
+    <div
+    onmouseenter="presentStory('four');" onmouseleave="hideStory('four');" class="grid-img"><img class="pic" src="image/imgKarnaliBridge.jpg" alt="">
+     <p class="photoText" id="four"> </p>
+    </div> 
+
+    <div
+    onmouseenter="presentStory('five');" onmouseleave="hideStory('five');" class="grid-img"><img class="pic" src="image/flower.jpg" alt="">
+    <p class="photoText" id="five"> </p>
+    </div>
+    
+    <div
+    onmouseenter="presentStory('six');" onmouseleave="hideStory('six');"   class="grid-img"><img class="pic" src="image/hudsonYards.jpg" alt="">
+    <p class="photoText" id="six"> </p>
+    </div>
+<!--
+    <div 
+    onmouseenter="presentStory('seven');" onmouseleave="hideStory('seven');" class="grid-img"><img class="pic" src="image/hudsonYards.jpg" alt="">
+    <p class="photoText" id="seven"> </p>
+    </div> 
+-->
+
 </div>
 
 <form id="email" action="mailto: ankit.kafle19@gmail.com" name="emailForm"  enctype="text/plain" method="post" onsubmit="return formValidation()">

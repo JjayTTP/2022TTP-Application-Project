@@ -1,9 +1,14 @@
+/*
+I find it easier to style the webpage on a serial mannar and then modified the contents for different screen size. I find this approach makes website makes mobile friendly 
+and there is always defult style irrespective of screen size.
+*/
 *
 {
     box-sizing: border-box;
 }
 body
 {
+    font-family: 'Merriweather', serif;
     font-size: 16px;
     margin:0;
     padding:0;
@@ -92,7 +97,7 @@ a:link {
     justify-content: center;
     margin: 3%;
     font-size: 20px;
-    color: red;
+    color: #141823 ;
     border-radius: 20px;
 }
 .poem
@@ -129,6 +134,15 @@ a:link {
 {
     width: 100%;   
     border-radius: 5px; 
+}
+.photoText
+{
+    padding: 10px;
+    text-align: left;
+    width: 95%;
+    font-size: 18px;
+
+
 }
 #email
 {
@@ -182,7 +196,7 @@ a:link {
     text-align: center;
 }
 
-/* Another media inquity */
+/* Mediq query for screen up to 1200 pix*/
 @media (min-width: 1200px) {
     body
         {
@@ -206,6 +220,7 @@ a:link {
     }
 }
 
+/*Media query when screen size is form 800- 1200px */
 @media (min-width: 800px) {
 
     .nav
@@ -234,7 +249,7 @@ a:link {
     }
 }
 
-
+/*Modifyng the grid when screen is between 800-1200px */
 @media ( min-width:800px) and (max-width:1200px) {
 
     #photoStory
