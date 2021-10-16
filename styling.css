@@ -11,7 +11,14 @@ html{
      background-color:#1d1d2c;
 
 }
+
+.contentContainer{
+    display: flex;
+    justify-content: center;
+    
+}
 .content{
+    margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,9 +34,6 @@ html{
     box-shadow: #555 0 0 8px;
 }
 .portrait{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 500px;
     height: 500px;
     margin: 20px;
@@ -39,7 +43,12 @@ html{
     box-shadow: #555 0 0 8px;
     text-align: center;
 }
-.pages{
+.ScrollMenu{
+    display:flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
     background-color: rgb(177, 48, 48);
     height: auto;
     width: 1040px;
@@ -56,3 +65,28 @@ html{
     height: 500px;
     object-fit: cover;
 }
+
+
+
+
+
+.button {
+    background-color: rgb(177, 48, 48);
+    border: 2px solid #1d1d2c;
+    color: seashell;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 250px;
+    cursor: pointer;
+  }
+
+  .buttonshadow:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: rgb(139, 39, 39);
+  }
