@@ -1,0 +1,85 @@
+.navabar_details{
+    justify-content: center;
+}
+
+.container{
+    /* padding: 3em; */
+}
+.aboutmecontents{
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 50vw;
+}
+
+#aboutme{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+#education{
+    height: 100vh;
+}
+
+#contactme{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.myimage{
+    margin-right: 3em;
+    border-radius: 5px;;
+}
+
+.myinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body{
+    background: aliceblue;
+}
+
+.aboutinternal{
+    background: rgb(125, 186, 236);
+    border-radius: 10px;
+    height : 45vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+
+}
+
+.schoolimage{
+    height: 400px;
+    width: object-fit;
+    border-radius : 5px;
+}
+
+.school-details{
+    display: flex;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0px;
+    width: 100%;
+}
