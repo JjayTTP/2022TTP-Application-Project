@@ -5,6 +5,7 @@
 .container{
     /* padding: 3em; */
 }
+
 .aboutmecontents{
     display: flex;
     /* flex-wrap: wrap; */
@@ -14,20 +15,26 @@
 #aboutme{
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 85vh;
     flex-direction: column;
     align-items: center;
 }
 
 #education{
+    margin:0px;
     height: 100vh;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #contactme{
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 70vh;
     flex-direction: column;
+    padding-bottom: 7em;
 }
 .myimage{
     margin-right: 3em;
@@ -41,8 +48,10 @@
     align-items: center;
 }
 
+
 .body{
     background: aliceblue;
+    color:rgba(70, 63, 63, 0.747)
 }
 
 .aboutinternal{
@@ -73,6 +82,11 @@
     flex-direction: column;
     align-items: center;
     padding: 3em;
+}
+
+#resume{
+    padding-top: 7em;
+    padding-bottom: 0em;
 }
 
 #footer{
