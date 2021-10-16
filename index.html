@@ -9,47 +9,64 @@
 
  <body>
     <section id="page-top">
-        <div id="topflex"><header>Christopher Thorne
-            <ul>
+        <header>Christopher Thorne
+        <!-- <ul>
                 <li>
                     <a href="index.html">Home</a>
                     <a href="ThorneChristopherRsume.PDF">Resume</a>
                     <a href="#">About</a>
                 </li>
-            </ul>
+            </ul>-->
+            <nav class="navbar" id="nav">
+                <a href="index.html">Home</a>
+                <a href="ThorneChristopherRsume.PDF">Resume</a>
+               <div class="dropdown"> 
+                   <button class="dropbtn">Navigate
+                       <i class="dancedown"></i>
+                   </button>
+                   <div class="dropdownitems">
+                    <a href="#">Projects</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                   </div>
+                   <a href="javascript:void(0);" class="dropIcon" oneclick="myfunction()">&#9776</a>
+                </div>
+            </nav>
+            <script src="Javascript.js"></script>
         </header>
-    <section>
+    </section>
 <main>
     <section id="aboutMe">
-        <img src="manphoto.jpg" alt="a photo of ya boy">
+        <img id="selfie" src="IMG_20210409_231732.jpg" alt="a photo of ya boy">
         <div id="PI">
             <div id="greypre-text">
                 <h2>Christopher Thorne</h2>
             </div>
-             <p>I'm Christopher Thorne, and I'm a undergraduate computer science student with a focus on full stack development and internet security.</p>
+             <p>I'm Christopher Thorne, an undergraduate computer science student at John Jay college with a focus on full stack development and internet security.</p>
             <div id="contact">
-                <a href="#">contact</a>
+                <a href="mailto:christhorne714@gmail.com">contact</a>
             </div>
         </div>
     </section>
 
     <section>
+        <h2>What I do</h2>
         <div class="grid2x2">
-            <div class="box box1"><h3>Front end development</h3>
+            <div class="box box1"><h3>Frontend-development</h3>
                 <p>proficient in html, css, and Javascript and always ready to learn and improve at a moments notice.</p></div>
             <div class="box box2"><h3>C++</h3>
                 <p>Proficient in C++. Able to create and run security algorithms as well as some other scipts, such as a histogram.</p></div>
             <div class="box box3"><h3>Java</h3>
-                <p>Basic Java skills and knowledge.</p></div>
+                <p>Knowledgeable about the basics of Java.</p></div>
             <div class="box box4"><h3>Python and mysql</h3>
-                <p>Some placeholder text about my python skillset.</p></div>
+                <p>Python command line and sagemath knowledge as well as some skills in basic database management with mysql.</p></div>
         </div>
     </section>
 </main>
 
 <footer>
     <section id="page_bot">
-        <ul>
+        <div id="icons"><ul>
             <li>
                 <a href="https://github.com/ChristopherThorne714/ChristopherThorne714.git">
                     <img src="icons/github.svg">
@@ -57,11 +74,11 @@
                 <a href="https://www.linkedin.com/in/christopher-thorne-645200222/">
                     <img src="icons/Linkedin1.svg">
                 </a>
-                <a href="#">
+                <a href="mailto:christhorne714@gmail.com">
                     <img src="icons/gmail.svg">
                 </a>
             </li>
-        </ul>
+        </ul></div>
     </section>
 </footer>
 </body>
