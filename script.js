@@ -54,7 +54,7 @@ function formValidation() {
 function presentStory(a) {
     switch (a) {
         case "zero":
-            document.getElementById(a).innerHTML = "The statue next to me is named as a fearless girl. The statue is infront of New York Stock Exchange building. I remember man people statred taking a photo like I did once other saw me; doing someting in New York City is also about trend setting as there are many tourist and they generally follow the trends.";
+            document.getElementById(a).innerHTML = "The statue next to me is named as a fearless girl. The statue is infront of New York Stock Exchange building. I remember many people statred taking photos like I did once other saw me; doing something in New York City is also about trend setting as there are many tourists and they generally follow the trends.";
             break;
         case "one":
             document.getElementById(a).innerHTML = "I was treeking in Annapurna Base Camp in Nepal. The mountain in the background is Mount Fish Tail. One potter who sang Nepali Hip-Hop song very well captured this pic for me; I wish I had remembered his name.";
@@ -63,16 +63,16 @@ function presentStory(a) {
             document.getElementById(a).innerHTML = "This was the first time I visited Washington DC.";
             break;
         case "three":
-            document.getElementById(a).innerHTML = "For once in my life, I fee like growing a long hair. I might grow hair agina, but, even if dont do it again I have this picture to look at.";
+            document.getElementById(a).innerHTML = "I feel like I should, at least once, grow a long hair, which I did once. I might grow hair again, but, even if don't do it again, I have this picture to look at.";
             break;
         case "four":
-            document.getElementById(a).innerHTML = "This picture is taken in Far Western region in Nepal. I am on a bridge which joins entire far-western to other parts of Nepal";
+            document.getElementById(a).innerHTML = "This picture is taken in Far Western region in Nepal. I am on a bridge which joins entire far-western region of Nepal to other parts of Nepal";
             break;
         case "five":
             document.getElementById(a).innerHTML = "Aren't these roses beautiful?";
             break;
         case "six":
-            document.getElementById(a).innerHTML = "This is the tallest build I ever climbed. I took this picture when my sister and her husband come in New York city.";
+            document.getElementById(a).innerHTML = "This is the tallest build I ever been to. I took this picture when my sister and her husband come in New York city to visit.";
             break;
         default:
             break;
