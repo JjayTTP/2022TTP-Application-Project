@@ -44,6 +44,7 @@ h2{
 
 #selfie{
     height: 450px;
+    padding-right: 20px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 45px;
@@ -56,8 +57,25 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 75px;
 }
-#contact{
+
+.button{
+    cursor: pointer;
+    background-color: royalblue; /* Green */
+    border: solid 3px royalblue;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+.button:hover{
+    background-color: rgb(209, 211, 218);
+    color: black;
+}
+/*#contact{
     height: 20px;
     width: 47px;
     background-color: #eab99d;
@@ -69,7 +87,7 @@ h2{
     box-shadow: 0px 4px 0px 0px #9e7b4ea8;
     -moz-box-shadow: 0px 4px 0px 0px #9e7b4ea8;
     -webkit-box-shadow: 0px 4px 0px 0px #9e7b4ea8;
-}
+}*/
 
 #greypre-text{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -100,13 +118,13 @@ h2{
 .box3 { /*background-color: purple;*/ }
 .box4 { /*background-color: grey;*/ }
 
-      /* Add a black background color to the top navigation */
+
 .navbar {
     background-color: #333;
     overflow: hidden;
 }
       
-      /* Style the links inside the navigation bar */
+
 .navbar a {
     float: left;
     display: block;
@@ -117,24 +135,24 @@ h2{
     font-size: 17px;
 }
       
-      /* Add an active class to highlight the current page */
+
 .active {
     background-color: royalblue;
     color: white;
 }
       
-      /* Hide the link that should open and close the topnav on small screens */
+
 .navbar .dropicon {
     display: none;
 }
       
-      /* Dropdown container - needed to position the dropdown content */
+
 .dropdown {
     float: left;
     overflow: hidden;
 }
       
-      /* Style the dropdown button to fit inside the topnav */
+
 .dropdown .dropbtn {
     font-size: 17px;
     border: none;
@@ -146,7 +164,7 @@ h2{
     margin: 0;
 }
       
-      /* Style the dropdown content (hidden by default) */
+
 .dropdownitems {
     display: none;
     position: absolute;
@@ -156,7 +174,6 @@ h2{
     z-index: 1;
 }
       
-      /* Style the links inside the dropdown */
 .dropdownitems a {
     float: none;
     color: black;
@@ -165,25 +182,17 @@ h2{
     display: block;
     text-align: left;
 }
-      
-      /* Add a dark background on topnav links and the dropdown button on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: #555;
     color: white;
 }
-      
-      /* Add a grey background to dropdown links on hover */
 .dropdownitems a:hover {
     background-color: #ddd;
     color: black;
 }
-      
-
 .dropdown:hover .dropdownitems {
     display: block;
 }
-      
-
 @media screen and (max-width: 600px) {
     .navbar a:not(:first-child), .dropdown .dropbtn {
         display: none;
@@ -193,9 +202,7 @@ h2{
         display: block;
     }
 }
-      
-    
-    @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .navbar.responsive {position: relative;}
     .navbar.responsive a.dropicon {
         position: absolute;
