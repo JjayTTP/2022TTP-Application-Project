@@ -1,11 +1,14 @@
-var aboutContent = document.getElementById('aboutContent');
+var homeContainer = document.getElementById("homeContainer");
+var contactContainer= document.getElementById("contactContainer");
 function showContact(){
-    aboutContent.style.display = 'none';
+    homeContainer.style.display = "none";
+    contactContainer.style.display = "block";
  
 }
 
 function showHome(){
-    aboutContent.style.display = 'flex';
+    homeContainer.style.display = "block";
+    contactContainer.style.display = "none";
 
 }
 

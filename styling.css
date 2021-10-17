@@ -1,41 +1,50 @@
 p{
     color: seashell;
     font-family: "mission_gothic", Arial, Verdana, sans-serif;
+    font-size: large;
 }
 
 h1{
     color: seashell;
     font-family: "mission_gothic", Arial, Verdana, sans-serif;
 }
+
+.skills h1{
+    color: seashell;
+    font-family: "mission_gothic", Arial, Verdana, sans-serif;
+    font-weight: bold;
+}
+
 html{
      background-color:#1d1d2c;
+     overflow-y: scroll;
 
 }
-
-.contentContainer{
-    display: flex;
-    justify-content: center;
-    
+.homeContainer{
+    display:block;
 }
-.content{
-    margin-top: 40px;
+.biographyContainer{
+    padding-top: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .about{
+    border-radius: 25px;
     background-color: rgb(177, 48, 48);
     width: 500px;
     height: 500px;
     margin: 20px;
+    padding: 5px;
     -moz-box-shadow: #555 0 0 8px;
     -webkit-box-shadow: #555 0 0 8px;
     -o-box-shadow: #555 0 0 8px;
     box-shadow: #555 0 0 8px;
 }
 .portrait{
+    border-radius: 25px;
     width: 500px;
-    height: 500px;
+    height: 510px;
     margin: 20px;
     -moz-box-shadow: #555 0 0 8px;
     -webkit-box-shadow: #555 0 0 8px;
@@ -43,34 +52,75 @@ html{
     box-shadow: #555 0 0 8px;
     text-align: center;
 }
-.ScrollMenu{
-    display:flex;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-    top: 0px;
+.skills{
+    text-align:center;
+    border-radius: 25px;
     background-color: rgb(177, 48, 48);
+    width: 1050px;
     height: auto;
-    width: 1040px;
+    margin: auto;
     -moz-box-shadow: #555 0 0 8px;
     -webkit-box-shadow: #555 0 0 8px;
     -o-box-shadow: #555 0 0 8px;
     box-shadow: #555 0 0 8px;
-    text-align: center;
-
+}
+.skillsWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 80px;
 }
 
-.selfie{
-    width: 500px;
+.ScrollMenu{
+    display:flex;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 25px;
+    border: 2px solid #1d1d2c;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    background-color: rgb(177, 48, 48);
+    height: 80px;
+    width: 1048px;
+    -moz-box-shadow: #555 0 0 8px;
+    -webkit-box-shadow: #555 0 0 8px;
+    -o-box-shadow: #555 0 0 8px;
+    box-shadow: #555 0 0 8px;
+}
+.contactContainer{
+    display:none;
+}
+.contactInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    background-color: rgb(177, 48, 48);
+    width: 1050px;
     height: 500px;
+    margin-top: 108px;
+    margin-left: auto;
+    margin-right: auto;
+    -moz-box-shadow: #555 0 0 8px;
+    -webkit-box-shadow: #555 0 0 8px;
+    -o-box-shadow: #555 0 0 8px;
+    box-shadow: #555 0 0 8px;
+}
+
+
+.selfie{
+    border-radius: 25px;
+    width: 500px;
+    height: 510px;
     object-fit: cover;
 }
 
 
-
-
-
 .button {
+    border-radius: 25px;
     background-color: rgb(177, 48, 48);
     border: 2px solid #1d1d2c;
     color: seashell;

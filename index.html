@@ -7,24 +7,70 @@
     <link rel="stylesheet" href="styling.css">
     <title>Document</title>
 </head>
-<body>
-<div class=content div>
-     <div class=ScrollMenu div>
-         <h3> <button type = "button" onclick="showHome()" id='homeButton' class = "button buttonshadow">Home</button> </h3>
-         <h3> <button type = "button" onclick="showContact()" id='contactButton' class = "button buttonshadow">Contact Information</button> </h3>
-     </div>
- </div>
 
-<div class= contentContainer id=aboutContent div>
-    <div class=content div>
-        <div class=about div>
+<body>
+     <div class="ScrollMenu" div>
+         <h3> <button type = "button" onclick="showHome()" id='homeButton' class = "button buttonshadow">Home</button> </h3>
+         <h3> <button type = "button" onclick="showContact()" id="contactButton" class = "button buttonshadow">Contact Information</button> </h3>
+     </div>
+
+<div class="homeContainer" id ="homeContainer" div>
+    <div class="biographyContainer" div>
+        <div class="about" div>
          <h1>Hi, my name is Michael Janus</h1>
-         <p>This is where the description will go</p>
+         <p>I am a Computer Science and Information Security student at John Jay College of Criminal Justice. My ultimate goal is to be
+            a full-stack developer. For hobbies I like to skate, ski, play video games, hike, and learn new languages.</p>
         </div>
-        <div class=portrait div>
+        <div class="portrait" div>
          <img src= "images/portrait.jpg" alt = "Image of me" class = "selfie">
         </div>
     </div>
+    <div class="skills" div>
+        <h1>Skills</h1>
+        <div class="skillsWrapper" div>
+            <div>
+                <h1>Python</h1>
+                <p>Knowledgeable in concepts of functional programming and utilization of Python libraries. </p>
+            </div>
+            <div>
+                <h1>C++</h1>
+                <p>Proficient in C++ after completeing 3 years of course work including: Advanced Data Structures, Operating Systems, and Computer Algorithms. </p>
+            </div>
+            <div>
+                <h1>MySQL/Postgres/SQLLite</h1>
+                <p>Taken databases course as an elective which utilized Python to create and manipulate databases. Knowledgeable in the libraries Pandas, numpy, and SQLAlchemy.</p>
+            </div>
+            <div>
+                <h1>Java</h1>
+                <p>Basic experience in Java after taking an AP course in highschool.</p>
+            </div>
+            <div>
+                <h1>JS</h1>
+                <p>Understanding in how to manipulate DOM to create interactive elements. Excited to learn more.</p>
+            </div>
+            <div>
+                <h1>HTML/CSS</h1>
+                <p>Knowledgeable in how to style and structure a website.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contactContainer" id="contactContainer">
+    <div class="contactInfo">
+        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="michael-janus-91248b207" data-version="v1">
+            <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/michael-janus-91248b207?trk=profile-badge"></a>
+        </div>
+        <a href="https://github.com/bluemike61"> 
+            <img src= "images\icons8-github-120.png">
+        </a>
+        <a href="mailto:michaeljanus61@gmail.com"> 
+            <img src= "images\icons8-mail-100.png">
+        </a>
+    </div>
+
+
+
 </div>
 
 
@@ -32,6 +78,7 @@
 
 
 
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 <script src="javascript.js"></script> 
 </body>
 
