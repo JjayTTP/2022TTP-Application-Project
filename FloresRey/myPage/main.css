@@ -62,7 +62,7 @@ body{
     width: 100%;
     flex-grow: 1;
     flex-basis: 0;
-    background-color: rebeccapurple;
+    background-color: #007cb2;
     border-bottom: 1px solid black;
     overflow: hidden;
 }
@@ -78,7 +78,6 @@ body{
     position: relative;
     width: 20px;
     height: 100%;
-    background-color: green;
     padding: 0;
     overflow: hidden;
 }
@@ -103,7 +102,7 @@ body{
     width: 20px;
     height: 20px;
     border-radius: 50%; 
-    background: #09dcd9;
+    background: #007fff;
     cursor: pointer;
   }
   
@@ -114,6 +113,7 @@ body{
     background: #04AA6D;
     cursor: pointer;
   }
+  /* --------------------- main content container ------------------- */
 
 .mainContent{
     display: block;
@@ -126,10 +126,22 @@ body{
     display: none;
   }
 
+
+.mainSection{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#sectionOne{
+    padding-top: 3.5vw;
+}
+
 .contentContainer{
     display: block;
     position: relative;
-    margin: 30px auto;
+    margin: 0 auto;
     width: 90%;
     height: auto;
     border-radius: 3vw;
@@ -207,7 +219,7 @@ body{
     padding: 1vw 0;
     font-family: 'Noto Sans Mono', monospace;
     display: inline-block;
-    margin-bottom: 1vw;
+    margin: 1vw auto;
 }
 .aboutMe h1{
     text-align: center;
@@ -221,8 +233,8 @@ body{
 
 .SectionDivider{
     width: 90%;
-    margin: auto;
-    height: 5vw;
+    margin: 2vw auto;
+    height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -248,7 +260,7 @@ body{
     font-size: 2.7vw;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    font-weight: lighter;
+
 }
 
 

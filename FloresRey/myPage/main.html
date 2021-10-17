@@ -18,7 +18,7 @@
                 <div class="scrollBar">
                     <div class="pageSection">
                         <div class="sectionItem"><h1>Home</h1></div>
-                        <div class="sectionItem"></div>
+                        <div class="sectionItem">Skills</div>
                         <div class="sectionItem"></div>
                         <div class="sectionItem"></div>
                         <div class="sectionItem"></div>
@@ -26,27 +26,36 @@
                         <div class="sectionItem"></div>
                     </div>
                     <div class="scrollSection">
-                        <input type="range" min="0" max="1000" oninput="scrollPage(this.value)" value="0" class="slider" id="sideNav_Slider">
+                        <input type="range" min="0" max="1000" oninput="scrollPage(this.value)" onmousewheel="moveSlider(event)" value="0" class="slider" id="sideNav_Slider">
                     </div>
                 </div>
             </div>
             <div onscroll="updateSlider()" class="mainContent">
-                <div class="contentContainer">
-                    <div class="myName">
-                        <h1>Rey Fl<span>O <img id="profileImg" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"></span>res</h1>
-                    </div>
-                    <div class="aboutMe">
-                        <h1>I am an aspiring Software Engineer who enjoys learning new skills, is motivated to solve complex problems, and is always willing to get outside of his comfort zone.
-                        </h1>
+
+                <div class="mainSection" id="sectionOne">
+                    <div class="contentContainer">
+                        <div class="myName">
+                            <h1>Rey Fl<span>O <img id="profileImg" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"></span>res</h1>
+                        </div>
+                        <div class="aboutMe">
+                            <h1>I am an aspiring Software Engineer who enjoys learning new skills, is motivated to solve complex problems, and is always willing to get outside of his comfort zone.
+                            </h1>
+                        </div>
                     </div>
                 </div>
-                <div class="testDiv">1</div>
+                <div class="SectionDivider">
+                    <div class="leftDivider"></div>
+                    <h1 class="dividerText">Skills</h1>
+                    <div class="rightDivider"></div>
+                </div>
+
+                <!-- <div class="testDiv">1</div>
                 <div class="testDiv">2</div>
                 <div class="testDiv">3</div>
                 <div class="testDiv">4</div>
                 <div class="testDiv">5</div>
                 <div class="testDiv">6</div>
-                <div class="testDiv">7</div>
+                <div class="testDiv">7</div> -->
 
                 <!-- <div class="SectionDivider">
                     <div class="leftDivider"></div>

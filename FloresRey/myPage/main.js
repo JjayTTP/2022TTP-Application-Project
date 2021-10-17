@@ -28,6 +28,43 @@ function updateSlider(){
     navSlider.value = slideAmount;
 }
 
+function moveSliderDown(){
+    var navSlider = document.getElementById("sideNav_Slider");
+    var contentPage = document.getElementsByClassName("mainContent")[0];
+    var pageHeight = contentPage.scrollHeight - contentPage.clientHeight;
+    var pixelsPerStep = pageHeight/100;
+    var scrollAmount = contentPage.scrollTop;
+    var slideSteps = 1000/100;
+
+    if(navSlider.value < 1000){
+        navSlider.value = parseInt(navSlider.value) + slideSteps;
+        
+        contentPage.scrollTo(0, scrollAmount + pixelsPerStep);
+    }
+}
+
+function moveSliderUp(){
+    var navSlider = document.getElementById("sideNav_Slider");
+    var contentPage = document.getElementsByClassName("mainContent")[0];
+    var pageHeight = contentPage.scrollHeight - contentPage.clientHeight;
+    var pixelsPerStep = pageHeight/100;
+    var scrollAmount = contentPage.scrollTop;
+    var slideSteps = 1000/100;
+
+    if(navSlider.value > 0){
+        navSlider.value = parseInt(navSlider.value) - slideSteps;
+
+        contentPage.scrollTo(0, scrollAmount - pixelsPerStep);
+    }
+}
+
+function moveSlider(event){
+    if(event.deltaY > 0){
+        moveSliderDown();
+    }else{
+        moveSliderUp();
+    }
+}
 
 window.addEventListener("load",()=>{
     setTimeout(()=>{
