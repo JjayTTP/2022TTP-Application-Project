@@ -1,18 +1,19 @@
 p{
     color: seashell;
     font-family: "mission_gothic", Arial, Verdana, sans-serif;
-    font-size: large;
+    font-size: x-large;
 }
 
 h1{
     color: seashell;
     font-family: "mission_gothic", Arial, Verdana, sans-serif;
+    font-size:45px;
 }
 
 .skills h1{
     color: seashell;
     font-family: "mission_gothic", Arial, Verdana, sans-serif;
-    font-weight: bold;
+    font-size: xx-large;
 }
 
 html{
