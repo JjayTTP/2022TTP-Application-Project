@@ -24,22 +24,9 @@ h2{
     padding-left: 1px;
     padding-right: 1px;
 }
-/*#page-top{
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 40px;
-    background-color: #eab99d;
-    margin: auto;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 0px 0px #9e7b4ea8;
-    -moz-box-shadow: 0px 4px 0px 0px #9e7b4ea8;
-    -webkit-box-shadow: 0px 4px 0px 0px #9e7b4ea8;
-}*/
+
 #whatdo{
-    margin-top: 155px;
+    margin-top: 100px;
     margin-left: 250px;
 }
 #selfie{
@@ -59,6 +46,9 @@ h2{
     align-items: center;
     justify-content: center;
 }
+#lifeskills{
+    display:none;
+}
 
 .button{
     cursor: pointer;
@@ -75,33 +65,27 @@ h2{
     background-color: rgb(153, 153, 153);
     color: black;
 }
+.swap{
+    cursor: pointer;
+    background-color: royalblue;
+    border: solid 3px royalblue;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+.swap:hover{
+    background-color: rgb(153, 153, 153);
+    color: black;
+}
 
 #greypre-text{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:grey;
 }
 
-/*.grid2x2 {
-    margin-left: 250px;
-    margin-right: 250px;
-    min-height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-.grid2x2 > div {
-    display: flex; 
-    flex-basis: calc(50% - 40px);  
-    justify-content: center;
-    flex-direction: column;
-}
-.grid2x2 > div > div {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-  
-.box { margin: 20px; }*/
 .grid2x2{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -217,36 +201,4 @@ h2{
         width: 100%;
         text-align: left;
     }
-}
-#buttons{
-    width: 100px;
-    height: 30px;
-    border: 3px soldi white;
-    border-radius: 50px;
-    background: #202020;
-    color: white;
-    cursor: pointer;
-    outline: none;
-}
-
-#stopwatch {
-    font-size: 90px;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -55%);
-}
-#buttons {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-51.6%, -45%);
-}
-#buttons li {
-    display: inline;
-    padding-left: 10px;
-}
-.swap{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(87, 85, 85);
 }

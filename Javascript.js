@@ -8,6 +8,20 @@ function resize() {
     }
 }
 
+function myFunction(){
+  var x = document.getElementById("csskills")
+  var y = document.getElementById("lifeskills")
+  if(x.style.display == "grid"){
+    x.style.display = "none";
+    y.style.display = "grid";
+  } 
+  else {
+    x.style.display = "grid";
+    y.style.display = "none";
+  }
+}
+
+
 const timer = document.getElementById('stopwatch');
 
 var hr = 0;
