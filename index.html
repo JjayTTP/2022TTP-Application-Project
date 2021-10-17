@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="styling.css">
  </head>
 
- <body>
+ <body onload="startTimer()">
     <section id="page-top">
         <header><!--Christopher Thorne-->
         <!-- <ul>
@@ -24,43 +24,62 @@
                     <i class="dancedown"></i>
                   </button>
                   <div class="dropdownitems">
-                    <a href="#">About Me</a>
-                    <a href="#">Skills</a>
+                    <a href="#aboutMe">About Me</a>
+                    <a href="#whatdo">Skills</a>
                     <a href="#">Projects</a>
                   </div>
                 </div>
                 <a href="ThorneChristopherRsume.PDF">Resume</a>
                 <a href="javascript:void(0);" class="dropicon" onclick="resize()">&#9776;</a>
-                <script src="javascript.js"></script>
             </nav></div>
-            <script src="Javascript.js"></script>
         </header>
     </section>
 <main>
     <section id="aboutMe">
         <img id="selfie" src="IMG_20210409_231732.jpg" alt="a photo of ya boy">
+
         <div id="PI">
             <div id="greypre-text">
                 <h2>Christopher Thorne</h2>
             </div>
-             <p>I'm Christopher Thorne, an undergraduate computer science and information security student at John Jay college with a focus on full stack development and internet security. In my free time I like to play video games, pet my dogs and cats excessively, and learn new languages.</p>
-            <div>
-                <input class="button" type="button" onclick="location.href='mailto:christhorne714@gmail.com';" value="Email me" />
-            </div>
+             <p>I'm Christopher Thorne, an undergraduate computer science and information security student at John Jay college with a focus on full stack development and internet security. In my free time I like to play video games, pet my dogs and cats excessively, and learn new languages. My preferred mode of transportation is via longboard or rollerblades because my cat ate my license.</p>
+            <input class="button" type="button" onclick="location.href='mailto:christhorne714@gmail.com';" value="Email me" />
+            
+            <a id="icons" href="https://github.com/ChristopherThorne714/ChristopherThorne714.git">
+                <img src="icons/github.svg">
+            </a>
+            <a id="icons" href="https://www.linkedin.com/in/christopher-thorne-645200222/">
+                <img src="icons/Linkedin1.svg">
+            </a>
+            <a id="icons" href="mailto:christhorne714@gmail.com">
+                <img src="icons/gmail.svg">
+            </a>
         </div>
     </section>
 
     <section>
-        <h2>What I do</h2>
+        <div id="stopwatch">
+            00:00:00
+        </div>
+
+        <ul id="buttons">
+           <!-- <li><button type="button" onclick="startTimer()">Start</button></li>-->
+            <li><button type="button" onclick="stopTimer()">Stop</button></li>
+
+            <li><button type="button" onclick="resetTimer()">Reset</button></li>
+        </ul>
+
+        <!--<h2 id="whatdo">What I do</h2>-->
+        <button type="button" class="swap" id="whatdo">What I do</button>
         <div class="grid2x2">
-            <div class="box box1"><h3>Frontend-development</h3>
+            <div class="box"><h3>Frontend-development</h3>
                 <p>proficient in html, css, and Javascript and always ready to learn and improve at a moments notice.</p></div>
-            <div class="box box2"><h3>C++</h3>
-                <p>All coursework at John Jay college was done in C++. I'm able to create and run security algorithms as well as some other scipts, such as a histogram.</p></div>
-            <div class="box box3"><h3>Java</h3>
-                <p>learned in an AP course in high school and knowledgable in the basics</p></div>
-            <div class="box box4"><h3>Python and mysql</h3>
-                <p>Python command line and sagemath knowledge as well as some skills in basic database management with mysql.</p></div>
+            <div class="box"><h3>C++</h3>
+                <p>All coursework at John Jay college was done in C++.Some of these courses include Object Oriented Programming, Cryptography & Cryptanalysis, and Computer Architecture. I'm able to create and run security algorithms as well as some other scipts, such as a histogram and sorting algorithms.</p></div>
+            <div class="box"><h3>Java</h3>
+                <p>learned in an AP Java course in high school. knowledgable in the basics up until object oriented programming</p></div>
+            <div class="box"><h3>Python and mysql</h3>
+                <p>Python command line and sagemath knowledge as well as some skills in basic database management with mysql, pandas, and postgres.</p></div>
         </div>
     </section>
     <script src="Javascript.js"></script>
@@ -68,7 +87,7 @@
 
 <footer>
     <section id="page_bot">
-        <div id="icons"><ul>
+       <!-- <div id="icons"><ul>
             <li>
                 <a href="https://github.com/ChristopherThorne714/ChristopherThorne714.git">
                     <img src="icons/github.svg">
@@ -80,7 +99,7 @@
                     <img src="icons/gmail.svg">
                 </a>
             </li>
-        </ul></div>
+        </ul></div>-->
     </section>
 </footer>
 </body>

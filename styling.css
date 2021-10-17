@@ -20,12 +20,9 @@ h2{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgb(87, 85, 85);
 }
-
-.flexnav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+#icons{
+    padding-left: 1px;
+    padding-right: 1px;
 }
 /*#page-top{
     position: absolute;
@@ -41,28 +38,31 @@ h2{
     -moz-box-shadow: 0px 4px 0px 0px #9e7b4ea8;
     -webkit-box-shadow: 0px 4px 0px 0px #9e7b4ea8;
 }*/
-
+#whatdo{
+    margin-top: 155px;
+    margin-left: 250px;
+}
 #selfie{
     height: 450px;
     padding-right: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 45px;
+    margin-right: 35px;
+    margin-top: 100px;
 }
 
 #aboutMe{
+    margin-left: 250px;
+    margin-right: 250px;
     box-shadow: 0px 4px 0px 0px #9e7b4ea8;
     -moz-box-shadow: 0px 4px 0px 0px #9e7b4ea8;
     -webkit-box-shadow: 0px 4px 0px 0px #9e7b4ea8;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 75px;
 }
 
 .button{
     cursor: pointer;
-    background-color: royalblue; /* Green */
+    background-color: royalblue;
     border: solid 3px royalblue;
     color: white;
     padding: 15px 32px;
@@ -72,29 +72,18 @@ h2{
     transition-duration: 0.4s;
 }
 .button:hover{
-    background-color: rgb(209, 211, 218);
+    background-color: rgb(153, 153, 153);
     color: black;
 }
-/*#contact{
-    height: 20px;
-    width: 47px;
-    background-color: #eab99d;
-    color:rgb(78, 78, 78);
-    margin: auto;
-    padding: 10px;
-    border-radius: 20px;
-    border-style: ridge;
-    box-shadow: 0px 4px 0px 0px #9e7b4ea8;
-    -moz-box-shadow: 0px 4px 0px 0px #9e7b4ea8;
-    -webkit-box-shadow: 0px 4px 0px 0px #9e7b4ea8;
-}*/
 
 #greypre-text{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:grey;
 }
 
-.grid2x2 {
+/*.grid2x2 {
+    margin-left: 250px;
+    margin-right: 250px;
     min-height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -112,18 +101,28 @@ h2{
     flex-direction: row;
 }
   
-.box { margin: 20px; }
-.box1 { /*background-color: red;*/ }
-.box2 { /*background-color: orange;*/ }
-.box3 { /*background-color: purple;*/ }
-.box4 { /*background-color: grey;*/ }
+.box { margin: 20px; }*/
+.grid2x2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 80px;
+    margin-left: 250px;
+    maRgin-right: 250px;
+}
 
+.flexnav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 
 .navbar {
     background-color: #333;
     overflow: hidden;
 }
-      
 
 .navbar a {
     float: left;
@@ -134,7 +133,6 @@ h2{
     text-decoration: none;
     font-size: 17px;
 }
-      
 
 .active {
     background-color: royalblue;
@@ -151,7 +149,6 @@ h2{
     float: left;
     overflow: hidden;
 }
-      
 
 .dropdown .dropbtn {
     font-size: 17px;
@@ -163,7 +160,6 @@ h2{
     font-family: inherit;
     margin: 0;
 }
-      
 
 .dropdownitems {
     display: none;
@@ -193,7 +189,7 @@ h2{
 .dropdown:hover .dropdownitems {
     display: block;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 3840px) {
     .navbar a:not(:first-child), .dropdown .dropbtn {
         display: none;
     }
@@ -202,7 +198,7 @@ h2{
         display: block;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 3840px) {
     .navbar.responsive {position: relative;}
     .navbar.responsive a.dropicon {
         position: absolute;
@@ -221,4 +217,36 @@ h2{
         width: 100%;
         text-align: left;
     }
+}
+#buttons{
+    width: 100px;
+    height: 30px;
+    border: 3px soldi white;
+    border-radius: 50px;
+    background: #202020;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+#stopwatch {
+    font-size: 90px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+}
+#buttons {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-51.6%, -45%);
+}
+#buttons li {
+    display: inline;
+    padding-left: 10px;
+}
+.swap{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(87, 85, 85);
 }
