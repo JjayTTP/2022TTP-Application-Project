@@ -198,6 +198,7 @@ body{
 }
 #sectionTwo{
     height: 1400px;
+    position: relative;
 }
 
 #sectionTwo::before{
@@ -209,6 +210,7 @@ body{
     bottom: 0px;
     left: 0px;
     opacity: 0.3;
+    z-index: -1;
 
     background-position:
     top 30px left 2vw,
@@ -461,11 +463,13 @@ body{
     width: 90%;
     height: auto;
     border-radius: 3vw;
+        background-color: rgba(31, 34, 35,0.83);
 }
 
 #sectionOneCont1{
     display: block;
-    background-color: #1f2223;
+    /* background-color: #1f2223;
+    background-color: rgba(31, 34, 35,0.83); */
 }
 
 
@@ -555,7 +559,7 @@ body{
 
 .SectionDivider{
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 4vw auto;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -580,7 +584,7 @@ body{
 .dividerText{
     text-transform: uppercase;
     margin: auto 2vw;
-    font-size: 3.3vw;
+    font-size: 4.5vw;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     color: #5865F2;
@@ -588,24 +592,69 @@ body{
 
 /* --------------------------------- Section Two ------------------------ */
 #sectionTwoCont1{
-    background-color: transparent;
-    margin-bottom: 30px;
     display: flex;
-    flex-direction: row;
-    overflow: hidden;
+    flex-direction: column;
+}
+
+.skillContainer{
+    width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.skillContainer h1{
+    margin: 0;
+    margin-top: 1.5vw;
+    width: 100%;
+    height: 4vw;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5vw;
+    font-weight: lighter;
+    color: #80d9ff;
+}
+.skillLayout{
+    width: 80%;
+    margin: 2vw auto;
+    height: auto;
+    display: block;
+}
+.skillGroup{
+    height: auto;
+    width: calc(100% / 3);
+}
+.skillGroup h1{
+    height: 20%;
+    color: #fffffe;
+}
+
+#frontEndGroup{
+    position: relative;
+    display: inline-block;
+
+}
+#backEndGroup{
+    position: relative;
+    float: right;
+}
+#databaseGroup{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+.skillItem{
+    width: 100%;
+    height: 20vw;
+    border-radius: 20px;
+    background-color: #80d9ff;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
-
-#programmingImg{
-    width: 18vw;
-    height: 15vw;
-    margin: 0 1vw 0 2vw;
-}
-
-.skillContent{
-    width: 100%;
-    height: 25vw;
+.skillItem img{
+    height: 35%;
+    width: 75%;
+    position: relative;
 }
 
 
