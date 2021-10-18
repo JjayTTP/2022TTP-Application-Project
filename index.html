@@ -14,9 +14,11 @@
     <title>Stephania Hoyos Quinones</title>
     <!-- LINK TO CSS STYLE -->
     <link rel = "stylesheet" href="style.css">
-    <script src="myscripts.js"></script>
+    
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
 </head>
 <body>
+    <script src="myscripts.js"></script>
     <!-- HEADER  -->
 
     <div  id="navbar">
@@ -82,15 +84,6 @@
                        practice in a work environment. 
                     </p>
                     <div class="info">
-
-                        <div>
-                            <label>Phone :</label>
-                            6466847890
-                        </div>
-                        <div>
-                            <label>Email :</label>
-                            hoyosstephania1@gmail.com
-                        </div>
                         <div>
                             <label>Hobbies :</label>
                              soccer 
@@ -106,7 +99,7 @@
             </div>
         </div>
     </section>
-    <!-- end -->
+    <!-- end  about section -->
 
     <!-- Skills section  -->
 
@@ -185,7 +178,7 @@
             </div>
         </div>
     </section>
-    <!-- end -->
+    <!-- end skills section-->
 
     <!-- projects section -->
     
@@ -202,9 +195,18 @@
             <div>
 
                 <div class="project-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quod quis esse reiciendis nihil minima nam laboriosam, tempore aut. Molestias assumenda 
-                            cupiditate distinctio? Voluptas, doloremque quas? Consectetur, rerum atque?</p>
+                    <h3>Air Hockey Game</h3>
+                    <p>Air Hockey Game project is written in Python. It’s a two-player game, 
+                        playing against each other. After starting the game, the player has 
+                        to move the paddle from left to right, up and down to block the ball 
+                        from entering the scoring area</p>        
                 </div>
+                <div>
+                    <a href="https://github.com/SQuinones/Google-Mentorship-and-Development-program/blob/main/Air_hockey_game.pyde" 
+                     target="_blank">
+                        <button id="btn" onclick = "sourceCode">
+                        <i class="fa fa-github"></i> </button></a>
+                </div>   
             </div>
             <div> 
                 <div class="project-Image"> 
@@ -214,74 +216,110 @@
             <div>
         
                 <div class="project-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quod quis esse reiciendis nihil minima nam laboriosam, tempore aut. Molestias assumenda 
-                            cupiditate distinctio? Voluptas, doloremque quas? Consectetur, rerum atque?</p>
+                    <h3>Paint Project </h3>
+                    <p>This project is written in Python.The application  allows 
+                        the user to simulate painting on the computer by using the mouse. 
+                        This program provide a basic set of painting tools such as change colors,
+                        erase and change the size of the lines.  
+                    </p>
                 </div>
-            </div>
-                
-            
+                <div>
+                    <a href="https://github.com/SQuinones/Google-Mentorship-and-Development-program/blob/main/painter_projectday4.pyde" 
+                     target="_blank">
+                        <button id="btn" onclick = "sourceCode">
+                        <i class="fa fa-github"></i> </button></a>
+                </div> 
+            </div>                    
         </div>
     </section>
+    <!-- end projects section -->
 
     <section id="contact" class ="contact_section">
         <div class="container">
-            <h2 class ="title">Contact</h2>
-        </div>
-        <div class="contactContent">
-            <div class="box">
-                <div class="contactIcon">
-                    <i class = "fa fa-home"></i>
-                </div>
-                <h3>
-                    Location
-                </h3>
-                <p>
-                    New York, NY 
-                </p>
-            </div>
-            <div class="box">
-                <div class="contactIcon">
-                    <i class = "fa fa-phone"></i>
-                </div>
-                <h3>
-                    Phone
-                </h3>
-                <p>
-                    646-684-7612
-                </p>
-            </div>
-            <div class="box">
-                <div class="contactIcon">
-                    <i class = "fa fa-envelope"></i>
-                </div>
-                <h3>
-                    Mail
-                </h3>
-                <p>
-                    hoyosstephania1@gmail.com
-                </p>
-            </div>
-            <div class="box">
-                <div class="contactIcon">
-                    <i class = "fa fa-home"></i>
-                </div>
-                <h3>
-                    Social media 
-                </h3>
-                <div class="socialGrid">
-                    <div>
-                    <i class = "fa fa-instagram"></i>
+                <h2 class ="title">Contact</h2>
+        <!-- </div> -->
+            <div class="contactContent">
+                <div class="box">
+                    <div class="contactIcon">
+                        <i class = "fa fa-home"></i>
                     </div>
-                    <div>
-                        <i class = "fa fa-linkedin"></i>
+                    <h3>
+                        Location
+                    </h3>
+                    <p>
+                        New York, NY 
+                    </p>
+                </div>
+                <div class="box">
+                    <div class="contactIcon">
+                        <i class = "fa fa-phone"></i>
                     </div>
-                    <div>
-                        <i class = "fa fa-github"></i>
+                    <h3>
+                        Phone
+                    </h3>
+                    <p>
+                        646-684-7612
+                    </p>
+                </div>
+                <div class="box">
+                    <div class="contactIcon">
+                        <i class = "fa fa-envelope"></i>
+                    </div>
+                    <h3>
+                        Mail
+                    </h3>
+                    <p>
+                        hoyosstephania1@gmail.com
+                    </p>
+                </div>
+                <div class="box">
+                    <div class="contactIcon">
+                        <i class = "fa fa-share-alt"></i>
+                    </div>
+                    <h3>
+                        Social media 
+                    </h3>
+                    <div class="socialGrid">
+                        <div>
+                        <i class = "fa fa-instagram"></i>
+                        </div>
+                        <div>
+                            <i class = "fa fa-linkedin"></i>
+                        </div>
+                        <div>
+                            <i class = "fa fa-github"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        <!-- <div class="container"> -->
+            <div class="contactMap">
+                <form class="form">
+                    <div class="fromGroup">
+                        <input type="text" name ="userName" autocomplete="off" placeholder="Enter your Name *">
+                        <input type ="text" name = "email" autocomplete="off" placeholder= "Enter Your Email *">
+                        
+                    </div>
+                    <textarea></textarea>
+                    <button type = "submit">Send Message</button>
+                    <!-- <input type="button" id="button" value="Send Message" /> -->
 
+                </form>
+                    <div class="map">
+                    <!-- map image -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103294.15434802702!2d-74.01963989023601!3d40.75691756791194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1634361627896!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div> 
+                        
+            </div> 
+        </div>
+        
+    </section>
+    <!-- copyright section start  -->
+    <footer >
+        Copyright © 2021 Stephania Hoyos Quinones"
+        <img src = "img/logo.png">
+    </footer>
+    <!-- copyright section end -->
     
 </body>
 </html>
