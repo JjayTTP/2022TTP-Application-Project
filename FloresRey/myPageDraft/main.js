@@ -89,9 +89,6 @@ function sideNavSectionHeight(){
 
         var sectionTextCont = document.createElement("div");
         sectionTextCont.classList.add("sectionItemText");
-        // var sectionTitle = document.createElement("h1");
-        // sectionTitle.textContent = sectionTitles[i];
-        // sectionTextCont.appendChild(sectionTitle);
         var sectionPointer = document.createElement("div");
         sectionPointer.classList.add("sectionPointer");
         var sectionTextDiv = document.createElement("div");
@@ -160,7 +157,7 @@ function updateSelectedSection(){
             return sumHeight;
         }();
         var maxScroll = minScroll + sectionHeight;
-        if(scrollAmount > minScroll && scrollAmount < maxScroll){
+        if(scrollAmount >= minScroll && scrollAmount < maxScroll){
             if(i > 0){
                 sideBarSections[i-1].classList.remove("selectedSectionItem");
             }
