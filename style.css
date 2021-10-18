@@ -174,17 +174,6 @@ animation-name: slidein;
   justify-content: center;
 
 }
-  
-/* @media screen and (max-width:990px){
-  #about .grid{
-    grid-template-columns: repeat(2, 1fr);
-  }
- }
- @media screen and (max-width:700px){
-  #about .grid{
-    grid-template-columns: repeat(1, 1fr);  
-  }
- } */
 
 .aboutImage{
   position: relative;
@@ -365,20 +354,6 @@ animation-name: slidein;
  .skill-icon{
    width: 60px;
  }
- /* @media screen and (max-width:990px){
-  .container_Skills{
-    grid-template-columns: repeat(2, 1fr);
-    padding: 1rem 50px;
-  }
-  .projects-content{
-    grid-template-columns: repeat(2, 1fr);
-  }
- }
- @media screen and (max-width:650px){
-  .container_Skills{
-    grid-template-rows: repeat(2, 1fr);  
-  }
- } */
  /* end skills section */
 
  /* projects style ------------------------------- */
@@ -391,30 +366,15 @@ animation-name: slidein;
   margin-top: 100px;
   padding: 10px;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
-  /* border-radius: 5%; */
   border-radius: 7px;
   transition: .3s;
   width: 80%;
   height: 100%;
-  
-  /* grid-template-rows: .5fr 2fr 1fr .5fr; */
-   /* display:grid;
-   grid-template-columns: repeat(2, 1fr);
-   border-radius: 7px;
-   margin:80px;
-   margin-top: 100px; */
  }
   
 
  .project-Image{
-  /* width:100%;
-  height: 500px;
-  background-color: #1e90ff;
-  color: #fff;
-  padding: 30px;
-  outline: 5px solid #fff; */
   width: 70%;
-  /* text-align: center; */
   margin: 0 auto;
   margin-top: 50px;
  }
@@ -426,19 +386,10 @@ animation-name: slidein;
  .project-Image img{
    width: 100%;
    height: 100%;
-   /* outline: 5px solid var(--blue); */
    box-shadow: 0 0 15px 0 #00000021;
-   
-   
+     
  }
  .project-text{
-  /* width:100%;
-  height: 500px; */
-  /* background-color: #ff6fff;
-  color: #fff;
-  padding: 50px;
-  outline: 5px solid #fff; */
-  /* margin-top: 50px; */
   width: 70%;
   text-align: center;
   margin: 0 auto;
@@ -460,20 +411,7 @@ animation-name: slidein;
   color: #181818; 
   line-height: 1.8;
   
-  /* padding-right: 50px;  */
 }
-
-
-/* @media screen and (max-width:990px){
-  .projects-content{
-    grid-template-columns: repeat(2, 1fr);
-  }
- }
- @media screen and (max-width:700px){
-  .projects-content{
-    grid-template-columns: repeat(1, 1fr);  
-  }
- } */
 
  /* END PROJECTS STYLE */
 
@@ -518,7 +456,6 @@ animation-name: slidein;
  .contactMap{
   margin-top:50px;
   box-shadow: 0 0 15px 0 #00000021;
-  /* box-shadow: 0 0 15px 0 rgb(0 0 0 / 20%); */
   width:100%;
   height:400px;
   position:relative;
@@ -537,7 +474,6 @@ animation-name: slidein;
 }
 .contactMap .form textarea{
   height: 240px;
-  /* width:315px; */
   grid-gap:15px;
   border: 1px solid var(--pink);
   outline:none;
@@ -645,39 +581,4 @@ footer img{
     grid-template-columns: 1fr;
   }
   
-    /* grid-template-columns: 1fr; */
-   /* grid-gap: 25px;
-    /* margin:80px; */
-    /* margin-top: 100px;  */
   }
-  
-  
-
-
-/* @media screen and (max-width:990px){
-  #about .grid{
-    grid-template-columns: repeat(2, 1fr);
-  }
- }
- @media screen and (max-width:700px){
-  #about .grid{
-    grid-template-columns: repeat(1, 1fr);  
-  } */
- /* @media screen and (max-width:650px){
-  .container_Skills{
-    grid-template-rows: repeat(2, 1fr);  
-  }
- } */
- /* @media screen and (max-width:990px){
-  .projects-content{
-    grid-template-columns: repeat(2, 1fr);
-  }
- }
- @media screen and (max-width:700px){
-  .projects-content{
-    grid-template-columns: repeat(1, 1fr);  
-  }
- } */
-
-
- 
