@@ -667,11 +667,12 @@ a:hover {
   color: #fff;
 }
 .hero .hero-content {
-  text-align: center;
+  bottom: -300px;
+  left: 16px;
   position: absolute;
 }
 .hero .overlay-itro {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 0;
   left: 0px;
