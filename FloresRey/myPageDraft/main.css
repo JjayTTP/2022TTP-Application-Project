@@ -1,0 +1,358 @@
+body{
+    background-color: #2C2F32;
+    margin: 0;
+    min-width: 400px;
+}
+
+.mainPage{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    min-height: 500px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* --------------------- Side Nav Bar ------------------------ */
+
+.sideNav{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    width: 80px;
+
+    background-color: #1f2223;
+}
+
+.sideNav_name{
+    display: inline-block;
+    width: 100%;
+    height: 80px;
+    font-size:12px;
+
+    background-color: #00cceb;
+}
+.sideNav_name h1{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    margin: 0;
+    left: 5px;
+    top: 5px;
+}
+
+/* ------------------------------Side Scroll Bar------------------------------- */
+
+.scrollBar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100% - 80px);
+}
+
+.pageSection{
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    height: 100%;
+}
+
+.sectionItem{
+    width: 100%;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    
+    background-attachment: fixed;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 4;
+}
+.sectionItem:hover{
+    background-color: #F4D03F;
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+    overflow: visible;
+    
+    cursor: pointer;
+}
+.sectionItem img{
+    margin: 0 auto;
+    width: 80%;
+    height: 35pt;
+}
+.selectedSectionItem{
+    background-color: #F4D03F;
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+}
+
+.sectionItemText{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    left: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+.sectionPointer{
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    
+    border-right:10px solid #57607A; 
+    opacity: 0.7;
+}
+.sectionTextDiv{
+    height: 100%;
+    width: 140px;
+    background-color: #57607A;
+    border-radius: 8px;
+    opacity: 0.7;
+}
+.sectionTextDiv h1{
+    margin: 10px auto;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 20pt;
+    color: #CCCCFF;
+}
+
+.scrollSection{
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.slider{
+    
+    -webkit-appearance: none;
+    position: relative;
+
+    min-width: 420px;
+    width: calc(100vh - 80px);
+    height: 20px;
+    margin: 0;
+    transform-origin: 10px 10px;
+    transform: rotate(-270deg);
+    background-color: #464f58;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background: #d6d9de;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+  /* --------------------- main content container ------------------- */
+
+.mainContent{
+    display: block;
+    position: relative;
+    height: 100%;
+    width: calc(100% - 80px);
+    overflow-y: scroll;
+}
+.mainContent::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.mainSection{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid rebeccapurple;
+}
+
+#sectionOne{
+    padding-top: 3.5vw;
+    padding-bottom: 3.5vw;
+}
+
+
+.contentContainer{
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    border-radius: 3vw;
+}
+
+#sectionOneCont1{
+    display: block;
+    background-color: #1f2223;
+}
+
+
+
+/* --------------------- My Name ----------------------- */
+.myName{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: calc(7.3vw - 0.35em);
+    user-select: none;
+    overflow: hidden;
+}
+.myName h1{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    background-image: url('../Images/myNameBackground.jfif');
+    background-attachment: fixed;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-size: 55vw 45vw;
+    margin: 0.12em 0.12em 0.12em 1.5%;
+    line-height: 11vw;
+    overflow: hidden;
+    text-align: left;
+
+    border-right: 0 solid transparent;
+    border-image: linear-gradient(to bottom,#1f2223 86%,#00B7EB 86%)5;
+    white-space: nowrap;
+
+    animation: 
+    typing 2.5s steps(50, end),
+    blink-caret-main 1s step-end infinite;
+}
+.myName span{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 0.78em;
+    height: inherit;
+    position: relative;
+    background-image: url('../Images/myNameBackground.jfif');
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    background-size: 55vw 45vw;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 90% }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret-main {
+  from, to { border-width: 0.5em;  }
+  50% { border-width: 0;}
+}
+
+
+#profileImg{
+    position: absolute;
+    width: 0.76em;
+    height: 0.76em;
+    border-radius: 50%;
+    left: 50vw;
+}
+
+/* --------------- About Me ----------------- */
+
+.aboutMe{
+    width: 100%;
+    height: auto;
+    padding: 1vw 0;
+    font-family: 'Noto Sans Mono', monospace;
+    display: inline-block;
+    margin: 1vw auto;
+}
+.aboutMe h1{
+    text-align: center;
+    font-size: 2.3vw;
+    font-weight: lighter;
+    margin: 1vw 4%;
+    color: #B9BBBE;
+}
+
+/* --------------- Section Divider ------------------ */
+
+.SectionDivider{
+    width: 90%;
+    margin: 3vw auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.SectionDivider div{
+    width: 40%;
+    height: 0.5vw;
+    border-radius: 20px;
+    margin: auto;
+    background: rgb(0,255,239);
+    background: linear-gradient(90deg, rgba(0,255,239,1) 30%, rgba(255,152,79,1) 82%);
+    background-size: cover;
+    background-attachment: fixed;
+
+    background-color: #00cceb;
+}
+
+.dividerText{
+    text-transform: uppercase;
+    width: 20%;
+    margin: auto 0;
+    font-size: 3.3vw;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: #5865F2;
+}
+
+/* --------------------------------- Section Two ------------------------ */
+#sectionTwoCont1{
+    background-color: transparent;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    height: auto;
+    align-items: center;
+}
+
+#programmingImg{
+    width: 18vw;
+    height: 15vw;
+    margin: 0 1vw 0 2vw;
+}
+
+.skillContent{
+    width: 100%;
+    height: 25vw;
+}
+
+
+
+
+.testDiv{
+    display: block;
+    width: 100%;
+    height: 300px;
+    border: 2px solid rebeccapurple;
+}

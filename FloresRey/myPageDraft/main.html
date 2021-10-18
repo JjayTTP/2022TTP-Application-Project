@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rey's Portfolio</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">    
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>  
+        <div class="mainPage">
+            <div class="sideNav">
+                <div class="sideNav_name"><h1>Rey Flores</h1></div>
+                <div class="scrollBar">
+                    <div class="pageSection"></div>
+                    <div class="scrollSection">
+                        <input type="range" min="0" max="1000" oninput="scrollPage(this.value)" onmousewheel="moveSlider(event)" value="0" class="slider" id="sideNav_Slider">
+                    </div>
+                </div>
+            </div>
+            <div class="mainContent">
+                <div class="mainSection" id="sectionOne">
+                    <div class="contentContainer" id="sectionOneCont1">
+                        <div class="myName">
+                            <h1>Rey Fl<span>O <img id="profileImg" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"></span>res</h1>
+                        </div>
+                        <div class="aboutMe">
+                            <h1>I am an aspiring Software Engineer who enjoys learning new skills, is motivated to solve complex problems, and is always willing to get outside of his comfort zone.
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="SectionDivider">
+                    <div class="leftDivider"></div>
+                    <h1 class="dividerText">Skills</h1>
+                    <div class="rightDivider"></div>
+                </div> -->
+                <div class="mainSection" id="sectionTwo" style="height: 1200px;">
+                    <div class="contentContainer" id="sectionTwoCont1">
+
+                    </div>
+                </div>
+                <div class="mainSection" id="sectionThree" style="height: 1200px;"></div>
+                <div class="mainSection" id="sectionFour" style="height: 1200px;"></div>
+                <div class="mainSection" id="sectionFive" style="height: 1200px;"></div>
+                <div class="mainSection" id="sectionSix" style="height: 1200px;"></div>
+                <div class="mainSection" id="sectionSeven" style="height: 1200px;"></div>
+
+                <!-- <div class="testDiv">1</div>
+                <div class="testDiv">2</div>
+                <div class="testDiv">3</div>
+                <div class="testDiv">4</div>
+                <div class="testDiv">5</div>
+                <div class="testDiv">6</div>
+                <div class="testDiv">7</div> -->
+
+                <!-- <div class="SectionDivider">
+                    <div class="leftDivider"></div>
+                    <h1 class="dividerText">My Expertise</h1>
+                    <div class="rightDivider"></div>
+                </div> -->
+            </div>
+        </div>
+    </body>
+    <script src="main.js"></script>
+</html>
