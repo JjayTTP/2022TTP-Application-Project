@@ -15,6 +15,9 @@ h1{
 .about p{
     padding: 20px;
 }
+.skills h1{
+    padding-top: 20px;
+}
 .skillsWrapper h2{
     color: seashell;
     font-family: "mission_gothic", Arial, Verdana, sans-serif;
