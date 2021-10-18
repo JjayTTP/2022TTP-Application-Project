@@ -34,7 +34,7 @@ Below are some sample websites. These may be a lot more intricate with a lot mor
 
 1. Complete the project
 2. Commit and push your changes to your fork
-3. Submit a pull request back to the assignment repo
+3. Submit a pull request back to the assignment repository
 
 Note: Remember to git add, git commit and git push regularly
 
