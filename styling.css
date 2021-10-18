@@ -31,7 +31,7 @@ h2{
 }
 #selfie{
     height: 450px;
-    padding-right: 20px;
+    padding-right: 55px;
     margin-right: 35px;
     margin-top: 100px;
 }
@@ -75,6 +75,7 @@ h2{
     text-decoration: none;
     font-size: 16px;
     transition-duration: 0.4s;
+    margin: auto;
 }
 .swap:hover{
     background-color: rgb(153, 153, 153);
@@ -93,7 +94,7 @@ h2{
     column-gap: 10px;
     row-gap: 80px;
     margin-left: 250px;
-    maRgin-right: 250px;
+    margin-right: 250px;
 }
 
 .flexnav {
@@ -173,6 +174,7 @@ h2{
 .dropdown:hover .dropdownitems {
     display: block;
 }
+/* planned to have the navbar change to the current display setting for smaller screens or in a thin window, but prefer this look instead*/
 @media screen and (max-width: 3840px) {
     .navbar a:not(:first-child), .dropdown .dropbtn {
         display: none;
