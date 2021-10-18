@@ -1,0 +1,156 @@
+p{
+    color: seashell;
+    font-family: "mission_gothic", Arial, Verdana, sans-serif;
+    font-size: large;
+}
+
+h1{
+    color: seashell;
+    font-family: "mission_gothic", Arial, Verdana, sans-serif;
+    font-weight: normal;
+}
+.about h1{
+    padding: 20px;
+}
+.about p{
+    padding: 20px;
+}
+.skills h1{
+    padding-top: 20px;
+}
+.skillsWrapper h2{
+    color: seashell;
+    font-family: "mission_gothic", Arial, Verdana, sans-serif;
+    font-size: xx-large;
+    text-decoration: underline;
+    text-decoration-color: #1d1d2c;
+    padding-top: 20px;
+    font-weight: normal;
+}
+.skills p{
+    padding-left:20px;
+    padding-right:20px;
+}
+
+html{
+     background-color:#1d1d2c;
+     overflow-y: scroll;
+
+}
+.homeContainer{
+    display:block;
+}
+.biographyContainer{
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about{
+    border-radius: 25px;
+    background-color: rgb(177, 48, 48);
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    -moz-box-shadow: #555 0 0 8px;
+    -webkit-box-shadow: #555 0 0 8px;
+    -o-box-shadow: #555 0 0 8px;
+    box-shadow: #555 0 0 8px;
+}
+.portrait{
+    border-radius: 25px;
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    -moz-box-shadow: #555 0 0 8px;
+    -webkit-box-shadow: #555 0 0 8px;
+    -o-box-shadow: #555 0 0 8px;
+    box-shadow: #555 0 0 8px;
+    text-align: center;
+}
+.skills{
+    text-align:center;
+    border-radius: 25px;
+    background-color: rgb(177, 48, 48);
+    width: 1040px;
+    height: auto;
+    margin: auto;
+    -moz-box-shadow: #555 0 0 8px;
+    -webkit-box-shadow: #555 0 0 8px;
+    -o-box-shadow: #555 0 0 8px;
+    box-shadow: #555 0 0 8px;
+}
+.skillsWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.ScrollMenu{
+    display:flex;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 25px;
+    border: 2px solid #1d1d2c;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    background-color: rgb(177, 48, 48);
+    height: 80px;
+    width: 1040px;
+    -moz-box-shadow: #555 0 0 8px;
+    -webkit-box-shadow: #555 0 0 8px;
+    -o-box-shadow: #555 0 0 8px;
+    box-shadow: #555 0 0 8px;
+}
+.contactContainer{
+    display:none;
+}
+.contactInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    background-color: rgb(177, 48, 48);
+    width: 1050px;
+    height: 500px;
+    margin-top: 108px;
+    margin-left: auto;
+    margin-right: auto;
+    -moz-box-shadow: #555 0 0 8px;
+    -webkit-box-shadow: #555 0 0 8px;
+    -o-box-shadow: #555 0 0 8px;
+    box-shadow: #555 0 0 8px;
+}
+
+
+.selfie{
+    border-radius: 25px;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+.button {
+    border-radius: 25px;
+    background-color: rgb(177, 48, 48);
+    border: 2px solid #1d1d2c;
+    color: seashell;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 250px;
+    cursor: pointer;
+  }
+
+  .buttonshadow:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: rgb(139, 39, 39);
+  }
