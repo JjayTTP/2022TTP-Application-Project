@@ -129,14 +129,6 @@ function adjustSideNavSectHeight(){
 function gotoSection(sectionNum){
     var sideBarSections = document.getElementsByClassName("sectionItem");
 
-    // for(var i=0; i < sideBarSections.length; i++){
-    //     if(sideBarSections[i].classList.contains("selectedSectionItem")){
-    //         sideBarSections[i].classList.remove("selectedSectionItem");
-    //     }
-    // }
-
-    // sideBarSections[sectionNum].classList.add("selectedSectionItem");
-
     var pageSections = document.getElementsByClassName("mainSection");
     pageSections[sectionNum].scrollIntoView({behavior: "smooth"});
 }
@@ -158,14 +150,26 @@ function updateSelectedSection(){
         }();
         var maxScroll = minScroll + sectionHeight;
         if(scrollAmount >= minScroll && scrollAmount < maxScroll){
-            if(i > 0){
-                sideBarSections[i-1].classList.remove("selectedSectionItem");
+            if(i != 5){
+                if(i > 0){
+                    sideBarSections[i-1].classList.remove("selectedSectionItem");
+                }
+                if(i < mainSections.length -1){
+                    sideBarSections[i+1].classList.remove("selectedSectionItem");
+                }
+                sideBarSections[i].classList.add("selectedSectionItem");
+                break;
+            }else{
+                if(mainContent.scrollTop != (mainContent.scrollHeight - mainContent.clientHeight)){
+                    sideBarSections[4].classList.remove("selectedSectionItem");
+                    sideBarSections[5].classList.add("selectedSectionItem");
+                    sideBarSections[6].classList.remove("selectedSectionItem");
+                }else{
+                    sideBarSections[5].classList.remove("selectedSectionItem");
+                    sideBarSections[6].classList.add("selectedSectionItem");
+                }
+                // console.log(mainContent.scrollTop,mainContent.scrollHeight - mainContent.clientHeight)
             }
-            if(i < mainSections.length -1){
-                sideBarSections[i+1].classList.remove("selectedSectionItem");
-            }
-            sideBarSections[i].classList.add("selectedSectionItem");
-            break;
         }
     }
 }
