@@ -97,3 +97,17 @@
     bottom: 0px;
     width: 100%;
 }
+
+.logo{
+    height: 25px;
+    width: object-fit;
+
+}
+
+.socialIcons{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+}

@@ -11,6 +11,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
   <title>Home Page</title>
   <link rel="stylesheet", href="index.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init('user_v6xcPRVbwt7j4L3bhbdeH')
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function(){
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const templateId = 'template_sdh1jd8';
+                const serviceId = 'service_gc6g6ak';
+                swal("Message Sent!", "I will get back to you as soon as possible", "success");
+                
+                emailjs.sendForm(serviceId, templateId,this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+    }
+  </script>
+
 </head>
 
 <body>
@@ -98,7 +123,7 @@
       <!--Grid column-->
       <div class="">
           <!--form id="contact-form" name="contact-form" action="mail.php" method="POST"-->
-            <form action="mailto:sumaia.al-hemyari@hotmail.com" method="post" enctype="text/plain"></form>
+            <form id="contact-form">
               <!--Grid row-->
               <div class="row">
 
@@ -119,16 +144,6 @@
                   <!--Grid column-->
 
               </div>
-         
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="md-form mb-0">
-                          <label for="subject" class="">Subject</label>
-                          <input type="text" id="subject" name="subject" class="form-control">
-                      </div>
-                  </div>
-
-              <div class="row">
 
                   <!--Grid column-->
                   <div class="col-md-12">
@@ -139,15 +154,16 @@
                       </div>
 
                   </div>
-              </div>
               <!--Grid row-->
+          <!-- <div class="text-center text-md-left">
+              <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+          </div> -->
+
+          <input type="submit" value="Send">
 
           </form>
-
-          <div class="text-center text-md-left">
-              <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-          </div>
           <div class="status"></div>
+
       </div>
 
 
@@ -156,26 +172,24 @@
 </section>
 
   <div id="footer">
-    <div>
-   <ul class="socialIcons">
-      <il>
-        <a href="https://www.linkedin.com/in/sumaia-alhemyari-69a472208/">
-          <img src="icons/linkedIn.svg" alt="image shows linkedIn symble">
-        </a>
-      </il>
-      <il>......</il>
-      <il>
+      <div>
+      <div class="socialIcons">
         <a href="https://github.com/SumaiaAlhemyari">
-          <img src="icons/instagram.svg" alt="image shows github symble">
+          <img class="logo" src="icons/github.svg" alt="Github">
         </a>
-      </il>
-    </ul>
+        &nbsp
+        <a href="https://www.linkedin.com/in/sumaia-alhemyari-69a472208/">
+          <img class="logo" src="icons/linkedin.svg" alt="Linked">
+        </a>
+
+  
   </div>
     <p style="text-decoration: none;">
       Sumaia Alhemyari © 2021 All rights reserved
     </p>
 
   </div>
+</div>
 
 </body>
 
