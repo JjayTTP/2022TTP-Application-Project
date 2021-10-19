@@ -46,6 +46,7 @@ h2{
     align-items: center;
     justify-content: center;
 }
+
 #lifeskills{
     display:none;
 }
@@ -61,10 +62,12 @@ h2{
     font-size: 16px;
     transition-duration: 0.4s;
 }
+
 .button:hover{
     background-color: rgb(153, 153, 153);
     color: black;
 }
+
 .swap{
     cursor: pointer;
     background-color: royalblue;
@@ -77,6 +80,7 @@ h2{
     transition-duration: 0.4s;
     margin: auto;
 }
+
 .swap:hover{
     background-color: rgb(153, 153, 153);
     color: black;
@@ -124,12 +128,10 @@ h2{
     color: white;
 }
       
-
 .navbar .dropicon {
     display: none;
 }
       
-
 .dropdown {
     float: left;
     overflow: hidden;
