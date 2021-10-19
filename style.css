@@ -27,9 +27,6 @@ section{
   box-sizing:border-box;  
 }
 /* navigation bar style---------------*/
- /* .iconMenu{
-  display:none;} */
-
 #navbar {
   overflow: hidden;
   background-color:black;
