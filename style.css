@@ -138,6 +138,11 @@ animation-name: slidein;
   padding: 2px 3px;
   transition:0.5s;  
 }
+.icons i{
+    font-size:30px;
+    text-align: center;
+    color: #fff;
+}
 
 .icons a:hover{
   background-color: var(--blue);
@@ -626,4 +631,3 @@ footer img{
   scroll-behavior: smooth;
 }
 }
-  
