@@ -549,6 +549,27 @@ footer img{
     grid-gap: 20px;
     grid-template-columns: repeat(1, 1fr);  
   }
+  #navbar {
+    padding: 20px 10px !important;
+  }
+
+  .menu {
+  overflow: hidden;
+  position: relative;
+  }
+  .menu #navbar-right {
+  display: none;
+  float:left;
+  }
+  .menu a {
+  font-size: 16px;
+  }
+  .menu a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  }
   .container_Skills{
     grid-template-rows: repeat(2, 1fr);  
   }
