@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <link rel="stylesheet" href="styling.css">
+ </head>
+
+ <body onload="myFunction()">
+    <section id="page-top">
+        <header>
+            <div class="flexnav"><nav class="navbar" id="nav">
+                <a href="index.html" class="active">Home</a>
+                <div class="dropdown">
+                  <button class="dropbtn">Navigate
+                    <i class="dancedown"></i>
+                  </button>
+                  <div class="dropdownitems">
+                    <a href="#aboutMe">About Me</a>
+                    <a href="#whatdo">Skills</a>
+                    <a href="#">Future Projects</a>
+                  </div>
+                </div>
+                <a href="ThorneChristopherRsume.PDF">Resume</a>
+                <a href="javascript:void(0);" class="dropicon" onclick="resize()">&#9776;</a>
+            </nav></div>
+        </header>
+    </section>
+<main>
+    <section id="aboutMe">
+        <img id="selfie" src="IMG_20210409_231732.jpg" alt="a photo of ya boy">
+
+        <div id="PI">
+            <div id="greypre-text">
+                <h2>Christopher Thorne</h2>
+            </div>
+             <p>I'm Christopher Thorne, an undergraduate computer science and information security student at John Jay college with a focus on full stack development and internet security. In my free time I like to play video games, pet my dogs and cats excessively, and learn new languages. My preferred mode of transportation is via longboard or rollerblades because my cat ate my license. I love learning new things, and I'm always looking to improve my skills. As I move forward into the future, I would like to sharpen my skills in database management, cybersecurity, and fullstack development. </p>
+            <input class="button" type="button" onclick="location.href='mailto:christhorne714@gmail.com';" value="Email me" />
+            
+            <a id="icons" href="https://github.com/ChristopherThorne714/ChristopherThorne714.git">
+                <img src="icons/github.svg">
+            </a>
+            <a id="icons" href="https://www.linkedin.com/in/christopher-thorne-645200222/">
+                <img src="icons/Linkedin1.svg">
+            </a>
+            <a id="icons" href="mailto:christhorne714@gmail.com">
+                <img src="icons/gmail.svg">
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <button type="button" class="swap" id="whatdo" onclick="myFunction()">What I do</button>
+        <div class="grid2x2" id="csskills">
+            <div class="box"><h3>Frontend-development</h3>
+                <p>proficient in html, css, and Javascript and always ready to learn and improve at a moments notice.</p></div>
+            <div class="box"><h3>C++</h3>
+                <p>All coursework at John Jay college was done in C++.Some of these courses include Object Oriented Programming, Cryptography & Cryptanalysis, and Computer Architecture. I'm able to create and run security algorithms as well as some other scipts, such as a histogram and sorting algorithms.</p></div>
+            <div class="box"><h3>Java</h3>
+                <p>learned in an AP Java course in high school. knowledgable in the basics up until object oriented programming</p></div>
+            <div class="box"><h3>Python and mysql</h3>
+                <p>Python command line and sagemath knowledge as well as some skills in basic database management with mysql, pandas, and postgres.</p></div>
+        </div>
+        <div class="grid2x2" id="lifeskills">
+            <div class="box"><h3>Language skills</h3>
+                <p>Studied Japanese for three years. Capable of speech at a conversational level. Currently studying German in school.</p></div>
+            <div class="box"><h3>Customer Service</h3>
+                <p>Worked as a bar back for a total of four years in two separate bars. Handled organization of supplies, cleaning, counting inventory, serving, and bussing. Frequently dealt with customer needs and questions about the establishments.</p></div>
+            <div class="box"><h3>Fast food</h3>
+                <p>Worked on a food truck for one year (never again). Worked the cash register as well as grills and fryers. Handled various foods such as Hamburgers, hotdogs, french fries, cheesesteaks, gyros, ice cream, etc...</p></div>
+            <div class="box"><h3>Music</h3>
+                <p>Served in various bands and symphonies over the course of ten years as a clarinetist. Occasionally served as concert master. Also proficient in Piano.</p></div>
+            </div>
+    </section>
+    <script src="Javascript.js"></script>
+</main>
+
+<footer>
+    <section id="page_bot">
+    </section>
+</footer>
+</body>
+</html>
