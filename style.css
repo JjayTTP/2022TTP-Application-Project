@@ -625,9 +625,13 @@ footer img{
     grid-template-columns:1fr;
   }
   .contactMap .form .fromGroup{
-    height:30px;
+    height:90px;
     }
   html{
   scroll-behavior: smooth;
 }
+  .contactMap .form textarea{
+  height: 180px; 
+}
+
 }
