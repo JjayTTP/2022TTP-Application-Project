@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- browser -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- LOGO LINK -->
+    <link rel="icon" href="img/logo.png">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Stephania Hoyos Quinones</title>
+    <!-- LINK TO CSS STYLE -->
+    <link rel = "stylesheet" href="style.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <script src="myscripts.js"></script>
+    <!-- HEADER  -->
+        <div  id="navbar">
+            <div class="menu">
+                <a href="#" id="logo">StephaniaHQ</a>
+                <div  class ="myNavbar" id = "navbar-right">
+                        
+                    <a href="#home" >Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a> 
+                </div>
+                <a href="javascript:void(0);" class="icon"
+                onclick="toggleMenu()">
+                <i onclick="myFunction(this)"
+                            class="fa fa-plus-circle">
+                </i>
+                </a>
+            </div>
+        </div>
+        
+
+    <!-- END HEADER -->
+    
+    <!-- MAIN SECTION -->
+
+     <section id ="home" class="main_Section" >  
+        <div class="content">
+            <div class="My_Image">
+                <img src="img/MyPicture.jpg" alt ="MyPicture">
+            </div>
+
+            <h2>
+                Aspiring Full Stack Developer 
+            </h2>
+            <!-- social media icons container  -->
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/stephania-hoyos-3982061ba/" target="_blank"><i class = "fa fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/hoyosstepha/"target="_blank"><i class = "fa fa-instagram"></i></a>
+                <a href="https://github.com/SQuinones" target="_blank"><i class = "fa fa-github"></i></a>
+                <a href="#contact"><i class = "fa fa-envelope"></i></a> 
+            </div>
+        </div>
+    </section> 
+    <!-- END MAIN SECTION  -->
+
+    <!-- ABOUT SECTION  -->
+    
+    <section id="about" class ="about_section">
+        <div class="container">
+            <h2 class ="title">About Me</h2>
+            <div class="grid">
+                <div class="aboutImage">
+                    <img src = img/img_About.jpg alt = "about image">
+                </div>
+                <div class="aboutContent">
+                    <h3>
+                        Hello, I am Stephania Hoyos Quinones
+                    </h3>
+                    <p>
+                        I am a Latina, born and grow up in Colombia. 
+                        Now living in New York with my husband and one daughter. Currently attending
+                        at John Jay College majoring 
+                        in Computer Science and Information Security. I have a passion for programming, 
+                        networking and mathematics and I love trying new things and learning new technologies.    
+                    </p>
+                      
+                    <p>
+                        I am independently motivated, yet I appreciate team effort and 
+                      collaborate productively within groups. Now I am looking forward to taking my career
+                       to the next level, expand my experience, put my knew knowledge and skills intro 
+                       practice in a work environment. 
+                    </p>
+                    <div class="info">
+                        <div>
+                            <label>Hobbies :</label>
+                             soccer 
+                        </div>
+
+                        <div>
+                            <a href="files/StephaniaHQ_Resume.pdf" download= "StephaniaHQ_Resume.pdf" target="_blank">
+                                <button id="btn" onclick = "downloadPDF">
+                                <i class="fa fa-download"></i> Resume</button></a>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end  about section -->
+
+    <!-- Skills section  -->
+
+    <section id="skills" class ="skills_section">
+        
+        <div class="inner">
+            <div class="header">
+                <h2 class ="title">My Skills</h2>
+            </div>
+            <div class="container_Skills">
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src ="img/html.png" class= "skill-icon">
+                        </div>
+                        <h3>HTML 5</h3>
+                    </div>
+                </div> 
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src ="img/css.png" class= "skill-icon">
+                        </div>
+                        <h3>CSS 3</h3>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src ="img/js.png" class= "skill-icon">
+                        </div>
+                        <h3>JavaScript</h3>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src ="img/java.png" class= "skill-icon">
+                        </div>
+                        <h3>Java</h3>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src ="img/python.jpg" class= "skill-icon">
+                        </div>
+                        <h3>Python</h3>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src ="img/c++.png" class= "skill-icon">
+                        </div>
+                        <h3>C++</h3>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src ="img/SQL.png" class= "skill-icon">
+                        </div>
+                        <h3>MySQL</h3>
+                    </div>
+                </div>
+                
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src ="img/git.png" class= "skill-icon">
+                        </div>
+                        <h3>Git</h3> 
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end skills section-->
+
+    <!-- projects section -->
+    
+    <section id="projects" class ="projects_section">
+        <div class="container">
+            <h2 class ="title">Projects</h2>
+        </div>
+        <div class="projects-content">
+            <div> 
+                <div class="project-Image"> 
+                    <img src ="img/Hockey-game.gif" alt = " project 1 image">                
+                </div>
+            </div>
+            <div>
+
+                <div class="project-text">
+                    <h3>Air Hockey Game</h3>
+                    <p>Air Hockey Game project is written in Python. It’s a two-player game, 
+                        playing against each other. After starting the game, the player has 
+                        to move the paddle from left to right, up and down to block the ball 
+                        from entering the scoring area</p>        
+                </div>
+                <div>
+                    <a href="https://github.com/SQuinones/Google-Mentorship-and-Development-program/blob/main/Air_hockey_game.pyde" 
+                     target="_blank">
+                        <button id="btn" onclick = "sourceCode">
+                        <i class="fa fa-github"></i> </button></a>
+                </div>   
+            </div>
+            <div> 
+                <div class="project-Image"> 
+                    <img src ="img/Painter-project.gif" alt = " project 1 image">                
+                </div>
+            </div>
+            <div>
+        
+                <div class="project-text">
+                    <h3>Paint Project </h3>
+                    <p>This project is written in Python.The application  allows 
+                        the user to simulate painting on the computer by using the mouse. 
+                        This program provide a basic set of painting tools such as change colors,
+                        erase and change the size of the lines.  
+                    </p>
+                </div>
+                <div>
+                    <a href="https://github.com/SQuinones/Google-Mentorship-and-Development-program/blob/main/painter_projectday4.pyde" 
+                     target="_blank">
+                        <button id="btn" onclick = "sourceCode">
+                        <i class="fa fa-github"></i> </button></a>
+                </div> 
+            </div>                    
+        </div>
+    </section>
+    <!-- end projects section -->
+
+    <section id="contact" class ="contact_section">
+        <div class="container">
+                <h2 class ="title">Contact</h2>
+        <!-- </div> -->
+            <div class="contactContent">
+                <div class="box">
+                    <div class="contactIcon">
+                        <i class = "fa fa-home"></i>
+                    </div>
+                    <h3>
+                        Location
+                    </h3>
+                    <p>
+                        New York, NY 
+                    </p>
+                </div>
+                <div class="box">
+                    <div class="contactIcon">
+                        <i class = "fa fa-phone"></i>
+                    </div>
+                    <h3>
+                        Phone
+                    </h3>
+                    <p>
+                        646-684-7612
+                    </p>
+                </div>
+                <div class="box">
+                    <div class="contactIcon">
+                        <i class = "fa fa-envelope"></i>
+                    </div>
+                    <h3>
+                        Mail
+                    </h3>
+                    <p>
+                        hoyosstephania1@gmail.com
+                    </p>
+                </div>
+                <div class="box">
+                    <div class="contactIcon">
+                        <i class = "fa fa-share-alt"></i>
+                    </div>
+                    <h3>
+                        Social media 
+                    </h3>
+                    <div class="socialGrid">
+                        <div>
+                        <i class = "fa fa-instagram"></i>
+                        </div>
+                        <div>
+                            <i class = "fa fa-linkedin"></i>
+                        </div>
+                        <div>
+                            <i class = "fa fa-github"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- <div class="container"> -->
+            <div class="contactMap">
+                <form class="form" action="https://formspree.io/f/xvodnrky"
+                method="POST">
+                    <div class="fromGroup">
+                        <input type="text" name= "name" placeholder="Enter your Name *"  required>
+                        <input type ="text" name= "email" placeholder= "Enter Your Email * " required>
+                        
+                    </div>
+                    <textarea name= "message"></textarea>
+                    <button  type = "submit">Send Message</button>
+    
+
+                </form>
+                
+                    <div class="map">
+                    <!-- map image -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103294.15434802702!2d-74.01963989023601!3d40.75691756791194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1634361627896!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div> 
+                        
+            </div> 
+        </div>
+        
+    </section>
+    <!-- copyright section start  -->
+    <footer >
+        Copyright © 2021 Stephania Hoyos Quinones
+        <img src = "img/logo.png">
+    </footer>
+    <!-- copyright section end -->
+    
+</body>
+</html>
