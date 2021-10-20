@@ -7,28 +7,51 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
+
 <body style="background-color: #00b08d;"> 
   <br>
+
   <div class="container" style="text-align: center; background-color: #d7dee1;">
       <hr>
         <h1>Vince Pamolarco</h1>
       <hr>
   </div>
-
-  <div class="Content">
-  <nav class="navbar-brand">
-    <a href="about-me.html">About Me</a>
-    <a href="current-projects.html">Project</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact-me.html">Contact</a>
-  </nav>
-  </div>  
   <br>
-  <div class="container-fluid">
-
-      <img class=img1 src="Photos/HEADSHOT.jpg" alt="Vince">
-    
+  <div class="button" style="text-align: center;">
+  <button type="button" class="btn btn-secondary btn-sm" onclick="aboutButton()">About Me</button>
+  <button type="button" class="btn btn-secondary btn-sm" onclick="resumeButton()">Resume</button>
+  <button type="button" class="btn btn-secondary btn-sm" onclick="projectButton()">Project</button>
+  <button type="button" class="btn btn-secondary btn-sm" onclick="contactButton()">Contact</button>  
+</div>
+  <br><br>
+  <div class="Main" id="main">
+    <img class=img1 src="Photos/HEADSHOT.jpg" alt="Vince">
   </div>
-    
-</body>     
+
+  <div class="row">
+    <div class = "col-md-6">
+      <div class="myInfo" id="Info">
+              <img class=img1 src="Photos/HEADSHOT.jpg" alt="Vince">
+      </div>
+    </div>
+    <div class = "col-md-6" style="text-align: justify;">
+      <div class="stuff">
+        <div class="Stuff" id="resume">
+         Resume
+        </div>
+       <div class="Stuff" id="about">
+          About Me
+       </div>
+        <div class="Stuff" id="project">
+         Projects
+        </div>
+        <div class="Stuff" id="contact">
+          Contact Me
+        </div>
+      </div>
+    </div>   
+  </div>
+
+</body>
 </html>
+<script src="index.js"></script>

@@ -7,27 +7,37 @@
     border-radius: 50%;
 }
 
-.navbar
-{
-    font-size: 10pt;
-}
-
-.Content
+.row
 {
     text-align: center;
 }
 
-
-
 .img1
 {
-    display: inline;
+    display: inline-block;
     border-radius: 50%;
     width: 30%;
     height: auto;
     border-color: aliceblue;
     border-width: 10px;
     border-style: double;
-    float: center   ;
 }
+
+.Main
+{
+    text-align: center;
+}
+
+.myInfo
+{
+    display: none;
+}
+
+.Stuff
+{
+    display: none;
+}
+
+
+
 
