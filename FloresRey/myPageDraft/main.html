@@ -4,20 +4,73 @@
         <title>Rey's Portfolio</title>
         <link rel="stylesheet" href="main.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="duringLoad.js"></script>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">    
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>  
         <div class="mainPage">
             <div class="sideNav">
                 <div class="sideNav_name"><h1>Rey Flores</h1></div>
                 <div class="scrollBar">
-                    <div class="pageSection"></div>
+                    <div class="pageSection">
+                        <div class="sectionItem selectedSectionItem" onclick="gotoSection(0)">
+                            <img src="../Images/sideNav/home.png">
+                            <div class="sectionItemText">
+                                <div class="sectionPointer"></div>
+                                <div class="sectionTextDiv"><h1>Home</h1></div>
+                            </div>
+                        </div>
+                        <div class="sectionItem" onclick="gotoSection(1)">
+                            <img src="../Images/sideNav/skills.png">
+                            <div class="sectionItemText">
+                                <div class="sectionPointer"></div>
+                                <div class="sectionTextDiv"><h1>Skills</h1></div>
+                            </div>
+                        </div>
+                        <div class="sectionItem" onclick="gotoSection(2)">
+                            <img src="../Images/sideNav/project.png">
+                            <div class="sectionItemText">
+                                <div class="sectionPointer"></div>
+                                <div class="sectionTextDiv"><h1>Projects</h1></div>
+                            </div>
+                        </div>
+                        <div class="sectionItem" onclick="gotoSection(3)">
+                            <img src="../Images/sideNav/experience.png">
+                            <div class="sectionItemText">
+                                <div class="sectionPointer"></div>
+                                <div class="sectionTextDiv"><h1>Experience</h1></div>
+                            </div>
+                        </div>
+                        <div class="sectionItem" onclick="gotoSection(4)">
+                            <img src="../Images/sideNav/education.png">
+                            <div class="sectionItemText">
+                                <div class="sectionPointer"></div>
+                                <div class="sectionTextDiv"><h1>Education</h1></div>
+                            </div>
+                        </div>
+                        <div class="sectionItem" onclick="gotoSection(5)">
+                            <img src="../Images/sideNav/certificate.png">
+                            <div class="sectionItemText">
+                                <div class="sectionPointer"></div>
+                                <div class="sectionTextDiv"><h1>Awards</h1></div>
+                            </div>
+                        </div>
+                        <div class="sectionItem" onclick="gotoSection(6)">
+                            <img src="../Images/sideNav/email.png">
+                            <div class="sectionItemText">
+                                <div class="sectionPointer"></div>
+                                <div class="sectionTextDiv"><h1>Contact</h1></div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="scrollSection">
+                        <style data="sideSlider" type="text/css"></style>
                         <input type="range" min="0" max="1000" oninput="scrollPage(this.value)" onmousewheel="moveSlider(event)" value="0" class="slider" id="sideNav_Slider">
                     </div>
                 </div>
@@ -114,6 +167,7 @@
                     <div class="rightDivider"></div>
                 </div> -->
             </div>
+            <script>sideNavSectionHeight();</script>
         </div>
     </body>
     <script src="main.js"></script>

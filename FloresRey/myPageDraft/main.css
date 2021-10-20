@@ -149,15 +149,17 @@ body{
     margin: 0;
     transform-origin: 10px 10px;
     transform: rotate(-270deg);
-    background-color: #464f58;
+    background-color: #464f58bb;
 }
 
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 20px;
     height: 20px;
-    border-radius: 50%; 
+    width: 0;
+    /* width: 20px;
+    height: 20px;
+    border-radius: 50%;  */
     background: #d6d9de;
     cursor: pointer;
   }
@@ -201,7 +203,7 @@ body{
     position: relative;
 }
 
-#sectionTwo::before{
+/* #sectionTwo::before{
     content: "";
     background-size: cover;
     position: absolute;
@@ -454,7 +456,7 @@ body{
     url("https://cdn-icons-png.flaticon.com/512/2343/2343785.png"),
     url("https://cdn-icons-png.flaticon.com/512/2590/2590807.png"),
     url("https://cdn-icons-png.flaticon.com/512/2590/2590807.png");
-}
+} */
 
 
 .contentContainer{
@@ -463,13 +465,15 @@ body{
     width: 90%;
     height: auto;
     border-radius: 3vw;
-        background-color: rgba(31, 34, 35,0.83);
+        background-color: #1f2223;
 }
 
 #sectionOneCont1{
     display: block;
+    height: 40vw;
     /* background-color: #1f2223;
     background-color: rgba(31, 34, 35,0.83); */
+    padding-top: 1vw;
 }
 
 
@@ -487,7 +491,7 @@ body{
 .myName h1{
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    background-image: url('../Images/myNameBackground.jfif');
+    background-image: url('../Images/aboutMe/myNameBackground.jfif');
     background-attachment: fixed;
     color: transparent;
     -webkit-background-clip: text;
@@ -512,7 +516,7 @@ body{
     width: 0.78em;
     height: inherit;
     position: relative;
-    background-image: url('../Images/myNameBackground.jfif');
+    background-image: url('../Images/aboutMe/myNameBackground.jfif');
     background-attachment: fixed;
     -webkit-background-clip: text;
     background-size: 55vw 45vw;
@@ -549,9 +553,9 @@ body{
 }
 .aboutMe h1{
     text-align: center;
-    font-size: 2.3vw;
+    font-size: 2.8vw;
     font-weight: lighter;
-    margin: 1vw 4%;
+    margin: 3vw 4%;
     color: #B9BBBE;
 }
 
@@ -559,7 +563,7 @@ body{
 
 .SectionDivider{
     width: 90%;
-    margin: 0 auto 4vw auto;
+    margin: 0 auto 3vw auto;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -584,7 +588,7 @@ body{
 .dividerText{
     text-transform: uppercase;
     margin: auto 2vw;
-    font-size: 4.5vw;
+    font-size: 3.8vw;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     color: #5865F2;

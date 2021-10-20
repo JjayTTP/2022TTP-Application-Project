@@ -66,47 +66,63 @@ function moveSlider(event){
     }
 }
 
+// function sideNavSectionHeight(){
+//     var contentPage = document.getElementsByClassName("mainContent")[0];
+//     var pageHeight = contentPage.scrollHeight - contentPage.clientHeight;
+//     var pageSections = document.getElementsByClassName("mainSection");
+    // var sideBarSectionCont = document.getElementsByClassName("pageSection")[0];
+    // var sideBarHeight = sideBarSectionCont.clientHeight;
+//     var sectionImages = ["home.png","skills.png","project.png","experience.png","education.png","certificate.png","email.png"];
+//     var sectionTitles = ["Home","Skills","Projects","Experience","Education","Awards","Contact"];
+//     for(var i=0; i < pageSections.length; i++){
+//         var sectionItem = document.createElement("div");
+//         sectionItem.classList.add("sectionItem");
+//         sectionItem.setAttribute("onclick",`gotoSection(${i})`);
+
+//         if(i == 0){
+//             sectionItem.classList.add("selectedSectionItem");
+//         }
+
+//         var sectionImg = document.createElement("img");
+//         sectionImg.setAttribute("src","../Images/sideNav/"+sectionImages[i]);
+//         sectionItem.appendChild(sectionImg);
+
+//         var sectionTextCont = document.createElement("div");
+//         sectionTextCont.classList.add("sectionItemText");
+//         var sectionPointer = document.createElement("div");
+//         sectionPointer.classList.add("sectionPointer");
+//         var sectionTextDiv = document.createElement("div");
+//         sectionTextDiv.classList.add("sectionTextDiv");
+//         sectionTextCont.appendChild(sectionPointer);
+//         sectionTextCont.appendChild(sectionTextDiv);
+//         sectionText = document.createElement("h1");
+//         sectionText.textContent = sectionTitles[i];
+//         sectionTextDiv.appendChild(sectionText);
+
+//         sectionItem.appendChild(sectionTextCont);
+
+//         var sectionPageHeight = pageSections[i].clientHeight/pageHeight;
+//         var sectionSideBarHeight = sectionPageHeight * sideBarHeight;
+
+//         sectionItem.style.height = sectionSideBarHeight+"px";
+
+//         sideBarSectionCont.appendChild(sectionItem);
+//     }
+// }
+
 function sideNavSectionHeight(){
     var contentPage = document.getElementsByClassName("mainContent")[0];
-    var pageHeight = contentPage.scrollHeight - contentPage.clientHeight;
     var pageSections = document.getElementsByClassName("mainSection");
+    var pageHeight = contentPage.scrollHeight - contentPage.clientHeight;
     var sideBarSectionCont = document.getElementsByClassName("pageSection")[0];
     var sideBarHeight = sideBarSectionCont.clientHeight;
-    var sectionImages = ["home.png","skills.png","project.png","experience.png","education.png","certificate.png","email.png"];
-    var sectionTitles = ["Home","Skills","Projects","Experience","Education","Awards","Contact"];
-    for(var i=0; i < pageSections.length; i++){
-        var sectionItem = document.createElement("div");
-        sectionItem.classList.add("sectionItem");
-        sectionItem.setAttribute("onclick",`gotoSection(${i})`);
+    var sideBarSections = document.getElementsByClassName("sectionItem");
 
-        if(i == 0){
-            sectionItem.classList.add("selectedSectionItem");
-        }
-
-        var sectionImg = document.createElement("img");
-        sectionImg.setAttribute("src","../Images/"+sectionImages[i]);
-        sectionItem.appendChild(sectionImg);
-
-        var sectionTextCont = document.createElement("div");
-        sectionTextCont.classList.add("sectionItemText");
-        var sectionPointer = document.createElement("div");
-        sectionPointer.classList.add("sectionPointer");
-        var sectionTextDiv = document.createElement("div");
-        sectionTextDiv.classList.add("sectionTextDiv");
-        sectionTextCont.appendChild(sectionPointer);
-        sectionTextCont.appendChild(sectionTextDiv);
-        sectionText = document.createElement("h1");
-        sectionText.textContent = sectionTitles[i];
-        sectionTextDiv.appendChild(sectionText);
-
-        sectionItem.appendChild(sectionTextCont);
-
+    for(var i=0; i < 7; i++){
         var sectionPageHeight = pageSections[i].clientHeight/pageHeight;
         var sectionSideBarHeight = sectionPageHeight * sideBarHeight;
-
-        sectionItem.style.height = sectionSideBarHeight+"px";
-
-        sideBarSectionCont.appendChild(sectionItem);
+    
+        sideBarSections[i].style.height = sectionSideBarHeight + "px";
     }
 }
 
@@ -168,7 +184,6 @@ function updateSelectedSection(){
                     sideBarSections[5].classList.remove("selectedSectionItem");
                     sideBarSections[6].classList.add("selectedSectionItem");
                 }
-                // console.log(mainContent.scrollTop,mainContent.scrollHeight - mainContent.clientHeight)
             }
         }
     }
@@ -180,7 +195,7 @@ document.getElementsByClassName("mainContent")[0].addEventListener("scroll", fun
 });
 
 window.addEventListener("load",()=>{
-    sideNavSectionHeight();
+    // sideNavSectionHeight();
     setTimeout(()=>{
         showProfileImg();
     },4000)

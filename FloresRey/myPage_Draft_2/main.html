@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rey's Portfolio</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="main.css">
+        <script src="load.js"></script>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">   
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="loadingPage"></div>
+        <div class="sideNav">
+            <div class="sideNav_name"><h1>Rey Flores</h1></div>
+            <div class="scrollBar">
+                <div class="pageSection">
+                    <div class="sectionItem selectedSectionItem" onclick="gotoSection(0)">
+                        <img src="../Images/sideNav/home.png" draggable="false">
+                        <div class="sectionItemText">
+                            <div class="sectionPointer"></div>
+                            <div class="sectionTextDiv"><h1>Home</h1></div>
+                        </div>
+                    </div>
+                    <div class="sectionItem" onclick="gotoSection(1)">
+                        <img src="../Images/sideNav/avatar.png" draggable="false">
+                        <div class="sectionItemText">
+                            <div class="sectionPointer"></div>
+                            <div class="sectionTextDiv"><h1>About Me</h1></div>
+                        </div>
+                    </div>
+                    <div class="sectionItem" onclick="gotoSection(2)">
+                        <img src="../Images/sideNav/skills.png"  draggable="false">
+                        <div class="sectionItemText">
+                            <div class="sectionPointer"></div>
+                            <div class="sectionTextDiv"><h1>Skills</h1></div>
+                        </div>
+                    </div>
+                    <div class="sectionItem" onclick="gotoSection(3)">
+                        <img src="../Images/sideNav/project.png" draggable="false">
+                        <div class="sectionItemText">
+                            <div class="sectionPointer"></div>
+                            <div class="sectionTextDiv"><h1>Projects</h1></div>
+                        </div>
+                    </div>
+                    <div class="sectionItem" onclick="gotoSection(4)">
+                        <img src="../Images/sideNav/education.png" draggable="false">
+                        <div class="sectionItemText">
+                            <div class="sectionPointer"></div>
+                            <div class="sectionTextDiv"><h1>Education</h1></div>
+                        </div>
+                    </div>
+                    <div class="sectionItem" onclick="gotoSection(5)">
+                        <img src="../Images/sideNav/certificate.png" draggable="false">
+                        <div class="sectionItemText">
+                            <div class="sectionPointer"></div>
+                            <div class="sectionTextDiv"><h1>Awards</h1></div>
+                        </div>
+                    </div>
+                    <div class="sectionItem" onclick="gotoSection(6)" draggable="false">
+                        <img src="../Images/sideNav/email.png" draggable="false">
+                        <div class="sectionItemText">
+                            <div class="sectionPointer"></div>
+                            <div class="sectionTextDiv"><h1>Contact</h1></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scrollSection">
+                    <style data="sideSlider" type="text/css"></style>
+                    <input type="range" min="0" max="1000" oninput="scrollPage(this.value)" onmousewheel="moveSlider(event)" value="0" class="slider" id="sideNav_Slider">
+                </div>
+            </div>
+        </div>
+        <div class="mainContent">
+            <div class="sectionContainer" id="sectionOne">
+                <div class="greetings">
+                    <p>Hello, I am</p>
+                    <div class="nameContainer">
+                        <h1 class="myName" data-period="2000" data-type='[ "Creative.", "Analytical.", "Ambitious.", "Dedicated." , "Rey Flores."]'></h1>
+                    </div>
+                    <h2 class="oof">I'm an aspiring Software Engineer who enjoys learning new skills, is motivated to solve complex problems, and is always willing to get outside of his comfort zone.</h2>
+                    <a id="resumeLink" href="../Images/Undergraduate Resume.pdf" target="_blank">Resume</a>
+                </div>
+            </div>
+            <div class="sectionContainer" id="sectionTwo">
+                <div class="aboutMe">
+                    <div class="sectionBanner">
+                        <div class="leftDivider"></div>
+                        <h1>About Me</h1>
+                        <div class="rightDivider"></div>
+                    </div>
+                    <div class="myInfo">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="sectionContainer"></div>
+            <div class="sectionContainer"></div>
+            <div class="sectionContainer"></div>
+            <div class="sectionContainer"></div>
+            <div class="sectionContainer"></div>
+        </div>
+
+        <script>sideNavSectionHeight();</script>
+    </body>
+    <script src="main.js"></script>
+</html>
