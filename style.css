@@ -1,10 +1,16 @@
-
 .container
 {
     padding: 5px;
     float: center;
     background-color: rgb(185, 196, 196);
     border-radius: 50%;
+}
+
+.foot
+{
+    text-align: center;
+    width: 40px;
+    height: auto;
 }
 
 .row
