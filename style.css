@@ -32,6 +32,7 @@
 .Main
 {
     text-align: center;
+    display: block;
 }
 
 .myInfo
