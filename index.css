@@ -1,0 +1,113 @@
+.navabar_details{
+    justify-content: center;
+}
+
+.container{
+    /* padding: 3em; */
+}
+
+.aboutmecontents{
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 50vw;
+}
+
+#aboutme{
+    display: flex;
+    justify-content: center;
+    height: 85vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+#education{
+    margin:0px;
+    height: 100vh;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactme{
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    flex-direction: column;
+    padding-bottom: 7em;
+}
+.myimage{
+    margin-right: 3em;
+    border-radius: 5px;;
+}
+
+.myinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.body{
+    background: aliceblue;
+    color:rgba(70, 63, 63, 0.747)
+}
+
+.aboutinternal{
+    background: rgb(125, 186, 236);
+    border-radius: 10px;
+    height : 45vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+
+}
+
+.schoolimage{
+    height: 400px;
+    width: object-fit;
+    border-radius : 5px;
+}
+
+.school-details{
+    display: flex;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+}
+
+#resume{
+    padding-top: 7em;
+    padding-bottom: 0em;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0px;
+    width: 100%;
+}
+
+.logo{
+    height: 25px;
+    width: object-fit;
+
+}
+
+.socialIcons{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+}
