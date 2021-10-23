@@ -10,7 +10,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">   
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="loadingPage"></div>
@@ -36,7 +38,7 @@
                         <img src="../Images/sideNav/skills.png"  draggable="false">
                         <div class="sectionItemText">
                             <div class="sectionPointer"></div>
-                            <div class="sectionTextDiv"><h1>Skills</h1></div>
+                            <div class="sectionTextDiv"><h1>My Expertise</h1></div>
                         </div>
                     </div>
                     <div class="sectionItem" onclick="gotoSection(3)">
@@ -93,12 +95,210 @@
                         <div class="rightDivider"></div>
                     </div>
                     <div class="myInfo">
-                        
+                        <!-- <img src="../Images/sideNav/avatar.png" class="myImg"> -->
+                        <div class="myInfoText">
+                            <h1>I am a fourth-year college student who has been pursuing his dream of becoming a software engineer. A dream which originated back in high school, where I was exposed to the many marvelous ways that technology has impacted and shaped our society. I developed a sense of purpose which influenced me to learn to code, so I did. I learned to code in Python, Java, and Ruby. In addition to this, I also took part in multiple programs and events, which further enhanced my knowledge of programming and web development.</h1>
+                        </div>
+                        <div class="myImgContainer">
+                            <img class="myImg" src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" >
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="sectionContainer"></div>
-            <div class="sectionContainer"></div>
+            <div class="sectionContainer" id="sectionThree">
+                <div class="mySkills">
+                    <div class="sectionBanner">
+                        <div class="leftDivider"></div>
+                        <h1>My Expertise</h1>
+                        <div class="rightDivider"></div>
+                    </div>
+                    <div class="skillSection">
+                        <div class="selectedSkill">
+                            <button onclick="prevSkill()" id="skillPrev"><h1>&#xab;</h1></button>
+                            <div class="skillTitleCont">
+                                <div class="skillTitleWrapper selectedSkillTitle">
+                                    <h1 class="skillTitle">Front End Development</h1>
+                                </div>
+                            </div>
+                            <button onclick="nextSkill()" id="skillNext"><h1>&#xbb;</h1></button>
+                        </div>
+                        <div class="skillDisplay">
+                            <div class="skillWrapper selectedSkillInfo" id="frontEndSkill">
+                                <div class="skillImages">
+                                    <div class="skillImgWrapper">
+                                        <img src="../Images/mySkills/html5.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">HTML5</div>
+                                        </div>
+                                    </div>
+                                    <div class="skillImgWrapper">
+                                        <img src="../Images/mySkills/javascript.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">Javascript</div>
+                                        </div>
+                                    </div>
+                                    <div class="skillImgWrapper">
+                                        <img src="../Images/mySkills/css.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">CSS3</div>
+                                        </div>
+                                    </div>
+                                    <div class="skillImgWrapper">
+                                        <img src="../Images/mySkills/jquery.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">Jquery</div>
+                                        </div>
+                                    </div>
+                                    <div class="skillImgWrapper">
+                                        <img src="../Images/mySkills/react.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">React</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="skillDescr">
+                                    <li>Hello</li>
+                                    <li>How are you.</li>
+                                    <li>Please Help me.</li>
+                                    <li>There is too much swimming.</li>
+                                </ul>
+                            </div>
+                            <div class="skillWrapper" id="backEndSkill">
+                                <div class="skillImages">
+                                    <div class="skillImgWrapper">
+                                        <img src="../Images/mySkills/php.svg">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">PHP</div>
+                                        </div>
+                                    </div>
+                                    <div class="skillImgWrapper">
+                                        <img src="../Images/mySkills/pythonIcon.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">Python</div>
+                                        </div>
+                                    </div>
+                                    <div class="skillImgWrapper">
+                                        <img src="../Images/mySkills/cpp.svg">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">CPP</div>
+                                        </div>
+                                    </div>
+                                    <div class="skillImgWrapper">
+                                        <img src="../Images/mySkills/express.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">Express</div>
+                                        </div>
+                                    </div>
+                                    <div class="skillImgWrapper">
+                                        <img src="../Images/mySkills/nodejs.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">Node JS</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="skillDescr">
+                                    <li>Hello</li>
+                                    <li>How are you.</li>
+                                    <li>Please Help me.</li>
+                                    <li>There is too much swimming.</li>
+                                </ul>
+                            </div>
+                            <div class="skillWrapper" id="DBArchitectureSkill">
+                                <div class="skillImages">
+                                    <div class="skillImgWrapper">
+                                        <img src="../Images/mySkills/mysql.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">MySQL</div>
+                                        </div>
+                                    </div>
+                                    <div class="skillImgWrapper">
+                                        <img src="../Images/mySkills/mongo.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">Mongo Database</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="skillDescr">
+                                    <li>Hello</li>
+                                    <li>How are you.</li>
+                                    <li>Please Help me.</li>
+                                    <li>There is too much swimming.</li>
+                                </ul>
+                            </div>
+                            <div class="skillWrapper" id="softwareEngineeringSkill">
+                                <div class="skillImages">
+                                    <div class="skillImgWrapper">
+                                        <img src="../Images/mySkills/cpp.svg">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">CPP</div>
+                                        </div>
+                                    </div>
+                                    <div class="skillImgWrapper">
+                                        <img src="../Images/mySkills/java.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">Java</div>
+                                        </div>
+                                    </div>
+                                    <div class="skillImgWrapper">
+                                        <img src="../Images/mySkills/pythonIcon.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">Python</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="skillDescr">
+                                    <li>Hello</li>
+                                    <li>How are you.</li>
+                                    <li>Please Help me.</li>
+                                    <li>There is too much swimming.</li>
+                                </ul>
+                            </div>
+                            <div class="skillWrapper" id="analyticsSkill">
+                                <div class="skillImages">
+                                    <div class="skillImgWrapper">
+                                        <img src="../Images/mySkills/r logo.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">R</div>
+                                        </div>
+                                    </div>
+                                    <div class="skillImgWrapper">
+                                        <img src="../Images/mySkills/Ipython.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">IPython</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="skillDescr">
+                                    <li>Hello</li>
+                                    <li>How are you.</li>
+                                    <li>Please Help me.</li>
+                                    <li>There is too much swimming.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sectionContainer">
+
+            </div>
             <div class="sectionContainer"></div>
             <div class="sectionContainer"></div>
             <div class="sectionContainer"></div>

@@ -5,7 +5,6 @@ function scrollPage(slideAmount){
     var pixelsPerScroller = pageHeight/1000;
     var scrollAmount = pixelsPerScroller * slideAmount;
 
-    console.log(pageHeight);
     contentPage.scrollTo(0,scrollAmount);
 }
 
@@ -65,6 +64,13 @@ function gotoSection(sectionNum){
     pageSections[sectionNum].scrollIntoView({behavior: "smooth"});
 }
 
+function loadtoSection(sectionNum){
+    var sideBarSections = document.getElementsByClassName("sectionItem");
+
+    var pageSections = document.getElementsByClassName("sectionContainer");
+    pageSections[sectionNum].scrollIntoView({behavior: "instant"});
+}
+
 function updateSelectedSection(){
     var mainContent = document.getElementsByClassName("mainContent")[0];
     var sectionContainers = document.getElementsByClassName("sectionContainer");
@@ -90,6 +96,9 @@ function updateSelectedSection(){
                     sideBarSections[i+1].classList.remove("selectedSectionItem");
                 }
                 sideBarSections[i].classList.add("selectedSectionItem");
+                if(localStorage.getItem('lastSection') != i){
+                    localStorage.setItem('lastSection',i);
+                }
                 break;
             }else{
                 if(mainContent.scrollTop != (mainContent.scrollHeight - mainContent.clientHeight)){
@@ -171,7 +180,7 @@ TxtType.prototype.tick = function() {
     }, delta);
 };
 
-window.onload = function() {
+function showName(){
     var elements = document.getElementsByClassName('myName');
     for (var i=0; i<elements.length; i++) {
         var toRotate = elements[i].getAttribute('data-type');
@@ -180,10 +189,165 @@ window.onload = function() {
           new TxtType(elements[i], JSON.parse(toRotate), period);
         }
     }
+}
+
+// function Timeout(fn, interval){
+//     var id = setTimeout(fn,interval);
+//     this.cleared = false;
+//     this.clear = function(){
+//         this.cleared = true;
+//         clearTimeout(id);
+//     };
+// }
+
+var allowSkillChange = true;
+var allTitles = ["Front End Development", "Back End Development", "Database Management", "Software Development", "Analytics"];
+var allInfo = ["frontEndSkill","backEndSkill", "DBArchitectureSkill","softwareEngineeringSkill","analyticsSkill"];
+function prevSkill(){
+    var titleCont = document.getElementsByClassName("skillTitleCont")[0];
+    var currentTitleElem = document.getElementsByClassName("skillTitleWrapper")[0];
+    var currentTitleText = currentTitleElem.getElementsByTagName("h1")[0];
+    var allSkillCont = document.getElementsByClassName("skillWrapper");
+    var skillContentDisplay = document.getElementsByClassName("skillDisplay")[0];
+
+    if(!allowSkillChange){
+        return;
+    }
+
+    var currentSkillIndex = (function(){
+        for(var i=0; i < allTitles.length; i++){
+            if(allTitles[i] === currentTitleText.innerHTML){
+                return i;
+            }
+        }
+        return -1;
+    })();
+
+    var prevSkillIndex = (function(){
+        if(currentSkillIndex !== 0){
+            return currentSkillIndex - 1;
+        }else{
+            return allSkillCont.length - 1;
+        }
+    })();
+
+    var prevWrapper = document.createElement("div");
+    prevWrapper.classList.add("skillTitleWrapper");
+    
+    var prevElem = document.createElement("h1");
+    prevElem.classList.add("skillTitle");
+    prevElem.innerHTML = allTitles[prevSkillIndex];
+
+
+    prevWrapper.appendChild(prevElem);
+    titleCont.prepend(prevWrapper);
+
+    currentTitleElem.classList.remove("selectedSkillTitle");
+    prevWrapper.classList.add("selectedSkillTitle");
+
+    setTimeout(function(){
+        currentTitleElem.remove();
+    },300)
+    
+    allowSkillChange = false;
+    setTimeout(function(){
+        allowSkillChange = true;
+    },350);
+
+    var skillInfoIndex = (()=>{
+        for(var i=0; i < allSkillCont.length; i++){
+            if(allSkillCont[i].getAttribute("id") === allInfo[currentSkillIndex]){
+                return i;
+            }
+        }
+        return -1;
+    })();
+
+    if(skillInfoIndex === 0){
+        var lastElement = allSkillCont[allSkillCont.length - 1];
+        skillContentDisplay.removeChild(allSkillCont[allSkillCont.length - 1]);
+        skillContentDisplay.prepend(lastElement);
+        skillInfoIndex++;
+    }
+    allSkillCont[skillInfoIndex].classList.remove("selectedSkillInfo");
+    allSkillCont[skillInfoIndex-1].classList.add("selectedSkillInfo");
+}
+
+function nextSkill(){
+    var titleCont = document.getElementsByClassName("skillTitleCont")[0];
+    var currentTitleElem = document.getElementsByClassName("skillTitleWrapper")[0];
+    var currentTitleText = currentTitleElem.getElementsByTagName("h1")[0];
+    var allSkillCont = document.getElementsByClassName("skillWrapper");
+    var skillContentDisplay = document.getElementsByClassName("skillDisplay")[0];
+
+    if(!allowSkillChange){
+        return;
+    }
+
+    var currentSkillIndex = (function(){
+        for(var i=0; i < allTitles.length; i++){
+            if(allTitles[i] === currentTitleText.innerHTML){
+                return i;
+            }
+        }
+        return -1;
+    })();
+
+    var nextSkillIndex = (function(){
+        if(currentSkillIndex !== allTitles.length - 1){
+            return currentSkillIndex + 1;
+        }else{
+            return 0;
+        }
+    })();
+
+    var nextWrapper = document.createElement("div");
+    nextWrapper.classList.add("skillTitleWrapper");
+    
+    var nextElem = document.createElement("h1");
+    nextElem.classList.add("skillTitle");
+    nextElem.innerHTML = allTitles[nextSkillIndex];
+
+    nextWrapper.appendChild(nextElem);
+    titleCont.appendChild(nextWrapper);
+
+    currentTitleElem.classList.remove("selectedSkillTitle");
+    nextWrapper.classList.add("selectedSkillTitle");
+    
+    setTimeout(function(){
+        currentTitleElem.remove();
+    },300)
+    
+    allowSkillChange = false;
+    setTimeout(function(){
+        allowSkillChange = true;
+    },350);
+
+    var skillInfoIndex = (()=>{
+        for(var i=0; i < allSkillCont.length; i++){
+            if(allSkillCont[i].getAttribute("id") === allInfo[currentSkillIndex]){
+                return i;
+            }
+        }
+        return -1;
+    })();
+
+    if(skillInfoIndex === allSkillCont.length - 1){
+        var firstElement = allSkillCont[0];
+        skillContentDisplay.removeChild(allSkillCont[0]);
+        skillContentDisplay.appendChild(firstElement);
+        skillInfoIndex--;
+    }
+    allSkillCont[skillInfoIndex].classList.remove("selectedSkillInfo");
+    allSkillCont[skillInfoIndex+1].classList.add("selectedSkillInfo");
+}
+
+
+
+window.onload = function() {
+    showName();
 
 };
-
-
 
 document.getElementsByClassName("mainContent")[0].addEventListener("scroll", function(){
     updateSlider();
@@ -191,7 +355,9 @@ document.getElementsByClassName("mainContent")[0].addEventListener("scroll", fun
 });
 
 window.addEventListener("load",()=>{
-
+    if(storageLocal.getItem('lastSection') != null){
+        loadtoSection(storageLocal.getItem('lastSection'));
+    }
 });
 
 window.addEventListener("resize", ()=>{

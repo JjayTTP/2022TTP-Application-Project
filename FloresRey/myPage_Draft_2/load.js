@@ -1,3 +1,5 @@
+storageLocal = window.localStorage;
+
 function sideNavSectionHeight(){
     var contentPage = document.getElementsByClassName("mainContent")[0];
     var pageSections = document.getElementsByClassName("sectionContainer");

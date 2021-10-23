@@ -96,16 +96,17 @@ body{
 
 .sectionItemText{
     position: absolute;
-    width: 150px;
+    width: auto;
     height: 50px;
     left: 80px;
     top: 50%;
     transform: translateY(-50%);
-    text-align: center;
+    /* text-align: center; */
     display: flex;
     flex-direction: row;
     align-content: center;
     align-items: center;
+    pointer-events: none;
 }
 .sectionPointer{
     width: 0; 
@@ -118,17 +119,19 @@ body{
 }
 .sectionTextDiv{
     height: 100%;
-    width: 140px;
+    width: auto;
     background-color: #57607A;
     border-radius: 8px;
     opacity: 0.7;
 }
 .sectionTextDiv h1{
-    margin: 10px auto;
+    height: inherit;
+    margin: 10px 10px;
     font-family: sans-serif;
     font-weight: lighter;
     font-size: 20pt;
     color: #CCCCFF;
+    white-space: nowrap;
 }
 
 .scrollSection{
@@ -193,7 +196,7 @@ body{
     width: 100%;
     height: 1000px;
     margin: 0;
-    border-bottom: 1px solid rgb(212, 255, 0);
+    /* border-bottom: 1px solid rgb(212, 255, 0); */
 }
 
 /* --------------------- section One ---------------- */
@@ -271,7 +274,7 @@ body{
 #sectionTwo{
     display: flex;
     flex-direction: column;
-    padding: min(10vw,100px) 0 min(10vw,400px) 0;
+    padding: min(8vw,70px) 0 min(10vw,400px) 0;
     align-content: center;
     align-items: center;
     position: relative;
@@ -290,6 +293,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: min(2vw,50px);
 }
 .sectionBanner div{
     flex-grow: 1;
@@ -308,5 +312,291 @@ body{
 }
 
 .myInfo{
-    
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+}
+
+.myInfoText{
+    min-width: 350px;
+    flex-grow: 1;
+    height: auto;
+    display: block;
+    padding: 0 2vw 0 0;
+}
+.myImgContainer{
+    min-width: 20vw;
+    min-height: 350px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+@media screen and (max-width:880px){
+    .myInfo{
+        flex-direction: column;
+    }
+    .myImg{
+        min-height: 300px;
+        min-width: 300px;
+        height: 50vw !important;
+        width: 50vw !important;
+    }
+}
+
+.myInfoText h1{
+    margin: 0;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: min(2.8vw,20px);
+    line-height: min(3.5vw,32px);
+
+    color: rgb(15, 139, 234);
+}
+
+.myImg{
+    position: relative;
+    width: 100%;
+    height: 20vw;
+    margin: auto;
+}
+
+/* --------------------- section Three ---------------- */
+#sectionThree{
+    display: flex;
+    flex-direction: column;
+    padding: min(8vw,70px) 0 min(10vw,400px) 0;
+    align-content: center;
+    align-items: center;
+    position: relative;
+}
+.mySkills{
+    min-width: 350px;
+    width: 60vw;
+    height: auto;
+}
+
+.skillSection{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vw;
+}
+
+.selectedSkill{
+    width: 100%;
+    height: 4vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #58E2C5;
+    align-items: center;
+}
+
+.skillTitleCont{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    font-size: 2vw;
+    overflow: hidden;
+    align-items: center;
+}
+
+.skillTitleWrapper{
+    width: 0;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    -webkit-transition: width 0.3s ease-in-out;
+    -moz-transition: width 0.3s ease-in-out;
+    -o-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+    opacity: 0.6;
+    transition: opacity 0.3;
+}
+
+.skillTitle{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.6em;
+    line-height: 1.6em;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.selectedSkillTitle{
+    width: 100%;
+    opacity: 1;
+}
+
+.selectedSkill button{
+    width: auto;
+    height: inherit;
+    font-size: 1.8em;
+    font-family: 'Poppins',sans-serif;
+    background-color: rgb(27, 127, 193);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 0 0.5em;
+}
+.selectedSkill button:hover{
+    background-color: rgb(6, 83, 171);
+}
+
+#skillPrev h1{
+    margin: 0;
+}
+#skillNext h1{
+    margin: 0;
+}
+
+.skillDisplay{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+/* 
+    border-bottom: 1px solid greenyellow;
+    border-left: 1px solid greenyellow;
+    border-right: 1px solid greenyellow; */
+}
+
+.skillWrapper{
+    width: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    -webkit-transition: width 0.3s ease-in-out;
+    -moz-transition: width 0.3s ease-in-out;
+    -o-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+
+    /* border: 1px solid red; */
+}
+
+.selectedSkillInfo{
+    width: 100%;
+}
+
+.skillImages{
+    width: 100%;
+    height: 11vw;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    padding: 0;
+    user-select: none;
+
+    /* border: 1px solid red; */
+}
+
+.skillImgWrapper{
+    height: auto;
+    width: auto;
+    position: relative;
+    box-sizing: border-box;
+	border: 5px white solid;
+	border-radius: 50%;
+	overflow: visible;
+	box-shadow: 0 5px 15px 0px rgba(22, 198, 228, 0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+    display: flex;
+    align-content: center;
+    padding: 0.6em;
+    margin: 0 auto;
+}
+
+.skillImgWrapper img{
+    width: 2.6em;
+    height: 2.6em;
+    margin: 0;
+}
+.skillImgWrapper:hover{
+    animation: none;
+}
+.skillImgWrapper:hover > .skillImgText{
+    display: flex;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(22, 198, 228, 0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(22, 198, 228, 0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(22, 198, 228, 0.6);
+		transform: translatey(0px);
+	}
+}
+
+.skillImgText{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-content: center;
+    align-items: center;
+    top: 4em;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    display: none;
+    pointer-events: none;
+}
+.imgTextPointer{
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #58E2C5;
+}
+.imgTextCont{
+    margin: 0;
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.7em;
+    background-color: #58E2C5;
+    border-radius: 10px;
+    padding: 0 0.3em;
+    font-family: 'Poppins',sans-serif;
+}
+
+.skillDescr{
+    width: 100%;
+    height: 300px;
+    list-style: none;
+}
+.skillDescr li{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.5em;
+    color: #343434;
+
+}
+.skillDescr li::before{
+    content: "";
+    border-color: transparent rgb(11, 194, 222);
+    border-style: solid;
+    border-width: 0.30em 0 0.30em 0.40em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 0.9em;
+    position: relative;
 }
