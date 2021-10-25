@@ -1,3 +1,4 @@
+storageLocal = window.localStorage;
 
 function scrollPage(slideAmount){
     var contentPage = document.getElementsByClassName("mainContent")[0];
@@ -9,14 +10,16 @@ function scrollPage(slideAmount){
 }
 
 function updateSlider(){
+
     var contentPage = document.getElementsByClassName("mainContent")[0];
     var navSlider = document.getElementById("sideNav_Slider");
-    var pageHeight = contentPage.scrollHeight - contentPage.clientHeight;
+    var scrollLimit = contentPage.scrollHeight - contentPage.clientHeight;
     var scrollAmount = contentPage.scrollTop;
-    var scrollerPerPixel = 1000/pageHeight;
-    var slideAmount = scrollerPerPixel * scrollAmount;
 
+    var scrollCover = scrollAmount / scrollLimit;
+    var slideAmount = 1000 * scrollCover;
     navSlider.value = slideAmount;
+
 }
 
 function moveSliderDown(){
@@ -66,52 +69,81 @@ function gotoSection(sectionNum){
 
 function loadtoSection(sectionNum){
     var sideBarSections = document.getElementsByClassName("sectionItem");
-
+    sideBarSections[0].classList.remove("selectedSectionItem");
+    
     var pageSections = document.getElementsByClassName("sectionContainer");
     pageSections[sectionNum].scrollIntoView({behavior: "instant"});
 }
-
+console.log(localStorage.getItem("lastSection"))
 function updateSelectedSection(){
     var mainContent = document.getElementsByClassName("mainContent")[0];
     var sectionContainers = document.getElementsByClassName("sectionContainer");
     var sideBarSections = document.getElementsByClassName("sectionItem");
-    
+
+    var scrollAmount = mainContent.scrollTop;
+    var bottomView = scrollAmount + mainContent.clientHeight;
+
+    var initialSection;
+
     for(var i=0; i < sectionContainers.length; i++){
-        var scrollAmount = mainContent.scrollTop;
-        var sectionHeight = sectionContainers[i].clientHeight;
-        var minScroll = function(){
+        var sectionTop = function(){
             var sumHeight = 0;
             for(var j=i-1; j >=0; j--){
                 sumHeight += sectionContainers[j].clientHeight;
             }
             return sumHeight;
         }();
-        var maxScroll = minScroll + sectionHeight;
-        if(scrollAmount >= minScroll && scrollAmount < maxScroll){
-            if(i != 5){
-                if(i > 0){
-                    sideBarSections[i-1].classList.remove("selectedSectionItem");
-                }
-                if(i < sectionContainers.length -1){
-                    sideBarSections[i+1].classList.remove("selectedSectionItem");
-                }
-                sideBarSections[i].classList.add("selectedSectionItem");
-                if(localStorage.getItem('lastSection') != i){
-                    localStorage.setItem('lastSection',i);
-                }
-                break;
-            }else{
-                if(mainContent.scrollTop != (mainContent.scrollHeight - mainContent.clientHeight)){
-                    sideBarSections[4].classList.remove("selectedSectionItem");
-                    sideBarSections[5].classList.add("selectedSectionItem");
-                    sideBarSections[6].classList.remove("selectedSectionItem");
-                }else{
-                    sideBarSections[5].classList.remove("selectedSectionItem");
-                    sideBarSections[6].classList.add("selectedSectionItem");
-                }
+        var sectionBottom = sectionTop + sectionContainers[i].clientHeight;
+        if((sectionTop >= scrollAmount && sectionTop < bottomView) || (sectionBottom > scrollAmount && sectionBottom <= bottomView) || (sectionTop <= scrollAmount && bottomView <= sectionBottom)){
+            sideBarSections[i].classList.add("selectedSectionItem");
+            if(initialSection === undefined || i < initialSection){
+                initialSection = i;
             }
+        }else{
+            sideBarSections[i].classList.remove("selectedSectionItem");
         }
     }
+    if(localStorage.getItem('lastSection') != initialSection){
+        localStorage.setItem('lastSection',initialSection);
+    }
+    
+    // for(var i=0; i < sectionContainers.length; i++){
+    //     var scrollAmount = mainContent.scrollTop;
+    //     var sectionHeight = sectionContainers[i].clientHeight;
+        // var minScroll = function(){
+        //     var sumHeight = 0;
+        //     for(var j=i-1; j >=0; j--){
+        //         sumHeight += sectionContainers[j].clientHeight;
+        //     }
+        //     return sumHeight;
+        // }();
+    //     var maxScroll = minScroll + sectionHeight;
+    //     if(scrollAmount >= minScroll && scrollAmount < maxScroll){
+    //         if(i != 4){
+    //             if(i > 0){
+    //                 sideBarSections[i-1].classList.remove("selectedSectionItem");
+    //             }
+    //             if(i < sectionContainers.length -1){
+    //                 sideBarSections[i+1].classList.remove("selectedSectionItem");
+    //             }
+    //             sideBarSections[i].classList.add("selectedSectionItem");
+                // if(localStorage.getItem('lastSection') != i){
+                //     localStorage.setItem('lastSection',i);
+                // }
+    //             break;
+    //         }else{
+    //             if(mainContent.scrollTop != (mainContent.scrollHeight - mainContent.clientHeight)){
+    //                 sideBarSections[3].classList.remove("selectedSectionItem");
+    //                 sideBarSections[4].classList.add("selectedSectionItem");
+    //                 sideBarSections[5].classList.remove("selectedSectionItem");
+    //             }else{
+    //                 sideBarSections[4].classList.remove("selectedSectionItem");
+    //                 sideBarSections[5].classList.add("selectedSectionItem");
+    //             }
+    //         }
+    //     }
+    // }
+
 }
 
 function adjustSideNavSectHeight(){
@@ -190,15 +222,6 @@ function showName(){
         }
     }
 }
-
-// function Timeout(fn, interval){
-//     var id = setTimeout(fn,interval);
-//     this.cleared = false;
-//     this.clear = function(){
-//         this.cleared = true;
-//         clearTimeout(id);
-//     };
-// }
 
 var allowSkillChange = true;
 var allTitles = ["Front End Development", "Back End Development", "Database Management", "Software Development", "Analytics"];
@@ -342,14 +365,6 @@ function nextSkill(){
     allSkillCont[skillInfoIndex+1].classList.add("selectedSkillInfo");
 }
 
-// function tester(){
-//     window.location.href = "mailto:reyhector1234@gmail.com?subject=Subject&body=message%20goes%20here";
-// }
-
-function tester(){
-    console.log("lol");
-}
-
 window.onload = function() {
     showName();
 
@@ -361,9 +376,10 @@ document.getElementsByClassName("mainContent")[0].addEventListener("scroll", fun
 });
 
 window.addEventListener("load",()=>{
-    if(storageLocal.getItem('lastSection') != null){
+    if(storageLocal.getItem('lastSection') != null && storageLocal.getItem('lastSection') != 0){
         loadtoSection(storageLocal.getItem('lastSection'));
     }
+    adjustSideNavSectHeight();
 });
 
 window.addEventListener("resize", ()=>{

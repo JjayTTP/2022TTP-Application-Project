@@ -8,7 +8,7 @@ function sideNavSectionHeight(){
     var sideBarHeight = sideBarSectionCont.clientHeight;
     var sideBarSections = document.getElementsByClassName("sectionItem");
 
-    for(var i=0; i < 7; i++){
+    for(var i=0; i < sideBarSections.length; i++){
         var sectionPageHeight = pageSections[i].clientHeight/pageHeight;
         var sectionSideBarHeight = sectionPageHeight * sideBarHeight;
     

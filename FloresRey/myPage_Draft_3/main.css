@@ -191,13 +191,11 @@ body{
 /* ---------------------------------- main sections ------------------------------- */
 
 .sectionContainer{
-    display: block;
+    display: inline-block;
     position: relative;
     width: 100%;
     height: auto;
     margin: 0;
-    background-color: red;
-    /* border-bottom: 1px solid rgb(212, 255, 0); */
 }
 
 /* --------------------- section One ---------------- */
@@ -272,20 +270,13 @@ body{
 
 /* --------------------- section Two ---------------- */
 
-#sectionTwo{
-    display: flex;
-    flex-direction: column;
-    padding: min(8vw,70px) 0 min(10vw,400px) 0;
-    align-content: center;
-    align-items: center;
-    position: relative;
-}
 
 .aboutMe{
     display: flex;
     flex-direction: column;
     min-width: 350px;
     width: 60vw;
+    margin: 5vw auto 13vw auto;
 }
 
 .sectionBanner{
@@ -364,18 +355,12 @@ body{
 }
 
 /* --------------------- section Three ---------------- */
-#sectionThree{
-    display: flex;
-    flex-direction: column;
-    padding: min(8vw,70px) 0 min(10vw,400px) 0;
-    align-content: center;
-    align-items: center;
-    position: relative;
-}
+
 .mySkills{
     min-width: 350px;
     width: 60vw;
     height: auto;
+    margin: 4vw auto 13vw auto;
 }
 
 .skillSection{
@@ -604,21 +589,13 @@ body{
 
 /* --------------------- section Four ---------------- */
 
-#sectionFour{
-    display: flex;
-    flex-direction: column;
-    padding: min(8vw,70px) 0 min(10vw,400px) 0;
-    align-content: center;
-    align-items: center;
-    position: relative;
-}
-
 .myProjects{
     display: flex;
     flex-direction: column;
     min-width: 350px;
     width: 60vw;
     height: auto;
+    margin: 4vw auto 13vw auto;
 }
 
 .projectContainer{
@@ -719,21 +696,13 @@ body{
 
 /* --------------------- section Five ---------------- */
 
-#sectionFive{
-    display: flex;
-    flex-direction: column;
-    padding: min(8vw,70px) 0 min(10vw,400px) 0;
-    align-content: center;
-    align-items: center;
-    position: relative;
-}
-
 .myEducation{
     display: flex;
     flex-direction: column;
     min-width: 350px;
     width: 60vw;
     height: auto;
+    margin: 4vw auto 13vw auto;
 }
 
 .educationWrapper{
@@ -886,15 +855,8 @@ body{
 
 /* --------------------- section Six ---------------- */
 
-
 #sectionSix{
-    display: flex;
-    flex-direction: column;
-    padding: min(8vw,70px) 0 min(10vw,400px) 0;
-    align-content: center;
-    align-items: center;
-    position: relative;
-
+    height: 49vw;
 }
 
 .contactMe{
@@ -903,6 +865,8 @@ body{
     min-width: 350px;
     width: 60vw;
     height: auto;
+    margin: auto;
+    border: 1px solid green;
 }
 
 .goodbyeText{
@@ -913,7 +877,7 @@ body{
     color: rgb(65, 193, 112);
 }
 
-/* ---------------------- Creator's Note --------------------- */
+/* ---------- Creator's Note ----------- */
 
 .creatorNote{
     width: 100%;
@@ -924,6 +888,6 @@ body{
 }
 .creatorNote h1{
     font-family: 'Poppins',sans-serif;
-    font-size: 1vw;
+    font-size: 1.5vw;
     color: wheat;
 }
