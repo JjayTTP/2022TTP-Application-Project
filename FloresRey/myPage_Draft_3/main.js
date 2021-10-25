@@ -266,7 +266,9 @@ function prevSkill(){
     titleCont.prepend(prevWrapper);
 
     currentTitleElem.classList.remove("selectedSkillTitle");
+    currentTitleElem.classList.remove("fade");
     prevWrapper.classList.add("selectedSkillTitle");
+    prevWrapper.classList.add("fade");
 
     setTimeout(function(){
         currentTitleElem.remove();
@@ -293,7 +295,9 @@ function prevSkill(){
         skillInfoIndex++;
     }
     allSkillCont[skillInfoIndex].classList.remove("selectedSkillInfo");
+    allSkillCont[skillInfoIndex].classList.remove("fade");
     allSkillCont[skillInfoIndex-1].classList.add("selectedSkillInfo");
+    allSkillCont[skillInfoIndex-1].classList.add("fade");
 }
 
 function nextSkill(){
@@ -335,7 +339,9 @@ function nextSkill(){
     titleCont.appendChild(nextWrapper);
 
     currentTitleElem.classList.remove("selectedSkillTitle");
+    currentTitleElem.classList.remove("fade");
     nextWrapper.classList.add("selectedSkillTitle");
+    nextWrapper.classList.add("fade");
     
     setTimeout(function(){
         currentTitleElem.remove();
@@ -362,7 +368,9 @@ function nextSkill(){
         skillInfoIndex--;
     }
     allSkillCont[skillInfoIndex].classList.remove("selectedSkillInfo");
+    allSkillCont[skillInfoIndex].classList.remove("fade");
     allSkillCont[skillInfoIndex+1].classList.add("selectedSkillInfo");
+    allSkillCont[skillInfoIndex+1].classList.add("fade");
 }
 
 window.onload = function() {
