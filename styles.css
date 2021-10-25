@@ -1,0 +1,69 @@
+body{
+	background-color: #20232b;
+	font-family: Helvetica;
+	color: white;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+.header_bar{
+	display: grid;
+	background-color: #33373d;
+	width: 100%;
+	grid-template-columns: 92.5% 7.5%;
+}
+#header_name{
+	font-family: Lucida Console;
+	font-size:50px;
+	font-weight:500;
+	padding-left: 20px;
+
+}
+#theme_text{
+	font-size: 20px;
+	padding-top: 15px;
+	padding-left: 20px;
+	background-color: #451d85;
+	border-radius: 20px;
+	margin: 5px 5px;
+}
+#theme_text:hover{
+	background-color: #a17ed9;
+}
+.navi{
+	padding-left: 0px;
+	display: flex;
+	flex-direction: row;
+}
+.navi > div{
+	font-size: 20px;
+}
+.navi > div > a{
+	display: block;
+	padding: 5px 20px;
+}
+#tab_about{
+	background-color: #732222;
+}
+#tab_about:hover{
+	background-color: #c45a5a;
+}
+#tab_skills{
+	background-color: #263191;
+}
+#tab_skills:hover{
+	background-color: #4c57c2;
+}
+#tab_resume{
+	background-color: #337982;
+}
+#tab_resume:hover{
+	background-color: #5bb1bd;
+}
+#tab_contact{
+	background-color: #1f692c;
+}
+#tab_contact:hover{
+	background-color: #46a356;
+}
