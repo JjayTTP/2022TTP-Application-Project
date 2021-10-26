@@ -47,6 +47,8 @@ function isValid(cmd) {
             help();
             break;
         case "clear":
+            clear();    //I do clear 3 times to make sure it clears most of the text out
+            clear();    //TODO: figure out why the console text isnt always cleared
             clear();
             break;
         case "ls":
