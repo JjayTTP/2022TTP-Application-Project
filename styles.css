@@ -1,11 +1,14 @@
+@font-face { font-family: Space_Mono; src: url('Space_Mono/SpaceMono-Regular.ttf'); } 
+@font-face { font-family: Space_Mono; font-weight: bold; src: url('Space_Mono/SpaceMono-Bold.ttf');}
 body{
 	margin: 0;
 	padding: 0;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Space_Mono;
+	
 }
 .nav{
-	background-color: black;
-	color: white;
+	background-color: white;
+	color: black;
 	list-style: none;
 	text-align: center;
 	padding: 20px 0 20px 0;
@@ -18,10 +21,10 @@ body{
 }
 .nav >li > a{
 	text-decoration: none;
-	color: white;
+	color: rgb(0, 0, 0);
 
 }
 .nav >li > a:hover{
-	color: rgb(204, 199, 199);
+	color: rgb(100, 100, 100);
 
 }
