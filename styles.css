@@ -10,13 +10,15 @@ body{
 	background-color: white;
 	color: black;
 	list-style: none;
-	text-align: center;
-	padding: 20px 0 20px 0;
+	text-align: right;
+	padding: 20px 0 0 0;
 
 }
 .nav > li{
 	display: inline-block;
 	padding-right: 50px;
+	font-size: 12px;
+
 
 }
 .nav >li > a{
@@ -27,4 +29,28 @@ body{
 .nav >li > a:hover{
 	color: rgb(100, 100, 100);
 
+}
+
+.logo{
+	color: black;
+	float: left;
+	padding-left: 25px;
+	font-size: 16px;
+	font-family: Space_Mono;
+	font-weight: bold;
+}
+
+.logo > a{
+	text-decoration: none;
+	color:  black;
+
+}
+.banner{
+	width: 100%;
+	display: block;
+}
+.banner > .banner-img{
+	width: 100%;ß
+	display: block;
+	height: 400px;
 }
