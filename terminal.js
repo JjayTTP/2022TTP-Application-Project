@@ -75,9 +75,7 @@ function help() {
 // Clear all paragraph children from the virtual terminal
 function clear() {
     var childArray = terminal.children;
-    console.log(childArray);
     for (var i = 0; i < childArray.length; i++) {
-        console.log(i, childArray[i].tagName);
         if (childArray[i].tagName == "P") {
             terminal.removeChild(childArray[i]);
         }
