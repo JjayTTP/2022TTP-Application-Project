@@ -1,8 +1,17 @@
 body {
+    display: flex;
+    flex-flow: column nowrap;
     font-family: 'Rubik', sans-serif;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: linear-gradient(to right bottom, #a9c1e7, #8293be, #5e6794, #3f3d6c, #221644);
+}
+
+/* This is the primary page title seen on the top of the page */
+body main h1 {
+    color: white;
+    margin-left: 2%;
+    text-shadow: 2px 2px 10px #000000;
 }
 
 body a {
@@ -22,7 +31,7 @@ body main {
     -moz-animation: fade-in 0.5s;    /* Firefox */
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    min-height: 75vh;
+    flex-basis: 75vh;
 }
 @keyframes fade-in {
     0% {opacity: 0;}
@@ -45,40 +54,80 @@ body main {
     100% {opacity: 100;}
 }
 
-body main h1 {
+.virtual-terminal {
+    border-radius: 10px;
+    background: rgb(0, 0, 0, .7);
     color: white;
-    margin-left: 2%;
-    text-shadow: 2px 2px 10px #000000;
+    width: 80%;
+    margin-left: 10%;
+    min-height: 50vh;
+    white-space: pre-line;
+}
+
+#vterm-title {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 25px #000000;
+}
+
+.grid-card-container {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    margin-left: 10%;
+    padding: 10px;
+}
+
+.blogcard {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: white;
+    transition: 0.25s;
+    width: 80%;
+    color: white;
+    text-shadow: 1px 1px 25px #000000;
+    box-shadow: 5px 5px 20px 0 #000000;
+    background: rgb(78, 52, 81, .4);
+}
+
+.blogcard img {
+    border-radius: 5px;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .blogpost {
     display: flex;
-    flex-flow: row wrap;
-    align-items: stretch;
+    flex-flow: column;
     width: 70%;
     padding: 10px;
     border: 2px solid;
-    border-radius: 4px 20px;
+    border-radius: 10px;
     background: rgb(133, 94, 140, .4);
     color: white;
     margin-left: 15%;
     text-shadow: 2px 2px 25px #000000;
+    box-shadow: 5px 6px 20px 0 #000000;
 }
 
 .blogpost h2 {
-    display: flex;
     align-self: stretch;
 }
 
 .blogpost h3 {
-    display: flex;
     align-self: stretch;
     font-size: 20px;
+    text-align: right;
+    flex-basis: 50%;
 }
 
 .blogpost img {
-    display: flex;
     align-self: center;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
 /* About Section elements */
@@ -102,9 +151,10 @@ body main h1 {
 /* These header elements affect the appearance of the Navbar */
 .navbar {
     display: flex;
-    justify-content: right;
-    width: 98%;
     font-size: 25px;
+    justify-content: right;
+    flex-basis: calc(100% - 2em);
+    margin-right: 2em;
 }
 
 .navbar a:link {
@@ -123,37 +173,32 @@ body main h1 {
 }
 
 /* These footer elements affect the appearance of the Footer */
-body footer {
+footer {
     display: flex;
-    flex-direction: column;
-    align-items: stretch;
+    flex-flow: column nowrap;
     flex-grow: 1;
+    align-items: stretch;
 }
 
-body footer ul {
-    font-size: 25px;
+footer .social-links {
+    font-size: 30px;
     text-align: center;
-    transition: 0.25s;
+    flex-basis: 50px;
 }
 
-body footer p {
-    margin-left: 5%;
-}
-
-body footer a {
+footer .social-links a {
     color: #132B1B;
     font-size: normal;
     margin-right: 20px;
     transition: 0.25s;
 }
 
-body footer a:visited {
+footer .social-links a:visited {
     color: #132B1B;
 }
 
-body footer a:hover {
+footer .social-links a:hover {
     color: hotpink;
     font-size: larger;
     transition: 0.25s;
-    line-height: 30px;
 }

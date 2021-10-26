@@ -8,36 +8,45 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="/portfolio.css">
+        <link rel="stylesheet" type="text/css" href="/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" media="all">
         <title>Ilan R. Home</title>
     </head>
     <body>
         <header>
             <!-- Navigation buttons -->
-            <ul>
-                <a href="index.html">Home</a>
-                <a href="blog.html">Blog</a>
-                <a href="projects.html">Projects</a>
-                <a href="about.html">About</a>
-                <a href="https://drive.google.com/file/d/1o2IRd1s4MTNctXhvpgo-Gud6XHxIRZB6/view?usp=sharing">Resume</a>
-            </ul>
+            <div class="navbar">
+                <ul>
+                    <a href="index.html">Home</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="about.html">About</a>
+                    <a href="https://drive.google.com/file/d/1o2IRd1s4MTNctXhvpgo-Gud6XHxIRZB6/view?usp=sharing">Resume</a>
+                </ul>
+            </div>
         </header>
         <main>
             <h1>Welcome to the site!</h1>
-            <p>This is the first edition of the website. This is the landing page <br>
-                Welcome and enjoy your stay.
-            </p>
+            <h2 id="vterm-title">Here is a virtual terminal, type a command and type "Enter".</h2>
+            <div class="virtual-terminal">
+                <input id="textbox" placeholder="Type command"><button onclick="exec()" id="btn1">Enter</button>
+            </div>
+            <h2 id="vterm-title">Some commands you can type are "help", "ls", and "clear". <br>
+                More commands will be added soon.
+            </h2>
         </main>
         <footer>
             <!-- Social Media buttons -->
-            <ul>
-                <a href="https://linkedin.com/in/ilanrod/"><i class="fab fa-linkedin"></i>Linkedin</a>
-                <a href="https://github.com/baboomerang"><i class="fab fa-github"></i>Github</a>
-                <a href="mailto:irodrigue101@gmail.com"><i class="fas fa-envelope-square"></i>Email</a>
-            </ul>
+            <div class="social-links">
+                <ul>
+                    <a href="https://www.linkedin.com/in/ilanrod/"><i class="fab fa-linkedin"></i>Linkedin</a>
+                    <a href="https://github.com/baboomerang"><i class="fab fa-github"></i>Github</a>
+                    <a href="mailto:irodrigue101@gmail.com"><i class="fas fa-envelope-square"></i>Email</a>
+                </ul>
+            </div>
             <!-- Show Copyright info -->
             <p>Ilan Rodriguez &copy; 2021</p>
         </footer>
+        <script src="terminal.js"></script>
     </body>
 </html>

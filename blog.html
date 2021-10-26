@@ -4,37 +4,52 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="HTML, CSS">
-        <meta name="description" content="A landing page for a few ideas and discoveries in IT and software.">
+        <meta name="description" content="A small blog where I post ideas and trivia">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="/portfolio.css">
+        <link rel="stylesheet" type="text/css" href="/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" media="all">
-        <title>Blog Post</title>
+        <title>Blog Page</title>
     </head>
     <body>
         <header>
             <!-- Navigation buttons -->
-            <ul>
-                <a href="index.html">Home</a>
-                <a href="blog.html">Blog</a>
-                <a href="projects.html">Projects</a>
-                <a href="about.html">About</a>
-                <a href="https://drive.google.com/file/d/1o2IRd1s4MTNctXhvpgo-Gud6XHxIRZB6/view?usp=sharing">Resume</a>
-            </ul>
+            <div class="navbar">
+                <ul>
+                    <a href="index.html">Home</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="about.html">About</a>
+                    <a href="https://drive.google.com/file/d/1o2IRd1s4MTNctXhvpgo-Gud6XHxIRZB6/view?usp=sharing">Resume</a>
+                </ul>
+            </div>
         </header>
         <main>
             <h1>Blog</h1>
-            <p>
-            </p>
+            <div class="blogpost">
+                <h2>Bass Intonation Fixing</h2>
+                <h3>Oct 2, 2021</h3>
+                <img src="/img/basstruss.jpg">
+                <p>Hey guys, just posting a little status update on my bass.<br>
+                    <br>
+                    My bass had some weird intonation issues last week and it was making the 6th fret flat on the D string.
+                    I looked down the neck and saw that there was a little backbow to it. <br>
+                    <br>
+                    So far I tried to tighten the trussrod (as in the picture) and it fixed my intonation issues.
+                    Time to keep playing!
+                </p>
+            </div>
         </main>
         <footer>
             <!-- Social Media buttons -->
-            <ul>
-                <a href="https://www.linkedin.com/in/ilanrod/"><i class="fab fa-linkedin"></i>Linkedin</a>
-                <a href="https://github.com/baboomerang"><i class="fab fa-github"></i>Github</a>
-                <a href="mailto:irodrigue101@gmail.com"><i class="fas fa-envelope-square"></i>Email</a>
-            </ul>
+            <div class="social-links">
+                <ul>
+                    <a href="https://www.linkedin.com/in/ilanrod/"><i class="fab fa-linkedin"></i>Linkedin</a>
+                    <a href="https://github.com/baboomerang"><i class="fab fa-github"></i>Github</a>
+                    <a href="mailto:irodrigue101@gmail.com"><i class="fas fa-envelope-square"></i>Email</a>
+                </ul>
+            </div>
             <!-- Show Copyright info -->
             <p>Ilan Rodriguez &copy; 2021</p>
         </footer>
