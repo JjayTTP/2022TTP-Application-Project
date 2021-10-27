@@ -35,7 +35,6 @@ function printstring(string, isPrompt) {
     terminal.insertBefore(tag, textboxReference);
 }
 
-
 // Check if the command is valid by searching for it inside a predefined array
 function isValid(cmd) {
     if (cmdlist.includes(cmd) === false) {
@@ -47,8 +46,6 @@ function isValid(cmd) {
             help();
             break;
         case "clear":
-            clear();    //I do clear 3 times to make sure it clears most of the text out
-            clear();    //TODO: figure out why the console text isnt always cleared
             clear();
             break;
         case "ls":
@@ -76,10 +73,10 @@ function help() {
 
 // Clear all paragraph children from the virtual terminal
 function clear() {
-    var childArray = terminal.children;
-    for (var i = 0; i < childArray.length; i++) {
-        if (childArray[i].tagName == "P") {
-            terminal.removeChild(childArray[i]);
+    var children = terminal.children;
+    for (var i = children.length - 1; i >= 0; i--) {
+        if (children[i].tagName == "P") {
+            terminal.removeChild(children[i]);
         }
     }
 }
