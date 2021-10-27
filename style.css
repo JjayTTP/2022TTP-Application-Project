@@ -1,0 +1,126 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    background-color: #292929;
+}
+
+h1 {
+    color: #8AC4FF;
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    color: #8AC4FF;
+    text-align: center;
+    font-size: 30px;
+}
+
+.profile {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+    float: left;
+    padding: 10px 0;
+   
+}
+
+.container {
+    width: 80%; 
+    margin: 10px auto;
+}
+
+header {
+    background: #8AC4FF; /*lightblue*/
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav {
+    float: right;
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-top: 75px;
+    position: relative;
+}
+
+nav a {
+    color: floralwhite;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+nav a:hover {
+    color: black;
+}
+
+nav a:before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: black;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+
+.WebsiteLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.WebsiteLogo {
+    background-color: #8AC4FF;
+    text-align: center;
+    width: 100px;
+    margin: 10px;
+}
+
+label, input, textarea {
+    display: block;
+    color: black;
+    margin: auto;
+    padding: 5px;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+
