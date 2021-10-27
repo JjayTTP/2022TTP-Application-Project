@@ -4,27 +4,26 @@
 		<meta charset="UTF-8">
 		<title>Alex B</title>
 		<link rel="stylesheet" type="text/css" href="styles.css"></link>
-		<script type="text/javascript" src="scripts.js"></script>
 	</head>
 
 	<body>
 		<header>
-			<div class="header_bar">
+			<div id="header_bar">
 				<a id="header_name">Alex Brostowin</a>
-				<a id="theme_text" href="#">Dark Mode</a>
+				<button id="theme_text" onclick="ChangeTheme()">Dark Mode</button>
 			</div>
 			<div class="navi">
 				<div>
-					<a id="tab_about" href="#">About</a>
+					<button id="tab_1" onclick="ChangeTab(this.id)">About</button>
 				</div>
 				<div>
-					<a id="tab_skills" href="#">Skills</a>
+					<button id="tab_2" onclick="ChangeTab(this.id)" >Skills</button>
 				</div>
 				<div>
-					<a id="tab_resume" href="https://drive.google.com/file/d/1NQfgzrI_ZoFFIefUjwHGRxk-qJC14wyg/view?usp=sharing">Resume</a>
+					<button id="tab_3" href="https://drive.google.com/file/d/1NQfgzrI_ZoFFIefUjwHGRxk-qJC14wyg/view?usp=sharing">Resume</button>
 				</div>
 				<div>
-					<a id="tab_contact" href="#">Contact Me</a>
+					<button id="tab_4" onClick="ChangeTab(this.id);">Contact Me</button>
 				</div>
 			</div>
 		</header>
@@ -53,5 +52,5 @@
 		</div>
 
 	</body>
-
+		<script type="text/javascript" src="scripts.js"></script>
 </html>

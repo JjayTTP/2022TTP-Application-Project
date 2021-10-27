@@ -1,15 +1,17 @@
 body{
-	background-color: #20232b;
 	font-family: Helvetica;
-	color: white;
+}
+button{
+	border: none;
+	cursor: pointer;
+	font-family: Helvetica;
+	font-size: 20px;
 }
 a{
 	text-decoration: none;
-	color: white;
 }
-.header_bar{
+#header_bar{
 	display: grid;
-	background-color: #33373d;
 	width: 100%;
 	grid-template-columns: 92.5% 7.5%;
 }
@@ -21,10 +23,6 @@ a{
 
 }
 #theme_text{
-	font-size: 20px;
-	padding-top: 15px;
-	padding-left: 20px;
-	background-color: #451d85;
 	border-radius: 20px;
 	margin: 5px 5px;
 }
@@ -37,33 +35,32 @@ a{
 	flex-direction: row;
 }
 .navi > div{
-	font-size: 20px;
 }
-.navi > div > a{
+.navi > div > button{
 	display: block;
 	padding: 5px 20px;
 }
-#tab_about{
+#tab_1{
 	background-color: #732222;
 }
-#tab_about:hover{
+#tab_1:hover{
 	background-color: #c45a5a;
 }
-#tab_skills{
+#tab_2{
 	background-color: #263191;
 }
-#tab_skills:hover{
+#tab_2:hover{
 	background-color: #4c57c2;
 }
-#tab_resume{
+#tab_3{
 	background-color: #337982;
 }
-#tab_resume:hover{
+#tab_3:hover{
 	background-color: #5bb1bd;
 }
-#tab_contact{
+#tab_4{
 	background-color: #1f692c;
 }
-#tab_contact:hover{
+#tab_4:hover{
 	background-color: #46a356;
 }
