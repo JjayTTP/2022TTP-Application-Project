@@ -352,14 +352,84 @@ body{
 
 /* --------------------- section Three ---------------- */
 
-.mySkills{
+.skillSection{
     min-width: 350px;
     width: 60vw;
     height: auto;
     margin: 4vw auto 13vw auto;
 }
 
-.skillSection{
+.mySkills{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+
+    /* border: 1px solid red; */
+}
+
+.skillTitleCont{
+    height: fit-content; /*set to auto*/
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+
+    /* border: 1px solid yellow; */
+}
+.skillIndicatorCont{
+    width: 1%;
+    height: auto;
+    position: relative;
+
+    background-color: rgb(184, 208, 216);
+}
+
+.skillIndicator{
+    width: 100%;
+    height: 2.8vw;
+    position: relative;
+
+    background-color: rgb(121, 5, 5);
+}
+
+.skillTitles{
+    width: 99%;
+    height: auto;
+    display: block;
+}
+
+.skillTitleItem{
+    width: 100%;
+    height: 2.8vw;
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    background-color: rgb(34, 148, 189);
+    cursor: pointer;
+}
+.skillTitleItem:hover{
+    background-color: yellow;
+}
+
+.skillTitleItem h1{
+    margin: 0 auto;
+    width: fit-content;
+    height: fit-content;
+    font-size: 1em;
+    white-space: nowrap;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+
+.skillInfo{
+    height: 25vw;
+    width: 75%;
+
+    background-color: green;
+}
+
+/* .skillSection{
     width: 100%;
     height: auto;
     display: flex;
@@ -391,12 +461,6 @@ body{
     height: 100%;
     display: block;
     overflow: hidden;
-    /* -webkit-transition: width 0.3s ease-in-out;
-    -moz-transition: width 0.3s ease-in-out;
-    -o-transition: width 0.3s ease-in-out;
-    transition: width 0.3s ease-in-out;
-    opacity: 0.6;
-    transition: opacity 0.3; */
 }
 
 .skillTitle{
@@ -443,6 +507,9 @@ body{
     height: auto;
     display: flex;
     flex-direction: row;
+    background-color: rgb(30, 41, 92);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .fade {
@@ -474,14 +541,6 @@ body{
     display: flex;
     flex-direction: column;
     overflow: hidden;
-/* 
-    -webkit-transition: width 0.3s ease-in-out;
-    -moz-transition: width 0.3s ease-in-out;
-    -o-transition: width 0.3s ease-in-out;
-    transition: width 0.3s ease-in-out; */
-
-    /* background-color: red; */
-    /* border: 1px solid red; */
 }
 
 .selectedSkillInfo{
@@ -498,8 +557,6 @@ body{
     align-content: center;
     padding: 0;
     user-select: none;
-
-    /* border: 1px solid red; */
 }
 
 .skillImgWrapper{
@@ -516,7 +573,6 @@ body{
     display: flex;
     align-content: center;
     align-items: center;
-    /* padding: 0.6em; */
     margin: 0 auto;
 }
 .skillImgWrapper:hover{
@@ -606,7 +662,7 @@ body{
     left: -1em;
     top: 1em;
     position: relative;
-}
+} */
 
 /* --------------------- section Four ---------------- */
 

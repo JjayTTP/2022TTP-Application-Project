@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+    position: absolute;
+    margin: 0;
+}
+
+.buttonCont{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin: auto;
+    display: block;
+    
+    border: 1px solid red;
+}
+
+.imageContOne{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    border: 1px solid green;
+}
+.imageContOne img{
+    height: inherit;
+    width: inherit;
+    object-fit: fill;
+}
