@@ -111,14 +111,87 @@
                         <div class="skillTitleCont">
                             <div class="skillIndicatorCont"><div class="skillIndicator"></div></div>
                             <div class="skillTitles">
-                                <div class="skillTitleItem" onclick="gotoSkill(0)"><h1>Front End Development</h1></div>
+                                <div class="skillTitleItem selectedSkillTitle" onclick="gotoSkill(0)"><h1>Front End Development</h1></div>
                                 <div class="skillTitleItem" onclick="gotoSkill(1)"><h1>Back End Development</h1></div>
                                 <div class="skillTitleItem" onclick="gotoSkill(2)"><h1>Database Management</h1></div>
-                                <div class="skillTitleItem" onclick="gotoSkill(3)"><h1>Software Development</h1></div>
-                                <div class="skillTitleItem" onclick="gotoSkill(4)"><h1>Analytics</h1></div>
+                                <div class="skillTitleItem" onclick="gotoSkill(3)"><h1>Analytics</h1></div>
+                                <div class="skillTitleItem" onclick="gotoSkill(4)"><h1>Other Technologies</h1></div>
                             </div>
                         </div>
-                        <div class="skillInfo"></div>
+                        <div class="skillInfo">
+                            <div class="skillInfoItem selectedSkillInfo" id="skill_frontEnd">
+                                <div class="skillImgs">
+                                    <div class="skillImgItem"><img src="../Images/mySkills/html5.png" alt="HTML Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">HTML5</h1></div></div>
+                                    <div class="skillImgItem"><img src="../Images/mySkills/css.png" alt="CSS Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">CSS3</h1></div></div>
+                                    <div class="skillImgItem"><img src="../Images/mySkills/javascript.png" alt="Javascript Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">Javascript</h1></div></div>
+                                    <div class="skillImgItem"><img src="../Images/mySkills/jquery.png" alt="Jquery Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">Jquery</h1></div></div>
+                                    <div class="skillImgItem"><img src="../Images/mySkills/react.png" alt="React Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">React</h1></div></div>
+                                </div>
+                                <ul class="skillInfoText">
+                                    <li>Hello</li>
+                                    <li>Hello</li>
+                                    <li>Hello</li>
+                                    <li>Hello</li>
+                                    <li>Hello</li>
+                                </ul>
+                            </div>
+                            <div class="skillInfoItem" id="skill_backEnd">
+                                <div class="skillImgs">
+                                    <div class="skillImgItem"><img src="../Images/mySkills/php.svg" style="width: 5.5vw;" alt="PHP Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">PHP</h1></div></div>
+                                    <div class="skillImgItem"><img src="../Images/mySkills/pythonIcon.png" alt="Python Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">Python</h1></div></div>
+                                    <div class="skillImgItem"><img src="../Images/mySkills/cpp.svg" alt="CPP Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">CPP</h1></div></div>
+                                    <div class="skillImgItem"><img src="../Images/mySkills/express.png" style="width: 6.5vw;" alt="Express Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">Express</h1></div></div>
+                                    <div class="skillImgItem"><img src="../Images/mySkills/java.png" style="width: 6vw;" alt="Java Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">Java</h1></div></div>
+                                </div>
+                                <ul class="skillInfoText">
+                                    <li>Hello</li>
+                                    <li>Hello</li>
+                                    <li>Hello</li>
+                                    <li>Hello</li>
+                                    <li>Hello</li>
+                                </ul>
+                            </div>
+                            <div class="skillInfoItem" id="skill_database">
+                                <div class="skillImgs">
+                                    <div class="skillImgItem"><img src="../Images/mySkills/mysql.png" style="width: 7.5vw;" alt="MySQL Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">MySQL</h1></div></div>
+                                    <div class="skillImgItem"><img src="../Images/mySkills/postgresql.png" alt="PostgreSQL Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">PostgreSQL</h1></div></div>
+                                    <div class="skillImgItem"><img src="../Images/mySkills/mongo.png" style="width: 10vw;" alt="mongoDB Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">Mongo Database</h1></div></div>
+                                </div>
+                                <ul class="skillInfoText">
+                                    <li>Hello</li>
+                                    <li>Hello</li>
+                                    <li>Hello</li>
+                                    <li>Hello</li>
+                                    <li>Hello</li>
+                                </ul>
+                            </div>
+                            <div class="skillInfoItem" id="skill_analytics">
+                                <div class="skillImgs">
+                                    <div class="skillImgItem"><img src="../Images/mySkills/r logo.png" alt="R Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">R</h1></div></div>
+                                    <div class="skillImgItem"><img src="../Images/mySkills/Ipython.png" style="width: 5.5vw;" alt="IPython Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">IPython</h1></div></div>
+                                </div>
+                                <ul class="skillInfoText">
+                                    <li>Hello</li>
+                                    <li>Hello</li>
+                                    <li>Hello</li>
+                                    <li>Hello</li>
+                                    <li>Hello</li>
+                                </ul>
+                            </div>
+                            <div class="skillInfoItem" id="skill_others">
+                                <div class="skillImgs">
+                                    <div class="skillImgItem"><img src="../Images/mySkills/nodejs.png" style="width: 6.5vw;" alt="NodeJS Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">Node JS</h1></div></div>
+                                    <div class="skillImgItem"><img src="../Images/mySkills/git.png" style="width: 6vw;" alt="Git Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">Git</h1></div></div>
+                                </div>
+                                <ul class="skillInfoText">
+                                    <li>Hello</li>
+                                    <li>Hello</li>
+                                    <li>Hello</li>
+                                    <li>Hello</li>
+                                    <li>Hello</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

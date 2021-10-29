@@ -184,6 +184,22 @@ function gotoSkill(selectedSkill){
 
     skillIndicator.style.transform = `translateY(${translateAmount}px)`;
     skillIndicator.style.transition = "all 0.2s linear";
+
+    var currentSelectedSkill = function(){
+        for(var i=0; i < skillTitles.length; i++){
+            if(skillTitles[i].classList.contains("selectedSkillTitle")){
+                return i;
+            }
+        }
+        return -1;
+    }();
+
+    skillTitles[currentSelectedSkill].classList.remove("selectedSkillTitle");
+    skillTitles[selectedSkill].classList.add("selectedSkillTitle");
+
+    var skillInfoItems = document.getElementsByClassName("skillInfoItem");
+    skillInfoItems[currentSelectedSkill].style.display = "none";
+    skillInfoItems[selectedSkill].style.display = "block";
 }
 
 function showName(){
