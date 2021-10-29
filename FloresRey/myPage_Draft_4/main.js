@@ -213,6 +213,11 @@ function showName(){
     }
 }
 
+function submitMessage(){
+    var messengerMessage = String(document.getElementsByClassName("userMessage")[0].value);
+
+    window.location.href = `mailto:reyhector1234@gmail.com?subject=Saying Hello&body=${messengerMessage}%0D%0A%0D%0A`;
+}
 
 window.onload = function() {
     showName();

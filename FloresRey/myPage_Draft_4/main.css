@@ -281,7 +281,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: min(5vw,80px);
+    margin-bottom: min(6vw,100px);
 }
 .sectionBanner div{
     flex-grow: 1;
@@ -355,6 +355,7 @@ body{
 .skillSection{
     min-width: 350px;
     width: 60vw;
+    min-height: 30vw;
     height: auto;
     margin: 4vw auto 15vw auto;
 }
@@ -495,8 +496,8 @@ body{
     display: none;
     flex-direction: column;
     left: 50%;
-    transform: translateX(-50%);
-    bottom: -2.9vw;
+    bottom: 0;
+    transform: translate(-50%,100%);
     pointer-events: none;
     z-index: 1;
 }
@@ -546,33 +547,6 @@ body{
     top: 1em;
     position: relative;
 }
-
-/* .workDetails{
-    display: block;
-    width: 100%;
-    height: auto;
-    list-style: none;
-    margin: 0;
-    font-size: 1vw;
-}
-.workDetails li{
-    font-family: 'Poppins',sans-serif;
-    font-size: 1.5em;
-    color: #635757;
-    margin-left: 1vw;
-}
-.workDetails li::before{
-    content: "";
-    border-color: transparent rgb(11, 194, 222);
-    border-style: solid;
-    border-width: 0.30em 0 0.30em 0.40em;
-    display: block;
-    height: 0;
-    width: 0;
-    left: -1em;
-    top: 1em;
-    position: relative;
-} */
 
 /* --------------------- section Four ---------------- */
 
@@ -842,18 +816,13 @@ body{
 
 /* --------------------- section Six ---------------- */
 
-#sectionSix{
-    height: 49vw;
-}
-
 .contactMe{
     display: flex;
     flex-direction: column;
     min-width: 350px;
     width: 60vw;
     height: auto;
-    margin: auto;
-    border: 1px solid green;
+    margin: 4vw auto 13.25vw auto;
 }
 
 .goodbyeText{
@@ -862,6 +831,171 @@ body{
     margin: 0;
     text-align: center;
     color: rgb(65, 193, 112);
+}
+
+.messageMe{
+    width: 35vw;
+    height: auto;
+    margin: 2vw auto;
+    border-radius: 20px;
+    font-size: 1vw;
+}
+.messageMe h1{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.4em;
+    color: wheat;
+    margin: 1vw 0 0.5vw 0;
+}
+
+.userMessage{
+    display: block;
+    width: calc(100% - 2vw);
+    height: 8vw;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1vw;
+    background-color: #112240;
+    border: none;
+    outline: none;
+    color: wheat;
+    resize: none;
+    padding: 0.5vw 1vw;
+}
+
+.socialMediaCont{
+    width: auto;
+    height: auto;
+    float: left;
+    margin: 2.5vw 0 0 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.socialMediaItem{
+    width: auto;
+    height: auto;
+    position: relative;
+    margin-right: 1vw;
+    transition: transform 0.3s linear;
+}
+.socialMediaItem:hover{
+    transform: translateY(-20%);
+}
+
+.mediaIcon{
+    display: flex;
+    width: 2.8vw;
+    height: 2.8vw;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: turquoise;
+    align-items: center;
+    position: relative;
+}
+.mediaIcon img{
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+.mediaIcon:hover > img{
+    filter: invert(1);
+    transition-property: filter;
+    transition-duration: 0.3s ease;
+}
+
+#github:hover{
+    background-color: black;
+    transition: background-color 0.3s ease;
+}
+
+#linkedIn:hover{
+    background-color: #0077b5;
+    transition: background-color 0.3s ease;
+}
+
+#instagram:hover{
+    background-color: #E4405F;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* .mediaIcon{
+    display: block;
+    width: 2.8vw;
+    height: 2.8vw;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: center;
+    background-color: #FFFF;
+}
+.mediaIcon:hover{
+    transform: translate(0, -10%);
+}
+
+#linkedIn{
+    background-image: url("../Images/SocialMedia/linkedin.png");
+}
+#linkedIn:hover{
+    background-color: #0077b5;
+    transition: background-color 0.5s ease;
+}
+#instagram{
+    background-image: url("../Images/SocialMedia/instagram.png");
+}
+#instagram:hover{
+    background-color: #E4405F;
+    transition: background-color 0.5s ease;
+}
+#github{
+    background-image: url("../Images/SocialMedia/github.png");
+}
+#github:hover{
+    background-color: rgba(0, 0, 0, 0.829);
+    transition: background-color 0.5s ease;
+}
+
+.testIcon{
+    display: flex;
+    width: 2.8vw;
+    height: 2.8vw;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: #FFFF;
+    align-items: center;
+}
+.testIcon img{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+.testIcon:hover{
+    background-color: rgb(0, 0, 0);
+}
+.testIcon:hover > img{
+    filter: invert(1);
+} */
+
+.submitButton{
+    display: block;
+    width: 8vw;
+    height: 2.5vw;
+    border-radius: 10px;
+    border: none;
+    margin: 2.5vw 0 0 0;
+    float: right;
+    background-color: transparent;
+    border: 1px solid turquoise;
+    background-color: transparent;
+    color: turquoise;
+    cursor: pointer;
+}
+.submitButton:hover{
+    background-color: #122D3E;
+
 }
 
 /* ---------- Creator's Note ----------- */
