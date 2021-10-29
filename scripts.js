@@ -10,9 +10,21 @@ const tab_1 = document.querySelector("#tab_1");
 const tab_2 = document.querySelector("#tab_2");
 const tab_3 = document.querySelector("#tab_3");
 const tab_4 = document.querySelector("#tab_4");
+const sections = document.querySelectorAll(".sections");
 
-window.onload = ChangeTheme();//initialize to dark mode
+
+window.onload = function(){
+	ChangeTheme();//initialize to dark mode
+	ChangeTab(2);//show about section on load
+}
 function ChangeTab(id){
+	for (var i = 0; i < sections.length; i++){
+		if (i == id){
+			sections[i].style.display = 'initial';
+		} else{
+			sections[i].style.display = 'none';
+		}
+}
 }
 function ChangeTheme(){
 	if (dark_mode < 1){//enter dark mode

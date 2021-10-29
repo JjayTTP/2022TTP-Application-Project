@@ -8,6 +8,7 @@ button{
 	font-size: 20px;
 }
 a{
+	font-family: Helvetica;
 	text-decoration: none;
 }
 #header_bar{
@@ -34,7 +35,10 @@ a{
 	display: flex;
 	flex-direction: row;
 }
-.navi > div{
+.navi > div > a{
+	display: block;
+	padding: 5px 20px;
+	font-size: 20px;
 }
 .navi > div > button{
 	display: block;

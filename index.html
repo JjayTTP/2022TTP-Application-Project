@@ -14,28 +14,27 @@
 			</div>
 			<div class="navi">
 				<div>
-					<button id="tab_1" onclick="ChangeTab(this.id)">About</button>
+					<button id="tab_1" onclick="ChangeTab(0)">About</button>
 				</div>
 				<div>
-					<button id="tab_2" onclick="ChangeTab(this.id)" >Skills</button>
+					<button id="tab_2" onclick="ChangeTab(1)" >Skills</button>
 				</div>
 				<div>
-					<button id="tab_3" href="https://drive.google.com/file/d/1NQfgzrI_ZoFFIefUjwHGRxk-qJC14wyg/view?usp=sharing">Resume</button>
+					<a id="tab_3" href="https://drive.google.com/file/d/1NQfgzrI_ZoFFIefUjwHGRxk-qJC14wyg/view?usp=sharing" target="_blank">Resume</a>
 				</div>
 				<div>
-					<button id="tab_4" onClick="ChangeTab(this.id);">Contact Me</button>
+					<button id="tab_4" onClick="ChangeTab(2)">Contact Me</button>
 				</div>
 			</div>
 		</header>
-
-		<div id="about">
+		<div class="sections" id="about">
 			<img id="self" src="./img/self.png">
 			<p id="bio">
 				Hi,<br>I'm Alex Brostowin. I'm a student at John Jay majoring in computer science. I have experience in object oriented programming and web development. Besides that, I love spending my time brewing coffee, reading, and learning new things.	
 			</p>
 		</div>
 
-		<div id="skills">
+		<div class ="sections" id="skills">
 			<p>These are some languages I'm experienced in.</p>
 			<div id="skill_icons">
 				<img id="cpp_logo" href="#" src="./img/cpp_logo">
@@ -43,9 +42,10 @@
 				<img id="html_logo" href="#" src="./img/html_logo">
 				<img id="js_logo" href="#" src="./img/js_logo">
 			</div>
+		</div>
 
-		<div id="contact_me">
-			<p id="contact_me_heading">Here are several ways you can contact me.</p>
+		<div class="sections" id="contact_me">
+			<p>Here are several ways you can contact me.</p>
 			<a href="mailto:alexbrostowin@gmail.com">Email</a>
 			<a href="https://github.com/alexbrostowin">GitHub</a>
 			<a href="https://www.linkedin.com/in/alex-brostowin/">LinkedIn</a>
