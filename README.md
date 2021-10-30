@@ -1,4 +1,4 @@
-# 2022TTP-Leandro Gamarra-Project
+## 2022TTP-Leandro Gamarra-Project
 
 # Leandro Gamarra Portfolio Website
 
