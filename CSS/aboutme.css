@@ -91,3 +91,17 @@
   color: #f12711;
   transition: all 0.3s ease;
 }
+div {
+  width: 500px;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+div.par {
+  word-wrap: break-word;
+}
+
+div.vids{
+  padding-left: 50px;
+}
