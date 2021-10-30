@@ -1,5 +1,8 @@
 @font-face { font-family: Space_Mono; src: url('Space_Mono/SpaceMono-Regular.ttf'); } 
 @font-face { font-family: Space_Mono; font-weight: bold; src: url('Space_Mono/SpaceMono-Bold.ttf');}
+html{
+	scroll-behavior: smooth;
+}
 body{
 
 	margin: 0;
@@ -11,12 +14,20 @@ body{
 div, section, span, ul, li, a, header{
     box-sizing: border-box;
 }
+
 .nav{
-	background-color: white;
-	color: black;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	overflow: hidden;
+	background-color: black;
+	color: white;
 	list-style: none;
 	text-align: right;
-	padding: 20px 0 0 0;
+	padding: 20px 0 40px 0;
+	z-index: 9;
+	transition: top 0.3s;
+	
 
 }
 .nav > li{
@@ -28,7 +39,8 @@ div, section, span, ul, li, a, header{
 }
 .nav >li > a{
 	text-decoration: none;
-	color: rgb(0, 0, 0);
+	font-size: 16px;
+	color: rgb(255, 255, 255);
 
 }
 .nav >li > a:hover{
@@ -40,18 +52,60 @@ div, section, span, ul, li, a, header{
 	margin: 50px auto;
 }
 .logo{
-	color: black;
+	color: red;
 	float: left;
 	padding-left: 25px;
-	font-size: 25px;
+	font-size: 24px;
 	font-family: Space_Mono;
-	font-weight: bold;
+
+}
+.logo span{
+	background: var(--color);
+	display: inline-block;
+	color: white;
+	
+	padding: 5px 5px;
+
 }
 
 .logo > a{
 	text-decoration: none;
-	color:  black;
+	color:  white;
+	font-weight: bold;
+}
+.welcome-txt{
+	position:absolute;
+	width: 600px;
+	height: 300px;
+	margin: 20% 30%;
+	text-align: center;
+}
+.welcome-txt h1{
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 60px;
+	
 
+}
+.welcome-txt a{
+	border: 1px solid white;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+	color: white;
+
+}
+.welcome-txt a:hover{
+	background: white;
+	color: black;
+}
+img{
+	max-width: 100%;
+	max-height: 100%;
 }
 .banner{
 	width: 100%;
@@ -63,21 +117,26 @@ div, section, span, ul, li, a, header{
 	height: 400px;
 }
 .contact-box{
-	background: white;
+	background: #152238;
 	display: flex;
+	padding: 20px;
+	color:white;
+	margin-top: 20px;
 
 }
 .contact-left{
-	flex-basis: 60%;
-	padding: 40px 60px;
+	flex-basis: 50%;
+	padding: 10px 60px;
 }.contact-right{
-	flex-basis: 40%;
+	flex-basis: 50%;
 	padding: 40px;
-	background-color: black;
+	background-color:#dddee5;
 	color: white;
 }
 h1{
+	text-align: center;
 	margin-top: 10px;
+	color:white;
 }
 .container p{
 	margin-top: 10px;
@@ -107,7 +166,7 @@ textarea{
 label{
 	margin-bottom: 6px;
 	display: block;
-	color: black;
+	color: white;
 }
 button{
 	background: black;
@@ -125,12 +184,14 @@ button{
 	text-align: center;
 	font-weight: 600;
 	margin-bottom: 30px;
+	
 }
 .contact-right h3{
 	font-size: 26px;
 	font-weight: 600;
 	margin-bottom: 0px;
 	text-align: center;
+	color: black;
 
 }
 .contact-right .icons{
@@ -264,7 +325,7 @@ footer{
 }
 .footer-content p{
 	max-width: 500px;
-	margin: 10px auto;
+	margin: 0px auto;
 	line-height: 28px;
 	font-size: 14px;
 
@@ -287,12 +348,12 @@ footer{
 	font-size: 1.1rem;
 }
 .socials a:hover i {
-	color:rebeccapurple
+	color:blue;
 }
 .footer-bottom{
 	background: black;
 	width: 100vw;
-	padding: 20px 0;
+	
 	text-align: center;
 
 }
@@ -320,22 +381,28 @@ section{
 }
 
 #home{
-	background: white;
+	background: rgb(204, 204, 250);
 }
 #about{
 	height: 100vh;
 	display: flex;
 	align-items: center;
-	background: black;
+	background: #152238;
 }
 #skills{
-	background: white;
+	background: #dddee5;
 }
 #project{
 	background: black;
 }
 #contact{
-	background: white;
+	background:#152238;
+
+}
+#footer{
+	height: auto;
+	width: 100vw;
+
 }
 
 /*section{
@@ -381,8 +448,10 @@ section{
 .right h1{
 	font-size: 27px;
 	font-weight: 800;
+	text-align: left;
 
 }
+
 .right p{
 	text-align: justify;
 	font-size: 20px;
@@ -396,8 +465,12 @@ section{
     text-align: center;
     font-weight: 800;
     font-size: 2.4rem;
-    margin-bottom: 2rem;
+	margin-bottom: 2rem;
+	color: black;
 }
+u{
+text-decoration-color: blue;}
+
 .grid2{
     display: grid;
     grid-template-columns: repeat(3,1fr);
