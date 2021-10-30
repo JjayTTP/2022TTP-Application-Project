@@ -237,4 +237,6 @@ window.addEventListener("load",()=>{
 
 window.addEventListener("resize", ()=>{
     adjustSideNavSectHeight();
+    updateSelectedSection();
+    updateSlider();
 });
