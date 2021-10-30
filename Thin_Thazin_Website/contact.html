@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contactstyle.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/3304ad7139.js" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <div class = "container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="https://drive.google.com/file/d/10vENnO7mEqD19Z9ZdRZMQnSbswTnnw_i/view?usp=sharing">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>   
+      </header>
+      <div class="wrapper">
+        <h2>Get In Touch</h2>
+        <div id="error_message"></div>
+
+        <form id="myform" onsubmit="return validation()">
+          <div class= "input_field">
+              <input type="text" placeholder="Name" id="name">
+          </div>
+          <div class= "input_field">
+            <input type="text" placeholder="Subject" id="subject">
+          </div>
+          <div class= "input_field">
+            <input type="text" placeholder="Phone" id="phone">
+          </div>
+          <div class= "input_field">
+            <input type="text" placeholder="Email" id="email">
+          </div>
+          <div class= "input_field">
+            <textarea placeholder="Message" id="message"></textarea>
+          </div>
+          <div class= "btn">
+            <input type="submit" >
+          </div>
+        </form>
+        
+      </div>
+</body>
+<footer class="footer">
+    <!-- <a href="mailto:thinthazin.chris@gmail.com" calss="footer__link">thinthazin.chris@gmail.com</a> -->
+    <ul class="social-list">
+        <li class = "social-list__item">
+            <a class ="social-list__link" href="mailto:thinthazin.chris@gmail.com">
+              <i class="fas fa-envelope"></i>
+            </a>
+        </li>
+        <li class = "social-list__item">
+            <a class ="social-list__link" href="https://github.com/thinthazin96">
+              <i class="fab fa-github"></i>
+            </a>
+        </li>
+        <li class = "social-list__item">
+          <a class ="social-list__link" href="https://www.linkedin.com/in/thin-thazin-641386115/">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class = "social-list__item">
+          <a class ="social-list__link" href="https://www.qwiklabs.com/public_profiles/42706f08-f5de-4119-9e0b-fe040d203a7a">
+            <i class="fas fa-cloud"></i>
+          </a>
+        </li>
+    </ul>
+    <p>© 2021 Thin Thazin</p>
+</footer>
+</html>
