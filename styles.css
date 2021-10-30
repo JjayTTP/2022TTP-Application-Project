@@ -1,10 +1,15 @@
 @font-face { font-family: Space_Mono; src: url('Space_Mono/SpaceMono-Regular.ttf'); } 
 @font-face { font-family: Space_Mono; font-weight: bold; src: url('Space_Mono/SpaceMono-Bold.ttf');}
 body{
+
 	margin: 0;
 	padding: 0;
 	font-family: Space_Mono;
 	
+	
+}
+div, section, span, ul, li, a, header{
+    box-sizing: border-box;
 }
 .nav{
 	background-color: white;
@@ -17,7 +22,7 @@ body{
 .nav > li{
 	display: inline-block;
 	padding-right: 50px;
-	font-size: 12px;
+	font-size: 25px;
 
 
 }
@@ -38,7 +43,7 @@ body{
 	color: black;
 	float: left;
 	padding-left: 25px;
-	font-size: 16px;
+	font-size: 25px;
 	font-family: Space_Mono;
 	font-weight: bold;
 }
@@ -57,11 +62,6 @@ body{
 	display: block;
 	height: 400px;
 }
-.containter{
-	width: 80%;
-	margin: 50px auto;
-
-}
 .contact-box{
 	background: white;
 	display: flex;
@@ -79,7 +79,7 @@ body{
 h1{
 	margin-top: 10px;
 }
-.containter p{
+.container p{
 	margin-top: 10px;
 }
 .input-row{
@@ -121,12 +121,16 @@ button{
 	box-shadow: 0px 5px 15px 0px rgb(100, 100, 100);
 }
 .contact-left h3{
+	font-size: 26px;
+	text-align: center;
 	font-weight: 600;
 	margin-bottom: 30px;
 }
 .contact-right h3{
+	font-size: 26px;
 	font-weight: 600;
 	margin-bottom: 0px;
+	text-align: center;
 
 }
 .contact-right .icons{
@@ -134,7 +138,7 @@ button{
 	height: 100%;
 	width: 100%;
 	place-items: center;
-	padding-bottom: 200px;
+	padding-bottom: 50px;
 
 }
 .wrapper{
@@ -229,10 +233,12 @@ button{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	line-height: 1.5;
+
 	
 }
 footer{
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -302,4 +308,135 @@ footer{
 	opacity: .4;
 	font-weight: 200;
 
+}
+:root{
+	--color:blue;
+}
+section{
+    width: 100%;
+    float: left;
+    height: 100vh;
+    position: relative;
+}
+
+#home{
+	background: white;
+}
+#about{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	background: black;
+}
+#skills{
+	background: white;
+}
+#project{
+	background: black;
+}
+#contact{
+	background: white;
+}
+
+/*section{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	background: black;
+}*/
+
+.container1{
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 20px;
+
+}
+.grid{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 2.5rem;
+	align-items: center;
+	justify-content: center;
+}
+.left img{
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+.right > *{
+	margin-bottom: 1.1rem;
+	color: white;
+
+}
+.right h4{
+	font-weight: 500;
+	background: var(--color);
+	display: inline-block;
+	padding: 5px 15px;
+	font-size: 26px;
+	border-radius: 4px;
+
+}
+.right h1{
+	font-size: 27px;
+	font-weight: 800;
+
+}
+.right p{
+	text-align: justify;
+	font-size: 20px;
+}
+@media (max-width:768px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
+.title{
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.grid2 .item{
+    text-align: center;
+}
+.item img{
+    height: 100px;
+	width: 100px;
+}	
+   /* border: 10px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    line-height: 80px;
+    font-size: 2.5rem;
+    transition: .3s linear;
+}
+/*.item img:hover{
+    border: 10px solid #95b8dd;
+    background: #0078ff;
+    color: #fff;
+}
+*/
+.grid2 .item h3{
+    margin: 1rem 0;
+	font-weight: 700;
+	font-size: 26px;
+}
+
+@media (max-width:768px){
+    .grid2{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:540px){
+    .grid2{
+        grid-template-columns: 1fr;
+    }
 }
