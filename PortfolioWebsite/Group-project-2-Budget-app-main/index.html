@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+  <link type="text/css" rel="stylesheet" href="assets/style.css" />
+  <title>Budget App</title>
+  
+   
+</head>
+<body>
+  
+  <div class="top" style="background-image: url('assets/img/background.jpg'); position: relative;">
+ 
+     <div class="budget">
+      <div class="budget__title">Available Budget in <span class="budget__title--month">%Month%</span>:</div>
+
+      <div class="budget__value">+ 2,345.64</div>
+     
+     
+      <div class="budget__income clearfix">
+        <div class="budget__income--text">Income</div>
+        <div class="right">
+          <div class="budget__income--value">+ 4,300.00</div>
+          <div class="budget__income--percentage">&nbsp;</div>
+        </div>
+      </div>
+      <div class="budget__expenses clearfix">
+        <div class="budget__expenses--text">Expenses</div>
+        <div class="right clearfix">
+          <div class="budget__expenses--value">- 1,954.36</div>
+          <div class="budget__expenses--percentage">45%</div>
+        </div>
+      </div>
+      </div>
+ 
+  </div>
+  
+
+
+   <!--Begining of Pie chart code by Ana D-->
+   <!--figure class="pie-chart">
+=======
+ <!--  <figure class="pie-chart">
+>>>>>>> c2b1de10084bf2f0ae8ce2307ac634d25f4e4738
+    <h2>Title</h2>
+    <figcaption>
+        Category 1<span style="color:#f28e2c"></span><br>
+        Category 2<span style="color:#e15759"></span><br>
+        title<span style="color:#c9bd92"></span>
+    </figcaption>
+    <cite>app name</cite>
+</figure>-->
+<!---end of piechart code-->
+
+  <div class="bottom">
+    <div class="add">
+    
+      <div class="add__container">
+        <p class="Add_income">Add Income: </p>
+        <input type="text" class="add__description_plus" placeholder="Add Income" />
+        <input type="number" step="50" class="add__value_plus" placeholder="Value" />
+        
+        <button class="add__btn_plus">
+          <i class="ion-ios-plus-outline"></i>
+        </button>
+      </div>
+      
+    <div>
+      <div class="bottom">
+        <div class="add">
+       
+          <div class="add__container">
+            <p class="Add_income">Add Expense: </p>
+            <input type="text" class="add__description_minus" placeholder="Add Expense" />
+            <input type="number" step="50" class="add__value_minus" placeholder="Value" />
+            <button class="add__btn_minus">
+              <i class="ion-ios-minus-outline"></i>
+            </button>
+          </div>
+        <div>
+
+
+    </div>
+
+    <div class="container clearfix">
+      <div class="income">
+        <h2 class="income__title">Income</h2>
+
+        <div class="income__list">
+          
+        </div>
+      </div>
+
+      <div class="expenses">
+        <h2 class="expenses__title">Expenses</h2>
+
+        <div class="expenses__list">
+         
+        </div>
+      </div>
+    </div>
+
+    <center><button onclick="clearEverything()" class="clear-button">Clear all</button></center>
+    <center> <div id="chartContainer" style="height: 300px; width: 100%;"></div></center>
+      <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <div class="row">
+    <blockquote class="insipirationalQuotes">
+      <h1>"A penny for your thoughts?"</h1>
+    </blockquote>
+    </div>
+  
+    <div class="row">
+    <div class="column">
+    <blockquote class="insipirationalQuotes">
+      <p class="quote">"Don't tell me what you value, show me your budget, and I'll tell you what you value."</p>
+      <p class="author">- Joe Biden</p> 
+    </blockquote>
+    <div class="column">
+      
+    </div> 
+    <blockquote class="insipirationalQuotes">
+      <p class="quote">"You don’t have to see the whole staircase, just take the first step.”</p>
+      <p class="author">- Martin Luther King, Jr.</p>      
+    </blockquote>
+    </div>
+    <div class="column">
+   
+    <blockquote class="insipirationalQuotes">
+      <p class="quote">"Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver."</p>
+      <p class="author">- Ayn Rand</p>
+    </blockquote>
+    <div class="column">
+
+    </div>
+    <blockquote class="insipirationalQuotes">      
+      <p class="quote">"Save today, so you won't sweat tomorrow!"</p>
+      <p class="author">- Cherrise Hatcher</p>
+    </blockquote>
+     </div>
+    </div>
+  </div>
+  <div>
+  <center><a href="https://i.pinimg.com/originals/06/96/b9/0696b9c52134f62699b998d1a2252f8c.gif"><button class="donate-button">Donate</button></a></center>
+  </div>
+  <script src="app.js"></script> 
+
+<!-- footer stuff (Uri) -->
+<footer>
+  <p>Images courtesy of <a href="http://images.google.com/">Google</a>.</p>
+  <p>Ana, Cherrise, Jo, Reagan, Frank, Uri, Nikol, and Cenk</p>
+  <ul>
+    <li><a href="https://twitter.com/?lang=en"><i id="tw" class="fa fa-twitter-square fa-2x"></i></a></li>
+    <li><a href="https://www.youtube.com/"><i id="yt" class="fa fa-youtube-square fa-2x"></i></a></li>
+    <li><a href="https://github.com/"><i id="gh" class="fa fa-github fa-2x"></i></a></li>
+    <li><a href="https://www.facebook.com/"><i id="fb" class="fa fa-facebook-square fa-2x"></i></a></li>
+  </ul>
+</footer>
+</body>
+</html>

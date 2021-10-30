@@ -12,6 +12,7 @@
 
         <!--stylsheet link-->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/skillscarosouel.css">
         <!--<link rel="stylesheet" href="css/stars-background.css">-->
         <!--<link rel="stylesheet" href="css/codepensocialsbuttons.css"> css for codepen socialsbuttons-->
 
@@ -28,7 +29,7 @@
 
     <body>
         <header>
-            <div class="logo" ><a href="index.html"><img src="img/devjane.png" alt=""></a>
+            <div class="logo" ><a href="index.html"><img src="img/ccaferlogo.jpeg" alt=""></a>
                 <!--<img src="img/devjane.png" alt=""> -->
                 <!--<h1 class="logo"><a href="index.html">DevFolio</a></h1>--> 
             </div>
@@ -43,7 +44,8 @@
                     <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-                    <li class="nav__item"><a href="#professional-experience" class="nav__link">Professional Experience</a></li>
+                    <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
                     <li class="nav__item"><a href="#extracirriculars" class="nav__link">Extracirriculars</a></li>
                     <li class="nav__item"><a href="https://docs.google.com/document/d/1v1Xt2tK-hCZZoDq9mhvD9p3Erw46pjhF9WzkCG7O3Pg/edit" class="nav__link">Resume</a></li>
                 </ul>
@@ -60,9 +62,13 @@
                 Hi, I am <strong>Cenk Cafer</strong>
             </h1>
 
-            <p class="section__subtitle section__subtitle--intro">Full Stack Developer</p>
-            <img src="img/dev-jane-01.jpg" alt="a picture of Cenk Cafer smiling" class="intro__img">
-
+            <p class="section__subtitle section__subtitle--intro">Full Stack Developer
+            &nbsp;<a href="https://github.com/cenkcafer"><i class="fab fa-github"></i></a>&nbsp;
+                <a href="https://www.linkedin.com/in/cenk-cafer/"><i class="fab fa-linkedin"></i></a>&nbsp;
+            </p>
+                <br>
+            <img src="img/selfie1.jpg" alt="a picture of Cenk Cafer smiling" class="intro__img">
+                <br>
             <a href="https://docs.google.com/document/d/1v1Xt2tK-hCZZoDq9mhvD9p3Erw46pjhF9WzkCG7O3Pg/edit" class="button1">Resume</a>
             <a href="mailto:cenk.s.cafer@gmail.com" class="button1">Contact Me</a>
 
@@ -71,30 +77,210 @@
         
         <!-- My services -->
         <section class="my-services" id="services">
-
             <h2 class="section__title section__title--services">What I do</h2>
-
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
             <div class="services">
-
                 <div class="service">
-                    <h3>Design + Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div> <!-- / service -->
-                
-                <div class="service">
-                    <h3>E-Commerce</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div> <!-- / service -->
-                
-                <div class="service">
-                    <h3>WordPress</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div> <!-- / service -->
-
-            </div> <!-- / services -->
+                    <br>
+                        <br>
+                    <div class="skillSection" >
+                        <br>
+                        <br>
+                        <div class="selectedSkill">
+                            <button onclick="prevSkill()" id="skillPrev" ><h1>&#xab;</h1></button>
+                            <div class="skillTitleCont">
+                                <div class="skillTitleWrapper selectedSkillTitle">
+                                    <h1 class="skillTitle" >Front End Development</h1>
+                                </div>
+                            </div>
+                            <button onclick="nextSkill()" id="skillNext" ><h1>&#xbb;</h1></button>
+                        </div>
+                        <br>
+                        <br>
+                       
+                        <div class="skillDisplay">
+                            <div class="skillWrapper selectedSkillInfo" id="frontEndSkill">
+                                <div class="skillImages">
+                                    <div class="skillImgWrapper">
+                                        <img src="img/html5.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">HTML5</div>
+                                        </div>
+                                    </div>
+                                    <div class="skillImgWrapper">
+                                        <img src="img/javascript.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">Javascript</div>
+                                        </div>
+                                    </div>
+                                    <div class="skillImgWrapper">
+                                        <img src="img/css.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">CSS3</div>
+                                        </div>
+                                    </div>
+                                    <div class="skillImgWrapper">
+                                        <img src="img/jquery.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">Jquery</div>
+                                        </div>
+                                    </div>
+                                    <div class="skillImgWrapper">
+                                        <img src="img/react.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">React</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="skillDescr">
+                                    <li>UI/UX Design</li>
+                                    <li>Built and hosted live websites</li>
+                                    <li>Created attractive UI with quick and easy navigation </li>
+                                    <li>Integrated multiple functions while maintaining responsivity</li>
+                                </ul>
+                            </div>
+                            <div class="skillWrapper" id="backEndSkill">
+                                <div class="skillImages">
+                                    <div class="skillImgWrapper">
+                                        <img src="img/php.svg">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">PHP</div>
+                                        </div>
+                                    </div>
+                                    <div class="skillImgWrapper">
+                                        <img src="img/pythonIcon.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">Python</div>
+                                        </div>
+                                    </div>
+                                    <div class="skillImgWrapper">
+                                        <img src="img/cpp.svg">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">CPP</div>
+                                        </div>
+                                    </div>
+                                    <div class="skillImgWrapper">
+                                        <img src="img/express.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">Express</div>
+                                        </div>
+                                    </div>
+                                    <div class="skillImgWrapper">
+                                        <img src="img/nodejs.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">Node JS</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="skillDescr">
+                                    <li>Integrated backend code with front end functionality</li>
+                                    <li>Configured websites to be hosted on to the world wide web</li>
+                                    <li>Established conenectivity of front end UI to back end functions</li>
+                                    <li>Created back end functions to calculate numbers in real time</li>
+                                </ul>
+                            </div>
+                            <div class="skillWrapper" id="DBArchitectureSkill">
+                                <div class="skillImages">
+                                    <div class="skillImgWrapper">
+                                        <img src="img/mysql.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">MySQL</div>
+                                        </div>
+                                    </div>
+                                    <div class="skillImgWrapper">
+                                        <img src="img/postgresql.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">PostgreSQL</div>
+                                        </div>
+                                    </div>
+                                    <div class="skillImgWrapper">
+                                        <img src="img/mongo.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">Mongo Database</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="skillDescr">
+                                    <li>Connected database to calculator to give live results</li>
+                                    <li>Wranlged data using SQL and R to filter data sets</li>
+                                    <li>Cleaned data and practiced data hygeine along with agile processes</li>
+                                    <li>Created UI that takes data and computes live results</li>
+                                </ul>
+                            </div>
+                            <div class="skillWrapper" id="softwareEngineeringSkill">
+                                <div class="skillImages">
+                                    <div class="skillImgWrapper">
+                                        <img src="img/cpp.svg">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">CPP</div>
+                                        </div>
+                                    </div>
+                                    <div class="skillImgWrapper">
+                                        <img src="img/java.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">Java</div>
+                                        </div>
+                                    </div>
+                                    <div class="skillImgWrapper">
+                                        <img src="img/pythonIcon.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">Python</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="skillDescr">
+                                    <li>Implemented algorthimic encoding to compress data to save space</li>
+                                    <li>Orchestrated a big team of engineers to work together on solving problems</li>
+                                    <li>Expereinced teamwork in high pace enviorments</li>
+                                </ul>
+                            </div>
+                            <div class="skillWrapper" id="analyticsSkill">
+                                <div class="skillImages">
+                                    <div class="skillImgWrapper">
+                                        <img src="img/r logo.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">R</div>
+                                        </div>
+                                    </div>
+                                    <div class="skillImgWrapper">
+                                        <img src="img/Ipython.png">
+                                        <div class="skillImgText">
+                                            <div class="imgTextPointer"></div>
+                                            <div class="imgTextCont">IPython</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="skillDescr">
+                                    <li>Filtered data sets using SQL and R to determine leading cause of death in nyc</li>
+                                    <li>Presented and coordinated group of data scientists to accurately predict results</li>
+                                    <li>Created a R studio lab work station to filter data and R mark down to present data.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
             
-            <a href="#work" class="btn">My Work</a>
-
         </section>
         
         
@@ -113,7 +299,7 @@
                 </p>
            </div>
            
-           <img src="img/dev-jane-02.jpg" alt="Jane leaning against a bus" class="about-me__img">
+           <img src="img/selfie2.jpg" alt="Jane leaning against a bus" class="about-me__img">
 
         </section>
         
@@ -126,23 +312,23 @@
 
             <div class="portfolio">
                 <!-- Portfolio item 01 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-01.jpg" alt="" class="portfolio__img">
+                <a href="Group-project-2-Budget-app-main/index.html" class="portfolio__item">
+                    <img src="img/proj1budgetapp_adobespark.jpeg" alt="" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 02 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-02.jpg" alt="" class="portfolio__img">
+                <a href="numberGuessingGame/index.html" class="portfolio__item">
+                    <img src="img/guessgamepic_adobespark.png" alt="" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 03 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
+                <a href="TTP_Travelling_Site-main/index.html" class="portfolio__item">
+                    <img src="img/cachetravel_adobespark.png" alt="" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 04 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
+                <a href="" class="portfolio__item">
+                    <img src="img/todolist_adobespark.png" alt="" class="portfolio__img">
                 </a>
                 
 
@@ -151,36 +337,81 @@
 
 
          <!-- I added this for another section for professional expereience -->
-         <section class="professional-experience" id="professional-experience">
-            <h2 class="section__title section__title--work">Professional Experience</h2>
+         <section class="professional-experience" id="experience">
+            <h2 class="section__title section__title--work">Experience</h2>
             <p class="section__subtitle section__subtitle--work">Companies I worked for</p>
             
 
             <div class="portfolio">
                 <!-- Portfolio item 01 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-01.jpg" alt="" class="portfolio__img">
+                <a href="https://www.dtcc.com/" class="portfolio__item">
+                    <img src="img/dtcclogo1.png" alt="" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 02 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-02.jpg" alt="" class="portfolio__img">
+                <a href="https://www.census.gov/" class="portfolio__item">
+                    <img src="img/uscenlogo.jpeg" alt="" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 03 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
+                <a href="https://www.bernsteinre.com/" class="portfolio__item">
+                    <img src="img/Bsteinlogo_adobespark.jpeg" alt="" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 04 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
+                <a href="https://www.autozone.com/" class="portfolio__item">
+                    <img src="img/aznelogo.png" alt="" class="portfolio__img">
                 </a>
                 
         
             </div>
         </section>
 
+        <!-- I added this for another section for Education -->
+        <section class="education" id="education">
+            <h2 class="section__title section__title--work">Education</h2>
+            <p class="section__subtitle section__subtitle--work">Formal education and relevant courses</p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="https://www.jjay.cuny.edu/" class="portfolio__item">
+                    <img src="img/jjlogo.png" alt="" class="portfolio__img">
+                </a>
+                
+                <div>
+                    <h3>Bachelor of Science, Computer Science and Information Security, 3.4 GPA</h3>
+                    <p>Completed courses in:<br>
+                        -Advanced Data Structures<br>
+                        -C++<br>
+                        -Python<br>
+                        -R<br>
+                        -Machine Learning<br>
+                        -Probability Theory<br>
+                        -Cryptography and Cryptanalysis<br>
+                        -Cyber Ethics<br>
+                        -Computer Security and Forensics<br>
+                    </p>
+                </div>
+                
+                <!-- Portfolio item 03 -->
+                <a href="https://www.kbcc.cuny.edu/ce/" class="portfolio__item">
+                    <img src="img/kbcclogo.jpeg" alt="" class="portfolio__img">
+                </a>
+                <div>
+                    <h3>Associate of Science - Computer Science, 3.2 GPA</h3>
+                        <p>Completed courses in:<br>
+                            -Differential Equations<br>
+                            -Multi-Variable Calculus<br>
+                            -Linear Algebra<br>
+                            -Discrete Mathematics<br>
+                            -Business Statistics<br>
+                            -Tutored Math in College Algebra, Pre-Calculus and Business Statistics<br>
+                        </p>
+                </div>
+                
+            </div>
+        </section>
+    
 
         <!-- I added this for another section for Extracirriculars -->
         <section class="extracirriculars" id="extracirriculars">
@@ -189,23 +420,23 @@
             
             <div class="portfolio">
                 <!-- Portfolio item 01 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-01.jpg" alt="" class="portfolio__img">
+                <a href="https://codepath.org" class="portfolio__item">
+                    <img src="img/codepathlogo1.jpeg" alt="" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 02 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-02.jpg" alt="" class="portfolio__img">
+                <a href="https://streetwisepartners.org" class="portfolio__item">
+                    <img src="img/swplogo1.jpeg" alt="" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 03 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
+                <a href="https://www.yearup.org" class="portfolio__item">
+                    <img src="img/yearuplogo1.jpeg" alt="" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 04 -->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
+                <a href="https://www.techtalentpipeline.nyc/" class="portfolio__item">
+                    <img src="img/nycttplogo.jpeg" alt="" class="portfolio__img">
                 </a>
                 
 

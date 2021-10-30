@@ -1,0 +1,240 @@
+#sectionThree{
+    display: flex;
+    flex-direction: column;
+    padding: min(8vw,70px) 0 min(10vw,400px) 0;
+    align-content: center;
+    align-items: center;
+    position: relative;
+}
+.mySkills{
+    min-width: 350px;
+    width: 60vw;
+    height: auto;
+}
+
+.skillSection{
+    width: 200%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.selectedSkill{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: #303030;
+    align-items: center;
+}
+
+.skillTitleCont{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    font-size: 2vw;
+    overflow: hidden;
+    align-items: center;
+}
+
+.skillTitleWrapper{
+    width: 0;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    -webkit-transition: width 0.3s ease-in-out;
+    -moz-transition: width 0.3s ease-in-out;
+    -o-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+    opacity: 0.6;
+    transition: opacity 0.3;
+}
+
+.skillTitle{
+    font-family: 'Comfortaa', cursive;
+    font-size: 6vw;
+    line-height: 1.2em;
+    margin: auto;
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding-top: 0px;
+    
+}
+
+.selectedSkillTitle{
+    width: 100%;
+    opacity: 1;
+}
+
+.selectedSkill button{
+    width: auto;
+    height: inherit;
+    font-size: 1.8em;
+    font-family: 'Comforataa', cursive;
+    background-color: rgb(190, 21, 21);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 0 0.5em;
+}
+.selectedSkill button:hover{
+    background-color: #ff1313;
+}
+
+#skillPrev h1{
+    margin: 0px;
+}
+#skillNext h1{
+    margin: 0px;
+}
+
+.skillDisplay{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.skillWrapper{
+    width: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    -webkit-transition: width 0.3s ease-in-out;
+    -moz-transition: width 0.3s ease-in-out;
+    -o-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+
+    /* border: 1px solid red; */
+}
+
+.selectedSkillInfo{
+    width: 100%;
+}
+
+.skillImages{
+    width: 100%;
+    height: 275px;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    padding-bottom: auto;
+    user-select: none;
+}
+
+.skillImgWrapper{
+    height: 7vw;
+    width: 7vw;
+    position: relative;
+    box-sizing: border-box;
+	
+	border-radius: 50%;
+	overflow: visible;
+	
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 0.4em;
+    margin: auto;
+}
+.skillImgWrapper:hover{
+    
+}
+
+.skillImgWrapper img{
+    width: 2.6em;
+    height: fit-content;
+    margin: 0;
+}
+.skillImgWrapper:hover{
+    animation: none;
+}
+.skillImgWrapper:hover > .skillImgText{
+    display: flex;
+}
+
+@keyframes float {
+	0% {
+		
+		transform: translatey(0px);
+	}
+	50% {
+		
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgb(255, 26, 26);
+		transform: translatey(0px);
+	}
+}
+
+.skillImgText{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-content: center;
+    align-items: center;
+    top: 4em;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    display: none;
+    pointer-events: none;
+}
+.imgTextPointer{
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #ff3131;
+}
+.imgTextCont{
+    margin: 0;
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.7em;
+    background-color: #f72222;
+    border-radius: 10px;
+    padding: 0 0.6em;
+    font-family: 'Comfortaa', cursive;
+}
+
+.skillDescr{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+.skillDescr li{
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.5em;
+    color: #ffffff;
+
+}
+.skillDescr li::before{
+    content: "";
+    border-color: transparent rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 0.30em 0 0.30em 0.40em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 1em;
+    position: relative;
+}
