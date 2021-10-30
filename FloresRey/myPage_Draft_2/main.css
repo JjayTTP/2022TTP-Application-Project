@@ -7,6 +7,9 @@ body{
     height: 100%;
     position: absolute;
 }
+::selection{
+    background: rgb(222, 13, 13);
+}
 /* ------------------------------------------------- loading page ------------------------------------------ */
 .loadingPage{
     display: block;
@@ -101,7 +104,6 @@ body{
     left: 80px;
     top: 50%;
     transform: translateY(-50%);
-    /* text-align: center; */
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -160,9 +162,6 @@ body{
     appearance: none;
     height: 20px;
     width: 0;
-    /* width: 20px;
-    height: 20px;
-    border-radius: 50%;  */
     background: #d6d9de;
     cursor: pointer;
   }
@@ -191,13 +190,11 @@ body{
 /* ---------------------------------- main sections ------------------------------- */
 
 .sectionContainer{
-    display: block;
+    display: inline-block;
     position: relative;
     width: 100%;
     height: auto;
     margin: 0;
-    background-color: red;
-    /* border-bottom: 1px solid rgb(212, 255, 0); */
 }
 
 /* --------------------- section One ---------------- */
@@ -212,14 +209,13 @@ body{
 .greetings{
     display: block;
     margin: auto;
-    width: 60%;
-    min-width: 350px;
+    width: 900px;
     height: auto;
     text-align: left;
 }
 .greetings p{
     font-family: 'Poppins', sans-serif;
-    font-size: min(2.7vw,30px);
+    font-size: 30px;
     color: #f7fdff;
     font-weight: lighter;
     margin: 0;
@@ -228,16 +224,17 @@ body{
 .nameContainer{
     display: block;
     width: 100%;
-    height: min(8vw,100px);
+    height: 100px;
+    overflow: visible;
 }
 .myName{
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    font-size: min(8vw,100px);
+    font-size: 100px;
     width: fit-content;
     color: #00ffef;
-    line-height: min(8vw, 100px);
-    
+    line-height: 100px;
+
     border-right: solid rgb(255, 255, 255);
 
     animation: blink-caret 1s step-end infinite;
@@ -248,20 +245,20 @@ body{
   }
 .greetings h2{
     margin: 0;
-    margin-top: 2vw;
+    margin-top: 30px;
     font-family: 'Poppins', sans-serif;
-    font-size: min(3vw,25px);
+    font-size: 25px;
     color: rgb(15, 139, 234);
 }
 #resumeLink{
-    margin-top: 3vw;
+    margin-top: 40px;
     display: block;
     font-family: 'Poppins',sans-serif;
     width: fit-content;
     height: auto;
-    font-size: min(4vw,35px);
+    font-size: 30px;
     text-decoration: none;
-    padding: 0 10px;
+    padding: 2px 20px;
     border-radius:5px;
     color: #00d0ff;
     border: 2px solid rgb(5, 84, 201);
@@ -270,22 +267,38 @@ body{
     background-color:rgba(19, 167, 230,0.4);
 }
 
+@media screen and (max-width:1100px){
+    .greetings{
+        width: 70vw !important;
+    }
+    .greetings p{
+        font-size: min(3.5vw,35px) !important;
+        margin-bottom: 1vw !important;
+    }
+    .nameContainer{
+        min-height: 60px;
+        height: 11vw !important;
+    }
+    .myName{
+        font-size: min(12.5vw,100px) !important;
+        line-height: min(12.5vw,100px) !important;
+    }
+    .greetings h2{
+        font-size: min(3.5vw,20px) !important;
+        margin-top: min(5vw,30px) !important;
+    }
+}
+
 /* --------------------- section Two ---------------- */
 
-#sectionTwo{
-    display: flex;
-    flex-direction: column;
-    padding: min(8vw,70px) 0 min(10vw,400px) 0;
-    align-content: center;
-    align-items: center;
-    position: relative;
-}
 
 .aboutMe{
     display: flex;
     flex-direction: column;
     min-width: 350px;
-    width: 60vw;
+    width: 1000px;
+    /* margin: 5vw auto 13vw auto; */
+    margin: 60px auto 250px auto;
 }
 
 .sectionBanner{
@@ -294,7 +307,8 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: min(5vw,80px);
+    margin-bottom: 100px;
+    user-select: none;
 }
 .sectionBanner div{
     flex-grow: 1;
@@ -312,6 +326,12 @@ body{
     padding: 0 20px;
 }
 
+@media screen and (max-width:880px){
+    .sectionBanner{
+        margin-bottom: 6vw;
+    }
+}
+
 .myInfo{
     display: flex;
     width: 100%;
@@ -320,14 +340,13 @@ body{
 }
 
 .myInfoText{
-    min-width: 350px;
-    flex-grow: 1;
+    width: 65%;
     height: auto;
     display: block;
-    padding: 0 2vw 0 0;
+    padding: 0 15px;
 }
 .myImgContainer{
-    min-width: 20vw;
+    width: 35%;
     min-height: 350px;
     height: auto;
     display: flex;
@@ -335,7 +354,42 @@ body{
     align-content: center;
 }
 
+.myInfoText h1{
+    margin: 0;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: rgb(15, 139, 234);
+}
+
+.myImg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+@media screen and (max-width:1250px){
+    .aboutMe{
+        width: 70vw !important;
+    }
+    .myInfoText{
+
+    }
+    .myInfoText h1{
+        font-size: 20px !important;
+        line-height: 30px !important;
+    }
+    .myImg{
+        height: 23vw !important;
+        width: auto !important;
+    }
+}
 @media screen and (max-width:880px){
+    .aboutMe{
+        margin: 0 auto 5vw auto !important;
+    }
     .myInfo{
         flex-direction: column;
     }
@@ -345,255 +399,243 @@ body{
         height: 50vw !important;
         width: 50vw !important;
     }
-}
+    .myInfoText{
+        width: 100%;
+        padding: 0;
+    }
+    .myImgContainer{
+        width: 100%;
+    }
+    .myInfoText h1{
+        font-size: max(2vw,18px) !important;
 
-.myInfoText h1{
-    margin: 0;
-    font-family: 'Hind Siliguri', sans-serif;
-    font-size: min(2.8vw,20px);
-    line-height: min(3.5vw,32px);
-
-    color: rgb(15, 139, 234);
-}
-
-.myImg{
-    position: relative;
-    width: 100%;
-    height: 20vw;
-    margin: auto;
+    }
 }
 
 /* --------------------- section Three ---------------- */
-#sectionThree{
-    display: flex;
-    flex-direction: column;
-    padding: min(8vw,70px) 0 min(10vw,400px) 0;
-    align-content: center;
-    align-items: center;
-    position: relative;
-}
-.mySkills{
-    min-width: 350px;
-    width: 60vw;
-    height: auto;
-}
 
 .skillSection{
+    min-width: 350px;
+    width: 1000px;
+    min-height: 570px;
+    height: auto;
+    /* margin: 4vw auto 15vw auto; */
+    margin: 60px auto 250px auto;
+}
+
+.mySkills{
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: column;
-    margin-top: 5vw;
-}
-
-.selectedSkill{
-    width: 100%;
-    height: 4vw;
-    display: flex;
     flex-direction: row;
-    background-color: #58E2C5;
-    align-items: center;
+
 }
 
 .skillTitleCont{
-    width: 100%;
-    height: inherit;
+    height: fit-content; /*set to auto*/
+    width: 25%;
     display: flex;
     flex-direction: row;
-    font-size: 2vw;
-    overflow: hidden;
-    align-items: center;
+
+}
+.skillIndicatorCont{
+    width: 1%;
+    height: auto;
+    position: relative;
+
+    background-color: rgb(8, 77, 120);
 }
 
-.skillTitleWrapper{
-    width: 0;
-    height: 100%;
-    display: block;
-    overflow: hidden;
-    -webkit-transition: width 0.3s ease-in-out;
-    -moz-transition: width 0.3s ease-in-out;
-    -o-transition: width 0.3s ease-in-out;
-    transition: width 0.3s ease-in-out;
-    opacity: 0.6;
-    transition: opacity 0.3;
-}
-
-.skillTitle{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.6em;
-    line-height: 1.6em;
-    margin: 0 auto;
+.skillIndicator{
     width: 100%;
-    height: 100%;
-    text-align: center;
+    /* height: 2.8vw; */
+    position: relative;
+    height: 55px;
+
+    background-color: turquoise;
+}
+
+.skillTitles{
+    width: 99%;
+    height: auto;
+    display: block;
+}
+
+.skillTitleItem{
+    width: 100%;
+    /* height: 2.8vw;
+    font-size: 1vw; */
+    height: 55px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    user-select: none;
+}
+.skillTitleItem:hover{
+    background-color: #194680;
+}
+.skillTitleItem:hover h1{
+    color: turquoise;
 }
 
 .selectedSkillTitle{
-    width: 100%;
-    opacity: 1;
+    background-color: #194680;
+}
+.selectedSkillTitle h1{
+    color: turquoise !important;
 }
 
-.selectedSkill button{
-    width: auto;
-    height: inherit;
-    font-size: 1.8em;
+.skillTitleItem h1{
+    margin: 0 auto;
+    width: fit-content;
+    height: fit-content;
+    font-size: 1em;
+    white-space: nowrap;
     font-family: 'Poppins',sans-serif;
-    background-color: rgb(27, 127, 193);
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    padding: 0 0.5em;
-}
-.selectedSkill button:hover{
-    background-color: rgb(6, 83, 171);
+    /* color: turquoise; */
+    font-weight: lighter;
+    color: rgb(79, 100, 101);
 }
 
-#skillPrev h1{
-    margin: 0;
-}
-#skillNext h1{
-    margin: 0;
-}
-
-.skillDisplay{
-    width: 100%;
+.skillInfo{
     height: auto;
+    width: 75%;
     display: flex;
     flex-direction: row;
 }
 
-.skillWrapper{
-    width: 0;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-
-    -webkit-transition: width 0.3s ease-in-out;
-    -moz-transition: width 0.3s ease-in-out;
-    -o-transition: width 0.3s ease-in-out;
-    transition: width 0.3s ease-in-out;
-
-    /* border: 1px solid red; */
+.skillInfoItem{
+    width: 100%;
+    height: auto;   
+    display: none;
+    -webkit-animation: fadeIn 0.25s;
 }
-
 .selectedSkillInfo{
-    width: 100%;
+    display: block;
 }
 
-.skillImages{
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0.2;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.skillImgs{
     width: 100%;
-    height: 14vw;
-    font-size: 2vw;
+    height: auto;
     display: flex;
     flex-direction: row;
+    /* margin-bottom: 1.5vw; */
+    margin-bottom: 25px;
     align-items: center;
-    align-content: center;
-    padding: 0;
-    user-select: none;
-
-    /* border: 1px solid red; */
 }
 
-.skillImgWrapper{
-    height: 8vw;
-    width: 8vw;
-    position: relative;
-    box-sizing: border-box;
-	border: 5px white solid;
-	border-radius: 50%;
-	overflow: visible;
-	box-shadow: 0 5px 15px 0px rgba(22, 198, 228, 0.6);
-	transform: translatey(0px);
-	animation: float 6s ease-in-out infinite;
+.skillImgItem{
+    width: auto;
+    height: fit-content;
+    /* margin:  0.5vw auto; */
+    margin: 15px auto;
     display: flex;
-    align-content: center;
     align-items: center;
-    padding: 0.6em;
+    position: relative;
+}
+.skillImgItem img{
+    /* width: 3.8vw; */
+    width: 90px;
+    height: auto;
     margin: 0 auto;
 }
-.skillImgWrapper:hover{
-    background-color: rgba(31, 198, 139, 0.7);
+
+#skillImg_PHP{
+    width: 120px;
+}
+#skillImg_Express{
+    width: 140px;
+    filter: invert(1);
+}
+#skillImg_Java{
+    width: 80px;
+}
+#skillImg_MySQL{
+    width: 150px;
+}
+#skillImg_mongoDB{
+    width: 200px;
+}
+#skillImg_Ipython{
+    width: 140px;
+    filter: invert(1);
+}
+#skillImg_NodeJS{
+    width: 140px;
+}
+#skillImg_Git{
+    width: 140px;
 }
 
-.skillImgWrapper img{
-    width: 2.6em;
-    height: fit-content;
-    margin: 0;
-}
-.skillImgWrapper:hover{
-    animation: none;
-}
-.skillImgWrapper:hover > .skillImgText{
+.skillImgItem:hover > .imgTextCont{
     display: flex;
 }
 
-@keyframes float {
-	0% {
-		box-shadow: 0 5px 15px 0px rgba(22, 198, 228, 0.6);
-		transform: translatey(0px);
-	}
-	50% {
-		box-shadow: 0 25px 15px 0px rgba(22, 198, 228, 0.2);
-		transform: translatey(-20px);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(22, 198, 228, 0.6);
-		transform: translatey(0px);
-	}
-}
-
-.skillImgText{
+.imgTextCont{
+    position: absolute;
     width: auto;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    align-content: center;
-    align-items: center;
-    top: 4em;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0;
     display: none;
+    flex-direction: column;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,100%);
     pointer-events: none;
+    z-index: 1;
+    font-size: 12px;
 }
 .imgTextPointer{
     width: 0;
-    height: 0;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-bottom: 20px solid #58E2C5;
+	height: 0;
+	border-left: 1.1em solid transparent;
+	border-right: 1.1em solid transparent;
+	border-bottom: 1.5em solid rgb(24, 110, 186);
+    margin: 0 auto;
 }
-.imgTextCont{
-    margin: 0;
-    width: fit-content;
+.imgTextBox{
+    width: auto;
     height: fit-content;
-    font-size: 0.7em;
-    background-color: #58E2C5;
-    border-radius: 10px;
-    padding: 0 0.6em;
+    white-space: nowrap;
     font-family: 'Poppins',sans-serif;
+    /* font-size: 1.2vw; */
+    font-size: 2.1em;
+    margin: 0;
+    background-color: rgb(24, 110, 186);
+    border-radius: 5px;
+    padding: 0 0.5em;
 }
 
-.skillDescr{
+.skillInfoText{
     width: 100%;
-    height: 300px;
+    height: auto;
+    margin: 0;
+    padding: 0;
     list-style: none;
+    font-size: 19px;
 }
-.skillDescr li{
+.skillInfoText li{
     font-family: 'Poppins',sans-serif;
-    font-size: 1.5em;
-    color: #343434;
-
+    font-size: 1.3em;
+    margin-left: 2.5em;
+    color: wheat;
 }
-.skillDescr li::before{
+.skillInfoText li::before{
     content: "";
     border-color: transparent rgb(11, 194, 222);
     border-style: solid;
-    border-width: 0.30em 0 0.30em 0.40em;
+    border-width: 0.25em 0 0.25em 0.35em;
     display: block;
     height: 0;
     width: 0;
@@ -602,16 +644,86 @@ body{
     position: relative;
 }
 
-/* --------------------- section Four ---------------- */
-
-#sectionFour{
-    display: flex;
-    flex-direction: column;
-    padding: min(8vw,70px) 0 min(10vw,400px) 0;
-    align-content: center;
-    align-items: center;
-    position: relative;
+@media screen and (max-width:1250px){
+    .skillSection{
+        width: 70vw !important;
+    }
+    .mySkills{
+        flex-direction: column;
+    }
+    .skillTitleCont{
+        width: 100%;
+    }
+    .skillInfo{
+        width: 100%;
+    }
+    .skillImgItem img{
+        width: 10vw;
+    }
+    #skillImg_PHP{
+        width: 15vw;
+    }
+    #skillImg_Express{
+        width: 16vw;
+    }
+    #skillImg_Java{
+        width: 9vw;
+    }
+    #skillImg_MySQL{
+        width: 17vw;
+    }
+    #skillImg_mongoDB{
+        width: 22vw;
+    }
+    #skillImg_Ipython{
+        width: 16vw;
+    }
+    #skillImg_NodeJS{
+        width: 16vw;
+    }
+    #skillImg_Git{
+        width: 16vw;
+    }
 }
+@media screen and (max-width:880px){
+    .skillImgs{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+    }
+    .skillImgItem img{
+        width: 90px !important;
+    }
+    #skillImg_PHP{
+        width: 120px !important;
+    }
+    #skillImg_Express{
+        width: 130px !important;
+    }
+    #skillImg_Java{
+        width: 80px !important;
+    }
+    #skillImg_MySQL{
+        width: 140px !important;
+    }
+    #skillImg_mongoDB{
+        width: 140px !important;
+    }
+    #skillImg_Ipython{
+        width: 120px !important;
+    }
+    #skillImg_NodeJS{
+        width: 140px !important;
+    }
+    #skillImg_Git{
+        width: 140px !important;
+    }
+    .skillInfoText{
+        font-size: 15px;
+    }
+}
+
+/* --------------------- section Four ---------------- */
 
 .myProjects{
     display: flex;
@@ -619,6 +731,9 @@ body{
     min-width: 350px;
     width: 60vw;
     height: auto;
+    /* margin: 4vw auto 12vw auto; */
+    margin: 60px auto 250px auto;
+
 }
 
 .projectContainer{
@@ -719,21 +834,15 @@ body{
 
 /* --------------------- section Five ---------------- */
 
-#sectionFive{
-    display: flex;
-    flex-direction: column;
-    padding: min(8vw,70px) 0 min(10vw,400px) 0;
-    align-content: center;
-    align-items: center;
-    position: relative;
-}
-
 .myEducation{
     display: flex;
     flex-direction: column;
     min-width: 350px;
     width: 60vw;
     height: auto;
+    /* margin: 4vw auto 13vw auto; */
+    margin: 60px auto 250px auto;
+
 }
 
 .educationWrapper{
@@ -886,23 +995,13 @@ body{
 
 /* --------------------- section Six ---------------- */
 
-
-#sectionSix{
-    display: flex;
-    flex-direction: column;
-    padding: min(8vw,70px) 0 min(10vw,400px) 0;
-    align-content: center;
-    align-items: center;
-    position: relative;
-
-}
-
 .contactMe{
     display: flex;
     flex-direction: column;
     min-width: 350px;
     width: 60vw;
     height: auto;
+    margin: 4vw auto 13.25vw auto;
 }
 
 .goodbyeText{
@@ -911,9 +1010,115 @@ body{
     margin: 0;
     text-align: center;
     color: rgb(65, 193, 112);
+    margin-bottom: 3vw;
 }
 
-/* ---------------------- Creator's Note --------------------- */
+.messageMe{
+    width: 35vw;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+    font-size: 1vw;
+}
+.messageMe h1{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.4em;
+    color: wheat;
+    margin: 1vw 0 0.5vw 0;
+}
+
+.userMessage{
+    display: block;
+    width: calc(100% - 2vw);
+    height: 8vw;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1vw;
+    background-color: #112240;
+    border: none;
+    outline: none;
+    color: wheat;
+    resize: none;
+    padding: 0.5vw 1vw;
+}
+
+.socialMediaCont{
+    width: auto;
+    height: auto;
+    float: left;
+    margin: 2.5vw 0 0 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.socialMediaItem{
+    width: auto;
+    height: auto;
+    position: relative;
+    margin-right: 1vw;
+    transition: transform 0.3s linear;
+}
+.socialMediaItem:hover{
+    transform: translateY(-20%);
+}
+
+.mediaIcon{
+    display: flex;
+    width: 2.8vw;
+    height: 2.8vw;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: turquoise;
+    align-items: center;
+    position: relative;
+}
+.mediaIcon img{
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+.mediaIcon:hover > img{
+    filter: invert(1);
+    transition-property: filter;
+    transition-duration: 0.3s ease;
+}
+
+#github:hover{
+    background-color: black;
+    transition: background-color 0.3s ease;
+}
+
+#linkedIn:hover{
+    background-color: #0077b5;
+    transition: background-color 0.3s ease;
+}
+
+#instagram:hover{
+    background-color: #E4405F;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton{
+    display: block;
+    width: 8vw;
+    height: 2.5vw;
+    border-radius: 10px;
+    border: none;
+    margin: 2.5vw 0 0 0;
+    float: right;
+    background-color: transparent;
+    border: 1px solid turquoise;
+    background-color: transparent;
+    color: turquoise;
+    cursor: pointer;
+}
+.submitButton:hover{
+    background-color: #122D3E;
+
+}
+
+/* ---------- Creator's Note ----------- */
 
 .creatorNote{
     width: 100%;
@@ -924,6 +1129,6 @@ body{
 }
 .creatorNote h1{
     font-family: 'Poppins',sans-serif;
-    font-size: 1vw;
+    font-size: 1.5vw;
     color: wheat;
 }

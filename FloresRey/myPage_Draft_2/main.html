@@ -4,7 +4,7 @@
         <title>Rey's Portfolio</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="main.css">
-        <script src="load.js"></script>
+        <!-- <script src="load.js"></script> -->
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -90,208 +90,97 @@
                         <div class="rightDivider"></div>
                     </div>
                     <div class="myInfo">
-                        <!-- <img src="../Images/sideNav/avatar.png" class="myImg"> -->
                         <div class="myInfoText">
                             <h1>I am a fourth-year college student who has been pursuing his dream of becoming a software engineer. A dream which originated back in high school, where I was exposed to the many marvelous ways that technology has impacted and shaped our society. I developed a sense of purpose which influenced me to learn to code, so I did. I learned to code in Python, Java, and Ruby. In addition to this, I also took part in multiple programs and events, which further enhanced my knowledge of programming and web development.</h1>
                         </div>
                         <div class="myImgContainer">
-                            <img class="myImg" src="../Images/aboutMe/profileImg.jfif" >
+                            <img class="myImg" src="https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" >
                         </div>
                     </div>
                 </div>
             </div>
             <div class="sectionContainer" id="sectionThree">
-                <div class="mySkills">
+                <div class="skillSection">
                     <div class="sectionBanner">
                         <div class="leftDivider"></div>
                         <h1>My Expertise</h1>
                         <div class="rightDivider"></div>
                     </div>
-                    <div class="skillSection">
-                        <div class="selectedSkill">
-                            <button onclick="prevSkill()" id="skillPrev"><h1>&#xab;</h1></button>
-                            <div class="skillTitleCont">
-                                <div class="skillTitleWrapper selectedSkillTitle">
-                                    <h1 class="skillTitle">Front End Development</h1>
-                                </div>
+                    <div class="mySkills">
+                        <div class="skillTitleCont">
+                            <div class="skillIndicatorCont"><div class="skillIndicator"></div></div>
+                            <div class="skillTitles">
+                                <div class="skillTitleItem selectedSkillTitle" onclick="gotoSkill(0)"><h1>Front End Development</h1></div>
+                                <div class="skillTitleItem" onclick="gotoSkill(1)"><h1>Back End Development</h1></div>
+                                <div class="skillTitleItem" onclick="gotoSkill(2)"><h1>Database Management</h1></div>
+                                <div class="skillTitleItem" onclick="gotoSkill(3)"><h1>Analytics</h1></div>
+                                <div class="skillTitleItem" onclick="gotoSkill(4)"><h1>Other Technologies</h1></div>
                             </div>
-                            <button onclick="nextSkill()" id="skillNext"><h1>&#xbb;</h1></button>
                         </div>
-                        <div class="skillDisplay">
-                            <div class="skillWrapper selectedSkillInfo" id="frontEndSkill">
-                                <div class="skillImages">
-                                    <div class="skillImgWrapper">
-                                        <img src="../Images/mySkills/html5.png">
-                                        <div class="skillImgText">
-                                            <div class="imgTextPointer"></div>
-                                            <div class="imgTextCont">HTML5</div>
-                                        </div>
-                                    </div>
-                                    <div class="skillImgWrapper">
-                                        <img src="../Images/mySkills/javascript.png">
-                                        <div class="skillImgText">
-                                            <div class="imgTextPointer"></div>
-                                            <div class="imgTextCont">Javascript</div>
-                                        </div>
-                                    </div>
-                                    <div class="skillImgWrapper">
-                                        <img src="../Images/mySkills/css.png">
-                                        <div class="skillImgText">
-                                            <div class="imgTextPointer"></div>
-                                            <div class="imgTextCont">CSS3</div>
-                                        </div>
-                                    </div>
-                                    <div class="skillImgWrapper">
-                                        <img src="../Images/mySkills/jquery.png">
-                                        <div class="skillImgText">
-                                            <div class="imgTextPointer"></div>
-                                            <div class="imgTextCont">Jquery</div>
-                                        </div>
-                                    </div>
-                                    <div class="skillImgWrapper">
-                                        <img src="../Images/mySkills/react.png">
-                                        <div class="skillImgText">
-                                            <div class="imgTextPointer"></div>
-                                            <div class="imgTextCont">React</div>
-                                        </div>
-                                    </div>
+                        <div class="skillInfo">
+                            <div class="skillInfoItem selectedSkillInfo" id="skill_frontEnd">
+                                <div class="skillImgs">
+                                    <div class="skillImgItem"><img src="../Images/mySkills/html5.png" alt="HTML Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">HTML5</h1></div></div>
+                                    <div class="skillImgItem"><img src="../Images/mySkills/css.png" alt="CSS Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">CSS3</h1></div></div>
+                                    <div class="skillImgItem"><img src="../Images/mySkills/javascript.png" alt="Javascript Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">Javascript</h1></div></div>
+                                    <div class="skillImgItem"><img src="../Images/mySkills/jquery.png" alt="Jquery Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">Jquery</h1></div></div>
+                                    <div class="skillImgItem"><img src="../Images/mySkills/react.png" alt="React Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">React</h1></div></div>
                                 </div>
-                                <ul class="skillDescr">
-                                    <li>Hello</li>
-                                    <li>How are you.</li>
-                                    <li>Please Help me.</li>
-                                    <li>There is too much swimming.</li>
+                                <ul class="skillInfoText">
+                                    <li>5+ years of experience in client-side development.</li>
+                                    <li>Designed numerous elegant websites using HTML and CSS.</li>
+                                    <li>Built resposive websites that provide seamless and optimal user experience using Javascript, React, and Jquery.</li>
+
                                 </ul>
                             </div>
-                            <div class="skillWrapper" id="backEndSkill">
-                                <div class="skillImages">
-                                    <div class="skillImgWrapper">
-                                        <img src="../Images/mySkills/php.svg">
-                                        <div class="skillImgText">
-                                            <div class="imgTextPointer"></div>
-                                            <div class="imgTextCont">PHP</div>
-                                        </div>
-                                    </div>
-                                    <div class="skillImgWrapper">
-                                        <img src="../Images/mySkills/pythonIcon.png">
-                                        <div class="skillImgText">
-                                            <div class="imgTextPointer"></div>
-                                            <div class="imgTextCont">Python</div>
-                                        </div>
-                                    </div>
-                                    <div class="skillImgWrapper">
-                                        <img src="../Images/mySkills/cpp.svg">
-                                        <div class="skillImgText">
-                                            <div class="imgTextPointer"></div>
-                                            <div class="imgTextCont">CPP</div>
-                                        </div>
-                                    </div>
-                                    <div class="skillImgWrapper">
-                                        <img src="../Images/mySkills/express.png">
-                                        <div class="skillImgText">
-                                            <div class="imgTextPointer"></div>
-                                            <div class="imgTextCont">Express</div>
-                                        </div>
-                                    </div>
-                                    <div class="skillImgWrapper">
-                                        <img src="../Images/mySkills/nodejs.png">
-                                        <div class="skillImgText">
-                                            <div class="imgTextPointer"></div>
-                                            <div class="imgTextCont">Node JS</div>
-                                        </div>
-                                    </div>
+                            <div class="skillInfoItem" id="skill_backEnd">
+                                <div class="skillImgs">
+                                    <div class="skillImgItem"><img id="skillImg_PHP" src="../Images/mySkills/php.svg" alt="PHP Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">PHP</h1></div></div>
+                                    <div class="skillImgItem"><img src="../Images/mySkills/pythonIcon.png" alt="Python Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">Python</h1></div></div>
+                                    <div class="skillImgItem"><img src="../Images/mySkills/cpp.svg" alt="CPP Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">CPP</h1></div></div>
+                                    <div class="skillImgItem"><img id="skillImg_Express" src="../Images/mySkills/express.png" alt="Express Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">Express</h1></div></div>
+                                    <div class="skillImgItem"><img id="skillImg_Java" src="../Images/mySkills/java.png" alt="Java Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">Java</h1></div></div>
                                 </div>
-                                <ul class="skillDescr">
+                                <ul class="skillInfoText">
+                                    <li>5+ years of exerience in server-side development.</li>
+                                    <li>Developed </li>
                                     <li>Hello</li>
-                                    <li>How are you.</li>
-                                    <li>Please Help me.</li>
-                                    <li>There is too much swimming.</li>
+                                    <li>Hello</li>
+                                    <li>Hello</li>
                                 </ul>
                             </div>
-                            <div class="skillWrapper" id="DBArchitectureSkill">
-                                <div class="skillImages">
-                                    <div class="skillImgWrapper">
-                                        <img src="../Images/mySkills/mysql.png">
-                                        <div class="skillImgText">
-                                            <div class="imgTextPointer"></div>
-                                            <div class="imgTextCont">MySQL</div>
-                                        </div>
-                                    </div>
-                                    <div class="skillImgWrapper">
-                                        <img src="../Images/mySkills/postgresql.png">
-                                        <div class="skillImgText">
-                                            <div class="imgTextPointer"></div>
-                                            <div class="imgTextCont">PostgreSQL</div>
-                                        </div>
-                                    </div>
-                                    <div class="skillImgWrapper">
-                                        <img src="../Images/mySkills/mongo.png">
-                                        <div class="skillImgText">
-                                            <div class="imgTextPointer"></div>
-                                            <div class="imgTextCont">Mongo Database</div>
-                                        </div>
-                                    </div>
+                            <div class="skillInfoItem" id="skill_database">
+                                <div class="skillImgs">
+                                    <div class="skillImgItem"><img id="skillImg_MySQL" src="../Images/mySkills/mysql.png" alt="MySQL Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">MySQL</h1></div></div>
+                                    <div class="skillImgItem"><img src="../Images/mySkills/postgresql.png" alt="PostgreSQL Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">PostgreSQL</h1></div></div>
+                                    <div class="skillImgItem"><img id="skillImg_mongoDB" src="../Images/mySkills/mongo.png" alt="mongoDB Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">Mongo Database</h1></div></div>
                                 </div>
-                                <ul class="skillDescr">
+                                <ul class="skillInfoText">
                                     <li>Hello</li>
-                                    <li>How are you.</li>
-                                    <li>Please Help me.</li>
-                                    <li>There is too much swimming.</li>
+                                    <li>Hello</li>
+                                    <li>Hello</li>
                                 </ul>
                             </div>
-                            <div class="skillWrapper" id="softwareEngineeringSkill">
-                                <div class="skillImages">
-                                    <div class="skillImgWrapper">
-                                        <img src="../Images/mySkills/cpp.svg">
-                                        <div class="skillImgText">
-                                            <div class="imgTextPointer"></div>
-                                            <div class="imgTextCont">CPP</div>
-                                        </div>
-                                    </div>
-                                    <div class="skillImgWrapper">
-                                        <img src="../Images/mySkills/java.png">
-                                        <div class="skillImgText">
-                                            <div class="imgTextPointer"></div>
-                                            <div class="imgTextCont">Java</div>
-                                        </div>
-                                    </div>
-                                    <div class="skillImgWrapper">
-                                        <img src="../Images/mySkills/pythonIcon.png">
-                                        <div class="skillImgText">
-                                            <div class="imgTextPointer"></div>
-                                            <div class="imgTextCont">Python</div>
-                                        </div>
-                                    </div>
+                            <div class="skillInfoItem" id="skill_analytics">
+                                <div class="skillImgs">
+                                    <div class="skillImgItem"><img src="../Images/mySkills/r logo.png" alt="R Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">R</h1></div></div>
+                                    <div class="skillImgItem"><img id="skillImg_Ipython" src="../Images/mySkills/Ipython.png" alt="IPython Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">IPython</h1></div></div>
                                 </div>
-                                <ul class="skillDescr">
+                                <ul class="skillInfoText">
                                     <li>Hello</li>
-                                    <li>How are you.</li>
-                                    <li>Please Help me.</li>
-                                    <li>There is too much swimming.</li>
+                                    <li>Hello</li>
+                                    <li>Hello</li>
                                 </ul>
                             </div>
-                            <div class="skillWrapper" id="analyticsSkill">
-                                <div class="skillImages">
-                                    <div class="skillImgWrapper">
-                                        <img src="../Images/mySkills/r logo.png">
-                                        <div class="skillImgText">
-                                            <div class="imgTextPointer"></div>
-                                            <div class="imgTextCont">R</div>
-                                        </div>
-                                    </div>
-                                    <div class="skillImgWrapper">
-                                        <img src="../Images/mySkills/Ipython.png">
-                                        <div class="skillImgText">
-                                            <div class="imgTextPointer"></div>
-                                            <div class="imgTextCont">IPython</div>
-                                        </div>
-                                    </div>
+                            <div class="skillInfoItem" id="skill_others">
+                                <div class="skillImgs">
+                                    <div class="skillImgItem"><img id="skillImg_NodeJS" src="../Images/mySkills/nodejs.png" alt="NodeJS Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">Node JS</h1></div></div>
+                                    <div class="skillImgItem"><img id="skillImg_Git" src="../Images/mySkills/git.png" alt="Git Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">Git</h1></div></div>
                                 </div>
-                                <ul class="skillDescr">
+                                <ul class="skillInfoText">
                                     <li>Hello</li>
-                                    <li>How are you.</li>
-                                    <li>Please Help me.</li>
-                                    <li>There is too much swimming.</li>
+                                    <li>Hello</li>
+                                    <li>Hello</li>
                                 </ul>
                             </div>
                         </div>
@@ -413,7 +302,7 @@
                     </div>
                 </div>
             </div>
-            <div class="sectionContainer" id="sectionSix" style="height: 1000px;">
+            <div class="sectionContainer" id="sectionSix">
                 <div class="contactMe">
                     <div class="sectionBanner">
                         <div class="leftDivider"></div>
@@ -421,14 +310,28 @@
                         <div class="rightDivider"></div>
                     </div>
                     <h1 class="goodbyeText">Enjoyed your visit? Get in touch.</h1>
+                    <form class="messageMe" onsubmit="submitMessage()">
+                        <h1>Message:</h1>
+                        <textarea class="userMessage" rows="4" cols="50" placeholder="Hello Rey..." required></textarea>
+                        <div class="socialMediaCont">
+                            <div class="socialMediaItem">
+                                <a class="mediaIcon" id="github" href="https://github.com/BluR3Y" target="blank"><img src="../Images/SocialMedia/github.png"></a>
+                            </div>
+                            <div class="socialMediaItem">
+                                <a class="mediaIcon" id="linkedIn" href="https://www.linkedin.com/in/rey-h-flores" target="blank"><img src="../Images/SocialMedia/linkedin.png"></a>
+                            </div>
+                            <div class="socialMediaItem">
+                                <a class="mediaIcon" id="instagram" href="https://www.instagram.com/b1u_rey/" target="blank"><img src="../Images/SocialMedia/instagram.png"></a>
+                            </div>
+                        </div>
+                        <button type="submit" class="submitButton">Submit</button>
+                    </form>
                 </div>
                 <div class="creatorNote">
                     <h1>Designed and Built by Rey Flores on Earth</h1>
                 </div>
             </div>
         </div>
-
-        <script>sideNavSectionHeight();</script>
     </body>
     <script src="main.js"></script>
 </html>

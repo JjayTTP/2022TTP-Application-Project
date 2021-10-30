@@ -1,3 +1,4 @@
+storageLocal = window.localStorage;
 
 function scrollPage(slideAmount){
     var contentPage = document.getElementsByClassName("mainContent")[0];
@@ -9,14 +10,16 @@ function scrollPage(slideAmount){
 }
 
 function updateSlider(){
+
     var contentPage = document.getElementsByClassName("mainContent")[0];
     var navSlider = document.getElementById("sideNav_Slider");
-    var pageHeight = contentPage.scrollHeight - contentPage.clientHeight;
+    var scrollLimit = contentPage.scrollHeight - contentPage.clientHeight;
     var scrollAmount = contentPage.scrollTop;
-    var scrollerPerPixel = 1000/pageHeight;
-    var slideAmount = scrollerPerPixel * scrollAmount;
 
+    var scrollCover = scrollAmount / scrollLimit;
+    var slideAmount = 1000 * scrollCover;
     navSlider.value = slideAmount;
+
 }
 
 function moveSliderDown(){
@@ -66,7 +69,8 @@ function gotoSection(sectionNum){
 
 function loadtoSection(sectionNum){
     var sideBarSections = document.getElementsByClassName("sectionItem");
-
+    sideBarSections[0].classList.remove("selectedSectionItem");
+    
     var pageSections = document.getElementsByClassName("sectionContainer");
     pageSections[sectionNum].scrollIntoView({behavior: "instant"});
 }
@@ -75,43 +79,34 @@ function updateSelectedSection(){
     var mainContent = document.getElementsByClassName("mainContent")[0];
     var sectionContainers = document.getElementsByClassName("sectionContainer");
     var sideBarSections = document.getElementsByClassName("sectionItem");
-    
+
+    var scrollAmount = mainContent.scrollTop;
+    var bottomView = scrollAmount + mainContent.clientHeight;
+
+    var initialSection;
+
     for(var i=0; i < sectionContainers.length; i++){
-        var scrollAmount = mainContent.scrollTop;
-        var sectionHeight = sectionContainers[i].clientHeight;
-        var minScroll = function(){
+        var sectionTop = function(){
             var sumHeight = 0;
             for(var j=i-1; j >=0; j--){
                 sumHeight += sectionContainers[j].clientHeight;
             }
             return sumHeight;
         }();
-        var maxScroll = minScroll + sectionHeight;
-        if(scrollAmount >= minScroll && scrollAmount < maxScroll){
-            if(i != 5){
-                if(i > 0){
-                    sideBarSections[i-1].classList.remove("selectedSectionItem");
-                }
-                if(i < sectionContainers.length -1){
-                    sideBarSections[i+1].classList.remove("selectedSectionItem");
-                }
-                sideBarSections[i].classList.add("selectedSectionItem");
-                if(localStorage.getItem('lastSection') != i){
-                    localStorage.setItem('lastSection',i);
-                }
-                break;
-            }else{
-                if(mainContent.scrollTop != (mainContent.scrollHeight - mainContent.clientHeight)){
-                    sideBarSections[4].classList.remove("selectedSectionItem");
-                    sideBarSections[5].classList.add("selectedSectionItem");
-                    sideBarSections[6].classList.remove("selectedSectionItem");
-                }else{
-                    sideBarSections[5].classList.remove("selectedSectionItem");
-                    sideBarSections[6].classList.add("selectedSectionItem");
-                }
+        var sectionBottom = sectionTop + sectionContainers[i].clientHeight - 1;
+        if((sectionTop >= scrollAmount && sectionTop < bottomView) || (sectionBottom > scrollAmount && sectionBottom < bottomView) || (sectionTop <= scrollAmount && bottomView <= sectionBottom)){
+            sideBarSections[i].classList.add("selectedSectionItem");
+            if(initialSection === undefined || i < initialSection){
+                initialSection = i;
             }
+        }else{
+            sideBarSections[i].classList.remove("selectedSectionItem");
         }
     }
+    if(localStorage.getItem('lastSection') != initialSection){
+        localStorage.setItem('lastSection',initialSection);
+    }
+
 }
 
 function adjustSideNavSectHeight(){
@@ -180,6 +175,33 @@ TxtType.prototype.tick = function() {
     }, delta);
 };
 
+function gotoSkill(selectedSkill){
+    var skillIndicator = document.getElementsByClassName("skillIndicator")[0];
+    var skillIndicatorCont = document.getElementsByClassName("skillIndicatorCont")[0];
+    var skillTitles = document.getElementsByClassName("skillTitleItem");
+    var heightPerTitle = skillIndicatorCont.clientHeight / skillTitles.length;
+    var translateAmount = heightPerTitle * selectedSkill;
+
+    skillIndicator.style.transform = `translateY(${translateAmount}px)`;
+    skillIndicator.style.transition = "all 0.2s linear";
+
+    var currentSelectedSkill = function(){
+        for(var i=0; i < skillTitles.length; i++){
+            if(skillTitles[i].classList.contains("selectedSkillTitle")){
+                return i;
+            }
+        }
+        return -1;
+    }();
+
+    skillTitles[currentSelectedSkill].classList.remove("selectedSkillTitle");
+    skillTitles[selectedSkill].classList.add("selectedSkillTitle");
+
+    var skillInfoItems = document.getElementsByClassName("skillInfoItem");
+    skillInfoItems[currentSelectedSkill].style.display = "none";
+    skillInfoItems[selectedSkill].style.display = "block";
+}
+
 function showName(){
     var elements = document.getElementsByClassName('myName');
     for (var i=0; i<elements.length; i++) {
@@ -191,168 +213,14 @@ function showName(){
     }
 }
 
-// function Timeout(fn, interval){
-//     var id = setTimeout(fn,interval);
-//     this.cleared = false;
-//     this.clear = function(){
-//         this.cleared = true;
-//         clearTimeout(id);
-//     };
-// }
+function submitMessage(){
+    var messengerMessage = String(document.getElementsByClassName("userMessage")[0].value);
 
-var allowSkillChange = true;
-var allTitles = ["Front End Development", "Back End Development", "Database Management", "Software Development", "Analytics"];
-var allInfo = ["frontEndSkill","backEndSkill", "DBArchitectureSkill","softwareEngineeringSkill","analyticsSkill"];
-function prevSkill(){
-    var titleCont = document.getElementsByClassName("skillTitleCont")[0];
-    var currentTitleElem = document.getElementsByClassName("skillTitleWrapper")[0];
-    var currentTitleText = currentTitleElem.getElementsByTagName("h1")[0];
-    var allSkillCont = document.getElementsByClassName("skillWrapper");
-    var skillContentDisplay = document.getElementsByClassName("skillDisplay")[0];
-
-    if(!allowSkillChange){
-        return;
-    }
-
-    var currentSkillIndex = (function(){
-        for(var i=0; i < allTitles.length; i++){
-            if(allTitles[i] === currentTitleText.innerHTML){
-                return i;
-            }
-        }
-        return -1;
-    })();
-
-    var prevSkillIndex = (function(){
-        if(currentSkillIndex !== 0){
-            return currentSkillIndex - 1;
-        }else{
-            return allSkillCont.length - 1;
-        }
-    })();
-
-    var prevWrapper = document.createElement("div");
-    prevWrapper.classList.add("skillTitleWrapper");
-    
-    var prevElem = document.createElement("h1");
-    prevElem.classList.add("skillTitle");
-    prevElem.innerHTML = allTitles[prevSkillIndex];
-
-
-    prevWrapper.appendChild(prevElem);
-    titleCont.prepend(prevWrapper);
-
-    currentTitleElem.classList.remove("selectedSkillTitle");
-    prevWrapper.classList.add("selectedSkillTitle");
-
-    setTimeout(function(){
-        currentTitleElem.remove();
-    },300)
-    
-    allowSkillChange = false;
-    setTimeout(function(){
-        allowSkillChange = true;
-    },350);
-
-    var skillInfoIndex = (()=>{
-        for(var i=0; i < allSkillCont.length; i++){
-            if(allSkillCont[i].getAttribute("id") === allInfo[currentSkillIndex]){
-                return i;
-            }
-        }
-        return -1;
-    })();
-
-    if(skillInfoIndex === 0){
-        var lastElement = allSkillCont[allSkillCont.length - 1];
-        skillContentDisplay.removeChild(allSkillCont[allSkillCont.length - 1]);
-        skillContentDisplay.prepend(lastElement);
-        skillInfoIndex++;
-    }
-    allSkillCont[skillInfoIndex].classList.remove("selectedSkillInfo");
-    allSkillCont[skillInfoIndex-1].classList.add("selectedSkillInfo");
-}
-
-function nextSkill(){
-    var titleCont = document.getElementsByClassName("skillTitleCont")[0];
-    var currentTitleElem = document.getElementsByClassName("skillTitleWrapper")[0];
-    var currentTitleText = currentTitleElem.getElementsByTagName("h1")[0];
-    var allSkillCont = document.getElementsByClassName("skillWrapper");
-    var skillContentDisplay = document.getElementsByClassName("skillDisplay")[0];
-
-    if(!allowSkillChange){
-        return;
-    }
-
-    var currentSkillIndex = (function(){
-        for(var i=0; i < allTitles.length; i++){
-            if(allTitles[i] === currentTitleText.innerHTML){
-                return i;
-            }
-        }
-        return -1;
-    })();
-
-    var nextSkillIndex = (function(){
-        if(currentSkillIndex !== allTitles.length - 1){
-            return currentSkillIndex + 1;
-        }else{
-            return 0;
-        }
-    })();
-
-    var nextWrapper = document.createElement("div");
-    nextWrapper.classList.add("skillTitleWrapper");
-    
-    var nextElem = document.createElement("h1");
-    nextElem.classList.add("skillTitle");
-    nextElem.innerHTML = allTitles[nextSkillIndex];
-
-    nextWrapper.appendChild(nextElem);
-    titleCont.appendChild(nextWrapper);
-
-    currentTitleElem.classList.remove("selectedSkillTitle");
-    nextWrapper.classList.add("selectedSkillTitle");
-    
-    setTimeout(function(){
-        currentTitleElem.remove();
-    },300)
-    
-    allowSkillChange = false;
-    setTimeout(function(){
-        allowSkillChange = true;
-    },350);
-
-    var skillInfoIndex = (()=>{
-        for(var i=0; i < allSkillCont.length; i++){
-            if(allSkillCont[i].getAttribute("id") === allInfo[currentSkillIndex]){
-                return i;
-            }
-        }
-        return -1;
-    })();
-
-    if(skillInfoIndex === allSkillCont.length - 1){
-        var firstElement = allSkillCont[0];
-        skillContentDisplay.removeChild(allSkillCont[0]);
-        skillContentDisplay.appendChild(firstElement);
-        skillInfoIndex--;
-    }
-    allSkillCont[skillInfoIndex].classList.remove("selectedSkillInfo");
-    allSkillCont[skillInfoIndex+1].classList.add("selectedSkillInfo");
-}
-
-// function tester(){
-//     window.location.href = "mailto:reyhector1234@gmail.com?subject=Subject&body=message%20goes%20here";
-// }
-
-function tester(){
-    console.log("lol");
+    window.location.href = `mailto:reyhector1234@gmail.com?subject=Saying Hello&body=${messengerMessage}%0D%0A%0D%0A`;
 }
 
 window.onload = function() {
     showName();
-
 };
 
 document.getElementsByClassName("mainContent")[0].addEventListener("scroll", function(){
@@ -361,11 +229,14 @@ document.getElementsByClassName("mainContent")[0].addEventListener("scroll", fun
 });
 
 window.addEventListener("load",()=>{
-    if(storageLocal.getItem('lastSection') != null){
+    if(storageLocal.getItem('lastSection') != null && storageLocal.getItem('lastSection') != 0){
         loadtoSection(storageLocal.getItem('lastSection'));
     }
+    adjustSideNavSectHeight();
 });
 
 window.addEventListener("resize", ()=>{
     adjustSideNavSectHeight();
+    updateSelectedSection();
+    updateSlider();
 });
