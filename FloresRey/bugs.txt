@@ -1,1 +1,0 @@
-- A bug in section three, where selecting a skill will result in the text from section four to fade out and back in
