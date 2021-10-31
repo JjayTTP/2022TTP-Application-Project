@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+	<head>
+		<title>Humayun Ahmed</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="styles/layout.css" type="text/css">
+		<script src="https://kit.fontawesome.com/440d4e8b20.js" crossorigin="anonymous"></script>
+		<script>
+			function showAndHide() {
+				var x = document.getElementById("skillIcons");
+				if (x.style.display === "flex") {
+					x.style.display = "none";
+				} else {
+					x.style.display = "flex";
+				}
+			}
+		</script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">	
+	</head>
+	<body>
+		<div>
+			<header>
+				<nav>
+					<ul>
+						<li class="item"><a href="#about">About</a></li>
+						<li class="item"><a href="#skills">Skills</a></li>
+						<li class="item"><a href="#projects">Projects</a></li>
+						<li class="item"><a href="#contact">Contact Me</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+		<a id="about">
+			<div>
+				<section>
+				<h1>Welcome!</h1>
+				<h2>I'm Humayun Ahmed</h3>
+				<ul>	
+					<li>Student</li>
+					<li>Full Stack Developer</li>
+					<li> Aspiring Pentester</li>
+				</ul>
+				</section>
+				<section>
+					<img src="images\profile_pic.jpg"></img>
+				</section>
+			</div>
+			
+		</a>
+		<a id="skills">
+			<div>
+				<h2 onclick="showAndHide()">My Skills</h2>
+				<div id="skillIcons">
+						<i class="fab fa-java fa-10x"></i>
+						<i class="fab fa-html5 fa-10x"></i>
+						<i class="fab fa-css3 fa-10x"></i>
+						<i class="fab fa-js fa-10x"></i>
+						<i class="fab fa-php fa-10x"></i>
+						<i class="fab fa-node fa-10x"></i>
+						<i class="fab fa-linux fa-10x"></i>
+						<i class="fab fa-python fa-10x"></i>
+				</div>
+			</div>
+		</a>
+		<a id="projects">
+			<div>	
+					<h2>My Projects</h2>
+					<div id="projectInfo">
+						<div id="projectImage">
+							<img src="images\datavisionSnapShot1.png">
+							<img src="images\datavisionSnapShot2.png">
+							<img src="images\datavisionSnapShot3.png">
+						</div>
+						<h3>Datavision</h3>
+						<p>Datavision is a cookie based e-commerce website for gadgets. It allows the user to create account, log in and log off the account. 
+It also allows users to add items into a shopping cart.</p>
+					</div>
+			</div>
+		</a>
+		<a id="contact">
+			<div>
+				<h2>Contact Me</h2>
+				<div id="contactInfo">
+					<a href = "mailto: humayun.ahmed123@yahoo.com"><i class="fas fa-envelope fa-6x"></i></a>
+					<a href = "https://www.linkedin.com/in/humayun-ahmed-6b27981b3/" target="_blank"><i class="fab fa-linkedin fa-6x"></i></a>
+					<a href = "https://github.com/ahmed-humayun" target="_blank"><i class="fab fa-github fa-6x"></i></a>
+					<a href = "https://www.facebook.com/Humayunahmed42" target="_blank"><i class="fab fa-facebook fa-6x"></i></a>
+				</div>
+			</div>
+		</a>
+	</body>
+	
+</html>

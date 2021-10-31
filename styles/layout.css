@@ -1,0 +1,150 @@
+body {
+	padding-left: 30px;
+	padding-right:30px;
+	background-color: #495057;
+	font-family: 'Roboto Mono', monospace;
+}
+nav {
+	  display: grid;
+	  min-height: 50px;
+	  grid-auto-flow: column;
+	  background-color: #ADB5BD;
+	  grid-gap: 1em;
+	  padding: 0 40px;
+	  top: 0;
+	  width: 100%;
+    }
+  li a {
+	  display: inline;
+	  padding: 8px;
+	  margin: 5px;
+	  background-color: #dee2e6;
+	  color: #ababab;
+	  text-decoration: none;
+  }
+  li a:hover {
+  	color: #eeeeee;
+  	background-color: #ADB5BD;
+  }
+ .item {
+	  display: inline;
+	  justify-content: right;
+	  align-content: center;
+ }
+#about div{
+	padding-top: 40px;
+	display: flex;
+	flex-direction:row;
+	justify-content: left;
+}
+#about section {
+	width: 50%;
+	position: left;
+	background-color: #ADB5BD; 
+	border: solid;
+	border-width: 1px;
+}
+#about section img {
+	flex-shrink: 0;
+    min-width: 99%;
+    min-height: 99%;
+	
+}
+#about section h1{
+	font-size: 80px;
+	background-color: #ADB5BD; 
+}
+#about section h2{
+	font-size: 40px;
+}
+#about section ul{
+	display: grid;
+	grid-auto-flow: row;
+	grid-row-gap: 5px;
+	font-size: 30px;	
+	
+	
+	
+}
+ #about section ul li {
+	display: flex;
+	text-decoration: none;
+	position: center;
+	background-color: #ADB5BD;
+    padding: 1px;
+	width: 70%;
+    
+} 
+#about img {
+	width: 400px;
+	position: right;
+	border: solid;
+	border-width:1px;
+}
+
+#skills h2, #projects h2, #contact h2 {
+	width: 100%;
+	text-align: center;
+	border:solid;
+	background-color: #ADB5BD; 
+}
+#skills h2:hover, #projects h2:hover, #contact h2:hover{
+	text-decoration: underline;
+}
+#skills #skillIcons{
+	display: none;
+	flex-wrap: wrap;
+    justify-content: center;
+	padding: 40px;
+	border: solid;
+	border-width: 1px;
+	background-color: #ADB5BD;
+	
+	
+}
+#skills #skillIcons i {
+	padding: 50px;
+
+}
+ #projectInfo{
+	 border:solid;
+	 border-width:1px;
+	 position: center;
+	 text-align: center;
+	 padding: 20px;
+	 background-color: #ADB5BD; 
+ }
+ #projectImage {
+	 display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+	padding: 30px;
+	
+	
+ }
+ #projectImage img {
+	 padding: 10px;
+	   height: 30%;
+		width: 30%;
+ }
+ #projectInfo p {
+	 font-size: 20px;
+ }
+ 
+#contactInfo {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+	padding: 40px;
+}
+ #contactInfo a {
+	padding: 0px 20px;
+}
+#contactInfo a:hover i.fab { 
+	text-decoration: none; 
+	color:#ADB5BD; 
+}
+#contactInfo a:visited i.fab { 
+	text-decoration: none; 
+	color:#ADB5BD; 
+
