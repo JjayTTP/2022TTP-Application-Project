@@ -18,6 +18,21 @@ h2 {
     font-size: 30px;
 }
 
+p {
+    color: #8AC4FF;
+
+    font-size: 18px;
+
+}
+
+.About {
+    text-align: center;
+}
+
+.left {
+    display: inline-block;
+    text-align: left;
+}
 .profile {
     width: 500px;
     height: auto;
@@ -126,3 +141,4 @@ input, textarea {
 .contact-form {
     text-align: center;
 }
+
