@@ -1,0 +1,32 @@
+nav {
+	  display: grid;
+	  min-height: 50px;
+	  grid-auto-flow: column;
+	  background-color: #cccccc;
+	  grid-gap: 1em;
+	  padding: 0 40px;
+	  position: fixed;
+	  top: 0;
+	  width: 100%;
+    }
+  li a {
+	  display: inline;
+	  padding: 8px;
+	  margin: 5px;
+	  background-color: #dddddd;
+	  color: #ababab;
+	  text-decoration: none;
+  }
+  li a:hover {
+  	color: #eeeeee;
+  	background-color: #aaaaaa;
+  }
+ .item {
+	  display: inline;
+	  justify-content: right;
+	  align-content: center;
+	  font-family: "Open Sans", sans-serif;
+ }
+.intro {
+	padding-top: 40px;
+}
