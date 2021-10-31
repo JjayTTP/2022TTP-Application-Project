@@ -4,7 +4,7 @@
         <title>Rey's Portfolio</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="main.css">
-        <!-- <script src="load.js"></script> -->
+        <script src="loadingPage.js"></script>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,9 +17,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="loadingPage"></div>
+        <div class="loadingPage">
+            <div class="logoCont">
+                <h1><span class="leftChar">R</span><span class="rightChar">F</span></h1>
+            </div>
+        </div>
+        <script>hideLoading();</script>
         <div class="sideNav">
-            <div class="sideNav_name"><h1>Rey Flores</h1></div>
+            <div class="sideNav_name"><h1><span class="leftChar">R</span><span class="rightChar">F</span></h1></div>
             <div class="scrollBar">
                 <div class="pageSection">
                     <div class="sectionItem selectedSectionItem" onclick="gotoSection(0)">
