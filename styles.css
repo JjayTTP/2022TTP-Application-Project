@@ -1,5 +1,10 @@
 body{
 	font-family: Helvetica;
+	font-size: 18px;
+}
+h1{
+	font-size: 20px;
+	font-weight: normal;
 }
 button{
 	border: none;
@@ -27,9 +32,6 @@ a{
 	border-radius: 20px;
 	margin: 5px 5px;
 }
-#theme_text:hover{
-	background-color: #a17ed9;
-}
 .navi{
 	padding-left: 0px;
 	display: flex;
@@ -44,27 +46,41 @@ a{
 	display: block;
 	padding: 5px 20px;
 }
-#tab_1{
-	background-color: #732222;
+#self{
+	float: left;
+	padding-top: 20px;
+	padding-right: 20px;
 }
-#tab_1:hover{
-	background-color: #c45a5a;
+#bio{
+	font-size: 20px;
+	line-height: 1.5;
+	border-style: none none none solid;
+	border-width: 4px;
+	margin-right: 250px;
+	margin-left: 820px;
+	padding-left: 25px;
 }
-#tab_2{
-	background-color: #263191;
+#skill_icon_container{
+	display: flex;
+	flex-direction: column;
 }
-#tab_2:hover{
-	background-color: #4c57c2;
+.skill_icons{
+	display: flex;
+	padding: 15px;
+	border-style: none none solid none;
+	border-color: #272930;
+	border-width: 4px;
 }
-#tab_3{
-	background-color: #337982;
+.skill_text{
+	padding-left: 50px;
 }
-#tab_3:hover{
-	background-color: #5bb1bd;
+#contact_me_container{
+	display: flex;
+	flex-direction: row;
 }
-#tab_4{
-	background-color: #1f692c;
+.contact_me_icons{
+	padding: 15px;
 }
-#tab_4:hover{
-	background-color: #46a356;
+.contact_me_text{
+	text-align: center;
 }

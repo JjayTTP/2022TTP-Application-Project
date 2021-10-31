@@ -14,41 +14,78 @@
 			</div>
 			<div class="navi">
 				<div>
-					<button id="tab_1" onclick="ChangeTab(0)">About</button>
+					<button id="tab_1" class="tabs" onclick="ChangeTab(0)">About</button>
 				</div>
 				<div>
-					<button id="tab_2" onclick="ChangeTab(1)" >Skills</button>
+					<button id="tab_2" class="tabs" onclick="ChangeTab(1)" >Skills</button>
 				</div>
 				<div>
-					<a id="tab_3" href="https://drive.google.com/file/d/1NQfgzrI_ZoFFIefUjwHGRxk-qJC14wyg/view?usp=sharing" target="_blank">Resume</a>
+					<a id="tab_3" class="tabs" href="https://drive.google.com/file/d/1NQfgzrI_ZoFFIefUjwHGRxk-qJC14wyg/view?usp=sharing" target="_blank">Resume</a>
 				</div>
 				<div>
-					<button id="tab_4" onClick="ChangeTab(2)">Contact Me</button>
+					<button id="tab_4" class="tabs" onClick="ChangeTab(3)">Contact Me</button>
 				</div>
 			</div>
 		</header>
+
 		<div class="sections" id="about">
-			<img id="self" src="./img/self.png">
+			<img id="self" src="./img/self.png" width = "800" alt="Self Portrait">
 			<p id="bio">
-				Hi,<br>I'm Alex Brostowin. I'm a student at John Jay majoring in computer science. I have experience in object oriented programming and web development. Besides that, I love spending my time brewing coffee, reading, and learning new things.	
+			Hi, welcome to my site.<br><br> I'm Alex Brostowin. Currently, I'm a student at John Jay College majoring in Computer Science and Information Security. On my free time, I'm usually brewing myself some coffee or tea, reading, or teaching myself something new online.<br><br>My most important values are honesty, transparency and responsibility. Trust is a must for me; we really need trust in order to get anything done, right?<br><br>When it comes to programming, I value simplicity and efficiency. I believe the best way to get a project done is the way that produces the most readable and maintainable code with the least overhead. I'm also a big proponent of Free and Open-Source Software (FOSS) both practically and philosophically because of the freedom and transparency FOSS provides. 	
 			</p>
 		</div>
 
 		<div class ="sections" id="skills">
-			<p>These are some languages I'm experienced in.</p>
-			<div id="skill_icons">
-				<img id="cpp_logo" href="#" src="./img/cpp_logo">
-				<img id="py_logo" href="#" src="./img/py_logo">
-				<img id="html_logo" href="#" src="./img/html_logo">
-				<img id="js_logo" href="#" src="./img/js_logo">
+			<h1>These are some languages I'm experienced in.</h1>
+			<div id="skill_icon_container">
+				<div class="skill_icons">
+					<img id="cpp_logo" href="#" src="./img/cpp.png" width="100" alt="C++ Logo">
+					<p class="skill_text"><strong>C++:</strong><br>My most comfortable language. I'm skilled with Object-Oriented Programming (OOP), Data-Oriented Programming (DOP), and using advanced data structures. Some projects I've done in C++ include multi-threading applications and text-based video games.</p>
+				</div>
+				<div class="skill_icons">
+					<img id="py_logo" href="#" src="./img/py.png" width="100" alt="Python Logo">
+					<p class="skill_text"><strong>Python:</strong><br>A secondary language I use for projects when they're more suited to Python. Some examples of projects I've done in Python are cryptographic functions and file servers.</p>
+				</div>
+				<div class="skill_icons">
+					<img id="html_logo" href="#" src="./img/html.png" width="100" alt="HTML5 Logo">
+					<p class="skill_text"><strong>HTML:</strong><br>I have experience using HTML to create multiple websites.</p>
+				</div>
+				<div class="skill_icons">
+					<img id="css_logo" href="#" src="./img/css.png" width="100" alt="CSS Logo">
+					<p class="skill_text"><strong>CSS:</strong><br>I use CSS to style the websites I've made using HTML.</p>
+				</div>
+				<div class="skill_icons">
+					<img id="js_logo" href="#" src="./img/js.png" width="100" alt="JavaScript Logo">
+					<p class="skill_text"><strong>JavaScript:</strong><br>I've used the Document-Oriented Model (DOM) in order to dynamically change aspects of my HTML/CSS websites using JavaScript. For example, this website.</p>
+				</div>
 			</div>
+		</div>
+		
+		<div class="sections" id="resume">
 		</div>
 
 		<div class="sections" id="contact_me">
-			<p>Here are several ways you can contact me.</p>
-			<a href="mailto:alexbrostowin@gmail.com">Email</a>
-			<a href="https://github.com/alexbrostowin">GitHub</a>
-			<a href="https://www.linkedin.com/in/alex-brostowin/">LinkedIn</a>
+			<h1>Here are several ways you can contact me.</h1>
+			<div id="contact_me_container">
+				<div class="contact_me_icons">
+					<a href="mailto:alexbrostowin@gmail.com">
+						<img src= "./img/email.png" width= "100" alt="Email Icon">
+						<p class="contact_me_text">Email</p>
+					</a>
+				</div>
+				<div class="contact_me_icons">
+					<a href="https://github.com/alexbrostowin">
+						<img src= "./img/github.png" width= "100" alt="GitHub Logo">
+						<p class="contact_me_text">GitHub</p>
+					</a>
+				</div>
+				<div class="contact_me_icons">
+					<a href="https://www.linkedin.com/in/alex-brostowin/" alt="LinkedIn Logo">
+						<img src= "./img/linkedin.png" width= "100">
+						<p class="contact_me_text">LinkedIn</p>
+					</a>
+				</div>
+			</div>
 		</div>
 
 	</body>
