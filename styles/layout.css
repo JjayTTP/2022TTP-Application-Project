@@ -1,3 +1,8 @@
+body {
+	padding-left: 30px;
+	padding-right:30px;
+	background-color: #E1ECF4;
+}
 nav {
 	  display: grid;
 	  min-height: 50px;
@@ -5,7 +10,7 @@ nav {
 	  background-color: #cccccc;
 	  grid-gap: 1em;
 	  padding: 0 40px;
-	  position: fixed;
+	  //position: fixed;
 	  top: 0;
 	  width: 100%;
     }
@@ -27,6 +32,45 @@ nav {
 	  align-content: center;
 	  font-family: "Open Sans", sans-serif;
  }
-.intro {
+#about div{
 	padding-top: 40px;
+	display: flex;
+	flex-direction:row;
+	justify-content: left;
+}
+#about section {
+	width: 50%;
+	position: left;
+	background-color: #BBDDF1; 
+	border: solid;
+	border-width: 2px;
+}
+#about section h1{
+	font-size: 80px;
+}
+#about section h2{
+	font-size: 40px;
+}
+#about section ul{
+	display: grid;
+	grid-auto-flow: row;
+	grid-row-gap: 5px;
+	font-size: 30px;	
+	
+	
+}
+ #about section ul li {
+	display: flex;
+	text-decoration: none;
+	position: center;
+	background: #BDCCDB;
+    padding: 1px;
+	width: 50%;
+    
+} 
+#about img {
+	width: 400px;
+	position: right;
+	border: solid;
+	border-width:2px;
 }
