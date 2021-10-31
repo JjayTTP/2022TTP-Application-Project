@@ -1051,7 +1051,7 @@ body{
     height: auto;
     display: block;
     background-color: #112240;
-    border-radius: 20px;
+    border-radius: 5px;
     padding: 25px;
     margin-bottom: 10px;
 }
@@ -1194,7 +1194,7 @@ body{
     width: 655px;
     height: auto;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 25px;
 }
 .messageMe h1{
@@ -1316,5 +1316,40 @@ body{
 @media screen and (max-width: 1250px) {
     .contactMe{
         width: 70vw !important;
+    }
+}
+@media screen and (max-width:980px) {
+    .goodbyeText{
+        font-size: 4vw !important;
+    }
+    .messageMe h1{
+        font-size: max(3.5vw,25px) !important;
+    }
+    .messageMe{
+        width: 100% !important;
+    }
+    .creatorNote h1{
+        font-size: max(3vw,19px) !important;
+    }
+}
+@media screen and (max-width:560px){
+    .messageMe{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .socialMediaCont{
+        float: none !important;
+        order: 2 !important;
+        margin: 0 auto;
+        width: 50vw !important;
+    }
+    .socialMediaItem{
+        margin: 0 auto;
+    }
+    .submitButton{
+        float: none !important;
+        order: 1 !important;
+        margin: 5vw auto;
+        width: 100% !important;
     }
 }
