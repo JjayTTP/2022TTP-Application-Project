@@ -1,13 +1,14 @@
 body {
 	padding-left: 30px;
 	padding-right:30px;
-	background-color: #E1ECF4;
+	background-color: #495057;
+	font-family: 'Roboto Mono', monospace;
 }
 nav {
 	  display: grid;
 	  min-height: 50px;
 	  grid-auto-flow: column;
-	  background-color: #5FA8D3;
+	  background-color: #ADB5BD;
 	  grid-gap: 1em;
 	  padding: 0 40px;
 	  top: 0;
@@ -17,19 +18,18 @@ nav {
 	  display: inline;
 	  padding: 8px;
 	  margin: 5px;
-	  background-color: #dddddd;
+	  background-color: #dee2e6;
 	  color: #ababab;
 	  text-decoration: none;
   }
   li a:hover {
   	color: #eeeeee;
-  	background-color: #aaaaaa;
+  	background-color: #ADB5BD;
   }
  .item {
 	  display: inline;
 	  justify-content: right;
 	  align-content: center;
-	  font-family: "Open Sans", sans-serif;
  }
 #about div{
 	padding-top: 40px;
@@ -40,9 +40,9 @@ nav {
 #about section {
 	width: 50%;
 	position: left;
-	background-color: #BBDDF1; 
+	background-color: #ADB5BD; 
 	border: solid;
-	border-width: 2px;
+	border-width: 1px;
 }
 #about section img {
 	flex-shrink: 0;
@@ -52,6 +52,7 @@ nav {
 }
 #about section h1{
 	font-size: 80px;
+	background-color: #ADB5BD; 
 }
 #about section h2{
 	font-size: 40px;
@@ -63,28 +64,29 @@ nav {
 	font-size: 30px;	
 	
 	
+	
 }
  #about section ul li {
 	display: flex;
 	text-decoration: none;
 	position: center;
-	background: #BDCCDB;
+	background-color: #ADB5BD;
     padding: 1px;
-	width: 50%;
+	width: 70%;
     
 } 
 #about img {
 	width: 400px;
 	position: right;
 	border: solid;
-	border-width:2px;
+	border-width:1px;
 }
 
 #skills h2, #projects h2, #contact h2 {
 	width: 100%;
 	text-align: center;
 	border:solid;
-	background-color: #5FA8D3;
+	background-color: #ADB5BD; 
 }
 #skills h2:hover, #projects h2:hover, #contact h2:hover{
 	text-decoration: underline;
@@ -95,18 +97,22 @@ nav {
     justify-content: center;
 	padding: 40px;
 	border: solid;
-	border-width: 2px;
+	border-width: 1px;
+	background-color: #ADB5BD;
+	
 	
 }
 #skills #skillIcons i {
 	padding: 50px;
+
 }
  #projectInfo{
 	 border:solid;
-	 border-width:2px;
+	 border-width:1px;
 	 position: center;
 	 text-align: center;
 	 padding: 20px;
+	 background-color: #ADB5BD; 
  }
  #projectImage {
 	 display: flex;
@@ -136,9 +142,9 @@ nav {
 }
 #contactInfo a:hover i.fab { 
 	text-decoration: none; 
-	color:blue; 
+	color:#ADB5BD; 
 }
 #contactInfo a:visited i.fab { 
 	text-decoration: none; 
-	color:blue; 
+	color:#ADB5BD; 
 
