@@ -6,8 +6,6 @@ $(document).ready(function () {
 
         console.log('CLicked Button')
 
-        div.style.color = "#8AC4FF"
-
         var name = $('.name').val()
         var email = $('.email').val()
         var subject = $('.subject').val()
@@ -15,37 +13,38 @@ $(document).ready(function () {
         var statusElm = $('.status')
         statusElm.empty()
 
-        if (name.length >= 3) {
+        if (name.length > 0) {
             statusElm.append('<div>Name is valid</div>')
         } else {
             event.preventDefault()
-            statusElm.append('<div>Name is not valid</div>')
+            statusElm.append('<div>Please enter your name</div>')
         }
 
         if (email.length >= 5 && email.includes('@') && email.includes('.')) {
             statusElm.append('<div>Email is valid</div>')
         } else {
             event.preventDefault()
-            statusElm.append('<div>Email is not valid</div>')
+            statusElm.append('<div>Please enter your email</div>')
         }
 
         if (subject.length >= 2) {
             statusElm.append('<div>Subject is valid</div>')
         } else {
             event.preventDefault()
-            statusElm.append('<div>Subject is not valid</div>')
+            statusElm.append('<div>No subject (optional)</div>')
         }
 
         if (message.length >= 10) {
             statusElm.append('<div>Message is valid</div>')
         } else {
             event.preventDefault()
-            statusElm.append('<div>Message is not valid</div>')
+            statusElm.append('<div>Please enter a message longer than 10 characters</div>')
         }
-
-
-
+        setTimeout(function () {
+            $(statusElm).empty()
+        }, 3000)
 
     })
+    
 })
 

@@ -4,6 +4,7 @@ body {
     font-family: Montserrat, sans-serif;
     margin: 0;
     background-color: #292929;
+    padding-bottom: 100px;
 }
 
 h1 {
@@ -20,9 +21,21 @@ h2 {
 
 p {
     color: #8AC4FF;
-
     font-size: 18px;
+}
 
+
+.profile:hover {
+    animation: rotation 1s linear;
+    animation-iteration-count: 1;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    } to {
+          transform: rotate(359deg);
+      }
 }
 
 .About {
@@ -31,10 +44,49 @@ p {
 
 .left {
     display: inline-block;
-    text-align: left;
+    text-align: justify;
+    width: 700px;
 }
+
+.aboutLogo {
+    width: 150px;
+    height: 150px;
+    padding: 20px 0;
+    vertical-align: top;
+    *display: inline;
+    zoom: 1;
+}
+
+    .aboutLogo:hover {
+        width: 300px;
+        height: auto;
+        padding: 20px 0;
+    }
+
+.longLogo {
+    height: 150px;
+    width: auto;
+    padding: 20px 0;
+    vertical-align: top;
+    text-align: center;
+}
+
+    .longLogo:hover {
+    height: 300px;
+    width: auto;
+    padding: 20px 0;
+    vertical-align: top;
+    }
+
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+
 .profile {
-    width: 500px;
+    width: 400px;
     height: auto;
     display: block;
     margin-left: auto;
@@ -142,3 +194,7 @@ input, textarea {
     text-align: center;
 }
 
+.status {
+    color: #8AC4FF;
+    text-align: center;
+}
