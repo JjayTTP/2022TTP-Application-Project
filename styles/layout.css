@@ -74,3 +74,21 @@ nav {
 	border: solid;
 	border-width:2px;
 }
+
+#skills h2 {
+	width: 100%;
+	text-align: center;
+	background-color: ;
+}
+#skills #skillIcons {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+	padding: 20px;
+	border: solid;
+	border-width: 2px
+	
+}
+#skills #skillIcons i {
+	padding: 50px;
+}
