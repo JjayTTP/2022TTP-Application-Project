@@ -10,14 +10,13 @@ nav {
 	  background-color: #5FA8D3;
 	  grid-gap: 1em;
 	  padding: 0 40px;
-	  //position: fixed;
 	  top: 0;
 	  width: 100%;
     }
   li a {
 	  display: inline;
 	  padding: 8px;
-	  //margin: 5px;
+	  margin: 5px;
 	  background-color: #dddddd;
 	  color: #ababab;
 	  text-decoration: none;
@@ -75,13 +74,13 @@ nav {
 	border-width:2px;
 }
 
-#skills h2, #projects h2 {
+#skills h2, #projects h2, #contact h2 {
 	width: 100%;
 	text-align: center;
 	border:solid;
 	background-color: #5FA8D3;
 }
-#skills h2:hover, #projects h2:hover{
+#skills h2:hover, #projects h2:hover, #contact h2:hover{
 	text-decoration: underline;
 }
 #skills #skillIcons{
@@ -116,4 +115,21 @@ nav {
  #projectInfo p {
 	 font-size: 20px;
  }
+ 
+#contactInfo {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+	padding: 40px;
+}
+ #contactInfo a {
+	padding: 0px 20px;
+}
+#contactInfo a:hover i.fab { 
+	text-decoration: none; 
+	color:blue; 
+}
+#contactInfo a:visited i.fab { 
+	text-decoration: none; 
+	color:blue; 
 
