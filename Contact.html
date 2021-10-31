@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html lang= "en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <title>Contact Page</title>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <header>
+        <div class="container">
+            <img src="images/logo.svg" alt="logo" class="logo">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="AboutMe.html">About Me</a></li>
+                    <li><a href="#">Contact Info</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <h1>Contact Me</h1>
+    <h2>Check Out My Links</h2>
+
+    <!--Buttons to websites-->
+    <div class="WebsiteLinks">
+        <a href="https://github.com/sangy1">
+            <img src="images/Github Logo.png" alt="Github logo" class="WebsiteLogo">
+        </a>
+        <a href="https://www.linkedin.com/in/sangwon-park-885b5b193/">
+            <img src="images/LI-In-Bug.png" alt="Linkedin logo" class="WebsiteLogo">
+        </a>
+    </div>
+
+    <h2>Send A Message</h2>
+    <!--Mail Form-->
+    <div id="mailform">
+        <form class="contact-form" action="https://formspree.io/f/xeqvwwzv" method="post">
+            <label>Full Name:<input type="text" name="name" class="name" placeholder="Full name" required /></label>
+            <label>Email address:<input type="text" name="mail" class="email" placeholder="youremail@email.com" required /></label>
+            <label>Subject:<input type="text" name="subject" class="subject" placeholder="Subject" /></label>
+            <label>Message:<textarea name="message" class="message" placeholder="Message" required></textarea></label>
+            <label><button type="submit" class="button" name="submit">SEND</button></label>
+        </form>
+    </div>
+    <div class="status">
+
+    </div>
+
+
+
+
+</body>
+
+</html>
