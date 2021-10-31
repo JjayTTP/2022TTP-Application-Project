@@ -24,6 +24,23 @@ p {
     font-size: 18px;
 }
 
+.button {
+    background-color: #8AC4FF;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+    .button:hover {
+        color: white;
+    }
+
 
 .profile:hover {
     animation: rotation 1s linear;
@@ -58,23 +75,21 @@ p {
 }
 
     .aboutLogo:hover {
-        width: 300px;
+        width: 200px;
         height: auto;
         padding: 20px 0;
     }
 
 .longLogo {
     height: 150px;
-    width: auto;
-    padding: 20px 0;
-    vertical-align: top;
-    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
     .longLogo:hover {
-    height: 300px;
+    height: 200px;
     width: auto;
-    padding: 20px 0;
     vertical-align: top;
     }
 
@@ -114,6 +129,10 @@ header {
         display: table;
         clear: both;
     }
+
+.center {
+    text-align: center;
+ }
 
 nav {
     float: right;
