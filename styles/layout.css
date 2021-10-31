@@ -80,11 +80,14 @@ nav {
 	text-align: center;
 	background-color: ;
 }
+#skills h2:hover{
+	text-decoration: underline;
+}
 #skills #skillIcons {
-	display: flex;
+	display: none;
 	flex-wrap: wrap;
     justify-content: center;
-	padding: 20px;
+	padding: 40px;
 	border: solid;
 	border-width: 2px
 	
