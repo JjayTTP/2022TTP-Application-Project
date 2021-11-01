@@ -1,0 +1,386 @@
+#main-header {
+    font-family: Times New Romans; 
+    color:  black ; 
+    font-size: 8px;
+}
+
+#profile{
+    width:300px;
+    height:400px; 
+    margin-right: 20px; 
+    float:right;
+}
+#intro{
+    font-family:courier;
+    color: black;
+    font-size: 18px; 
+    margin-left: 60px
+}
+#about-me{
+    font-family:courier;
+    color: black; 
+    font-size: 15px; 
+    margin-left: 60px;
+}
+#contact-header{
+    font-family:courier; 
+    color:#3498db; 
+    font-size: 14px; 
+    text-align: bottom; 
+    margin-left: 60px;
+}
+#Contact-info{
+    font-family:courier; 
+    color:#115e92; 
+    font-size: 12px; 
+    text-align: bottom; 
+    margin-left: 60px;
+}
+
+#linkedIn{
+    font-family:courier; 
+    color:#3498db; 
+    width:20px; 
+    height:20px;
+    text-align: bottom; 
+    margin-left: 60px;
+}
+#github{
+    font-family:courier; 
+    color:#3498db; 
+    width:20px; 
+    height:20px;
+    text-align: bottom; 
+    margin-left: 60px;
+    margin-right: 60px;
+}
+#gmail{
+    font-family:courier; 
+    color:#3498db; 
+    width:20px; 
+    height:20px;
+    text-align: bottom; 
+    margin-left: 60px;
+}
+
+#portfolio{
+    font-family:courier; 
+    color:#196F3D; 
+    font-size: 14px; 
+    text-align: bottom; 
+    margin-left: 20px;
+}
+#portfolio1{
+    font-family:courier; 
+    color:#196F3D; 
+    font-size: 14px; 
+    text-align: top; 
+    float: right;
+    margin-right: 20px;
+}
+
+#artwork{
+    font-family:courier; 
+    color:#196F3D; 
+    font-size: 14px; 
+    text-align: bottom; 
+    margin-left: 40px;
+}
+
+#artwork1{
+    font-family:courier; 
+    color:#196F3D; 
+    font-size: 14px; 
+    text-align: top; 
+    float: right;
+    margin-right: 40px;
+}
+#DOM{
+    font-family:courier; 
+    color:#196F3D; 
+    font-size: 14px; 
+    text-align: bottom; 
+    margin-left: 40px;
+}
+
+#copyright{
+    font-family:'Times New Roman', Times, serif; 
+    color:black; 
+    font-size: 11px; 
+    text-align: bottom; 
+    float:right;
+    margin-right: 40px;
+}
+
+#silver-title{
+    font-family:courier; 
+    color:#0E6655; 
+    font-size: 25px;
+    margin-left: 60px;
+}
+
+#silver-description{
+    font-family:'Times New Roman', Times, serif; 
+    color:black; 
+    font-size: 18px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#silver{
+    width:800px;
+    height:500px; 
+    margin-left: 60px; 
+}
+
+#present{
+    font-family:'Times New Roman', Times, serif; 
+    color:black; 
+    font-size: 18px;
+    margin-left: 60px;
+}
+
+#silver-link1{
+    font-family:'Times New Roman', Times, serif; 
+    color:black; 
+    font-size: 18px;
+    margin-left: 60px;
+}
+#application{
+    font-family:'Times New Roman', Times, serif; 
+    color:black; 
+    font-size: 18px;
+    margin-left: 60px;
+}
+#silver-link2{
+    font-family:'Times New Roman', Times, serif; 
+    color:black; 
+    font-size: 18px;
+    margin-left: 60px;
+}
+#demonstration{
+    font-family:'Times New Roman', Times, serif; 
+    color:black; 
+    font-size: 18px;
+    margin-left: 60px;
+}
+#silver-link3{
+    font-family:'Times New Roman', Times, serif; 
+    color:black; 
+    font-size: 18px;
+    margin-left: 60px;
+}
+#river-title{
+    font-family:courier; 
+    color:#0E6655; 
+    font-size: 25px;
+    margin-left: 60px;
+}
+
+#river-description{
+    font-family:'Times New Roman', Times, serif; 
+    color:black; 
+    font-size: 18px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+#river{
+    width:800px;
+    height:500px; 
+    margin-left: 60px; 
+}
+
+#riverlink{
+    font-family:'Times New Roman', Times, serif; 
+    color:black; 
+    font-size: 18px;
+    margin-left: 60px;
+}
+
+#river-link{
+    font-family:'Times New Roman', Times, serif; 
+    color:black; 
+    font-size: 18px;
+    margin-left: 60px;
+}
+#home{
+    font-family:courier; 
+    color:#196F3D; 
+    font-size: 14px; 
+    text-align: bottom; 
+    margin-left: 40px;
+}
+
+#home1{
+    font-family:courier; 
+    color:#196F3D; 
+    font-size: 14px; 
+    text-align: top; 
+    float: right;
+    margin-right: 40px;
+}
+
+#art-header{
+    font-family:courier; 
+    color:#0E6655; 
+    font-size: 25px;
+    margin-left: 60px;
+}
+
+#lion-t{
+    font-family:courier; 
+    color:black; 
+    font-size: 20px;
+    margin-left: 60px;
+}
+#lion{
+    width:800px;
+    height:1000px; 
+    margin-left: 60px; 
+}
+
+#animals-t{
+    font-family:courier; 
+    color:black; 
+    font-size: 20px;
+    margin-left: 60px;
+}
+#animals{
+    width:1200px;
+    height:900px; 
+    margin-left: 60px; 
+}
+#dance-t{
+    font-family:courier; 
+    color:black; 
+    font-size: 20px;
+    margin-left: 60px;
+}
+#dance{
+    width:1200px;
+    height:800px; 
+    margin-left: 60px; 
+}
+#starry-t{
+    font-family:courier; 
+    color:black; 
+    font-size: 20px;
+    margin-left: 60px;
+}
+#starry{
+    width:1200px;
+    height:800px; 
+    margin-left: 60px; 
+}
+#anakin-t{
+    font-family:courier; 
+    color:black; 
+    font-size: 20px;
+    margin-left: 60px;
+}
+#anakin{
+    width:800px;
+    height:1000px; 
+    margin-left: 60px; 
+}
+#pretzel-t{
+    font-family:courier; 
+    color:black; 
+    font-size: 20px;
+    margin-left: 60px;
+}
+#pretzel{
+    width:1200px;
+    height:900px; 
+    margin-left: 60px; 
+}
+#plates-t{
+    font-family:courier; 
+    color:black; 
+    font-size: 20px;
+    margin-left: 60px;
+}
+#plates{
+    width:1200px;
+    height:800px; 
+    margin-left: 60px; 
+}
+
+#id1{
+    width:40px;
+    height:20px; 
+    margin-left: 60px; 
+}
+
+#q1{
+    font-family:courier; 
+    color:black; 
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+#q2{
+    font-family:courier; 
+    color:black; 
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+#q3{
+    font-family:courier; 
+    color:black; 
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+#a1{
+    font-family:courier; 
+    color:black; 
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+#a2{
+    font-family:courier; 
+    color:black; 
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+#a3{
+    font-family:courier; 
+    color:black; 
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+#catch{
+    font-family:courier; 
+    color:black; 
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+#b1{
+    margin-left: 60px;
+    color: rgb(95, 95, 212);
+}
+#b2{
+    margin-left: 60px;
+    color: rgb(95, 95, 212);
+}
+#b3{
+    margin-left: 60px;
+    color: rgb(95, 95, 212);
+}
+
+#hello{
+    margin-left: 60px;
+    color: rgb(45, 45, 158);
+    font-family: courier;
+    font-size: 25px;
+}
+#button{
+    margin-left: 60px;
+    color: rgb(95, 95, 212);
+}
