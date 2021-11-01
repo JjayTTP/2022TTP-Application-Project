@@ -1,0 +1,98 @@
+.rect{
+  transition: width 2.3s, height 2s, border-radius 2s;
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width:10%;
+  height:10%;
+  border-radius: 50%;
+  z-index: -1;
+}
+.rect2{
+  transition: width 2.3s, height 2s, border-radius 2s;
+  position: absolute;
+  bottom:-20%;
+  right:-20%;
+  width:10%;
+  height:10%;
+  border-radius: 50%;
+  z-index: -1;
+}
+body{
+  text-align: center;
+  
+}
+ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+a {
+  font-size: 24px;
+  color: #000;
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 8px;
+}
+
+a:before, a:after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #41b6e6;
+}
+a:before {
+  opacity: 0;
+  -webkit-transform: translateY(-8px);
+      -ms-transform: translateY(-8px);
+          transform: translateY(-8px);
+  -webkit-transition: -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+          transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+}
+a:after {
+  opacity: 0;
+  -webkit-transform: translateY(4px);
+      -ms-transform: translateY(4px);
+          transform: translateY(4px);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+          transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+}
+a:hover:before, a:hover:after, a:focus:before, a:focus:after {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+a:hover:before, a:focus:before {
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+          transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+}
+a:hover:after, a:focus:after {
+  -webkit-transition: -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
+          transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
+}
+.pic{
+  width:15%;
+  margin-right:30px;
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+.title{
+  font-family: 'Alegreya SC';
+  font-size: 102px;
+  margin-top:20%;
+
+}
+.words{
+  font-size:30px;
+  margin-bottom: 20px;
+  color:#5a5a5ae0;
+
+}
+.checkback{
+  font-size:26px;
+  color:#5a5a5ae0;
+}

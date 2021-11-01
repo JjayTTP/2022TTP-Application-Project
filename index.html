@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Muzaffar's Portfolio</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Adamina' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Arapey' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body onload="initalize();initComparisons();myFunction();">
+	<div class="main" style="display: flex;">
+    <div id="nav"class="nav">
+      <div style="display:flex;align-items:center;"><img id="logo" style="width:90px;padding-left:86px;"src="chasedreams.png">
+      <div id="nameNav" style="display:none;cursor: pointer;font-size:24px;padding-left:86px;">Muzaffar Mukhitdinov</div></div>
+      <div id="nav2" class="nav2">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <!--<div id="toggle"onclick="toggleChange();"class="toggle">
+        <div class="toggleinside">
+          <span></span>
+          <span style="width:65% !important;"></span>
+          <span></span>
+        </div>
+      </div>-->
+    </div>
+
+		<!-- Left content -->
+		<div class="left" style="flex: 0.91;margin:auto;">
+			
+
+            <div style="font-family: 'Libre Baskerville';font-size:52px;padding-bottom:10px;padding-top:25px;">Hi,</div>
+            <div style="font-family: 'Lato';font-size:115px; font-weight:;padding-bottom:0px;    line-height: 72px; margin-top: 30px;">I'm <span style="font-style:;font-family: 'Allura';">Muzaffar</span></div>
+            <!--<div style="font-size:25px;font-family: 'Annie Use Your Telescope';color:#6f6d6a;">Computer Science Student</div>-->
+            <div style="cursor:pointer;" onclick="relocate2();"class="connect">Learn More!</div>
+
+        </div>
+
+        <!-- Right content -->
+        <div class="right" style="flex: 1.8;">
+          
+        </div>
+        <!--<div class="Arrow">
+          <span>&#10148;</span>
+        </div>-->
+    </div>
+    <!--<div class="second" style="display:flex;">
+      <div class="left2" style="flex: 1.1;">
+      </div>
+        <!-- Right content 
+      <div class="right2" style="flex: 1.2;">
+      </div>
+    </div>-->
+    <div class="third">
+      <div class="thirdleft">
+        <div class="img-comp-container">
+          <div class="img-comp-img">
+            <img src="https://mail.google.com/mail/u/0?ui=2&ik=06302b66c2&attid=0.1.1&permmsgid=msg-f:1715053960454231451&th=17cd187d8380559b&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ8CiFNcLNf3NBccBS7DDHQpgoZtsO6Vm7aILjw6ZQMeugxhnPqwYoBEQbKPNqmrKiZhKK9oRa_hRqrU0_xDUUE0lSgfHSUBlgE60q0oyS8TG3yugdc9QaFMid4&disp=emb" width="420px" height="100%">
+          </div>
+          <div class="img-comp-img img-comp-overlay">
+            <img src="https://mail.google.com/mail/u/0?ui=2&ik=06302b66c2&attid=0.1.1&permmsgid=msg-f:1715053922446830289&th=17cd1874aa156ad1&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ_xzNg6W0rCxLkr5twCX_lPUC446FMuMI8HxS1fzTyn4dsLlb6LYPEUBqpkBJKStfIiFXUSgdae_ePQzxJ9sy3jH8gMgpd4ah0Pgehv9rv9pVLwkX4vQJyy-2M&disp=emb" width="420px" height="100%">
+          </div>
+        </div>
+
+      </div>
+      <div class="thirdright">
+        <div class="thirdrighttitle">CS Student</div>
+        <div class="thirdrightpara">
+          <p>Good day! My name is Muzaffar and I'm a sophomore attending John Jay College of Criminal Justice and projected to graduate May 2024. I'm pursuing a major in Computer Science and Information Systems, as well as minors in Mathematics and Economics.
+          </p>
+          <p>I'm strongly interested in Artificial Intelligence and want to learn more how it will continue to further enhace our lives.</p>
+        </div>
+      </div>
+    </div>
+    <div style="width:100%;height:auto;background-color: #d6eaec;padding-top: 60px;padding-bottom:25px;background: linear-gradient(30deg, #d6eaec 0%, #d6eaec 38.6%, rgba(255, 255, 255, 1) 50%, rgb(255, 255, 255) 100%);">
+      <div style="position:;"><h2 style="text-align:center; font-size:58px;font-weight:100;font-family: 'Arapey';margin:0px; padding:40px;/*background:linear-gradient(50deg, rgb(211 226 229) 0%, rgb(211 226 229)35.72%, rgba(255, 255, 255, 1) 31%, rgb(255, 255, 255) 100%);*/"id="">Moments</h2></div>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="https://images.pexels.com/photos/691034/pexels-photo-691034.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" style="width:100%">
+          <!--<div class="text">Caption Text</div>-->
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="images/img1.JPG" style="width:100%">
+          <!--<div class="text">Caption Two</div>-->
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="images/img3.JPG" style="width:100%">
+          <!--<div class="text">Caption Three</div>-->
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="images/img4.JPG" style="width:100%">
+          <!--<div class="text">Caption Three</div>-->
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="images/img5.JPG" style="width:100%">
+          <!--<div class="text">Caption Three</div>-->
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+        <br>
+ 
+      </div>
+
+
+
+    <div style="position:relative;"><h2 style="text-align:center; font-size:58px;font-weight:100;font-family: 'Arapey';margin:0px; padding:40px;/*background:linear-gradient(50deg, rgb(211 226 229) 0%, rgb(211 226 229)35.72%, rgba(255, 255, 255, 1) 31%, rgb(255, 255, 255) 100%);*/"id="recentTitle">Recent Project</h2>
+      <label style="display:none;" class="switch">
+        <input id="check" onclick="change();" type="checkbox">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div id="fourth" class="fourth">
+      <div style="cursor:pointer;" onclick="relocate3(1);"class="one">
+        <img src="https://miro.medium.com/max/1400/1*L76A5gL6176UbMgn7q4Ybg.jpeg">
+        <h2 class="language">HTML CSS JS</h2>
+        <div>Calculus Lesson</div>
+      </div> 
+    </div>
+
+    
+    <div class="view" onclick="relocate();">View More!</div>
+    <div class="footer"style="background:#d6eaec;">
+      <div style="align-items:center;display:flex;width:100%;justify-content:center;">
+        <div></div><div style="padding-bottom:15px;font-size:30px;text-align:center;">MUZAFFAR MUKHITDINOV</div><div></div>
+      </div>
+        <div class="icons"style="display:flex;justify-content:center;font-size:28px;">
+          <a href="https://github.com/nolimitmuzaffar" target="_blank" style="margin-right:8px;"><span class="fa fa-github">
+          </span></a>
+          <a href="https://www.linkedin.com/in/muzaffarmukhitdinov/" target="_blank" ><span class="fa fa-linkedin"></span>
+        </div></a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
