@@ -20,7 +20,7 @@ div, section, span, ul, li, a, header{
 	top: 0;
 	width: 100%;
 	overflow: hidden;
-	background-color: black;
+	background-color: #000117;
 	color: white;
 	list-style: none;
 	text-align: right;
@@ -37,19 +37,36 @@ div, section, span, ul, li, a, header{
 
 
 }
-.nav >li > a{
-	text-decoration: none;
-	font-size: 16px;
-	color: rgb(255, 255, 255);
-
+a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Space_Mono';
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
 }
-.nav >li > a:hover{
-	color: rgb(100, 100, 100);
-
+.nav > li> a:after{
+    content: "";
+    position: absolute;
+    background-color: blue;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.nav > li> a:hover{
+    color: #ffffff;
+}
+.nav > li> a:hover:after{
+    width: 100%;
 }
 .container{
 	width: 80%;
 	margin: 50px auto;
+	overflow-y: scroll;
+
 }
 .logo{
 	color: red;
@@ -60,8 +77,6 @@ div, section, span, ul, li, a, header{
 
 }
 .logo span{
-	background: var(--color);
-	display: inline-block;
 	color: white;
 	
 	padding: 5px 5px;
@@ -74,11 +89,16 @@ div, section, span, ul, li, a, header{
 	font-weight: bold;
 }
 .welcome-txt{
-	position:absolute;
-	width: 600px;
-	height: 300px;
-	margin: 20% 30%;
-	text-align: center;
+	background-size:cover;
+	background-position:center;
+	height:100vh;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	padding:0 20px;
+	background-image: url("img/home.jpg");
 }
 .welcome-txt h1{
 	text-align: center;
@@ -122,6 +142,7 @@ img{
 	padding: 20px;
 	color:white;
 	margin-top: 20px;
+	display: flex;
 
 }
 .contact-left{
@@ -169,7 +190,7 @@ label{
 	color: white;
 }
 button{
-	background: black;
+	background: #000117;
 	width: 100px;
 	border: none;
 	outline: white;
@@ -221,7 +242,7 @@ button{
 	display: block;
 	height: 120px;
 	width: 120px;
-	background: rgb(15, 15, 15);
+	background: #000117;
 	border-radius: 50%;
 	position: relative;
 	z-index: 2;
@@ -303,7 +324,7 @@ footer{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: black;
+	background: #000117;
 	height: auto;
 	width: 100vw;
 	font-family: "Space_mono";
@@ -351,7 +372,7 @@ footer{
 	color:blue;
 }
 .footer-bottom{
-	background: black;
+	background: #000117;
 	width: 100vw;
 	
 	text-align: center;
@@ -377,7 +398,8 @@ section{
     width: 100%;
     float: left;
     height: 100vh;
-    position: relative;
+	position: relative;
+
 }
 
 #home{
@@ -405,18 +427,12 @@ section{
 
 }
 
-/*section{
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	background: black;
-}*/
-
 .container1{
 	width: 100%;
 	max-width: 1440px;
 	margin: 0 auto;
 	padding: 0 20px;
+	overflow-y: scroll;
 
 }
 .grid{
@@ -468,8 +484,6 @@ section{
 	margin-bottom: 2rem;
 	color: black;
 }
-u{
-text-decoration-color: blue;}
 
 .grid2{
     display: grid;

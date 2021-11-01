@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 	<head>
@@ -6,7 +7,7 @@
 		<meta charset="utf-8">
 		
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>NAVBAR</title>
+		<title>Luis Marin Website</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 	</head>
 	<body>
@@ -14,27 +15,24 @@
 
 				<ul class="nav">
 					<div class = "logo">
-						<a href="#" >Luis <span>Marin</span></a>
+						<a href="#home" ><i class="fas fa-desktop"></i> Luis <span>Marin</span></a>
 					</div>		
-					<li><a href="#" >HOME</a></li>
-					<li><a href="#" >ABOUT ME</a></li>
-					<li><a href="#" >SKILLS</a></li>
-					<li><a href="#" >CONTACT</a></li>
-					<li><a href="#" >RESUME</a></li>
+					<li><a href="#home">HOME</a></li>
+					<li><a href="#about">ABOUT ME</a></li>
+					<li><a href="#skills" >SKILLS</a></li>
+					<li><a href="#contact" >CONTACT</a></li>
 				</ul>
 
 				<section id="home">
-					<div class="container">
+					
 					<div class="welcome-txt">
 						<h1>Welcome To My Website!</h1>
-						<a href="#"> ENTER</a>
-					</div>	
+						<a href="#about"> ENTER</a>
+						
 					</div>
-					<div class="background-photo">
-					<img src="img/home.jpg" alt="">
-					</div>
+
 				</section>
-				<section id= "about">
+				<section id="about">
 					<div class="container1">
 						<div class="grid">
 							<div class="left">
@@ -44,7 +42,7 @@
 								<h4>Hello World!</h4>
 								<h1>My name is Luis Enrique Marin</h1>
 								<h3>Im an aspiring software engineer</h3>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vel vitae illo quidem fugit voluptates modi tempore, cum recusandae debitis! Velit maxime ad recusandae mollitia ea, ipsam veritatisrem architecto!</p>
+								<p>Currently a senior at John Jay Criminal Justice College as a computer science and information security major. I've always been passionate about tech and even more so for programming. I love the challanges that programming brings, because of those challanges I'm always being pushed to want and learn more.</p>
 
 							</div>
 
@@ -102,6 +100,7 @@
 					<div class="contact-box">
 						<div class="contact-left">
 							<h3>Feel free to send me a message</h3>
+							<h3>My Email: Marinluis1997@gmail.com</h3>
 							<form>
 								<div class="input-row">
 									<div class="input-group">
@@ -136,19 +135,19 @@
 								<div class="wrapper">	
 									<div class="icon linkedin">
 										<div class="tooltip">LinkedIn</div>
-										<span><i class="fab fa-linkedin"></i></span>
+										<span><a href="https://www.linkedin.com/in/luis-e-marin/"><i class="fab fa-linkedin"></i></span></a>
 									</div>
 									<div class="icon github">
 										<div class="tooltip">Github</div>
-										<span><i class="fab fa-github"></i></span>
+										<span><a href="https://github.com/Luisiskey"><i class="fab fa-github"></i></span></a>
 									</div>
 									<div class="icon twitter">
 										<div class="tooltip">Twitter</div>
-										<span><i class="fab fa-twitter"></i></span>
+										<span><a href="https://twitter.com/NimbleLM"><i class="fab fa-twitter"></i></span></a>
 									</div>
 									<div class="icon instagram">
 										<div class="tooltip">Instagram</div>
-										<span><i class="fab fa-instagram"></i></span>
+										<span> <a href="https://www.instagram.com/luisiskey/"><i class="fab fa-instagram"></i></span></a>
 									</div>
 								</div>
 							</div>
@@ -164,10 +163,10 @@
 				<div class="footer-content">
 					<h3>Luis Marin</h3>
 					<ul class="socials">
-						<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-						<li><a href="#"><i class="fab fa-github"></i></a></li>
-						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/luis-e-marin/"><i class="fab fa-linkedin"></i></a></li>
+						<li><a href="https://github.com/Luisiskey"><i class="fab fa-github"></i></a></li>
+						<li><a href="https://twitter.com/NimbleLM"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="https://www.instagram.com/luisiskey/"><i class="fab fa-instagram"></i></a></li>
 					</ul>
 				<div class="footer-bottom">
 					<p>copyright &copy; 2021 Luis Marin. designed by <span>Luis Marin</span></p>
@@ -179,3 +178,24 @@
 	</body>
 	
 </html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ 
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
