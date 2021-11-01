@@ -163,6 +163,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
+    background: url("https://www.theopencode.org/wp-content/uploads/2020/09/Chelsea-Alcinord.jpg") no-repeat center;
     height: 100vh;
     color:rgb(26,28,30);
     min-height: 500px;
