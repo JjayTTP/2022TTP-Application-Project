@@ -123,3 +123,4 @@ Your site needs to implement all user stories and meet the UI/UX criteria. There
 - How can we use JavaScript to keep track of what things are supposed to be shown or hidden?
 - How can we use DOM events and JavaScript to change or replace the HTML or text content of an element when we want to show or hide something?
 
+ 
