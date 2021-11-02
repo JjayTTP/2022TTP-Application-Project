@@ -8,6 +8,7 @@ For this project you will build your own personal website using the following cr
 - Building Web sites with HTML and CSS
 - Using JavaScript to make Web sites interactive
 - Developing your personal brand and online profiles
+- You'll be getting mango instead of chocolate
 
 You'll use these skills to build an MVP (Most Viable Product) of your personal web site. This Web site is a place to show the tech industry who you are and what you can do.
 
