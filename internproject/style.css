@@ -2,10 +2,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
-  background-color: #cbccda;
+  background-color: #efeff8;
   font-family: Arial, Helvetica, sans-serif;
   color: #153b51;
 }
@@ -17,6 +19,15 @@ body {
 }
 a {
   text-decoration: none;
+}
+
+#button {
+  position: absolute;
+  position: fixed;
+  bottom: 8%;
+  right: 8%;
+
+  display: none;
 }
 
 /* navbar */
@@ -109,25 +120,46 @@ a {
 /* about content */
 
 .about {
-  width: 100%;
-  margin-top: 0.2rem;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  column-gap: 2.5rem;
+  padding: 2.5rem;
 }
-.about-container {
-  width: 30rem;
+.about-hd {
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 5rem;
 }
-
+.about-img img {
+  height: 50rem;
+  border-radius: 2.5rem;
+}
 .about-p {
-  line-height: 3rem;
-}
-.software {
-  font-weight: bold;
+  margin-top: 5rem;
+  line-height: 2rem;
 }
 
+/*picture and hobbies*/
+.pic-hobbies-container h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.pic-hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.pic-and-hobbies {
+  width: 350px;
+  height: 350px;
+  margin: 2.5rem;
+}
+.hobbies p {
+  text-align: center;
+}
+
+#danceVideo {
+  display: none;
+  transition: all 0.3s;
+}
 /* programming languages and frameworks */
 
 .codinglanguage {
@@ -138,6 +170,7 @@ a {
 }
 .codinglanguage h1 {
   text-align: center;
+  text-transform: uppercase;
 }
 
 .code-icons {
@@ -194,6 +227,21 @@ a {
 }
 
 /* contact form  */
+.center {
+  text-align: center;
+  background-color: #cbccda;
+  padding: 2rem;
+  margin: 0.5rem;
+}
+.contact-me {
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+}
 .contact-form {
   display: flex;
   text-align: center;
@@ -209,8 +257,6 @@ a {
   padding: 2rem 2rem;
 }
 
-
-
 .space {
   margin-bottom: 1.5em;
 }
@@ -223,7 +269,7 @@ a {
 /* footer */
 
 .footer {
-  background-color: #efeff8;
+  background-color: #cbccda;
   height: 4rem;
   display: flex;
   justify-content: flex-end;
@@ -304,6 +350,13 @@ hover effect */
   }
   .card {
     margin: 2rem 0 0 0;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-info {
+    flex-direction: column;
   }
 }
 
