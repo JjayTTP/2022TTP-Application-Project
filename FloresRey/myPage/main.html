@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rey's Portfolio</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="main.css">
+        <script src="loadingPage.js"></script>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">   
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="loadingPage">
+            <div class="logoCont">
+                <h1><span class="leftChar">R</span><span class="rightChar">F</span></h1>
+            </div>
+        </div>
+        <script>hideLoading();</script>
+        <div class="sideNav">
+            <div class="sideNav_name"><h1><span class="leftChar">R</span><span class="rightChar">F</span></h1></div>
+            <div class="scrollBar">
+                <div class="pageSection">
+                    <div class="sectionItem selectedSectionItem" onclick="gotoSection(0)">
+                        <img src="../Images/sideNav/home.png" draggable="false">
+                        <div class="sectionItemText">
+                            <div class="sectionPointer"></div>
+                            <div class="sectionTextDiv"><h1>Home</h1></div>
+                        </div>
+                    </div>
+                    <div class="sectionItem" onclick="gotoSection(1)">
+                        <img src="../Images/sideNav/avatar.png" draggable="false">
+                        <div class="sectionItemText">
+                            <div class="sectionPointer"></div>
+                            <div class="sectionTextDiv"><h1>About Me</h1></div>
+                        </div>
+                    </div>
+                    <div class="sectionItem" onclick="gotoSection(2)">
+                        <img src="../Images/sideNav/skills.png"  draggable="false">
+                        <div class="sectionItemText">
+                            <div class="sectionPointer"></div>
+                            <div class="sectionTextDiv"><h1>My Expertise</h1></div>
+                        </div>
+                    </div>
+                    <div class="sectionItem" onclick="gotoSection(3)">
+                        <img src="../Images/sideNav/project.png" draggable="false">
+                        <div class="sectionItemText">
+                            <div class="sectionPointer"></div>
+                            <div class="sectionTextDiv"><h1>Projects</h1></div>
+                        </div>
+                    </div>
+                    <div class="sectionItem" onclick="gotoSection(4)">
+                        <img src="../Images/sideNav/education.png" draggable="false">
+                        <div class="sectionItemText">
+                            <div class="sectionPointer"></div>
+                            <div class="sectionTextDiv"><h1>Education</h1></div>
+                        </div>
+                    </div>
+                    <div class="sectionItem" onclick="gotoSection(5)">
+                        <img src="../Images/sideNav/send.png" draggable="false">
+                        <div class="sectionItemText">
+                            <div class="sectionPointer"></div>
+                            <div class="sectionTextDiv"><h1>Get In Touch</h1></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scrollSection">
+                    <style data="sideSlider" type="text/css"></style>
+                    <input type="range" min="0" max="1000" oninput="scrollPage(this.value)" onmousewheel="moveSlider(event)" value="0" class="slider" id="sideNav_Slider">
+                </div>
+            </div>
+        </div>
+        <div class="mainContent">
+            <div class="sectionContainer" id="sectionOne">
+                <div class="greetings">
+                    <p>Hello, I am</p>
+                    <div class="nameContainer">
+                        <h1 class="myName" data-period="2000" data-type='[ "Creative.", "Analytical.", "Ambitious.", "Dedicated." , "Rey Flores."]'></h1>
+                    </div>
+                    <h2 class="oof">I'm an aspiring Software Engineer who enjoys learning new skills, is motivated to solve complex problems, and is always willing to get outside of his comfort zone.</h2>
+                    <a id="resumeLink" href="../Images/Undergraduate Resume.pdf" target="_blank">Resume</a>
+                </div>
+            </div>
+            <div class="sectionContainer" id="sectionTwo">
+                <div class="aboutMe">
+                    <div class="sectionBanner">
+                        <div class="leftDivider"></div>
+                        <h1>About Me</h1>
+                        <div class="rightDivider"></div>
+                    </div>
+                    <div class="myInfo">
+                        <div class="myInfoText">
+                            <h1>I am a fourth-year college student who is passionate about programming. A passion that originated back in high school, where I was presented with the many marvelous ways that technology has impacted and shaped our society. I developed a sense of purpose which motivated me to want to code, so I did. I learned to code in Python, Java, and Ruby. In addition to this, I also took part in multiple hackathons and programs, which further enhanced my knowledge of programming and web development.</h1><br>
+                            <h1>That passion that originated more than six years ago has led to me being proficient in numerous programming languages, improved my ability to solve complex problems, and drove my desire to obtain a Bachelor's Degree in Computer Science.</h1>
+                        </div>
+                        <div class="myImgContainer">
+                            <img class="myImg" src="../Images/aboutMe/profileImg.jfif" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sectionContainer" id="sectionThree">
+                <div class="skillSection">
+                    <div class="sectionBanner">
+                        <div class="leftDivider"></div>
+                        <h1>My Expertise</h1>
+                        <div class="rightDivider"></div>
+                    </div>
+                    <div class="mySkills">
+                        <div class="skillTitleCont">
+                            <div class="skillIndicatorCont"><div class="skillIndicator"></div></div>
+                            <div class="skillTitles">
+                                <div class="skillTitleItem selectedSkillTitle" onclick="gotoSkill(0)"><h1>Front End Development</h1></div>
+                                <div class="skillTitleItem" onclick="gotoSkill(1)"><h1>Back End Development</h1></div>
+                                <div class="skillTitleItem" onclick="gotoSkill(2)"><h1>Database Architecture</h1></div>
+                                <div class="skillTitleItem" onclick="gotoSkill(3)"><h1>Analytics</h1></div>
+                                <div class="skillTitleItem" onclick="gotoSkill(4)"><h1>Other Technologies</h1></div>
+                            </div>
+                        </div>
+                        <div class="skillInfo">
+                            <div class="skillInfoItem selectedSkillInfo" id="skill_frontEnd">
+                                <div class="skillImgs">
+                                    <div class="skillImgItem"><img src="../Images/mySkills/html5.png" alt="HTML Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">HTML5</h1></div></div>
+                                    <div class="skillImgItem"><img src="../Images/mySkills/css.png" alt="CSS Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">CSS3</h1></div></div>
+                                    <div class="skillImgItem"><img src="../Images/mySkills/javascript.png" alt="Javascript Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">Javascript</h1></div></div>
+                                    <div class="skillImgItem"><img src="../Images/mySkills/jquery.png" alt="Jquery Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">Jquery</h1></div></div>
+                                    <div class="skillImgItem"><img src="../Images/mySkills/react.png" alt="React Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">React</h1></div></div>
+                                </div>
+                                <ul class="skillInfoText">
+                                    <li>5+ years of experience in client-side development.</li>
+                                    <li>Designed numerous elegant websites using HTML and CSS.</li>
+                                    <li>Built responsive websites that provide seamless and optimal user experience using Javascript.</li>
+                                    <li>Proficient in implementing numerous frontend frameworks such as Jquery and React.</li>
+
+                                </ul>
+                            </div>
+                            <div class="skillInfoItem" id="skill_backEnd">
+                                <div class="skillImgs">
+                                    <div class="skillImgItem"><img id="skillImg_PHP" src="../Images/mySkills/php.svg" alt="PHP Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">PHP</h1></div></div>
+                                    <div class="skillImgItem"><img src="../Images/mySkills/pythonIcon.png" alt="Python Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">Python</h1></div></div>
+                                    <div class="skillImgItem"><img src="../Images/mySkills/cpp.svg" alt="CPP Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">CPP</h1></div></div>
+                                    <div class="skillImgItem"><img id="skillImg_Express" src="../Images/mySkills/express.png" alt="Express Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">Express</h1></div></div>
+                                    <div class="skillImgItem"><img id="skillImg_Java" src="../Images/mySkills/java.png" alt="Java Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">Java</h1></div></div>
+                                </div>
+                                <ul class="skillInfoText">
+                                    <li>5+ years of experience in server-side development.</li>
+                                    <li>Developed several backend web architectures using PHP, Python, C++, and Java.</li>
+                                    <li>Experience implementing databases, backend logic, APIs, and Servers.</li>
+                                    <li>Proficient in implementing numerous backend frameworks such as Express and Django.</li>
+                                </ul>
+                            </div>
+                            <div class="skillInfoItem" id="skill_database">
+                                <div class="skillImgs">
+                                    <div class="skillImgItem"><img id="skillImg_MySQL" src="../Images/mySkills/mysql.png" alt="MySQL Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">MySQL</h1></div></div>
+                                    <div class="skillImgItem"><img src="../Images/mySkills/postgresql.png" alt="PostgreSQL Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">PostgreSQL</h1></div></div>
+                                    <div class="skillImgItem"><img id="skillImg_mongoDB" src="../Images/mySkills/mongo.png" alt="mongoDB Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">Mongo Database</h1></div></div>
+                                </div>
+                                <ul class="skillInfoText">
+                                    <li>Experience using MySQL, PostgreSQL, and MongoDB to develop, implement, and maintain database infrastructures.</li>
+                                </ul>
+                            </div>
+                            <div class="skillInfoItem" id="skill_analytics">
+                                <div class="skillImgs">
+                                    <div class="skillImgItem"><img src="../Images/mySkills/r logo.png" alt="R Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">R</h1></div></div>
+                                    <div class="skillImgItem"><img id="skillImg_Ipython" src="../Images/mySkills/Ipython.png" alt="IPython Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">IPython</h1></div></div>
+                                </div>
+                                <ul class="skillInfoText">
+                                    <li>Experience in applying systematic computational analysis of data using R and IPython.</li>
+                                    <li>Skilled at discovering, interpreting, and communicating meaningful patterns in data.</li>
+                                </ul>
+                            </div>
+                            <div class="skillInfoItem" id="skill_others">
+                                <div class="skillImgs">
+                                    <div class="skillImgItem"><img id="skillImg_NodeJS" src="../Images/mySkills/nodejs.png" alt="NodeJS Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">Node JS</h1></div></div>
+                                    <div class="skillImgItem"><img id="skillImg_Git" src="../Images/mySkills/git.png" alt="Git Icon"><div class="imgTextCont"><div class="imgTextPointer"></div><h1 class="imgTextBox">Git</h1></div></div>
+                                </div>
+                                <ul class="skillInfoText">
+                                    <li>Adept at building scalable network applications that require a persistent connection from the browser to the server using NodeJS.</li>
+                                    <li>Proficient at tracking changes in files and collaborating with teams using Git.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sectionContainer" id="sectionFour">
+                <div class="myProjects">
+                    <div class="sectionBanner">
+                        <div class="leftDivider"></div>
+                        <h1>Recent Projects</h1>
+                        <div class="rightDivider"></div>
+                    </div>
+                    <div class="projectContainer">
+                        <div class="projectImgCont leftProject" id="projectOne">
+                            <div class="projectTextCont">
+                                <h1 class="projectTitle">Uni-Chat</h1>
+                                <h2 class="projectDescr">A messaging platform for communicating with friends, family, colleagues, well, anyone really. View who's online, recent messages, other group members, or even customize your profile. Have an idea you want to share with like-minded people? Great. Just create a group. Make it public, or private, and watch as your idea becomes a group project.</h2>
+                                <div class="projectLanguages">
+                                    <h1>HTML</h1>
+                                    <h1>CSS</h1>
+                                    <h1>Javascript</h1>
+                                    <h1>Express</h1>
+                                    <h1>Node JS</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projectContainer">
+                        <div class="projectImgCont rightProject" id="projectTwo">
+                            <div class="projectTextCont">
+                                <h1 class="projectTitle">Calendro</h1>
+                                <h2 class="projectDescr">A comprehensive web application for storing important events. Create, alter, or delete an event on any given day of any given month. Add specifics such as description, date, time, and status. With Calendro, there's no event you aren't ready for.</h2>
+                                <div class="projectLanguages">
+                                    <h1>HTML</h1>
+                                    <h1>CSS</h1>
+                                    <h1>Javascript</h1>
+                                    <h1>PHP</h1>
+                                    <h1>React</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projectContainer">
+                        <div class="projectImgCont leftProject" id="projectThree">
+                            <div class="projectTextCont">
+                                <h1 class="projectTitle">Fact-Check</h1>
+                                <h2 class="projectDescr">A responsive discussion forum for educational conversations. View intellectual posts created by other users, weigh in on the discussion, and like or dislike on a post that someone created. Want to discuss a specific topic? Just use the search bar to find a group focused on your subject. Join the group. And share your knowledge with everyone else in the group.</h2>
+                                <div class="projectLanguages">
+                                    <h1>HTML</h1>
+                                    <h1>CSS</h1>
+                                    <h1>Javascript</h1>
+                                    <h1>PHP</h1>
+                                    <h1>Jquery</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sectionContainer" id="sectionFive">
+                <div class="myEducation">
+                    <div class="sectionBanner">
+                        <div class="leftDivider"></div>
+                        <h1>My Education</h1>
+                        <div class="rightDivider"></div>
+                    </div>
+                    <div class="educationWrapper">
+                        <img class="collegeLogo" src="../Images/education/JJLogo.png">
+                        <div class="collegeInfo">
+                            <h1 class="honors">Honors and Awards</h1>
+                            <ul class="honorsList">
+                                <li>Dean's Honors - 2020</li>
+                                <li>Dean's Honors - 2021</li>
+                                <li>The Dream.US Scholarship </li>
+                                <li>The Excelsior Scholarship</li>
+                                <li>Ambassador for the NYC DOE College Immigrant Ambassador Program</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collegeCourseWork">
+                        <h1 class="pursuingDegree">Pursuing Degrees</h1>
+                        <div class="collegeWorkWrapper">
+                            <div class="collegeWorkCont">
+                                <h1 class="workTitle">B.S. in Computer Science and Information Technology</h1>
+                                <ul class="workDetails">
+                                    <li>Majoring in Computer Science has advanced my understanding of Algorithms, Information Security, and Web development.</li>
+                                    <li>Has heightened my ability to solve complex problems using computer technologies.</li>
+                                </ul>
+                            </div>
+                            <div class="courseWork">
+                                <h1 class="firstCourse">Cryptography and Cryptoanalysis                                </h1>
+                                <h1 class="secondCourse">Operating Systems</h1>
+                                <h1 class="thirdCourse">Computer Networking</h1>
+                                <h1 class="fourthCourse">Advanced Data Structures</h1>
+                                <h1 class="fifthCourse">Computer Architecture</h1>
+                                <h1 class="sixthCourse">Network Security</h1>
+                            </div>
+                        </div>
+                        <div class="collegeWorkWrapper">
+                            <div class="collegeWorkCont">
+                                <h1 class="workTitle">Minor in Mathematics</h1>
+                                <ul class="workDetails">
+                                    <li>Chose to pursue mathematics as a minor to enhance my understanding of quantitative disciplines. Such as those which are crucial to many technology fields.</li>
+                                    <li>My ability to recognize, extract, and analyze patterns from data have heightened due to my extensive focus on mathematics. </li>
+                                    <li>Studying mathematics has helped me express quantitative information effectively to others.</li>
+                                </ul>
+                            </div>
+                            <div class="courseWork">
+                                <h1 class="firstCourse">Discrete Mathematics</h1>
+                                <h1 class="secondCourse">Calculus I</h1>
+                                <h1 class="thirdCourse">Calculus II</h1>
+                                <h1 class="fourthCourse">Calculus III</h1>
+                                <h1 class="fifthCourse">Probability and Mathematical Statistics</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sectionContainer" id="sectionSix">
+                <div class="contactMe">
+                    <div class="sectionBanner">
+                        <div class="leftDivider"></div>
+                        <h1>Get In Touch</h1>
+                        <div class="rightDivider"></div>
+                    </div>
+                    <h1 class="goodbyeText">Enjoyed your visit? Send me a message.</h1>
+                    <form class="messageMe" onsubmit="submitMessage()">
+                        <h1>Message:</h1>
+                        <textarea class="userMessage" rows="4" cols="50" placeholder="Hello Rey..." required></textarea>
+                        <div class="socialMediaCont">
+                            <div class="socialMediaItem">
+                                <a class="mediaIcon" id="github" href="https://github.com/BluR3Y" target="blank"><img src="../Images/SocialMedia/github.png"></a>
+                            </div>
+                            <div class="socialMediaItem">
+                                <a class="mediaIcon" id="linkedIn" href="https://www.linkedin.com/in/rey-h-flores" target="blank"><img src="../Images/SocialMedia/linkedin.png"></a>
+                            </div>
+                            <div class="socialMediaItem">
+                                <a class="mediaIcon" id="instagram" href="https://www.instagram.com/b1u_rey/" target="blank"><img src="../Images/SocialMedia/instagram.png"></a>
+                            </div>
+                        </div>
+                        <button type="submit" class="submitButton">Submit</button>
+                    </form>
+                </div>
+                <div class="creatorNote">
+                    <h1>Designed and Built by Rey Flores on Earth</h1>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="main.js"></script>
+</html>

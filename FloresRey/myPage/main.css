@@ -1,0 +1,1382 @@
+body{
+    margin: 0;
+    background-color: #061830;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+::selection{
+    background: rgb(222, 13, 13);
+}
+/* ------------------------------------------------- loading page ------------------------------------------ */
+.loadingPage{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    z-index: 6;
+
+    animation: loadingOff 2s ease;
+    animation-delay: 4s;
+}
+
+.logoCont{
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    user-select: none;
+}
+.logoCont h1{
+    font-family: 'Poppins',sans-serif;
+    font-size: 23vw;
+    line-height: 23vw;
+    font-weight: lighter;
+    margin: 0;
+    display: block;
+    color: turquoise;
+    animation: turnOn 4s ease;
+}
+
+@keyframes turnOn{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+@keyframes loadingOff{
+    from{
+        opacity: 1;
+    }to{
+        opacity: 0;
+    }
+}
+
+.leftChar{
+    display: inline-block;
+    transform: scale(-1, 1);
+    position: relative;
+    left: 0.06em;
+}
+.rightChar{
+    display: inline-block;
+    position: relative;
+    right: 0.06em;
+}
+
+/* -------------------------------------------------  side nav bar -------------------------------------------*/
+
+.sideNav{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    width: 80px;
+}
+
+/* ---------------------- side nav Name --------------------- */
+
+.sideNav_name{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: #00cceb;
+    align-items: center;
+    user-select: none;
+}
+.sideNav_name h1{
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    font-size: 65px;
+    line-height: 65px;
+    margin: 0 auto;
+    font-weight: lighter;
+}
+
+/* --------------------- side nav scroll bar ---------------- */
+
+.scrollBar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100% - 80px);
+    user-select: none;
+}
+
+.pageSection{
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    height: 100%;
+}
+
+.sectionItem{
+    width: 100%;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    
+    background-attachment: fixed;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 4;
+}
+.sectionItem:hover{
+    background-color: #F4D03F;
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+    overflow: visible;
+    
+    cursor: pointer;
+}
+.sectionItem img{
+    margin: 0 auto;
+    width: 80%;
+    height: 35pt;
+}
+.selectedSectionItem{
+    background-color: #F4D03F;
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+}
+
+.sectionItemText{
+    position: absolute;
+    width: auto;
+    height: 50px;
+    left: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+.sectionPointer{
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    
+    border-right:10px solid #57607A; 
+    opacity: 0.7;
+}
+.sectionTextDiv{
+    height: 100%;
+    width: auto;
+    background-color: #57607A;
+    border-radius: 8px;
+    opacity: 0.7;
+}
+.sectionTextDiv h1{
+    height: inherit;
+    margin: 10px 10px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 20pt;
+    color: #CCCCFF;
+    white-space: nowrap;
+}
+
+.scrollSection{
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.slider{
+    
+    -webkit-appearance: none;
+    position: relative;
+    width: calc(100vh - 80px);
+    height: 20px;
+    margin: 0;
+    transform-origin: 10px 10px;
+    transform: rotate(-270deg);
+    background-color: #464f58bb;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 20px;
+    width: 0;
+    background: #d6d9de;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+
+/* ---------------------------------- main content ------------------------------ */
+
+.mainContent{
+    display: block;
+    position: relative;
+    height: 100%;
+    width: calc(100% - 80px);
+    overflow-y: scroll;
+}
+.mainContent::-webkit-scrollbar {
+    display: none;
+}
+
+/* ---------------------------------- main sections ------------------------------- */
+
+.sectionContainer{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+/* --------------------- section One ---------------- */
+#sectionOne{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 0;
+}
+
+.greetings{
+    display: block;
+    margin: auto;
+    width: 900px;
+    height: auto;
+    text-align: left;
+}
+.greetings p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: #f7fdff;
+    font-weight: lighter;
+    margin: 0;
+
+}
+.nameContainer{
+    display: block;
+    width: 100%;
+    height: 100px;
+    overflow: visible;
+}
+.myName{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 100px;
+    width: fit-content;
+    color: #00ffef;
+    line-height: 100px;
+
+    border-right: solid rgb(255, 255, 255);
+
+    animation: blink-caret 1s step-end infinite;
+}
+@keyframes blink-caret {
+    from, to { border-width: 0.1em;  }
+    50% { border-width: 0;}
+  }
+.greetings h2{
+    margin: 0;
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: rgb(15, 139, 234);
+}
+#resumeLink{
+    margin-top: 40px;
+    display: block;
+    font-family: 'Poppins',sans-serif;
+    width: fit-content;
+    height: auto;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 2px 20px;
+    border-radius:5px;
+    color: #00d0ff;
+    border: 2px solid rgb(5, 84, 201);
+}
+#resumeLink:hover{
+    background-color:rgba(19, 167, 230,0.4);
+}
+
+@media screen and (max-width:1100px){
+    .greetings{
+        width: 70vw !important;
+    }
+    .greetings p{
+        font-size: min(3.5vw,35px) !important;
+        margin-bottom: 1vw !important;
+    }
+    .nameContainer{
+        min-height: 60px;
+        height: 11vw !important;
+    }
+    .myName{
+        font-size: min(12.5vw,100px) !important;
+        line-height: min(12.5vw,100px) !important;
+    }
+    .greetings h2{
+        font-size: min(3.5vw,20px) !important;
+        margin-top: min(5vw,30px) !important;
+    }
+}
+
+/* --------------------- section Two ---------------- */
+
+
+.aboutMe{
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+    width: 1100px;
+    margin: 60px auto 250px auto;
+}
+
+.sectionBanner{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 100px;
+    user-select: none;
+}
+.sectionBanner div{
+    flex-grow: 1;
+    flex-basis: 1;
+    height: 1px;
+    background-color: rgb(167, 231, 18);
+    margin: auto;
+}
+.sectionBanner h1{
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    font-size: min(6vw,50px);
+    color: white;
+    margin: auto;
+    padding: 0 20px;
+}
+
+@media screen and (max-width:880px){
+    .sectionBanner{
+        margin-bottom: 6vw;
+    }
+}
+
+.myInfo{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+}
+
+.myInfoText{
+    width: 65%;
+    height: auto;
+    display: block;
+    padding: 0 15px;
+}
+.myImgContainer{
+    width: 35%;
+    min-height: 350px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.myInfoText h1{
+    margin: 0;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: rgb(15, 139, 234);
+}
+
+.myImg{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+@media screen and (max-width:1250px){
+    .aboutMe{
+        width: 70vw !important;
+    }
+    .myInfoText{
+
+    }
+    .myInfoText h1{
+        font-size: 20px !important;
+        line-height: 30px !important;
+    }
+    .myImg{
+        height: 23vw !important;
+        width: auto !important;
+    }
+}
+@media screen and (max-width:880px){
+    .aboutMe{
+        margin: 0 auto 5vw auto !important;
+    }
+    .myInfo{
+        flex-direction: column;
+    }
+    .myImg{
+        min-height: 300px;
+        min-width: 300px;
+        height: 50vw !important;
+        width: 50vw !important;
+    }
+    .myInfoText{
+        width: 100%;
+        padding: 0;
+    }
+    .myImgContainer{
+        width: 100%;
+    }
+    .myInfoText h1{
+        font-size: max(2vw,18px) !important;
+
+    }
+}
+
+/* --------------------- section Three ---------------- */
+
+.skillSection{
+    min-width: 350px;
+    width: 1100px;
+    min-height: 570px;
+    height: auto;
+    margin: 60px auto 250px auto;
+}
+
+.mySkills{
+    width: 100%;
+    min-height: 450px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.skillTitleCont{
+    height: fit-content;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+}
+.skillIndicatorCont{
+    width: 1%;
+    height: auto;
+    position: relative;
+
+    background-color: rgb(8, 77, 120);
+}
+
+.skillIndicator{
+    width: 100%;
+    position: relative;
+    height: 55px;
+
+    background-color: turquoise;
+}
+
+.skillTitles{
+    width: 99%;
+    height: auto;
+    display: block;
+}
+
+.skillTitleItem{
+    width: 100%;
+    height: 55px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    user-select: none;
+}
+.skillTitleItem:hover{
+    background-color: #194680;
+}
+.skillTitleItem:hover h1{
+    color: turquoise;
+}
+
+.selectedSkillTitle{
+    background-color: #194680;
+}
+.selectedSkillTitle h1{
+    color: turquoise !important;
+}
+
+.skillTitleItem h1{
+    margin: 0 auto;
+    width: fit-content;
+    height: fit-content;
+    font-size: 1em;
+    white-space: nowrap;
+    font-family: 'Poppins',sans-serif;
+    font-weight: lighter;
+    color: rgb(79, 100, 101);
+}
+
+.skillInfo{
+    height: auto;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+}
+
+.skillInfoItem{
+    width: 100%;
+    height: auto;   
+    display: none;
+    -webkit-animation: fadeIn 0.25s;
+}
+.selectedSkillInfo{
+    display: block;
+}
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0.2;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.skillImgs{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.skillImgItem{
+    width: auto;
+    height: fit-content;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.skillImgItem img{
+    width: 90px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#skillImg_PHP{
+    width: 120px;
+}
+#skillImg_Express{
+    width: 140px;
+    filter: invert(1);
+}
+#skillImg_Java{
+    width: 80px;
+}
+#skillImg_MySQL{
+    width: 150px;
+}
+#skillImg_mongoDB{
+    width: 200px;
+}
+#skillImg_Ipython{
+    width: 140px;
+    filter: invert(1);
+}
+#skillImg_NodeJS{
+    width: 140px;
+}
+#skillImg_Git{
+    width: 140px;
+}
+
+.skillImgItem:hover > .imgTextCont{
+    display: flex;
+}
+
+.imgTextCont{
+    position: absolute;
+    width: auto;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,100%);
+    pointer-events: none;
+    z-index: 1;
+    font-size: 12px;
+}
+.imgTextPointer{
+    width: 0;
+	height: 0;
+	border-left: 1.1em solid transparent;
+	border-right: 1.1em solid transparent;
+	border-bottom: 1.5em solid rgb(24, 110, 186);
+    margin: 0 auto;
+}
+.imgTextBox{
+    width: auto;
+    height: fit-content;
+    white-space: nowrap;
+    font-family: 'Poppins',sans-serif;
+    font-size: 2.1em;
+    margin: 0;
+    background-color: rgb(24, 110, 186);
+    border-radius: 5px;
+    padding: 0 0.5em;
+}
+
+.skillInfoText{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 19px;
+}
+.skillInfoText li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    margin-left: 2.5em;
+    color: wheat;
+}
+.skillInfoText li::before{
+    content: "";
+    border-color: transparent rgb(11, 194, 222);
+    border-style: solid;
+    border-width: 0.25em 0 0.25em 0.35em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 1em;
+    position: relative;
+}
+
+@media screen and (max-width:1250px){
+    .skillSection{
+        width: 70vw !important;
+    }
+    .mySkills{
+        flex-direction: column;
+    }
+    .skillTitleCont{
+        width: 100%;
+    }
+    .skillInfo{
+        width: 100%;
+    }
+    .skillImgItem img{
+        width: 10vw;
+    }
+    #skillImg_PHP{
+        width: 15vw;
+    }
+    #skillImg_Express{
+        width: 16vw;
+    }
+    #skillImg_Java{
+        width: 9vw;
+    }
+    #skillImg_MySQL{
+        width: 17vw;
+    }
+    #skillImg_mongoDB{
+        width: 22vw;
+    }
+    #skillImg_Ipython{
+        width: 16vw;
+    }
+    #skillImg_NodeJS{
+        width: 16vw;
+    }
+    #skillImg_Git{
+        width: 16vw;
+    }
+}
+@media screen and (max-width:880px){
+    .skillImgs{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+    }
+    .skillImgItem img{
+        width: 90px !important;
+    }
+    #skillImg_PHP{
+        width: 120px !important;
+    }
+    #skillImg_Express{
+        width: 130px !important;
+    }
+    #skillImg_Java{
+        width: 80px !important;
+    }
+    #skillImg_MySQL{
+        width: 140px !important;
+    }
+    #skillImg_mongoDB{
+        width: 140px !important;
+    }
+    #skillImg_Ipython{
+        width: 120px !important;
+    }
+    #skillImg_NodeJS{
+        width: 140px !important;
+    }
+    #skillImg_Git{
+        width: 140px !important;
+    }
+    .skillInfoText{
+        font-size: 15px;
+    }
+}
+
+/* --------------------- section Four ---------------- */
+
+.myProjects{
+    display: flex;
+    flex-direction: column;
+    width: 1050px;
+    height: auto;
+    margin: 60px auto 250px auto;
+
+}
+
+.projectContainer{
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.projectImgCont{
+    width: 600px;
+    height: 350px;
+    position: relative;
+
+    overflow: visible;
+    color: #b81313;
+    border-radius: 5px;
+}
+
+.leftProject{
+    float: left;
+}
+.leftProject > .projectTextCont{
+    right: -450px;
+}
+.leftProject > .projectTextCont > .projectTitle{
+    float: right;
+}
+.leftProject > .projectTextCont > .projectDescr{
+    float: right;
+    text-align: right;
+}
+.leftProject > .projectTextCont > .projectLanguages{
+    float: right;
+}
+
+.rightProject{
+    float: right;
+}
+.rightProject > .projectTextCont{
+    left: -450px;
+}
+.rightProject > .projectTextCont > .projectTitle{
+    text-align: left;
+}
+.rightProject > .projectTextCont > .projectDescr{
+    float: left;
+    text-align: left;
+}
+.rightProject > .projectTextCont > .projectLanguages{
+    float: left;
+}
+
+
+#projectOne{
+    background: url(../Images/Projects/Project1.png) 0 0 no-repeat fixed;
+    background-attachment: local;
+    background-size: 100% 100%;
+}
+#projectTwo{
+    background: url(../Images/Projects/Project3.png) 0 0 no-repeat fixed;
+    background-attachment: local;
+    background-size: 100% 100%;
+}
+#projectThree{
+    background: url(../Images/Projects/Project2.png) 0 0 no-repeat fixed;
+    background-attachment: local;
+    background-size: 100% 100%;
+}
+
+.projectTextCont{
+    width: 450px;
+    height:350px;
+    position: absolute;
+    font-size: 30px;
+    display: block;
+}
+
+.projectTitle{
+    width: fit-content;
+    height: fit-content;
+    font-size: 1em;
+    font-family: 'Poppins',sans-serif;
+    margin: 50px 0 20px 0;
+}
+
+.projectDescr{
+    width: 480px;
+    height: auto;
+    margin: 0;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.55em;
+    padding: 1em; 
+
+    background-color: rgb(23, 51, 113);
+}
+
+.projectLanguages{
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.projectLanguages h1{
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: lighter;
+    margin: 0 12px;
+    white-space: nowrap;
+    padding: 0;
+}
+
+@media screen and (max-width: 1315px){
+    .myProjects{
+        width: 70vw !important;
+    }
+    .projectContainer{
+        margin-bottom: 15vw !important;
+    }
+    .projectImgCont{
+        width: 45.5vw !important;
+        height: 27vw !important;
+    }
+
+    .leftProject > .projectTextCont{
+        right: -24.5vw !important;
+    }
+    .rightProject > .projectTextCont{
+        left: -24.5vw !important;
+    }
+    .projectTitle{
+        margin: 2vw 0 1vw 0 !important;
+    }
+    .projectTextCont{
+        width: 24.5vw !important;
+        height: 27vw !important;
+
+    }
+    .projectDescr{
+        width: max(38.5vw,400px) !important;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .projectTextCont{
+        width: 360px !important;
+    }
+    .projectTitle{
+        font-size: 30px !important;
+        margin: 0 !important;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .projectContainer{
+        width: 70vw !important;
+    }
+    .projectImgCont{
+        width: 100% !important;
+        height: 300px !important;
+    }
+    .projectTextCont{
+        position: relative !important;
+        width: 100% !important;
+        height: 100% !important;
+        top: 0 !important;
+        border-radius: 5px;
+        background-color: #0C2034;
+        opacity: 0.95;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .leftProject > .projectTextCont{
+        right: 0 !important;
+    }
+    .rightProject > .projectTextCont{
+        left: 0 !important;
+    }
+    .projectTitle{
+        display: block !important;
+        margin: 4vw auto !important;
+    }
+    .projectDescr{
+        background-color: transparent !important;
+        text-align: center !important;
+        font-size: 15px !important;
+        display: block !important;
+        width: 90% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+    .projectLanguages{
+       float: none !important;
+       margin: 8vw auto !important;
+       width: 100%;
+    }
+    .projectLanguages h1{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .projectImgCont{
+        height: 350px !important;
+    }
+    .projectLanguages{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+    }
+}
+
+/* --------------------- section Five ---------------- */
+
+.myEducation{
+    display: flex;
+    flex-direction: column;
+    width: 1100px;
+    height: auto;
+    margin: 60px auto 250px auto;
+
+}
+
+.educationWrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 70px;
+    align-items: center;
+}
+
+.collegeLogo{
+    height: fit-content;
+    width: 450px;
+}
+.collegeInfo{
+    flex-grow: 1;
+    height: auto;
+    font-size: 19px;
+}
+.honors{
+    width: 100%;
+    height: fit-content;
+    line-height: 1em;
+    font-family: 'Poppins',sans-serif;
+    color: rgb(36, 203, 206);
+    text-align: center;
+    margin: 0 0 0.5em 0;
+}
+
+.honorsList{
+    width: 30em;
+    height: auto;
+    list-style: none;
+    float: right;
+}
+.honorsList li{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.5em;
+    color: #635757;
+}
+.honorsList li::before{
+    content: "";
+    border-color: transparent rgb(11, 194, 222);
+    border-style: solid;
+    border-width: 0.30em 0 0.30em 0.40em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 1em;
+    position: relative;
+}
+
+.collegeCourseWork{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.pursuingDegree{
+    width: 100%;
+    height: fit-content;
+    font-size: 55px;
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+    color: #1798D1;
+}
+
+.collegeWorkWrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+    margin: 50px auto;
+}
+
+.collegeWorkCont{
+    width: calc(100% - 50px);
+    height: auto;
+    display: block;
+    background-color: #112240;
+    border-radius: 5px;
+    padding: 35px 25px;
+    margin-bottom: 10px;
+}
+
+.workTitle{
+    width: 100%;
+    height: fit-content;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    margin: 0;
+    color: #b81313;
+}
+
+.workDetails{
+    display: block;
+    width: 100%;
+    height: auto;
+    list-style: none;
+    margin: 0;
+    font-size: 16px;
+}
+.workDetails li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    color: #635757;
+    margin-left: 1vw;
+}
+.workDetails li::before{
+    content: "";
+    border-color: transparent rgb(11, 194, 222);
+    border-style: solid;
+    border-width: 0.30em 0 0.30em 0.40em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 1em;
+    position: relative;
+}
+
+.courseWork{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "first" "second" "third" "fourth" "fifth"
+    "sixth" "seventh" "eighth" "nineth" "tenth";
+}
+.courseWork h1{
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+    font-weight: lighter;
+    margin: 5px auto;
+    color: red;
+}
+
+@media screen and (max-width:1250px) {
+    .myEducation{
+        width: 70vw !important;
+    }
+    .collegeLogo{
+        width:30vw !important;
+    }
+    .collegeInfo{
+        width: calc(100% - 30vw) !important;
+    }
+    .honorsList{
+        width: calc(100% - 40px);
+        float: none;
+    }
+    .workTitle{
+        font-size: max(3vw,23px) !important;
+    }
+    .workDetails{
+        width: calc(100% - 4vw) !important;
+        font-size: 16px !important;
+    }
+    .courseWork{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 880px){
+    .educationWrapper{
+        flex-direction: column;
+    }
+    .collegeLogo{
+        width: max(42vw,300px) !important;
+        margin-bottom: 8vw !important;
+    }
+    .collegeInfo{
+        width: 100% !important;
+        font-size: max(2.2vw,14px) !important;
+    }
+    .pursuingDegree{
+        font-size: 6.5vw !important;
+    }
+}
+
+@media screen and (max-width:980px){
+    .courseWork{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:560px) {
+    .courseWork{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* --------------------- section Six ---------------- */
+
+.contactMe{
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+    width: 800px;
+    height: auto;
+    margin: 50px auto 180px auto;
+}
+
+.goodbyeText{
+    font-family: 'Poppins',sans-serif;
+    font-size: 35px;
+    margin: 0;
+    text-align: center;
+    color: rgb(65, 193, 112);
+    margin-bottom: 60px;
+}
+
+.messageMe{
+    width: 655px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+.messageMe h1{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.4em;
+    color: turquoise;
+    margin: 20px 0;
+}
+
+.userMessage{
+    display: block;
+    width: calc(100% - 36px);
+    height: 200px;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    background-color: #112240;
+    border: none;
+    outline: none;
+    color: wheat;
+    resize: none;
+    padding: 10px 18px;
+}
+
+.socialMediaCont{
+    width: auto;
+    height: auto;
+    float: left;
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.socialMediaItem{
+    width: auto;
+    height: auto;
+    position: relative;
+    margin-right: 20px;
+    transition: transform 0.3s linear;
+}
+.socialMediaItem:hover{
+    transform: translateY(-20%);
+}
+
+.mediaIcon{
+    display: flex;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: turquoise;
+    align-items: center;
+    position: relative;
+}
+.mediaIcon img{
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+.mediaIcon:hover > img{
+    filter: invert(1);
+    transition-property: filter;
+    transition-duration: 0.3s ease;
+}
+
+#github:hover{
+    background-color: black;
+    transition: background-color 0.3s ease;
+}
+
+#linkedIn:hover{
+    background-color: #0077b5;
+    transition: background-color 0.3s ease;
+}
+
+#instagram:hover{
+    background-color: #E4405F;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton{
+    display: block;
+    width: 150px;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    margin: 50px 0 0 0;
+    float: right;
+    background-color: transparent;
+    border: 1px solid turquoise;
+    background-color: transparent;
+    color: turquoise;
+    cursor: pointer;
+}
+.submitButton:hover{
+    background-color: #122D3E;
+
+}
+
+/* ---------- Creator's Note ----------- */
+.creatorNote{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+.creatorNote h1{
+    font-family: 'Poppins',sans-serif;
+    font-size: 28px;
+    color: #b81313;
+    margin: 0;
+}
+
+@media screen and (max-width: 1250px) {
+    .contactMe{
+        width: 70vw !important;
+    }
+}
+@media screen and (max-width:980px) {
+    .goodbyeText{
+        font-size: 4vw !important;
+    }
+    .messageMe h1{
+        font-size: max(3.5vw,25px) !important;
+    }
+    .messageMe{
+        width: 100% !important;
+    }
+    .creatorNote h1{
+        font-size: max(3vw,19px) !important;
+    }
+}
+@media screen and (max-width:560px){
+    .messageMe{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .socialMediaCont{
+        float: none !important;
+        order: 2 !important;
+        margin: 0 auto;
+        width: 50vw !important;
+    }
+    .socialMediaItem{
+        margin: 0 auto;
+    }
+    .submitButton{
+        float: none !important;
+        order: 1 !important;
+        margin: 5vw auto;
+        width: 100% !important;
+    }
+}

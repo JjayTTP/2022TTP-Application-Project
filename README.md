@@ -44,9 +44,9 @@ Note: Remember to git add, git commit and git push regularly
 
 ### Acceptance criteria
 
-1. I can see your full name.
-2. I can see a picture of you.
-3. I can read a short description of you.
+1. I can see your full name. //Done
+2. I can see a picture of you.  //Done
+3. I can read a short description of you.  //Done
 
 <h2> As a user, I can see how to contact or follow you. </h2>
 
