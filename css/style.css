@@ -1,0 +1,115 @@
+body{
+    
+
+    background-size: auto;
+    background-color: aqua;
+}
+h2{
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+}
+#java{
+    height: 80px;
+    width: 80px;
+}
+#html{
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+}
+#css{
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+}
+#js{
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+}
+
+#paint{
+    width: 500px;
+    align-items: center;
+}
+
+#bio{
+    text-align: center;
+    width: 300;
+}
+.share{
+    padding-top: 3%;
+}
+
+.profile{
+    height: 100px;
+    width: 100px;
+
+    border-radius: 50%;
+}
+
+.profile:hover{
+    box-shadow: 0 0 25px 7px rgba(69, 48, 185, 0.5);
+}
+#introHeader{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.share p{
+    text-align: center;
+}
+
+table.colleges{
+    align-items: right;
+}
+
+.share{
+    align-items: center;
+}
+#NCC{
+    border: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-right: 20px;
+    height: 10px;
+    width: 10px;
+}
+
+#NCC:hover{
+
+        box-shadow: 0 0 5px 15px rgba(243, 95, 69, 0.5);
+
+}
+
+#JJAY{
+    border: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    margin-top: collapse;
+    margin-left: 45px;
+    height: 50px;
+    width: 10px;
+}
+
+#JJAY:hover{
+    box-shadow: 0 0 5px 15px rgba(59, 16, 250, 0.5);
+}
+#figcaption{
+    padding-top: 10px;
+    position: absolute;
+}
+#LinkedInImage{
+    align-items: center;
+    height: 25px;
+    width: 25px;
+}
+
+table.Contact{
+    align-items: right;
+}
