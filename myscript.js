@@ -1,7 +1,7 @@
 const fadeIn = document.querySelectorAll('.container2');
 
 const appearOptions = {
-    threshold: 1,
+    threshold: .50,
     rootMargin: "0px 0px 0px 0px"
 };
 
