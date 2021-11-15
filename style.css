@@ -135,3 +135,12 @@ fieldset {
   color: #fff7a2;
   background-color: black;
 }
+
+.hide {
+  display: none;
+}
+
+.contact-link:hover + .hide {
+  display: block;
+  color: white;
+}

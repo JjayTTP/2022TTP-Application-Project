@@ -18,7 +18,8 @@
         <a href="#"></a>
     </div>
 
-    <span style="float: right;color: #fcf284; font-size:40px;cursor:pointer" onclick="openNavbutton()">&#9776;</span>
+    <span style="float: right;color: #fcf284; padding-right: 30px;
+    font-size:40px;cursor:pointer" onclick="openNavbutton()">&#9776;</span>
     
     <div id="intro">
         <h1>Introduction</h1>
@@ -74,10 +75,13 @@
     <div class="container2">
         <div>
             <h1 id="contact">Contact Me</h1><br>
-            <p>At 
-                <span style="color: #fac228">shimingh1479@gmail.com</span>  
+            <p class="contact-link">At 
+                <a href="mailto:shimingh1479@gmail.com"
+                style="color: #fac228">shimingh1479@gmail.com</a> 
                 or do that here down below
             </p>
+            <div class="hide">Doesn't work on chrome unless handler is enabled</div>
+            <p style="font-size: 15px;">Not actually set up but its just an example at the moment.</p>
             <form action="http://formsubmit.co/shimingh1479@gmail.com" method="POST">
                 <fieldset>
                 <label for="email_address">Your Email Address</label><br>
