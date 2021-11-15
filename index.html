@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="sideNavBar" class="sideBar">
+        <a href="javascript:void(0)" class="closebutton" onclick="closeNavbutton()">&times;</a>
+        <a href="#about"> About</a>
+        <a href="#contact">Contact</a>
+        <a href="#"></a>
+    </div>
+
+    <span style="float: right;color: #fcf284; padding-right: 30px;
+    font-size:40px;cursor:pointer" onclick="openNavbutton()">&#9776;</span>
+    
+    <div id="intro">
+        <h1>Introduction</h1>
+    </div>
+    
+    <div class="container">
+        <img src="/images/profilepic.png" width="300" height="400" alt="profile picture">
+        <div>
+            <h1>Shiming Huang</h1>
+            <p>Hello! I'm a student at John Jay College 
+                of Criminal Justice and a major in Computer Science and 
+                Information Security.
+            </p>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/shiming-huang-98b474221/"
+                target="_blank"><img src="/images/linkinlogo.jpg" width="50" height="50"
+                alt="linkedin logo">
+                </a>
+                <a href="https://github.com/shmg1679" target="_blank">
+                <img src="/images/githublogo.jpg" width="50" height="50" 
+                alt="">
+                </a>
+                <a class="resume_link" 
+                href="https://docs.google.com/document/d/18NNfUY4r3--g196wodtFzlFH9ER6jay7/edit?usp=sharing&ouid=114207603439270689217&rtpof=true&sd=true"
+                target="_blank"">Resume
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container2">
+        <h1 id="about">More About Me</h1>
+        <p>
+            Whenever I'm not focusing on classwork or projects for my college classes, 
+            I spend time doing some of my hobbies such as gaming with friends, 
+            reading novels or watch streams.
+        </p><br>
+        <h1>
+            Languages
+        </h1>
+        <p>Here are the languages I've worked the most with although it isn't
+            at the level of professionals in the working field.
+        </p>
+        <ul>
+            <li>
+                <img src="/images/c-plus-plus.png" width="50" height="50" alt="c++">
+            </li>
+            <li>
+                <img src="/images/pythonlogo.png" width="50" height="50" alt="python">
+            </li>
+        </ul>
+    </div>
+    <div class="container2">
+        <div>
+            <h1 id="contact">Contact Me</h1><br>
+            <p class="contact-link">At 
+                <a href="mailto:shimingh1479@gmail.com"
+                style="color: #fac228">shimingh1479@gmail.com</a> 
+                or do that here down below
+            </p>
+            <div class="hide">Doesn't work on chrome unless handler is enabled</div>
+            <p style="font-size: 15px;">Not actually set up but its just an example at the moment.</p>
+            <form action="http://formsubmit.co/shimingh1479@gmail.com" method="POST">
+                <fieldset>
+                <label for="email_address">Your Email Address</label><br>
+                <input type="email" name="email" placeholder="Email Address" required><br>
+                <label for="text_msg">Your Message</label><br>
+                <textarea name="message" id="message" cols="60" rows="10"
+                placeholder="Write message here"></textarea>
+                <button class="submitButton" type="submit">Send</button>
+                </fieldset>    
+            </form>
+        </div>
+    </div>
+    <script src="myscript.js"></script>
+</body>
+</html>

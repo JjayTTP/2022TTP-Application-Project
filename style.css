@@ -1,0 +1,146 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #262626;
+}
+
+.sideBar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 50px;
+  transition: 1s;
+  background-color: #0d0d0d;
+}
+
+.sideBar a {
+  padding: 8px 8px 8px 35px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fcf284;
+  display: block;
+  transition: 0.5s;
+}
+
+.sideBar a:hover {
+  color: orange;
+}
+
+.sideBar .closebutton {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.container {
+  width: 900px;
+  padding-top: 10px;
+  margin: 50px auto;
+  background-color: #0d0d0d;
+  border-radius: 10px;
+  display: flex;
+  justify-self: space-between;
+  align-items: center;
+}
+
+.container2 {
+  width: 900px;
+  padding-top: 10px;
+  margin: 50px auto;
+  background-color: #0d0d0d;
+  border-radius: 10px;
+  padding-left: 50px;
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.container2.appear {
+  opacity: 1;
+}
+
+#intro {
+  color: #fcf284;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 20px;
+}
+
+li {
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+h1 {
+  color: #fcf284;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1.1;
+}
+
+p {
+  color: #fff7a2;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.social {
+  padding-top: 100px;
+}
+
+.resume_link {
+  color: #fff7a2;
+  background-color: #262626;
+  border-radius: 10px;
+  font-size: 30px;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.about {
+  width: 900px;
+  padding-top: 10px;
+  margin: 50px auto;
+  background-color: #0d0d0d;
+  border-radius: 10px;
+  display: flex;
+  justify-self: space-between;
+  align-items: center;
+}
+
+label {
+  color: #fcf284;
+}
+
+form {
+  padding: 10px;
+  display: block;
+  margin-top: auto;
+  text-align: left;
+}
+
+fieldset {
+  border: none;
+}
+
+.submitButton {
+  color: #fff7a2;
+  background-color: black;
+}
+
+.hide {
+  display: none;
+}
+
+.contact-link:hover + .hide {
+  display: block;
+  color: white;
+}
