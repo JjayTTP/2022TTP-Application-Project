@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+body{
+    margin:0px;
+}
+.banner {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    padding: 100px;
+}
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background: url("/images/Ibrahima\ black\ background.jpg");
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.banner h2 {
+    font-size: 3em;
+    color: rgb(250, 245, 245);
+    font-weight: 500;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+.banner h2 span {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0;
+}
+.banner h3 {
+    font-size: 1.5em;
+    color: rgb(240, 234, 234);
+    font-weight: 500;
+    margin: 0;
+}
+
+@media(max-width:750px)
+{
+    .banner h3 {
+        font-size: 1.2em;
+        color: rgb(240, 234, 234);
+        font-weight: 500;
+        margin: 0;
+    }
+    .banner h2 {
+        font-size: 1.5em;
+        font-weight: 500;
+        line-height: 1.5em;
+        margin: 0;
+    }
+    
+    .banner h2 span {
+        font-size: 1.2em;
+        font-weight: 700;
+        margin: 0;
+    }  
+}
+
+.textBx {
+    margin-top: -100px;
+}
+
+.btn {
+    position: relative;
+    background: #2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 50px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    transition: 0.5%;
+}
+
+header.sticky {
+    background: #fff;
+    padding-right: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    color: rgb(248, 241, 241);
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header.sticky .logo {
+    color: #111;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header.sticky ul li a {
+    color: rgb(10, 9, 9);
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    color: 111;
+}
+.heading h2 {
+    font-size: 3rem;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+}
+.comtentBx h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.w50 {
+    min-width: 50%;
+}
+
+img {
+    max-width: 70%;
+}
+
+.contact {
+    display: flex;
+    margin-top: 90px;
+    justify-content: end;
+}
+
+.contact img {
+    width: 100px;
+}
+
+.resume {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.iframe {
+    margin: auto;
+    height: 700px;
+}
+hr {
+width: 200px;
+margin: auto;
+margin-bottom: 50px;
+}
+@media(max-width:650px){
+    .content {
+        flex-direction: column;
+    }
+}
