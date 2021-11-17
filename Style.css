@@ -1,3 +1,10 @@
 p:hover {
     background-color: orange;
 }
+section > h1{
+    background-image:url("Images/tiger.jpg");
+    color: red;
+    text-align: center;
+    height: 300px;
+  
+}
