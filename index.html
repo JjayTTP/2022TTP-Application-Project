@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>TTP Project</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#home" class="logo">Portfolio</a>
+        <div class="toggle"></div>
+        <ul>
+            <li><a href="#home">Home</a> </li>
+            <li><a href="#about">About Me</a> </li>
+            <li><a href="#resume">Resume</a> </li>
+        </ul>
+    </header>
+    <section id="home" class="banner">
+        <div class="textBx">
+            <h2>Hello, I'm<br><span>Ibrahima Coulibaly.</span></h2>
+            <h3>I'm a student.</h3>
+            <a href="#about" class="btn">About Me</a>
+
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+        <hr>
+        <div class="content">
+            <div class="w50">
+                <img src="/images/Imag1.jpeg" class="img">
+            </div>
+            <div class="contentBx w50">
+
+                <p>
+                    My name is Ibrahima Coulibaly. I am currently a computer science student at John Jay. I
+                    graduated
+                    with my associate degree from laguardia community college during the Fall 2020 semester.
+                    I am passionate about technology and eager to learn new things. My goal is to earn my
+                    bachelor degree in computer
+                    science and information security by the fall 2022 and enter the job market in the tech
+                    industry.
+                    During my free time, I like to play sport play video game or go on a walk.
+
+                </p>
+                <div class="contact">
+                    <a href="https://github.com/Ibrahima2201" target=_blank>
+                        <img class="contact_image" src="/images/GitHub_logo.png" alt="">
+                    </a>
+                    <a href="mailto:iboucouldy95@gmail.com" target=_blank>
+                        <img class="contact_image" src="/images/Gmail_logo.png" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/ibrahima-coulibaly/" target=_blank>
+                        <img class="contact_image" src="/images/Linkedin_Logo.png " alt="">
+                    </a>
+                </div>
+            </div>
+    </section>
+    <section id="resume" class="resume">
+        <iframe class="iframe" src="My_Resume.pdf#toolbar=0" width="100%" >
+        </iframe>
+
+    </section>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > .0);
+        });
+    </script>
+
+</body>
+
+</html>
