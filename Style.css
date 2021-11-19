@@ -4,6 +4,7 @@
     color: rgba(150, 0, 0, 0.75); /*the last parameter controls transparency ranging 0-1
     text-align: center;
 }*/
+
 nav a {
     text-decoration: none;
     background-color: white;
@@ -18,33 +19,52 @@ nav a:active{
     background-color:dimgrey;
 }
 nav {
-    justify-content:center;
-    display:flex;
+    justify-content: center;
+    display: flex;
+    height:33px;
 }
- a:hover {
+nav a:hover {
         background-color: lightgray;
+        margin:2px;
     }
 .main h1{
     text-align:center;
     color:forestgreen;
+}
+.about {
+    background-image: url(Images/bg2.jpg);
+    background-size: 100% 100%;
+    font-weight:bold;
+    font-size:20px;
+    color:darkblue;
+}
+.about p:hover{
+    background-color:white;
 }
 .about img {
     float: left;
     box-shadow: 4px 4px 4px lightgray;
     margin:10px;
 }
-.about a{
-    padding: 2px;
-    border: 2px solid black;
-    background-color: deepskyblue;
+#resume:hover {
+    padding: 4px;
+    background-color:gray;
+    color: red;
 }
 section {
    display:flex;
    justify-content:center;
 }
-div{
+div {
     width: 500px;
 }
-body{
-    background-image:src("Gmail.png");
+#resume {
+    
+    text-transform:uppercase;
+    padding: 2px;
+    border: 2px solid black;
+    background-color: white;
+    text-decoration: none;
+    color: white;
+    box-shadow: 3px 3px 3px lightgray;
 }
