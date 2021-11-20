@@ -4,7 +4,10 @@
     color: rgba(150, 0, 0, 0.75); /*the last parameter controls transparency ranging 0-1
     text-align: center;
 }*/
-
+ .about h1{
+     display:flex;
+     justify-content:center;
+ }
 nav a {
     text-decoration: none;
     background-color: white;
@@ -16,12 +19,12 @@ nav a {
     box-shadow: 3px 3px 3px lightgray;
 }
 nav a:active{
-    background-color:dimgrey;
+    color:red;
 }
 nav {
     justify-content: center;
     display: flex;
-    height:33px;
+    height: 33px;
 }
 nav a:hover {
         background-color: lightgray;
@@ -36,8 +39,11 @@ nav a:hover {
     background-size: 100% 100%;
     font-weight:bold;
     font-size:20px;
-    color:darkblue;
+    color:maroon;
 }
+    .about p {
+        background-color: rgba(105, 105, 105, 0.55);
+    }
 .about p:hover{
     background-color:white;
 }
@@ -46,11 +52,19 @@ nav a:hover {
     box-shadow: 4px 4px 4px lightgray;
     margin:10px;
 }
-#resume:hover {
+#resume > a:hover {
     padding: 4px;
-    background-color:gray;
-    color: red;
+    background-color:white;
+    color: black;
 }
+#resume {
+    display: flex;
+    justify-content: center;
+}
+    #resume > a {
+        color: maroon;
+        background-color: rgba(255,255,255,0.5);
+    }
 section {
    display:flex;
    justify-content:center;
@@ -58,13 +72,13 @@ section {
 div {
     width: 500px;
 }
-#resume {
+.about a {
     
     text-transform:uppercase;
     padding: 2px;
     border: 2px solid black;
     background-color: white;
     text-decoration: none;
-    color: white;
+    color: black;
     box-shadow: 3px 3px 3px lightgray;
 }
