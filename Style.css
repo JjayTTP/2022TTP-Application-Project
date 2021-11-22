@@ -82,22 +82,48 @@ nav a:hover {
     color: black;
     box-shadow: 3px 3px 3px lightgray;
 }
-#grid{
-    width:100%;
+#grid {
+    margin-top: 25px;
+    width: 100%;
     display: grid;
     grid-template-columns: 200px 200px 200px;
-    grid-gap:10px 10px;
-    justify-content:space-evenly;
-    
-    
+    grid-gap: 20px;
+    justify-content: space-evenly;
 }
- #grid div {
+    #grid div {
         border: 2px saddlebrown;
-        margin:2px;
+        margin: 2px;
         border: 2px solid black;
         padding: 4px;
+        text-align: center;
+        box-shadow: 3px 3px 3px lightgray;
+        background-color: rgba(255,255,255,0.75);
     }
 
-/*#grid:hover {
-    background-color: yellow;
-}*/
+#grid div:hover {
+    background-color: dimgray;
+}
+.skill-tag {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    border: 2px solid black;
+    padding: 2px;
+    background-color: white;
+}
+.skill-tag:hover{
+    background-color:black;
+    color:white;
+}
+.skill-body {
+    background-image: url(Images/tech.gif)
+}
+#skill-button{
+    background-image: url(Images/tech3.gif);
+    color:white;
+}
+#skill-button2 {
+    background-image: url(Images/tech2.gif);
+    color: white;
+}
+
