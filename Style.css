@@ -4,7 +4,7 @@
     color: rgba(150, 0, 0, 0.75); /*the last parameter controls transparency ranging 0-1
     text-align: center;
 }*/
- .about h1{
+.about h1{
      display:flex;
      justify-content:center;
  }
@@ -41,7 +41,7 @@ nav a:hover {
     font-size:20px;
     color:maroon;
 }
-    .about p {
+ .about p {
         background-color: rgba(105, 105, 105, 0.55);
     }
 .about p:hover{
@@ -61,15 +61,15 @@ nav a:hover {
     display: flex;
     justify-content: center;
 }
-    #resume > a {
+#resume > a {
         color: maroon;
         background-color: rgba(255,255,255,0.5);
-    }
-section {
+}
+.about section {
    display:flex;
    justify-content:center;
 }
-div {
+.about div {
     width: 500px;
 }
 .about a {
@@ -82,3 +82,22 @@ div {
     color: black;
     box-shadow: 3px 3px 3px lightgray;
 }
+#grid{
+    width:100%;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-gap:10px 10px;
+    justify-content:space-evenly;
+    
+    
+}
+ #grid div {
+        border: 2px saddlebrown;
+        margin:2px;
+        border: 2px solid black;
+        padding: 4px;
+    }
+
+/*#grid:hover {
+    background-color: yellow;
+}*/
