@@ -1,0 +1,141 @@
+#main-header {
+    font-family: Times New Romans; 
+    color:  black ; 
+    font-size: 8px;
+}
+
+#profile{
+    width:350px;
+    height:350px; 
+    margin-right: 20px; 
+    float:right;
+}
+
+#intro{
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+    font-size: 35px; 
+    margin-left: 60px
+}
+
+#contact-header{
+    font-family:'Times New Roman', Times, serif; 
+    color:#6254e6; 
+    font-size: 20px; 
+    text-align: bottom; 
+    margin-left: 60px;
+}
+
+
+#linkedIn{
+    font-family:'Times New Roman', Times, serif; 
+    width:20px; 
+    height:20px;
+    float: bottom; 
+    margin-left: 60px;
+    margin-right: 60px;
+}
+#github{
+    font-family:'Times New Roman', Times, serif; 
+    width:20px; 
+    height:20px;
+    float: bottom; 
+    margin-left: 60px;
+    margin-right: 60px;
+}
+#email{
+    font-family:'Times New Roman', Times, serif; 
+    width:20px; 
+    height:20px;
+    float: bottom; 
+    margin-left: 60px;
+}
+
+#portfolio{
+    font-family:'Times New Roman', Times, serif; 
+    color:#160bad; 
+    font-size: 14px; 
+    float: left;
+    margin-left: 30px;
+    text-align: bottom; 
+}
+
+
+#bio{
+    font-family:'Times New Roman', Times, serif; 
+    color:#160bad; 
+    font-size: 14px; 
+    text-align: bottom; 
+    float: left;
+    margin-left: 140px;
+}
+
+#CCT{
+    font-family:'Times New Roman', Times, serif; 
+    color:#1207aa; 
+    font-size: 14px; 
+    text-align: top; 
+    float: left;
+    margin-left: 140px;
+}
+
+#CCT2{
+    font-family:'Times New Roman', Times, serif; 
+    color:#0e36b9; 
+    font-size: 14px; 
+    text-align: top; 
+    float: right;
+    margin-right: 260px;
+}
+
+#CCT3{
+    font-family:'Times New Roman', Times, serif; 
+    color:#0c18c0; 
+    font-size: 14px; 
+    text-align: top; 
+    float: right;
+    margin-left: 120px;
+}
+
+
+
+#copyright{
+    font-family:'Times New Roman', Times, serif; 
+    color:black; 
+    font-size: 15px; 
+    text-align: bottom; 
+    float:right;
+    margin-right: 40px;
+}
+
+
+#id1{
+    width:500px;
+    height:100px; 
+    margin-left: 300px; 
+}
+#id2{
+    width:40px;
+    height:20px; 
+    margin-left: 300px; 
+}
+#id3{
+    width:40px;
+    height:20px; 
+    margin-left: 300px; 
+}
+
+#button1{
+    margin-left: 400px;
+    color: rgb(95, 95, 212);
+} 
+
+#button2{
+    margin-left:400px;
+    color: rgb(95, 95, 212);
+} 
+
+#button3{
+    margin-left: 400px;
+    color: rgb(95, 95, 212);
+} 
