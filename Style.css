@@ -30,9 +30,8 @@ nav a:hover {
         background-color: lightgray;
         margin:2px;
     }
-.main h1{
-    text-align:center;
-    color:forestgreen;
+.main h1 {
+    text-align: center;
 }
 .about {
     background-image: url(Images/bg2.jpg);
@@ -83,7 +82,7 @@ nav a:hover {
     box-shadow: 3px 3px 3px lightgray;
 }
 #grid {
-    margin-top: 25px;
+    margin-top: 50px;
     width: 100%;
     display: grid;
     grid-template-columns: 200px 200px 200px;
@@ -126,4 +125,22 @@ nav a:hover {
     background-image: url(Images/tech2.gif);
     color: white;
 }
-
+.content {
+    display: grid;
+    
+    grid-template-columns: 50% 40%;
+    justify-content:center;
+    
+}
+.content p {
+     color: white;
+     font-family: Arial;
+     padding-top: 80px;
+}
+.home{
+    background-image: url(Images/tech_bg.jpg);
+    background-size:100% 150%;
+}
+.main{
+    color:aquamarine;
+}
