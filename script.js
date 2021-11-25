@@ -1,6 +1,9 @@
 
-let p = document.querySelector("p");
-p.removeAttribute("p");
+
+let p = document.querySelector(".about");
+p.style = "color: maroon";
+
+
 
 
 
