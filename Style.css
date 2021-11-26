@@ -4,6 +4,12 @@
     color: rgba(150, 0, 0, 0.75); /*the last parameter controls transparency ranging 0-1
     text-align: center;
 }*/
+.content p {
+     color: white;
+    font-family: Arial;
+    padding-top: 80px;
+    font-size: 20px;
+}
 .about h1{
      display:flex;
      justify-content:center;
@@ -134,12 +140,6 @@ nav a:hover {
     grid-template-columns: 50% 40%;
     justify-content:center;
     }
-.content p {
-        color: white;
-        font-family: Arial;
-        padding-top: 80px;
-        font-size: 20px;
-}
 .home{
     background-image: url(Images/tech_bg.jpg);
     background-size:100% 150%;
