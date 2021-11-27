@@ -1,6 +1,6 @@
 
-let x = document.querySelector('#button');
-x.addEventListener('click, changeRule');
+//let x = document.querySelector('#button');
+//x.addEventListener('click, changeRule');
 
 function changeRule() {
     let stylesheet = document.styleSheets[1];
