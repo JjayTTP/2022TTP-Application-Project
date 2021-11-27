@@ -1,14 +1,13 @@
 
-document.querySelector("#button").addEventListener("click", changeRule);
+let x = document.querySelector('#button');
+x.addEventListener('click, changeRule');
 
 function changeRule() {
-    let stylesheet = document.styleSheets[0];
-    stylesheet.insertRule("div { color: blue; }");
+    let stylesheet = document.styleSheets[1];
+    stylesheet.changeRule('#par { color: blue; }');
 }
 
 
-let p = document.querySelector(".about");
-p.style = "color: maroon";
 
 
 
