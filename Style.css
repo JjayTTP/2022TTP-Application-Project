@@ -1,4 +1,27 @@
+.btn{
+    border: 2px solid grey;
+    padding: 3px;
+    background-color: mediumaquamarine;
+    }
+.btn:hover{
+    color:white;
+}
+.btn:active{
+    color:black;
+}
+.btnH {
+    border: 2px solid grey;
+    padding: 3px;
+    background-color: mediumaquamarine;
+}
 
+.btnH:hover {
+        color: white;
+    }
+
+.btnH:active {
+        color: black;
+    }
 .content p {
     color: white;
     font-family: Arial;
