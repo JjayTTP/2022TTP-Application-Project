@@ -1,0 +1,121 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 2em;
+  background: rgb(187,248,228);
+  background: radial-gradient(circle, rgba(187,248,228,1) 0%, rgba(144,202,249,1) 100%);
+}
+
+h1 {
+  font-style: italic;
+  color: #fff;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+
+.waves-effect {
+   top: 118px;
+}
+ .height{
+    height:600px !important;
+    padding:10px !important;
+    margin: 0 !important;
+  }
+
+.profile-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  background-color: #90caf9;
+  padding-bottom: 20px;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.page-footer {
+  background-color: transparent;
+}
+
+.blue.lighten-3 {
+  margin: 50px;
+  padding: 50px;
+  font-size: 60px;
+}
+
+.row {
+  margin-bottom: 0;
+}
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+#card1 {
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/25c06d80836305.5ced0e58b11ca.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+#card2 {
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/850ca010605075.560e7c08a8608.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#card3 {
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3cad0264996161.5ae4e41f3a636.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#card4 {
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/77142c46026667.5845af3ec9fa6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button {
+    border: 1px solid white;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    margin-bottom: 5px;
+    color: white;
+    background-color: #4db6ac;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+.q-color {
+  color: #4db6ac;
+  text-transform: capitalize;
+}
+#q3 {
+  color: white;
+}
+//
