@@ -1,11 +1,17 @@
 
-//let x = document.querySelector('#button');
-//x.addEventListener('click, changeRule');
+document.querySelector(".btn").addEventListener("click", function () {
+   document.querySelector(".paragraph").style.color = "aqua";
 
-function changeRule() {
-    let stylesheet = document.styleSheets[1];
-    stylesheet.changeRule('#par { color: blue; }');
-}
+});
+
+document.querySelector(".btnH").addEventListener("click", function () {
+    document.querySelector(".head").style.color = "white";
+
+});
+document.querySelector(".btnH2").addEventListener("click", function () {
+    document.querySelector(".head").innerHTML = "Thank you for interacting with my site :)";
+
+});
 
 
 

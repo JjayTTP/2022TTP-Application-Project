@@ -1,4 +1,14 @@
-
+button{
+    border: 2px solid grey;
+    padding: 3px;
+    background-color: mediumaquamarine;
+    }
+button:hover{
+    color:white;
+}
+button:active{
+    color:black;
+}
 .content p {
     color: white;
     font-family: Arial;
