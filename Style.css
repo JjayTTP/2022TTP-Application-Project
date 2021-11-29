@@ -1,0 +1,178 @@
+button{
+    border: 2px solid grey;
+    padding: 3px;
+    background-color: mediumaquamarine;
+    }
+button:hover{
+    color:white;
+}
+button:active{
+    color:black;
+}
+.content p {
+    color: white;
+    font-family: Arial;
+    padding-top: 80px;
+    font-size: 20px;
+}
+.about h1{
+     display:flex;
+     justify-content:center;
+ }
+nav a {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 4px;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 3px lightgray;
+}
+nav a:active{
+    color:red;
+}
+nav {
+    justify-content: center;
+    display: flex;
+    height: 33px;
+}
+nav a:hover {
+        background-color: lightgray;
+        margin:2px;
+    }
+.main h1 {
+    text-align: center;
+}
+.about {
+    background-image: url(Images/bg2.jpg);
+    background-size: 100% 100%;
+    font-weight: bold;
+    font-size: 20px;
+    color:maroon;
+}
+.about p {
+        background-color: rgba(105, 105, 105, 0.55);
+        width: 440px;
+        text-align:center;
+        float:right;
+         
+    }
+.about p:hover{
+    background-color:white;
+}
+.about img {
+    float: left;
+    box-shadow: 4px 4px 4px lightgray;
+    margin:10px;
+}
+#resume > a:hover {
+    padding: 4px;
+    background-color:white;
+    color: black;
+}
+#resume {
+    display: flex;
+    justify-content: center;
+    padding-left: 30px
+}
+#resume > a {
+        color: maroon;
+        background-color: rgba(255,255,255,0.5);
+}
+.about section {
+   display:flex;
+   justify-content:center;
+}
+.about div {
+    width: 500px;
+}
+.about a {
+    
+    text-transform:uppercase;
+    padding: 2px;
+    border: 2px solid black;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    box-shadow: 3px 3px 3px lightgray;
+}
+#grid {
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-gap: 20px;
+    justify-content: space-evenly;
+}
+    #grid div {
+        margin: 2px;
+        border: 2px solid black;
+        padding: 4px;
+        text-align: center;
+        box-shadow: 3px 3px 3px lightgray;
+        background-color: rgba(255,255,255,0.75);
+    }
+
+#grid div:hover {
+    background-color: dimgray;
+}
+.skill-tag {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    border: 2px solid black;
+    padding: 2px;
+    background-color: white;
+}
+.skill-tag:hover{
+    background-color:black;
+    color:white;
+}
+.skill-body {
+    background-image: url(Images/tech.gif)
+}
+#skill-button{
+    background-image: url(Images/tech3.gif);
+    color:white;
+}
+#skill-button2 {
+    background-image: url(Images/tech2.gif);
+    color: white;
+}
+.content {
+    display: grid;
+    grid-template-columns: 50% 40%;
+    justify-content:center;
+    }
+.home{
+    background-image: url(Images/tech_bg.jpg);
+    background-size:100% 150%;
+}
+.main h1 {
+    color: rgb(26, 173, 124);
+    background-color: rgba(255,255,255,0.35);
+}
+.contact-pic{
+    display:flex;
+    margin-top: 20px;
+    height: 530px;
+    justify-content:center;
+   background-image: url(Images/kitten.jpg);
+   background-size:50% 100%;
+    align-items:center;
+    justify-content:space-evenly
+}
+    .contact-pic a {
+        border: 2px solid black;
+        padding: 20px;
+        background-color: rgba(255,255,255,0.75);
+        box-shadow: 3px 3px 3px lightgray;
+    }
+        .contact-pic a:hover {
+            background-color: darkgrey;
+            /*{
+    font-size: 100px;
+    color: rgba(150, 0, 0, 0.75); /*the last parameter controls transparency ranging 0-1
+    text-align: center;
+}*/
