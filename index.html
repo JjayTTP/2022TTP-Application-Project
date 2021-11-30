@@ -5,6 +5,8 @@
 
     <title>SyedaK Web</title>
 
+    <!-- comment -->
+
     <!-- Meta tags for SEO and social sharing -->
     <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
     <meta
@@ -25,13 +27,30 @@
     />
     <meta name="twitter:card" content="summary" />
 
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
     <!-- Import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="Styles.css" />
 
     <!-- Import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
+    <script src="Script.js" defer></script>
   </head>
   <body>
+
+    <section id="main">
+
+    <nav>
+		<!--logo--->
+		<!--menu--------->
+		<div class="toggle"></div>
+		<ul class="menu">
+			<li class="active"><a href="#main" >Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#contact-form">Contact</a></li>
+		</ul>
+		<!--language-->
+	  </nav>
+
     <!--
       This is the body of the page
       Look at the elements and see how they appear in the rendered page on the right
@@ -44,28 +63,45 @@
     <div class="wrapper">
       <div class="content" role="main">
         <!-- This is the start of content for our page -->
-        <h1 class="title">Hello World!</h1>
+        <br>
+        <br>
+        <h1 class="title" style="color: white">Welcome!</h1>
 
         <img
           src="https://cdn.glitch.me/25ae4a70-39cd-4922-992f-95b1ad302f85%2Fpic.jpeg?v=1638212675732"
           class="illustration"
           alt="Editor illustration"
           title="Click the image!"
+          style="display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;"
         />
         <!-- Instructions on using this project -->
+        <section id="about">
+
         <div class="instructions">
-          <h2>
+          <h2 style="font-size:80px; color:#7393B3; text-align: center">
             About Me
           </h2>
+          <br>
+          <br>
+          <br>
           <p>
-            My name is Syeda Kazmi and I am a student at John Jay College of Criminal Justice.
+            <i>My name is Syeda Kazmi and I am a student at John Jay College of Criminal Justice.</i>
           </p>
-          <p2>I was studying Mechanical
-            Engineering before I decided to change my major to Information Security.
+          <p2><i>I was studying Mechanical
+            Engineering before I decided to change my major to Information Security.</i>
           </p2>
           <p3>
             This is my first semester with this major and I am really liking it so far.
           </p3>
+
+          <br>
+          <br>
+
+          <!-- Change this link to your resume link **Important** -->
+          <a href="https://docs.google.com/document/d/1lNj8G-30FpHgWshAS7UnSOamjeJn_L3DmFBXUYpM4d8/edit?usp=sharing" class="cv-btn" style="color: white;">Download Resume</a>
           <!-- ADD BUTTON HERE -->
 
           <!-- Once you've added the button from the readme, click it in the page -->
@@ -73,6 +109,41 @@
         </div>
       </div>
     </div>
+    <div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<!-- Contact Me Section -->
+<!--Contact-btn------------------>
+	<section id="contact-btn" style="background: gray">
+	<!--heading-------------->
+		<h1 class="c-b-heading" style="text-align: center; font-size:40px; color:#7393B3;">Contact Me</h1>
+	<!--btn-------->
+
+		<button style="height: 120px; display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 30%;;"><a style="color:green;" href="mailto:leandrogamarra@rocketmail.com.com?Subject=Hello%20again">Email Me</button></a>
+    <br>
+    <br>
+		<!-- <button >Contact Me</button> -->
+		<div id="contact-form" style="text-align: center;">
+			<a href="https://github.com/syedak512"><i class="fab fa-github"></i></a>
+			&nbsp;&nbsp; | &nbsp; &nbsp;
+			<a href="https://www.linkedin.com/in/-syedakazmi/"><i class="fab fa-linkedin-in"></i></a>
+		</div>
+
+		<p style="color:black; text-align: center">Copyright © 2021 Syeda ©</p>
+	</section>
+
     <!-- The footer holds our remix button — you can use it for structure or cut it out ✂ -->
     <footer class="footer">
       <div class="links"></div>
