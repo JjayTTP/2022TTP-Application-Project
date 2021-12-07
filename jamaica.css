@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    background-color: #765DBF;
+    background-image: url(background.jpg);
+}
+#wrapper{
+	background-color:whitesmoke;
+	 width: 950px;
+	height: ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mashthead{
+    padding-left: 2px;
+    padding-right: 2px;
+    height: 300px;
+    background-color: #3C17CF;
+    width: 30%;
+}
+
+
+#logo{ float: left;
+padding-left: 50px;
+padding-top: 10px;
+padding-right: 10px;
+}
+
+#NAV{
+	float: auto;
+	background-color: ;
+    padding-top: 2px;
+	padding-bottom: 2px;
+	color: pink;
+	font-family: 'Lobster', cursive;
+	font-size: 23px;
+	line-height: 50px;
+	
+}
+	li{
+		display: inline;
+		padding-right: 40px;
+		font-family: 'Lobster', cursive;
+		
+	}
+a{
+		text-decoration: none;
+		}
+
+
+#main_text{
+	padding-left: 20px;
+    padding-right: 20px;
+	width: 900px;
+	float: left;
+	font-size: 20px;
+	line-height: 30px;
+	
+	
+}
+
+#main_text img{
+	float: left;
+	margin-right: 15px;
+	border: deeppink 3px solid;
+	padding: 3px;
+	
+}
+
+h1{
+    color: black;
+    background-color: deeppink;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Lobster', cursive;
+
+}
+h2{
+	color:deeppink;
+    text-align: center;
+	font-size:60px;
+	
+}
+h3{
+	color: blue;
+	font-size:40px;
+	
+}
+
+h4{
+	color:blue;
+    text-align: center;
+	
+	
+	
+}
+p{
+	color:black;
+	
+	
+}
+#colum-2{
+	float: right;
+	width: 270px;
+	padding-left: 10px;
+	padding-right: 15px;
+	padding-top: 55px;
+	line-height: 52px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	background-color: greenyellow;
+}
+
+#Box{
+	border: black medium solid;
+	padding-left: 20px;
+	width: 225px;
+	float: right;
+	font-size: 20px;
+	background-color: rosybrown;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+#footer{
+	border: black medium solid;
+	background-color: deeppink;
+	color: white;
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-size: 16px;
+	clear: both;
+}

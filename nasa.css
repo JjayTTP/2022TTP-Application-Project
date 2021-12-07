@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    background-color:purple;
+   
+}
+#wrapper{
+	background-color:yellow;
+	 width: 800px;
+	height: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mashthead{padding-left: 2px;
+padding-right: 2px}
+
+#logo{ float: left;
+padding-left: 50px;
+padding-top: 10px;
+padding-right: 10px;
+}
+
+#NAV{
+	float: inherit;
+	background-color: greenyellow;
+    padding-top: 3px;
+	padding-bottom: 3px;
+	border-bottom: blue 10px solid;
+	border-top:  red 10px solid;
+}
+	li{
+		display: inline;
+		padding-right: 35px;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		
+	}
+a{
+		text-decoration: none;
+		}
+
+
+#main_text{
+	padding-left: 20px;
+    padding-right: 20px;
+	width: 460px;
+	float: left;
+	border-right: 5px solid red;
+	line-height: 40px;
+	
+	
+}
+
+#main_text img{
+	float: left;
+	margin-right: 15px;
+	border: red 3px solid;
+	padding: 3px;
+}
+
+h1{
+   color:red;
+   background-color:green;
+   text-align: center;
+   font-size:80px; 
+   font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	border-bottom: thick blue solid;
+}
+
+
+h2{
+	color:red;
+    text-align: center;
+	
+}
+h3{
+	color: blue;
+	
+}
+p{
+	color:deepskyblue;
+	
+}
+#colum-2{
+	float: right;
+	width: 270px;
+	padding-left: 10px;
+	padding-right: 15px;
+	padding-top: 55px;
+	line-height: 52px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	background-color: greenyellow;
+}
+
+#Box{
+	border: black medium solid;
+	padding-left: 20px;
+	width: 225px;
+	float: right;
+	font-size: 20px;
+	background-color: rosybrown;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+#footer{
+	border: red medium solid;
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-size: 12px;
+	clear: both;
+}
