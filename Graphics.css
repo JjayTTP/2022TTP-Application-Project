@@ -1,0 +1,53 @@
+#intro
+{
+font-family: Courier
+text-align: center;
+}
+#Meheading
+{ 
+font-family: Courier;
+font-size: 19px
+}
+
+#thisisme
+{ 
+font-family: Courier;
+text-align: left;
+font-size: 19px
+}
+
+#desc
+{
+font-family: Courier;
+margin-right: 500px;
+font-size: 22px
+}
+
+#Nav
+{
+font-family: Courier;
+text-align: right;
+font-size: 19px
+}
+#Header
+{
+text-align: center;
+}
+#home{
+text-align: right;
+}
+#button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+#contact
+{display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+
+
+
