@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ankit Kafle</title>
+    <link rel="shortcut icon" type="image/jpg" href="image/logo.png"/>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='script.js'></script>
+</head>
+<body>
+    
+    <nav>   
+        <ul class="navbar" id="top">
+            <li class="nav" id="name"> <h1>Welcome to Ankit Kafle website </h1></li>
+            <li class="nav">
+                <a href="#introduction">
+                About</a></li>
+            <li class="nav"> <a href="https://drive.google.com/file/d/1Mk2wuO4-BNP8eZ4K_lZvJKtfDG6gUMsp/view?usp=sharing">Resume</a>
+            </li>
+            <li class="nav"> <a href="#photStoryID">Photo Story</a></li>
+            <li class="nav"> <a href="#contactId"> Contact</a></li>
+        </ul>
+    </nav>
+
+<div onmouseenter="makeBorder('introduction');" onmouseleave="removeBorder('introduction');"  id="introduction">
+       <img id="profileImage" src="image/ankitKafle.png" alt="Photo of Ankit Kafle">
+        <p  id="introtext">
+        Hi, I am Ankit Kafle. I am orginally form Nepal and living in New York for past 5 years. I am currently persuing my bacelors degree in Computer Sciece and Information Security in John Jay College Of Criminal Justice. I love to travel, read
+        books. I am intereseted in economics, biology and computer sciece.
+        </p>
+</div>
+
+<h2>Poems</h2>
+
+<div onmouseenter="makeBorder('poems');" onmouseleave="removeBorder('poems');"id="poems"> 
+    <div class="poem">
+        <span class="heading">You</span> <br><br>
+        Life is a story, <br>
+        If not for you, for me <br>
+        Your life is a story <br>
+         <br>
+        A story I want to live and see <br>
+        A story where I want to be <br> 
+        Live the moments, Feel the life <br> 
+        Climb up the mountains, see the sunrise <br>
+        <br>
+        more dreams and imaginations <br>
+        promises and procrastination <br>
+        And live what I never could <br>
+        Or live the life I never should <br>
+        In my head,  in my diary <br>
+        Because, Your are a story. <br><br>
+        <author class="authorName">Ankit Kafle</author>
+    </div>
+
+    <div class="poem">
+        <span class="heading">Dream</span> <br> <br>
+        Dear Dream <br>
+        Please come when, <br>
+        I am alone and asleep <br>
+        And knock on a door to my soul <br>
+        Take me to a beautiful ride <br>
+        I the world where my mother reside <br><br>
+        <author class="authorName">Ankit Kafle</author>
+    </div>
+
+    <div class="poem">
+        <span class="heading" >Stopping by Woods on a Snowy Evening</span> <br> <br>
+        Whose woods these are I think I know. <br>
+        His house is in the village though;   <br>
+        He will not see me stopping here   <br>
+        To watch his woods fill up with snow.  <br><br> 
+        
+        My little horse must think it queer   <br>
+        To stop without a farmhouse near   <br>
+        Between the woods and frozen lake   <br>
+        The darkest evening of the year.   <br><br>
+        
+        He gives his harness bells a shake   <br>
+        To ask if there is some mistake.   <br>
+        The only other sound’s the sweep   <br>
+        Of easy wind and downy flake.   <br><br>
+        
+        The woods are lovely, dark and deep,   <br>
+        But I have promises to keep,   <br>
+        And miles to go before I sleep,   <br>
+        And miles to go before I sleep. <br> <br>
+        <author class="authorName">Robert Frost</author>
+    </div>
+
+</div> 
+
+<h2 id="photStoryID">Photo Story</h2>
+
+<div onmouseenter="makeBorder('photoStory');" onmouseleave="removeBorder('photoStory');" id="photoStory">
+
+    <div
+    onmouseenter="presentStory('zero');" onmouseleave="hideStory('zero');"  class="grid-img"><img class="pic" src="image/fearlessGirl.jpg" alt="">
+    <p class="photoText" id="zero"> </p>
+    </div>
+    
+    <div
+    onmouseenter="presentStory('one');" onmouseleave="hideStory('one');" class="grid-img"><img class="pic" src="image/imgABC.jpeg" alt="">
+    <p class="photoText" id="one"> </p>
+    </div>  
+    
+    <div
+    onmouseenter="presentStory('two');" onmouseleave="hideStory('two');" class="grid-img"><img class="pic" src="image/imgDC.jpg" alt="">
+    <p class="photoText" id="two"> </p>
+    </div>
+
+    <div
+    onmouseenter="presentStory('three');" onmouseleave="hideStory('three');" class="grid-img"><img class="pic" src="image/imgLamoKapal.jpg" alt="">
+    <p class="photoText" id="three"> </p>
+    </div>
+   
+    <div
+    onmouseenter="presentStory('four');" onmouseleave="hideStory('four');" class="grid-img"><img class="pic" src="image/imgKarnaliBridge.jpg" alt="">
+     <p class="photoText" id="four"> </p>
+    </div> 
+
+    <div
+    onmouseenter="presentStory('five');" onmouseleave="hideStory('five');" class="grid-img"><img class="pic" src="image/flower.jpg" alt="">
+    <p class="photoText" id="five"> </p>
+    </div>
+    
+    <div
+    onmouseenter="presentStory('six');" onmouseleave="hideStory('six');"   class="grid-img"><img class="pic" src="image/hudsonYards.jpg" alt="">
+    <p class="photoText" id="six"> </p>
+    </div>
+<!--
+    <div 
+    onmouseenter="presentStory('seven');" onmouseleave="hideStory('seven');" class="grid-img"><img class="pic" src="image/hudsonYards.jpg" alt="">
+    <p class="photoText" id="seven"> </p>
+    </div> 
+-->
+
+</div>
+
+<form id="email" action="mailto: ankit.kafle19@gmail.com" name="emailForm"  enctype="text/plain" method="post" onsubmit="return formValidation()">
+<h2>Send me an email</h2>
+    Name:
+    <input id="emailName" type="text" name="name"><br><br>
+    <textarea  id="emailMessage" name="message"></textarea> 
+    <input class="buttons" type="submit" value="Send">
+    <input class="buttons" type="reset" value="Reset">
+</form>
+
+<div id="contactId"  style="text-align: center;">
+    <h2>Contact me</h2>
+    <a  onclick="goSocialMedia('linkedIn');" class="fa fa-linkedin"></a>
+    <a  onclick="goSocialMedia('instagram');" class="fa fa-instagram"></a>
+    <a  onclick="goSocialMedia('github');" class="fa fa-github"></a>
+</div>
+
+<div id="footer">
+    <h2>Thank you for Visiting my website</h2>
+</div>
+
+</body>
+</html>

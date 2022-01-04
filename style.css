@@ -1,0 +1,261 @@
+/*
+I find it easier to style the webpage on a serial mannar and then modified the contents for different screen size. I find this approach makes website makes mobile friendly 
+and there is always defult style irrespective of screen size.
+*/
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    margin:0;
+    padding:0;
+    background-color: antiquewhite;
+}
+h1
+{
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+h2
+{
+    clear: both;
+    text-align: center;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: grey;
+  }
+  
+  a:hover {
+    color: yellow;
+  }
+
+.navbar
+{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    padding: 5px;
+
+}
+
+.nav
+{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 5px 20px;
+    text-decoration:none;
+}
+
+#introduction
+{
+    margin: 3%;
+    background-color: beige;
+    font-size: 20px;
+    height: 700px;
+    border-radius: 20px;
+    padding: 5px;
+}
+#profileImage
+{ 
+    float: left;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 3px;
+    width: 90%;
+    margin: 1%;
+}
+
+#introtext
+{
+    float: left;
+    width: 90%;
+    background-color: cadetblue;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 1%;
+    margin-top: 20px;
+}
+
+#poems
+{
+    clear: both;
+    background-color: beige;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: center;
+    margin: 3%;
+    font-size: 20px;
+    color: #141823 ;
+    border-radius: 20px;
+}
+.poem
+{
+    border-radius: 20px;
+    padding:20px;
+}
+
+.heading
+{
+    padding: 3%;
+    font-weight: bold;
+    color: black;
+}
+
+.poem:nth-child(odd)
+{
+    background-color: rgb(243, 252, 252);
+}
+
+#photoStory
+{
+    border-radius: 20px;
+    clear: both;
+    margin:3%; 
+}
+.grid-img 
+{
+    font-size: 30px;
+    text-align: center;  
+  } 
+
+.pic
+{
+    width: 100%;   
+    border-radius: 5px; 
+}
+.photoText
+{
+    padding: 10px;
+    text-align: left;
+    width: 95%;
+    font-size: 18px;
+
+
+}
+#email
+{
+    clear: both;
+    text-align: left;
+    border: navy solid 2px;
+    border-radius: 20px;
+    width: 90%;
+    height: 250px;
+    margin: auto;
+    padding: 0 20px;
+    
+}
+#email > p 
+{
+    text-align: center;
+}
+#emailName
+{
+    text-align:left;
+}
+#emailMessage
+{
+    width: 95%;
+    height: 100px;
+}
+#emailName
+{
+    height: 30px;
+    border-radius: 5px;
+}
+#emailMessage
+{
+    border-radius: 5px;
+}
+#contactId a
+{
+    clear: both;
+    color: black;
+    font-size: 36px;
+    background-color:rgb(255, 255, 255);
+}
+
+#footer
+{
+    clear: both;
+    background-color: rgb(95, 74, 74);
+    padding: 5px;
+    font-size: 16px;
+    color: rgb(201, 103, 247);
+    text-align: center;
+}
+
+/* Mediq query for screen up to 1200 pix*/
+@media (min-width: 1200px) {
+    body
+        {
+        border: #333 2px solid;
+        width:1300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #name
+    {
+        margin-right:30%;
+    }
+    #photoStory
+    {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    #email
+    {
+        width: 60%;
+    }
+}
+
+/*Media query when screen size is form 800- 1200px */
+@media (min-width: 800px) {
+
+    .nav
+    {
+        float: left;  
+    }
+
+    #introduction
+    {
+        height: 640px;
+    }
+    #profileImage
+    {
+        width: 50%;
+    }
+
+    #introtext
+    {
+        width: 40%;
+        margin-top: 30%;
+    }
+
+    #email
+    {
+        width: 60%;
+    }
+}
+
+/*Modifyng the grid when screen is between 800-1200px */
+@media ( min-width:800px) and (max-width:1200px) {
+
+    #photoStory
+    {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
