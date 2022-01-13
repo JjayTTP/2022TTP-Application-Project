@@ -1,0 +1,127 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ege Kacmaz 2022 TTP Application Project</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="header">
+        
+        <nav>
+
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="experience.html">EXPERIENCE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="text-box">
+            <h1>Ege Kacmaz</h1>
+            <p>Merhaba<br> Welcome to my personal website<br></p>
+            <a href="contact.html" class="hero-btn">Get in Touch</a>
+        </div>
+    </section>
+    
+<!---------- EXPERIENCE ----------->
+    
+    <section class="experience">
+        <h1>Technical Experience</h1>
+        <p></p>
+        <div class="row">
+            <div class="experience-col">
+                <h3>CodePath</h3>
+                <p>Student at Cybersecurity University<br>14-Week Online Program<br>●Learning the basics of cybersecurity and common vulnerabilities<br>●Receiving hands on practice in both exploitation techniques and strategies for protecting and hardening applications</p>
+            </div>
+            <div class="experience-col">
+                <h3>Google</h3>
+                <p>Team Member at Google<br>Mentorship and Development Program (MDP)<br>CSSI: Online Program Participant<br>●Participated in a 2-week intensive introductory project-based Python Processing curriculum taught by Google engineers<br>●Completed 10 individual coding projects by using concepts such as variables, conditionals, loops, and functions<br>●Participated in a 1:1 mentorship program with a Google engineer to develop personal and professional goals over 
+                    a 6-month period
+                    </p>
+            </div>
+            <div class="experience-col">
+                <h3>Tech Scholar Program</h3>
+                <p>Coding Cohort Team Member<br>●Developed a text parser to automatically check the instances of different keywords in C++<br>●Created graphs in MS Excel to visually represent the data and presented the project to a group<br>●Designed an e-Portfolio to showcase the work completed in the project</p>
+            </div>
+        </div>
+    </section>
+    
+<!---------- SKILLS ---------->
+    
+    <section class="skills">
+        <h1>Skills</h1>
+        <p></p>
+            <div class="row">
+                <div class="skills-col">
+                    <img src="images/processing.png">
+                    <div class="layer">
+                        <h3>Processing</h3>
+                    </div>
+                </div>
+                <div class="skills-col">
+                    <img src="images/ms.png">
+                    <div class="layer">
+                        <h3>MS Office</h3>
+                    </div>
+                </div>
+                <div class="skills-col">
+                    <img src="images/python.png">
+                    <div class="layer">
+                        <h3>Python</h3>
+                    </div>
+                </div>
+                <div class="skills-col">
+                    <img src="images/burp.png">
+                    <div class="layer">
+                        <h3>Burp Suite</h3>
+                    </div>
+                </div>
+                <div class="skills-col">
+                    <img src="images/html.png">
+                    <div class="layer">
+                        <h3>HTML-CSS-JS</h3>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+ 
+<!-------- footer ---------->
+
+<section class="footer">
+        <h4></h4>
+        <p></p>
+        <a href="" class="footer-link"><p><br>© Ege Kacmaz</p></a>
+</section>    
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+    
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ege Kacmaz 2022 TTP Application Project</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="experience.html">EXPERIENCE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>   
+            <h1>About Me</h1>
+    </section>
+    
+    
+<!------- about me content -------->
+    
+<section class="about-me">
+    <div class="row">
+        <div class="about-col">
+            <h1>Merhaba.</h1>     
+            <p> My name is Ege Kacmaz and I am a Computer Science and Information Security student at John Jay College of Criminal Justice.<br>As a tech student, I have passion for learning programming. I am looking for my first real life experience to grow as a programmer. I like spending my time to follow and learn exciting new technologies.<br>My favorite book is Crime and Punishment and I mostly like to read philosophical and psychological books.<br>My hobbies are kickboxing and jogging.</p>
+            <a href="images/Resume_Ege Kacmaz.pdf" class="hero-btn cv-btn">RESUME</a>
+        </div>
+        <div class="about-col">
+            <img src="images/about.jpg">
+        </div>
+    </div>    
+</section>
+
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+    
+</body>
+</html>    
+
+
+
+<section class="footer">
+    <h4></h4>
+    <p></p>
+    <a href="" class="footer-link"><p><br>© Ege Kacmaz</p></a>
+</section>    
