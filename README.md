@@ -17,6 +17,8 @@ For now, this project will be an MVP (Minimum Viable Product) that you can conti
 # Examples
 Below are some sample websites. These may be a lot more intricate with a lot more elements than what is expected for. These are here to give you ideas on how to move forward. You do not need to copy any specific feature here. You can and should use your own creativity!
 
+[Fakhreddine Chaabani (he/him)](http://fakhreddinechaabani.com/)
+
 [Carlos Martinez (he/him)](https://carlosmartinez.dev/)
 
 [Owen Jones (he/him)](https://ojonesdev.netlify.app/)
