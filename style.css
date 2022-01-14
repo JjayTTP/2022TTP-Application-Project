@@ -1,0 +1,50 @@
+.container
+{
+    padding: 5px;
+    float: center;
+    background-color: rgb(185, 196, 196);
+    border-radius: 50%;
+}
+
+.foot
+{
+    text-align: center;
+    width: 40px;
+    height: auto;
+}
+
+.row
+{
+    text-align: center;
+}
+
+.img1
+{
+    display: inline-block;
+    border-radius: 50%;
+    width: 30%;
+    height: auto;
+    border-color: aliceblue;
+    border-width: 10px;
+    border-style: double;
+}
+
+.Main
+{
+    text-align: center;
+    display: block;
+}
+
+.myInfo
+{
+    display: none;
+}
+
+.Stuff
+{
+    display: none;
+}
+
+
+
+
