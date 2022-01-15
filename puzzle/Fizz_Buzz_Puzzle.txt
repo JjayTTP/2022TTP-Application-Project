@@ -1,0 +1,24 @@
+for loop from 1 to 10:
+  if the number is divisible by 3:
+     print "Fizz"
+  if the number is divisible by 3 and 5:
+     print "Fizz Buzz"
+  else:
+     print the number
+
+
+//Create a funcion call fuzz_buzz and take input as parameter
+function fuzz_buzz(input);
+//for loop up to 10 times
+  for(var i=1 ; i <= 10; i++){
+  // if the input is divisible by 3, print "Fizz"
+    if(input % 3 === 0);
+      console.log("Fizz”);
+  // if the input is divisible by both 3 and 5, print "Fizz"
+    else if (input % 3 === 0 || input % 5 === 0)
+      console.log("Fizz Buzz”);
+  //if not just print the count
+    else
+      console.log(i);
+
+
