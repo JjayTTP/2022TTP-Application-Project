@@ -1,0 +1,30 @@
+Question: Given two stings ransomNote and magazine, return true if ransomNote can be constructed from magazine and false otherwise.
+Each letter in magazine can only be used once in ransomNote.
+
+Psudo Code
+1. assign ransomNote to a variable.
+2.assign magazine to a variable. 
+3.Create an empty dictionary that will store the frequency of letter in magazine.
+4.if the array already have the letter from magazine already discard that and skip to another letter.
+5.To do that we need to keep tack of the count of each letter in the array.
+6.if all the letter in array from magazine can construct a world, return ture.
+7.if not, return false.
+
+In Python:
+
+//store ransomeNote in ransom variable.
+ransom = "ransomNote"
+//store magazine in maga variable.
+maga = "magazine"
+
+//Create an empty dictionary to keep track on letter in maga
+word_freq = {}
+
+//loop all the letter in maga variable.
+for i in maga:
+    if i in word_freq:
+    // if the letter is already in dictionary, increase the count for that letter.
+        world_freq[i] += i
+    else:
+    //if the letter doesn't exit in dictionary, start count as 1.
+        word_freq[i] = 1

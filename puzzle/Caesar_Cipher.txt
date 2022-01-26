@@ -1,0 +1,41 @@
+Julius Caesar protected his confidential information by encrypting it using a cipher. 
+Caesar's cipher shifts each letter by a number of letters. 
+If the shift takes you past the end of the alphabet, just rotate back to the front of the alphabet.
+In the case of a rotation by 3, w, x, y, and z would map to z, a, b and c.
+Code the Caesar Cipher in Javascript and submit it here.
+
+
+
+-----This code is provided by SangWon, commented by Thin Thazin------
+
+//create a function that take the string and the shift number as input
+  function enc_caesar(plaintext, shift) {
+    
+    //create a function with all alphabet
+    alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',
+                'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r',
+                's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+    // Create string that will store encrypted text
+    var enc_string = ""
+   
+    //loop all the number of elements on plaintext
+    for (let i = 0; i < plaintext.length; i++) { 
+        // Loop all elements in alphabet array
+        for (let j = 0; j < alphabet.length; j++) { 
+            // If the elements in plaintext and the elements in alphabet array are match
+            if (plaintext[i] == alphabet[j]) { 
+                // add the aplphabet with the shift that user desire and mod with 26 since there are 26 letters in array
+                enc_string += alphabet[(j + shift) % 26]; 
+            }
+        }
+        
+    }
+    // Print the original string
+    console.log("Original String: " + plaintext) 
+    // Print the encrypted stirng
+    console.log("Encrypted String: "  + enc_string) 
+}
+
+
+enc_caesar("wxyz", 3);
