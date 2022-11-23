@@ -34,15 +34,15 @@
     });
 
     // typing text animation script
-    var typed = new Typed(".typing", {
-        strings: ["Full-time student", "Entrepreneur", "Cybersecurity Enthusiast", "Hacking Learner", "soon to be Worker"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
+    // var typed = new Typed(".typing", {
+    //     strings: ["Generation USA Student", "Entrepreneur", "Cybersecurity Enthusiast", "Hacking Learner", "soon to be a web developer"],
+    //     typeSpeed: 100,
+    //     backSpeed: 60,
+    //     loop: true
+    // });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Full-time student", "Entrepreneur", "Cybersecurity Enthusiast", "Hacking Learner", "soon to be Worker"],
+        strings: ["Generation USA Student", "Entrepreneur", "Cybersecurity Enthusiast", "Hacking Learner", "soon to be a web developer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
